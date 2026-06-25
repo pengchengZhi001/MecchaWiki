@@ -132,14 +132,76 @@ export default async function SpotDetailPage({ params }: Props) {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold">Best Colors</h2>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {seo.bestColors.map((color) => (
+              <h2 className="text-xl font-bold">How to Win Here</h2>
+              <p className="mt-2 text-sm text-muted">{seo.paintHexDisclaimer}</p>
+              <ul className="mt-4 space-y-3">
+                {seo.guideSourced.howToWin.map((tip) => (
                   <li
-                    key={color}
-                    className="rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent ring-1 ring-accent/30"
+                    key={tip.slice(0, 48)}
+                    className="flex gap-2 text-sm leading-relaxed text-foreground/80"
                   >
-                    {color}
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent/80" />
+                    {tip}
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold">Color &amp; Paint Plan</h2>
+              <p className="mt-2 text-sm text-muted">
+                Body-part breakdown from published guides — sample with in-game Eyedropper (F → Space), then
+                fine-tune HSV / metallic / roughness per surface.
+              </p>
+              <div className="mt-4 overflow-x-auto rounded-xl border border-card-border">
+                <table className="w-full min-w-[520px] text-left text-sm">
+                  <thead>
+                    <tr className="border-b border-card-border bg-surface/50">
+                      <th className="px-4 py-3 font-semibold">Body part</th>
+                      <th className="px-4 py-3 font-semibold">Sample from</th>
+                      <th className="px-4 py-3 font-semibold">Technique</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {seo.guideSourced.paintLayers.map((layer) => (
+                      <tr key={layer.bodyPart} className="border-b border-card-border/60 last:border-0">
+                        <td className="px-4 py-3 font-medium text-accent">{layer.bodyPart}</td>
+                        <td className="px-4 py-3 text-foreground/80">{layer.sampleFrom}</td>
+                        <td className="px-4 py-3 text-muted">{layer.technique ?? "—"}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div className="mt-4 space-y-2">
+                <h3 className="text-sm font-semibold">Pose</h3>
+                <p className="text-sm leading-relaxed text-foreground/80">{seo.guideSourced.poseAdvice}</p>
+              </div>
+              <div className="mt-4 space-y-2">
+                <h3 className="text-sm font-semibold">Metallic &amp; roughness</h3>
+                <ul className="space-y-1">
+                  {seo.guideSourced.finishSettings.map((s) => (
+                    <li key={s} className="text-sm text-foreground/80">
+                      · {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold">Guide Sources</h2>
+              <ul className="mt-3 space-y-2">
+                {seo.guideSourced.sources.map((src) => (
+                  <li key={src.url} className="text-sm">
+                    <a
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent hover:underline"
+                    >
+                      {src.name}
+                    </a>
                   </li>
                 ))}
               </ul>

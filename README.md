@@ -1,37 +1,37 @@
 # Meccha Spots
 
-**Meccha Chameleon Hidden Spot Database** — 社区驱动的隐藏点与工坊地图数据库。
+**Meccha Chameleon Hidden Spot Database** — A community-driven database of hiding spots and workshop maps.
 
-## 数据说明
+## Data
 
-### 隐藏点（50 个）
-- 内容来源：**TheGamer**、**IGN**、**meccha-chameleon.net**、**YouTube 社区**
-- 每条记录含 `source` + `sourceUrl` 可追溯
-- 截图：Steam 官方游戏截图 CDN（`shared.akamai.steamstatic.com`）
+### Hidden spots (50+)
+- Sources: **TheGamer**, **IGN**, **meccha-chameleon.net**, **YouTube community**
+- Each entry includes traceable `source` + `sourceUrl`
+- Screenshots: Steam official CDN (`shared.akamai.steamstatic.com`)
 
-### 工坊地图（29 张）
-- 真实 Steam Workshop 数据（订阅数、预览图）
-- 预览图来自 `images.steamusercontent.com`
-- 运行 `npm run fetch:workshop` 从 Steam API 刷新数据
-- 编辑 `scripts/workshop-catalog.mjs` 添加新地图，运行 `npm run generate:workshop` 生成本地数据
+### Workshop maps (29)
+- Live Steam Workshop data (subscriptions, preview images)
+- Preview images from `images.steamusercontent.com`
+- Run `npm run fetch:workshop` to refresh from the Steam API
+- Edit `scripts/workshop-catalog.mjs` and run `npm run generate:workshop` for local data
 
-## 开发
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 刷新 Workshop 数据
+## Refresh workshop data
 
 ```bash
-# 从 Steam API 同步预览图与订阅数（推荐，Windows）
+# Sync preview images and subscription counts from Steam API (recommended on Windows)
 npm run sync:workshop
 
-# 或仅离线从 catalog 生成（无网络时）
+# Or generate offline from catalog only (no network)
 npm run generate:workshop
 ```
 
-## 技术栈
+## Stack
 
-Next.js 16 · TypeScript · Tailwind CSS v4 · next/image 远程图片
+Next.js 16 · TypeScript · Tailwind CSS v4 · next/image remote images

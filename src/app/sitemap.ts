@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site";
 import { maps } from "@/data/maps";
 import { guides } from "@/data/guides";
+import { helpTopics } from "@/data/help";
 import { hiddenSpots } from "@/data/hidden-spots";
 import { workshopMaps } from "@/data/workshop";
 
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/workshop-maps",
     "/maps",
     "/guides",
+    "/help",
   ];
 
   return [
@@ -46,6 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.5,
+    })),
+    ...helpTopics.map((t) => ({
+      url: `${siteConfig.url}/help/${t.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
     })),
   ];
 }

@@ -36,9 +36,17 @@ export default function PrivacyPage() {
               choice only in your browser session — we do not send votes to our servers today.
             </li>
             <li>
-              <strong>Analytics (if enabled):</strong> We may use privacy-focused analytics to
-              understand traffic. If added, this section will name the provider and link to their
-              policy.
+              <strong>Analytics:</strong> We use{" "}
+              <a
+                href="https://vercel.com/docs/analytics/privacy-policy"
+                className="text-accent underline-offset-2 hover:underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Vercel Web Analytics
+              </a>{" "}
+              to measure page views and visitor counts. It does not use third-party advertising
+              cookies.
             </li>
           </ul>
         </section>

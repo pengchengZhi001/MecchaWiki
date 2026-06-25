@@ -45,7 +45,12 @@ export default function HomeFaqSection() {
         <h2 className="text-2xl font-bold">Player Guides &amp; FAQ</h2>
         <p className="mt-2 text-sm text-muted">
           New to MECCHA CHAMELEON? Expand any topic below for in-depth tips on
-          hiding spots, beginner mechanics, and workshop maps.
+          hiding spots, beginner mechanics, and workshop maps. For download,
+          controls, and multiplayer help, see{" "}
+          <Link href="/help" className="font-medium text-accent hover:underline">
+            Help &amp; FAQ
+          </Link>
+          .
         </p>
 
         <div className="mt-8 divide-y divide-card-border rounded-xl border border-card-border bg-card/40">
