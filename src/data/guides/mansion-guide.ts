@@ -1,0 +1,67 @@
+import type { Guide } from "./types";
+
+export const mansionGuide: Guide = {
+  slug: "mansion-guide",
+  title: "Mansion Map Guide: Every Best Hiding Spot",
+  category: "Maps",
+  readTime: "14 min",
+  excerpt:
+    "Room-by-room breakdown of all 14 community-verified Mansion hiding spots — survival rates, color sampling, prep timing, and which viral clips still work in current patches.",
+  content: [
+    {
+      id: "overview",
+      heading: "Why Mansion Is the Meta Learning Map",
+      body: "Mansion is the default training ground for Meccha Chameleon because its rooms are readable, its color blocks are large, and fourteen community-verified spots span every skill tier from beginner-safe to meme-tier impossible. TheGamer's spot guide and IGN editor live-match tests agree on the same core truth: Mansion rewards preparation during countdown more than raw reflex during the hunt. Seekers develop floor-level habits here — sweeping armchairs, checking kitchen counters, glancing at hallway art — which means ceiling pillars, rear bookshelf rows, and deep kitchen shelving survive longer than spots that look impressive on TikTok. This guide walks every Mansion zone with survival rates from our community database, linked to the mechanics that explain those numbers. Treat survival rate as a curriculum ranking, not a guarantee: an 87% Library Shelf spot still fails if you sample the wrong spine color or stick past the shelf lip. Your goal after reading this is a mental floor plan — which room to drop into on spawn, where to prep before hunt phase, and when to rotate along the living-room-to-study loop instead of camping one prop.",
+    },
+    {
+      id: "library-study",
+      heading: "Library & Study — Library Shelf (87% Survival)",
+      body: "The Library Shelf is Mansion's highest-rated hide at 87% community survival, verified by TheGamer and consistently top-voted in our database with over 350 upvotes. Position yourself between rear bookshelf rows in a crouch pose, sampling both book spine color and the shadow gap between stacks — not the highlight on facing spines visible from the door. Flat pose discipline matters: any limb extending past the shelf lip creates a vertical line seekers spot instantly on round two when they start crouch-checking. The mechanic that makes this work is outline breaking. Books add visual noise so your body rectangle dissolves into texture. Seekers scanning at default camera height see a wall of spines; only deliberate rear-row checks expose you, and most public-lobby hunters skip that after a quick front sweep. Prep during countdown, not after hunt starts — movement on shelves is visible from the study doorway. Pair this spot with Wooden Arch Wall (74%) in the adjacent study wing if you need a rotation exit: sample warm paneling on the arch, wall-flat pose, and slide along the curve when pressure builds. Library teaches the sampling muscle memory every other map demands.",
+    },
+    {
+      id: "main-hall",
+      heading: "Main Hall — Ceiling Pillar (84%) & Pillar Top (31%)",
+      body: "The main hall defines Mansion's vertical meta. Ceiling Pillar sits at 84% survival — attach during prep phase to a ceiling column, sample highlight plus shadow on the column surface, and lock pose before hunt begins. Seekers entering from the ballroom or foyer typically sweep chest-height first; column attachments above default sightlines buy full rounds in casual lobbies. TheGamer notes that Space-on-walls climbing during prep is essential; attempting setup mid-hunt telegraphs movement. Contrast that with Pillar Top at only 31% survival: same room, same vertical concept, but sitting on the pillar cap exposes your silhouette to any hunter who looks up on round two. Community votes reflect the risk — high reward clips exist on YouTube, but the spot fails more often than it wins in tracked matches. Use Pillar Top only when you have confirmed the lobby's hunters are floor-locked, and always sample the cap's stone tone separately from wall plaster. Main hall rotation path: drop from ceiling pillar toward Armchair Tuck in the adjoining sitting area rather than crossing open floor. Open floor in main hall is a death sentence; wall movement keeps emergency sampling surfaces available.",
+    },
+    {
+      id: "kitchen",
+      heading: "Kitchen Zone — Shelving (78%) & Poster Wall (79%)",
+      body: "Kitchen Shelving at 78% and Kitchen Poster at 79% are TheGamer's twin anchors for the east wing. Shelving: crouch inside open kitchen cubbies, sample the interior shelf paint — not the wood trim — and keep all limbs inside the cubby silhouette. The critical warning from community tips: seekers who crouch get a clear sightline into shallow shelves. Prioritize depth over convenience; the back cubby survives, the front one dies. Kitchen Poster works because flat print colors read as wall texture from distance. Sample poster border tone for your outline and mid-tone for torso separately; rectangular poses sell the illusion of a flat print. Avoid sampling the bright center of food imagery — value mismatch pops under Mansion's warm lighting. Kitchen is a high-traffic rotation zone between dining and hallway; camp only if you finished prep before hunt. Otherwise cross through along the counter line, sampling baseboard shadow as you move. Both spots drop sharply in survival when hunters play repeat Mansion — round-two kitchen checks are common. Treat 78–79% as first-pass survival, not infinite immunity.",
+    },
+    {
+      id: "bathroom",
+      heading: "Bathroom — Tile & Grout Dual Sampling (76%)",
+      body: "Bathroom Tiles hold 76% survival when executed correctly and collapse below 50% when players sample once and hope. TheGamer and our beginner guide both stress dual sampling: tile AND grout, twice, on the exact pixels your body touches. Bathroom reflectivity increased after v1.1.0 — metallic slider settings matter on glossy tile. A perfect hue with wrong roughness catches seeker angles like a mirror flash. Crouch poses on floor tiles work better than wall-flat on shower surrounds because wall tiles have stronger specular highlights. Pose locking before hunt is non-negotiable; bathroom door sightlines expose any late color adjustment. Seeker psychology on bathroom: first pass checks shower curtain and sink; second pass crouch-scans floor grout lines. Survive the first pass by going darker on grout shadow lines — value match beats hue perfection in low light. Black Tiled Wall (73%) in the adjacent side room pairs well as a rotation: dark walls forgive small value errors but punish outline glow, so turn down metallic response when sampling. Bathroom teaches the dual-texture discipline required for Sewer graffiti and Cold Storage tile grids later.",
+    },
+    {
+      id: "hallways-art",
+      heading: "Hallways — Painting (72%) & Wooden Arch (74%)",
+      body: "Hallway Painting at 72% turns you into wall art — literally. Sample frame color for your outline edge and canvas mid-tone for torso; rectangular pose alignment is essential because irregular shapes read as player models against flat drywall. TheGamer community notes that seekers rushing between rooms often glance at paintings without processing them; slow hunters who walk the full corridor are your counter. Wooden Arch Wall at 74% uses curvature to hide shoulder width: wall-flat pose against arch paneling, warm trim sampled from the deepest shadow under the curve. Arch spots fail when hunters approach from the curve's convex side — your silhouette bulges. Position on the concave interior. Hallway rotation connects kitchen, bathroom, and main hall; never stand idle in corridor center. Move wall-hugging toward Vase Corner or Armchair Tuck when footstep audio approaches. Hallway Painting and Wooden Arch share a survival profile: solid mid-tier picks that reward pose discipline over climb tech. Neither breaks 80% because corridor traffic is inevitable on small lobbies.",
+    },
+    {
+      id: "living-areas",
+      heading: "Living Areas — Armchair Tuck (71%) & Black Tile Wall (73%)",
+      body: "Armchair Tuck at 71% is the sitting-room staple: crouch behind armchair, sample carpet shadow under the chair — not upholstery highlight — and stay on the shadow side facing away from primary door entry. Upholstery highlights are brighter than seekers expect; shadow-side carpet matches value correctly and hides your outline behind furniture mass. Black Tiled Wall at 73% occupies a side-room accent wall where dark tones forgive hue error but not metallic glow. Community tips from TheGamer: reduce metallic and roughness sliders after sampling so dark wall paint does not catch angle-dependent shine. Both spots share a weakness: repeat hunters check furniture backs on round two. First-round survival exceeds database averages; third-round lobbies collapse these rates. Living room connects to main hall and study — use it as a transit zone with pre-sampled emergency corners rather than a permanent camp. Armchair pairs with Library Shelf rotation through study door; Black Tile pairs with bathroom dark tones for color consistency when rotating under pressure.",
+    },
+    {
+      id: "party-special",
+      heading: "Party Hall — Balloon Banner (65%), Vase Corner (80%), Behind the Plank (58%)",
+      body: "The party wing mixes meme spots with genuine tech. Balloon Banner Back Wall at 65% requires hiding at the tallest balloon cluster point — game systems warn when you are too buried, so height matters mechanically, not just visually. GameRant community submissions note funny wins when paint matches balloon pastels; serious players use it as last-resort rotation. Vase Corner at 80% is IGN Editor Jen verified in a live match: hide between vases and the dark wall on the left, sampling vase ceramic plus wall shadow separately. This is Mansion's most underrated high-tier spot because seekers tunnel on party center props and skip peripheral corners. Behind the Plank at 58% is the community \"so bad it's good\" pick — YouTube famous, statistically mediocre, but hunters walk past when plank edge paint matches because the spot violates expectations. None of these are first-drop choices for ranked grinding; use them when you know hunter patterns or need chaos in late-round lobbies.",
+    },
+    {
+      id: "horse-statue",
+      heading: "Horse Statue — Viral Clip Spot (38% Survival)",
+      body: "Horse Statue at 38% survival is Mansion's cautionary tale. TheGamer lists it as \"impossible tier\" despite viral YouTube clips — enter during prep, sample statue stone tone, curled pose inside the prop — because seekers who tap props or sweep statue bases find you reliably in tracked matches. The mechanic conflict: prop mimic only works when hunters ignore props, but Mansion's most famous prop attracts attention. Survival rate reflects 289 community votes where 110 upvoted success — meaning most players who tried it reported failure. Use Horse Statue for content, not consistency. If you commit, prep exclusively during countdown, match statue gray-brown exactly, and accept that any hunter running prop-check meta ends your round. The spot teaches an important lesson visible across all maps: fame does not equal survival rate. Compare 38% Horse Statue to 87% Library Shelf — both appear in guides, only one belongs in your default loadout.",
+    },
+    {
+      id: "survival-rates",
+      heading: "Reading Survival Rates on Mansion",
+      body: "Our database survival rates aggregate community votes, TheGamer verification, and IGN editor tests — not developer official stats. An 87% rate means roughly seven of ten reported attempts succeeded in public lobbies, weighted by upvotes. Rates shift with patches, hunter skill, and lobby size. Mansion averages higher than Sewer ceiling meta for beginners because floor spots dominate hunter training. Rates above 75%: Library Shelf, Ceiling Pillar, Vase Corner, Kitchen Poster, Kitchen Shelving, Bathroom Tiles — your core curriculum. Rates 70–75%: Wooden Arch, Hallway Painting, Armchair, Black Tile — solid with pose discipline. Below 70%: Balloon Banner, Behind the Plank, Horse Statue, Pillar Top — situational or meme. When a spot underperforms for you personally, check color before position — Mobalytics' \"white elbow syndrome\" data shows unpainted limb gaps kill more Mansion rounds than wrong rooms. Vote your attempts on meccha.wiki hidden spots to keep community numbers honest.",
+    },
+    {
+      id: "quick-reference",
+      heading: "Mansion Quick Reference",
+      body: "First drop: Library Shelf or Vase Corner for highest survival. Vertical: Ceiling Pillar during prep, never Pillar Top unless hunters ignore ceilings. Kitchen: depth in shelving, dual-tone on poster. Bathroom: tile plus grout, lower metallic. Hallways: rectangular painting pose, concave arch interior. Living room: armchair shadow side, black tile with dull finish. Party wing: Vase Corner over Balloon Banner. Avoid: Horse Statue for wins, open main hall floor, mid-hunt shelf setup. Rotation loop: study → library → living room → kitchen → hallway → bathroom. Sample every room transition — Mansion warm tones shift subtly between zones. Pair this guide with our Mansion hidden spots page for screenshots and per-spot voting. Master Mansion's fourteen spots and every other official map becomes a color problem, not a layout problem.",
+    },
+  ],
+};

@@ -1,12 +1,16 @@
 {
-  "name": "meccha-wiki-temp",
+  "name": "meccha-wiki",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "fetch:images": "node scripts/fetch-spot-images.mjs",
+    "fetch:workshop": "node scripts/fetch-workshop.mjs",
+    "generate:workshop": "node scripts/generate-workshop.mjs",
+    "sync:workshop": "powershell -ExecutionPolicy Bypass -File scripts/sync-workshop.ps1"
   },
   "dependencies": {
     "next": "16.2.9",

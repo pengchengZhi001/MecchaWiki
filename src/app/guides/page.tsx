@@ -1,0 +1,39 @@
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+import PageHeader from "@/components/PageHeader";
+import Card from "@/components/Card";
+import { guides } from "@/data/guides";
+
+export const metadata: Metadata = createMetadata({
+  title: "Guides & Strategy",
+  description:
+    "In-depth Meccha Chameleon guides: how to hide better, color matching, seeker strategies, map tactics, and workshop tips.",
+  path: "/guides",
+  keywords: ["guide", "beginner", "hiding tips", "seeker", "strategy"],
+});
+
+export default function GuidesPage() {
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <PageHeader
+        title="Guides & Strategy"
+        description="Long-form guides built for search — not thin wiki stubs. Start with How To Hide Better."
+      />
+      <div className="grid gap-4">
+        {guides.map((guide) => (
+          <Card
+            key={guide.slug}
+            href={`/guides/${guide.slug}`}
+            title={guide.title}
+            description={guide.excerpt}
+            badge={guide.category}
+            badgeColor="bg-purple/10 text-purple ring-purple/30"
+            footer={
+              <span className="text-xs text-muted">{guide.readTime} read</span>
+            }
+          />
+        ))}
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,46 @@
+export const siteConfig = {
+  name: "Meccha Wiki",
+  tagline: "Mecha Chameleon Hidden Spot Database",
+  description:
+    "50+ source-curated MECCHA CHAMELEON hiding spots, Steam Workshop maps, editorial ratings, and prop hunt guides. Sewer, Mansion, Cold Storage, and more.",
+  url: "https://meccha.wiki",
+  locale: "en-US",
+  author: "Meccha Wiki",
+} as const;
+
+export const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/hidden-spots", label: "Hidden Spots" },
+  { href: "/workshop-maps", label: "Workshop Maps" },
+  { href: "/maps", label: "Maps" },
+  { href: "/guides", label: "Guides" },
+] as const;
+
+export const spotCategories = [
+  { id: "best", label: "Best Hiding Spots", emoji: "🏆" },
+  { id: "funny", label: "Funniest Spots", emoji: "😂" },
+  { id: "impossible", label: "Impossible Spots", emoji: "💀" },
+  { id: "community", label: "Community Picks", emoji: "🔥" },
+] as const;
+
+export type SpotCategoryId = (typeof spotCategories)[number]["id"];
+
+export const spotSortOptions = [
+  { id: "top-rated", label: "Top Rated" },
+  { id: "newest", label: "Newest" },
+  { id: "featured", label: "Featured" },
+  { id: "funny", label: "Most Funny" },
+] as const;
+
+export type SpotSortId = (typeof spotSortOptions)[number]["id"];
+
+export const workshopCategories = [
+  { id: "funny", label: "Top Funny Maps" },
+  { id: "horror", label: "Top Horror Maps" },
+  { id: "competitive", label: "Top Competitive Maps" },
+  { id: "new", label: "New This Week" },
+] as const;
+
+export type WorkshopCategoryId = (typeof workshopCategories)[number]["id"];
+
+export const SPOTS_PER_PAGE = 12;
