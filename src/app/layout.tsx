@@ -18,11 +18,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = createMetadata({
-  title: siteConfig.name,
-  description: siteConfig.description,
-  path: "/",
-});
+export const metadata: Metadata = {
+  ...createMetadata({
+    title: siteConfig.name,
+    description: siteConfig.description,
+    path: "/",
+  }),
+  verification: {
+    google: "W4aHUmcZc23Q5GS93B9LStQy7Bu12Cbpf5GaoEvbdKI",
+  },
+};
 
 export default function RootLayout({
   children,
