@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
-import { Banner300, NativeBanner } from "@/components/ads";
+import { InlineAds, SidebarAds } from "@/components/ads";
 import { guides, getGuideBySlug } from "@/data/guides";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
 
@@ -59,8 +59,8 @@ export default async function GuideDetailPage({ params }: Props) {
           }),
         ]}
       />
-      <div className="lg:grid lg:grid-cols-4 lg:gap-12">
-        <aside className="mb-8 lg:col-span-1">
+      <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+        <aside className="mb-8 lg:col-span-2">
           <Link
             href="/guides"
             className="text-sm text-muted transition hover:text-accent"
@@ -86,7 +86,7 @@ export default async function GuideDetailPage({ params }: Props) {
           </nav>
         </aside>
 
-        <div className="lg:col-span-3">
+        <div className="lg:col-span-7">
           <header className="border-b border-card-border pb-8">
             <div className="flex items-center gap-3">
               <span className="rounded-full bg-purple/10 px-2.5 py-0.5 text-xs font-medium text-purple ring-1 ring-purple/30">
@@ -97,8 +97,6 @@ export default async function GuideDetailPage({ params }: Props) {
             <h1 className="mt-4 text-3xl font-bold sm:text-4xl">{guide.title}</h1>
             <p className="mt-3 text-lg text-muted">{guide.excerpt}</p>
           </header>
-
-          <Banner300 />
 
           <nav className="mt-8 rounded-xl border border-card-border bg-card p-5 lg:hidden">
             <p className="text-xs font-semibold uppercase tracking-wider text-muted">
@@ -130,8 +128,6 @@ export default async function GuideDetailPage({ params }: Props) {
             })}
           </div>
 
-          <NativeBanner />
-
           {guide.sources && guide.sources.length > 0 && (
             <footer className="mt-12 rounded-xl border border-card-border bg-surface p-6">
               <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">
@@ -158,6 +154,12 @@ export default async function GuideDetailPage({ params }: Props) {
             </footer>
           )}
         </div>
+
+        <SidebarAds className="hidden lg:col-span-3 lg:block" />
+      </div>
+
+      <div className="mt-8 lg:hidden">
+        <InlineAds />
       </div>
     </article>
   );

@@ -7,7 +7,7 @@ import SpotImage from "@/components/SpotImage";
 import SpotRatingBadge from "@/components/SpotRatingBadge";
 import SpotRecommendations from "@/components/SpotRecommendations";
 import JsonLd from "@/components/JsonLd";
-import { Banner300, NativeBanner } from "@/components/ads";
+import { InlineAds, SidebarAds } from "@/components/ads";
 import { hiddenSpots, getSpotBySlug, getSpotRecommendations } from "@/data/hidden-spots";
 import { getSpotSeoContent } from "@/data/spot-seo-content";
 import { spotCategories } from "@/lib/site";
@@ -132,8 +132,6 @@ export default async function SpotDetailPage({ params }: Props) {
               <p className="mt-3 leading-relaxed text-foreground/80">{spot.description}</p>
             </section>
 
-            <Banner300 />
-
             <section>
               <h2 className="text-xl font-bold">Why It Works</h2>
               <p className="mt-3 leading-relaxed text-foreground/80">{seo.whyItWorks}</p>
@@ -257,7 +255,7 @@ export default async function SpotDetailPage({ params }: Props) {
             </section>
           </div>
 
-          <div className="space-y-6">
+          <SidebarAds>
             <VotePanel spotName={spot.name} />
             <div className="rounded-xl border border-card-border bg-card p-5">
               <h3 className="text-sm font-semibold">Quick Links</h3>
@@ -290,10 +288,12 @@ export default async function SpotDetailPage({ params }: Props) {
                 </li>
               </ul>
             </div>
-          </div>
+          </SidebarAds>
         </div>
 
-        <NativeBanner />
+        <div className="mt-8 lg:hidden">
+          <InlineAds />
+        </div>
 
         <div className="mt-16">
           <h2 className="text-2xl font-bold">Similar Spots</h2>

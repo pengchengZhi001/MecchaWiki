@@ -7,7 +7,7 @@ import DifficultyBadge from "@/components/DifficultyBadge";
 import SpotCard from "@/components/SpotCard";
 import { maps, getMapBySlug } from "@/data/maps";
 import { getSpotsByMap } from "@/data/hidden-spots";
-import { Banner300, NativeBanner } from "@/components/ads";
+import { InlineAds, SidebarAds } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -63,85 +63,91 @@ export default async function MapDetailPage({ params }: Props) {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <p className="max-w-3xl text-lg leading-relaxed text-foreground/80">{map.description}</p>
+        <div className="grid gap-8 lg:grid-cols-3">
+          <div className="space-y-12 lg:col-span-2">
+            <p className="max-w-3xl text-lg leading-relaxed text-foreground/80">{map.description}</p>
 
-        <Banner300 />
-
-        <div className="mt-6 flex gap-2">
-          {map.colorPalette.map((c) => (
-            <div key={c} className="text-center">
-              <div
-                className="h-10 w-10 rounded-lg ring-1 ring-card-border"
-                style={{ backgroundColor: c }}
-              />
-              <p className="mt-1 font-mono text-[10px] text-muted">{c}</p>
-            </div>
-          ))}
-        </div>
-
-        <section className="mt-12">
-          <h2 className="text-xl font-bold">Pro Tips</h2>
-          <ul className="mt-4 space-y-3">
-            {map.tips.map((tip, i) => (
-              <li
-                key={i}
-                className="flex gap-3 rounded-lg border border-card-border bg-card p-4"
-              >
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xs font-bold text-accent">
-                  {i + 1}
-                </span>
-                <p className="text-sm leading-relaxed">{tip}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
-          <section>
-            <h2 className="text-xl font-bold">Hot Zones</h2>
-            <div className="mt-4 space-y-3">
-              {map.hotspots.map((spot) => (
-                <div
-                  key={spot.name}
-                  className="rounded-xl border border-card-border bg-card p-5"
-                >
-                  <div className="flex items-center gap-2">
-                    <span
-                      className={`h-2 w-2 rounded-full ${
-                        spot.type === "hot"
-                          ? "bg-accent"
-                          : spot.type === "danger"
-                            ? "bg-red-400"
-                            : "bg-muted"
-                      }`}
-                    />
-                    <h3 className="font-semibold" style={{ color: map.accentColor }}>
-                      {spot.name}
-                    </h3>
-                  </div>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">{spot.description}</p>
+            <div className="flex gap-2">
+              {map.colorPalette.map((c) => (
+                <div key={c} className="text-center">
+                  <div
+                    className="h-10 w-10 rounded-lg ring-1 ring-card-border"
+                    style={{ backgroundColor: c }}
+                  />
+                  <p className="mt-1 font-mono text-[10px] text-muted">{c}</p>
                 </div>
               ))}
             </div>
-          </section>
 
-          <section>
-            <h2 className="text-xl font-bold">Danger Zones</h2>
-            <div className="mt-4 space-y-3">
-              {map.dangerZones.map((zone) => (
-                <div
-                  key={zone.name}
-                  className="rounded-xl border border-red-500/20 bg-red-500/5 p-5"
-                >
-                  <h3 className="font-semibold text-red-400">{zone.name}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">{zone.description}</p>
+            <section>
+              <h2 className="text-xl font-bold">Pro Tips</h2>
+              <ul className="mt-4 space-y-3">
+                {map.tips.map((tip, i) => (
+                  <li
+                    key={i}
+                    className="flex gap-3 rounded-lg border border-card-border bg-card p-4"
+                  >
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xs font-bold text-accent">
+                      {i + 1}
+                    </span>
+                    <p className="text-sm leading-relaxed">{tip}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <div className="grid gap-6 lg:grid-cols-2">
+              <section>
+                <h2 className="text-xl font-bold">Hot Zones</h2>
+                <div className="mt-4 space-y-3">
+                  {map.hotspots.map((spot) => (
+                    <div
+                      key={spot.name}
+                      className="rounded-xl border border-card-border bg-card p-5"
+                    >
+                      <div className="flex items-center gap-2">
+                        <span
+                          className={`h-2 w-2 rounded-full ${
+                            spot.type === "hot"
+                              ? "bg-accent"
+                              : spot.type === "danger"
+                                ? "bg-red-400"
+                                : "bg-muted"
+                          }`}
+                        />
+                        <h3 className="font-semibold" style={{ color: map.accentColor }}>
+                          {spot.name}
+                        </h3>
+                      </div>
+                      <p className="mt-2 text-sm leading-relaxed text-muted">{spot.description}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </section>
+
+              <section>
+                <h2 className="text-xl font-bold">Danger Zones</h2>
+                <div className="mt-4 space-y-3">
+                  {map.dangerZones.map((zone) => (
+                    <div
+                      key={zone.name}
+                      className="rounded-xl border border-red-500/20 bg-red-500/5 p-5"
+                    >
+                      <h3 className="font-semibold text-red-400">{zone.name}</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted">{zone.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
             </div>
-          </section>
+          </div>
+
+          <SidebarAds className="hidden lg:block" />
         </div>
 
-        <NativeBanner />
+        <div className="mt-8 lg:hidden">
+          <InlineAds />
+        </div>
 
         <section className="mt-12">
           <div className="flex flex-wrap items-end justify-between gap-4">

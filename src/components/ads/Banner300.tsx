@@ -5,7 +5,11 @@ import { AdSlot } from "./AdSlot";
 
 const AD_KEY = "59bbbdea4fdb1cc26e1787b4cc0dc94e";
 
-export default function Banner300() {
+type Banner300Props = {
+  sidebar?: boolean;
+};
+
+export default function Banner300({ sidebar = false }: Banner300Props) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -26,7 +30,7 @@ export default function Banner300() {
 
     const invokeScript = document.createElement("script");
     invokeScript.src = `https://www.highperformanceformat.com/${AD_KEY}/invoke.js`;
-    invokeScript.async = true;
+    invokeScript.async = false;
     container.appendChild(invokeScript);
 
     return () => {
@@ -35,7 +39,7 @@ export default function Banner300() {
   }, []);
 
   return (
-    <AdSlot>
+    <AdSlot variant={sidebar ? "sidebar" : "inline"}>
       <div ref={containerRef} className="h-[250px] w-[300px] max-w-full" />
     </AdSlot>
   );

@@ -26,7 +26,7 @@ export default function Banner728() {
 
     const invokeScript = document.createElement("script");
     invokeScript.src = `https://www.highperformanceformat.com/${AD_KEY}/invoke.js`;
-    invokeScript.async = true;
+    invokeScript.async = false;
     container.appendChild(invokeScript);
 
     return () => {

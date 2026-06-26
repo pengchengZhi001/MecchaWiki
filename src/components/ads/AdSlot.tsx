@@ -3,14 +3,17 @@ import type { ReactNode } from "react";
 type AdSlotProps = {
   children: ReactNode;
   className?: string;
+  variant?: "inline" | "sidebar";
 };
 
-export function AdSlot({ children, className = "" }: AdSlotProps) {
+export function AdSlot({ children, className = "", variant = "inline" }: AdSlotProps) {
+  const layout =
+    variant === "sidebar"
+      ? "flex justify-center"
+      : "my-8 flex justify-center overflow-hidden";
+
   return (
-    <aside
-      className={`my-8 flex justify-center overflow-hidden ${className}`.trim()}
-      aria-hidden
-    >
+    <aside className={`${layout} ${className}`.trim()} aria-hidden>
       {children}
     </aside>
   );
