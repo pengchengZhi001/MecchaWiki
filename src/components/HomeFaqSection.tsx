@@ -60,12 +60,12 @@ export default function HomeFaqSection() {
             return (
               <details key={section.id} className="group px-5 sm:px-6">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-base font-medium transition hover:text-accent [&::-webkit-details-marker]:hidden">
-                  {section.heading}
+                  <span className="min-w-0 break-words">{section.heading}</span>
                   <ChevronIcon />
                 </summary>
                 <div className="space-y-3 pb-5 pt-1">
                   {section.paragraphs.map((paragraph, i) => (
-                    <p key={i} className="text-sm leading-relaxed text-muted">
+                    <p key={i} className="break-words text-sm leading-relaxed text-muted">
                       {paragraph}
                     </p>
                   ))}

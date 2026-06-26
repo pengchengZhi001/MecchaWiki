@@ -23,14 +23,14 @@ export default function Card({
 }: CardProps) {
   const inner = (
     <>
-      <div className="flex items-start justify-between gap-3">
-        <div className="flex items-center gap-3">
+      <div className="flex min-w-0 items-start justify-between gap-3">
+        <div className="flex min-w-0 items-center gap-3">
           {icon && (
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-surface ring-1 ring-card-border">
               {icon}
             </div>
           )}
-          <h3 className="text-base font-semibold leading-snug">{title}</h3>
+          <h3 className="min-w-0 break-words text-base font-semibold leading-snug">{title}</h3>
         </div>
         {badge && (
           <span
@@ -40,7 +40,7 @@ export default function Card({
           </span>
         )}
       </div>
-      <p className="mt-3 text-sm leading-relaxed text-muted">{description}</p>
+      <p className="mt-3 break-words text-sm leading-relaxed text-muted">{description}</p>
       {footer && <div className="mt-4 border-t border-card-border pt-4">{footer}</div>}
     </>
   );

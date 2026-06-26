@@ -18,14 +18,14 @@ export default function SpotRatingBadge({
   const c = sizeClasses[size];
 
   return (
-    <div>
-      <div className="flex items-baseline gap-1">
+    <div className="min-w-0">
+      <div className="flex flex-wrap items-baseline gap-1">
         <span className={`font-bold text-accent ${c.score}`}>{rating}</span>
         <span className={`font-bold text-accent/70 ${c.suffix}`}>/100</span>
         <span className={`ml-1 text-muted ${c.label}`}>Guide rating</span>
       </div>
       {showDisclaimer && (
-        <p className="mt-1 text-xs text-muted">
+        <p className="mt-1 break-words text-xs text-muted">
           Recommended by experienced players · sourced from published guides, not live match stats
         </p>
       )}

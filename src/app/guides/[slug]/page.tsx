@@ -94,8 +94,8 @@ export default async function GuideDetailPage({ params }: Props) {
               </span>
               <span className="text-xs text-muted">{guide.readTime} read</span>
             </div>
-            <h1 className="mt-4 text-3xl font-bold sm:text-4xl">{guide.title}</h1>
-            <p className="mt-3 text-lg text-muted">{guide.excerpt}</p>
+            <h1 className="mt-4 break-words text-3xl font-bold sm:text-4xl">{guide.title}</h1>
+            <p className="mt-3 break-words text-lg text-muted">{guide.excerpt}</p>
           </header>
 
           <nav className="mt-8 rounded-xl border border-card-border bg-card p-5 lg:hidden">
@@ -121,8 +121,8 @@ export default async function GuideDetailPage({ params }: Props) {
               const id = section.id ?? slugify(section.heading);
               return (
                 <section key={id} id={id} className="scroll-mt-24">
-                  <h2 className="text-xl font-bold">{section.heading}</h2>
-                  <p className="mt-4 leading-relaxed text-foreground/80">{section.body}</p>
+                  <h2 className="break-words text-xl font-bold">{section.heading}</h2>
+                  <p className="mt-4 break-words leading-relaxed text-foreground/80">{section.body}</p>
                 </section>
               );
             })}

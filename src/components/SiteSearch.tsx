@@ -86,7 +86,7 @@ export default function SiteSearch({
                 className="flex items-center justify-between gap-3 px-4 py-3 transition hover:bg-surface"
               >
                 <div>
-                  <p className="text-sm font-medium">{item.title}</p>
+                  <p className="min-w-0 break-words text-sm font-medium">{item.title}</p>
                   <p className="text-xs text-muted">{item.type}</p>
                 </div>
                 <span className="text-xs text-accent">→</span>

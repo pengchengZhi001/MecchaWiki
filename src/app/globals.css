@@ -39,12 +39,36 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
-  overflow-x: clip;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+}
+
+/* Flex/grid children default to min-width:auto, which blocks text wrapping */
+:where(.flex, .inline-flex, .grid) > :not([class*="shrink-0"]) {
+  min-width: 0;
+}
+
+main {
+  min-width: 0;
+  max-width: 100%;
+}
+
+:where(p, li, h1, h2, h3, h4, h5, h6, a, td, th, figcaption, label, summary) {
+  overflow-wrap: anywhere;
+}
+
+.prose-custom :where(p, li, h2, a) {
+  overflow-wrap: anywhere;
 }
 
 /* Room for fixed bottom social bar + notched devices */
 .safe-area-pb {
   padding-bottom: max(3.5rem, env(safe-area-inset-bottom, 0px));
+}
+
+/* effectivecpm social bar mounts fixed nodes on body */
+body > div[id^="sb_main_"] {
+  z-index: 2147483646;
 }
 
 ::selection {

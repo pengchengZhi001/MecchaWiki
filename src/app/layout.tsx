@@ -47,11 +47,11 @@ export default function RootLayout({
         />
       </head>
       <body className="safe-area-pb flex min-h-full flex-col">
+        <SocialBar />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="min-w-0 max-w-full flex-1">{children}</main>
         <Footer />
         <Analytics />
-        <SocialBar />
       </body>
     </html>
   );

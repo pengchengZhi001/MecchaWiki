@@ -56,7 +56,7 @@ export default async function MapDetailPage({ params }: Props) {
               <DifficultyBadge difficulty={map.difficulty} />
               <span className="text-sm text-muted">{map.playerCount}</span>
             </div>
-            <h1 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">{map.name}</h1>
+            <h1 className="mt-3 break-words text-2xl font-bold sm:text-3xl md:text-4xl">{map.name}</h1>
             <p className="mt-2 text-base text-muted sm:text-lg">{map.tagline}</p>
           </div>
         </div>

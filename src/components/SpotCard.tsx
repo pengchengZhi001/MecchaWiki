@@ -28,13 +28,13 @@ export default function SpotCard({ spot, rank }: SpotCardProps) {
           </span>
         </div>
         <div className="absolute bottom-3 left-3 right-3">
-          <p className="text-lg font-bold text-white drop-shadow-lg">{spot.name}</p>
+          <p className="break-words text-lg font-bold text-white drop-shadow-lg">{spot.name}</p>
         </div>
       </div>
 
       <div className="p-4">
         <SpotRatingBadge rating={spot.survivalRate} size="sm" />
-        <p className="mt-2 line-clamp-2 text-sm text-muted">{spot.description}</p>
+        <p className="mt-2 line-clamp-2 break-words text-sm text-muted">{spot.description}</p>
         <p className="mt-2 text-xs text-muted/60">
           via {spot.source} · {spot.author}
         </p>

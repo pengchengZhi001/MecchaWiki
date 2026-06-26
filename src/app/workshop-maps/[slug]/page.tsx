@@ -15,6 +15,7 @@ import {
 } from "@/data/workshop-seo-content";
 import { getSteamSubscribeUrl } from "@/lib/steam-workshop";
 import { workshopCategories } from "@/lib/site";
+import { InlineAds, SidebarAds } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -233,7 +234,7 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
             </section>
           </div>
 
-          <aside className="space-y-6">
+          <SidebarAds>
             <div className="rounded-xl border border-card-border bg-card p-5">
               <h2 className="text-sm font-semibold text-muted">Steam Stats</h2>
               <dl className="mt-4 space-y-3">
@@ -320,7 +321,11 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
             <p className="text-xs text-muted">
               Preview image from Steam Workshop. Stats synced from live Steam data.
             </p>
-          </aside>
+          </SidebarAds>
+        </div>
+
+        <div className="mt-8 lg:hidden">
+          <InlineAds />
         </div>
 
         {relatedMaps.length > 0 && (

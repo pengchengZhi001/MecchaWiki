@@ -42,7 +42,7 @@ function BulletList({ items, dotClass = "bg-accent/80" }: { items: string[]; dot
       {items.map((item) => (
         <li key={item.slice(0, 48)} className="flex gap-2 text-sm leading-relaxed text-foreground/80">
           <span className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${dotClass}`} />
-          {item}
+          <span className="min-w-0 break-words">{item}</span>
         </li>
       ))}
     </ul>
@@ -101,7 +101,7 @@ export default async function SpotDetailPage({ params }: Props) {
                 </span>
               )}
             </div>
-            <h1 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">{spot.name}</h1>
+            <h1 className="mt-3 break-words text-2xl font-bold sm:text-3xl md:text-4xl">{spot.name}</h1>
             <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
               <SpotRatingBadge rating={spot.survivalRate} size="lg" showDisclaimer />
               <div className="text-sm text-muted">
@@ -129,7 +129,7 @@ export default async function SpotDetailPage({ params }: Props) {
           <div className="order-2 space-y-8 lg:order-1 lg:col-span-2">
             <section>
               <h2 className="text-xl font-bold">Location Description</h2>
-              <p className="mt-3 leading-relaxed text-foreground/80">{spot.description}</p>
+              <p className="mt-3 break-words leading-relaxed text-foreground/80">{spot.description}</p>
             </section>
 
             <section>
