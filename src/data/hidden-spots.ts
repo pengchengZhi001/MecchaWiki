@@ -856,6 +856,10 @@ export function getSpotsByMap(mapSlug: string): HiddenSpot[] {
     .sort((a, b) => b.survivalRate - a.survivalRate);
 }
 
+export function getSpotCountByMap(mapSlug: string): number {
+  return hiddenSpots.filter((s) => s.mapSlug === mapSlug).length;
+}
+
 export function getRelatedSpots(spot: HiddenSpot, limit = 4): HiddenSpot[] {
   const sameMap = getSpotsByMap(spot.mapSlug).filter((s) => s.slug !== spot.slug);
   if (sameMap.length >= limit) return sameMap.slice(0, limit);

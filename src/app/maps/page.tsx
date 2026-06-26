@@ -7,6 +7,7 @@ import MapsPageTabs from "@/components/MapsPageTabs";
 import WorkshopMapCard from "@/components/WorkshopMapCard";
 import { maps } from "@/data/maps";
 import { workshopMaps } from "@/data/workshop";
+import { getSpotCountByMap } from "@/data/hidden-spots";
 
 export const metadata: Metadata = createMetadata({
   title: "Map Guides — Official & Workshop",
@@ -63,7 +64,9 @@ export default async function MapsPage({ searchParams }: Props) {
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {maps.map((map) => (
+            {maps.map((map) => {
+              const spotCount = getSpotCountByMap(map.slug);
+              return (
               <Card
                 key={map.slug}
                 href={`/maps/${map.slug}`}
@@ -82,11 +85,15 @@ export default async function MapsPage({ searchParams }: Props) {
                         />
                       ))}
                     </div>
-                    <span className="text-xs text-muted">{map.playerCount}</span>
+                    <div className="flex items-center gap-3 text-xs text-muted">
+                      {spotCount > 0 && <span>{spotCount} spots</span>}
+                      <span>{map.playerCount}</span>
+                    </div>
                   </div>
                 }
               />
-            ))}
+            );
+            })}
           </div>
         </section>
       )}

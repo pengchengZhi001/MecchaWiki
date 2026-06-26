@@ -32,7 +32,7 @@ export default async function MapDetailPage({ params }: Props) {
   const map = getMapBySlug(slug);
   if (!map) notFound();
 
-  const linkedSpots = getSpotsByMap(slug).slice(0, 9);
+  const linkedSpots = getSpotsByMap(slug);
 
   return (
     <article>
@@ -77,22 +77,38 @@ export default async function MapDetailPage({ params }: Props) {
         </div>
 
         <section className="mt-12">
-          <h2 className="text-xl font-bold">Best Spots In {map.name}</h2>
-          <p className="mt-1 text-sm text-muted">
-            {linkedSpots.length} verified hiding spots on this map
-          </p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {linkedSpots.map((spot, i) => (
-              <SpotCard key={spot.slug} spot={spot} rank={i + 1} />
-            ))}
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <h2 className="text-xl font-bold">Hidden Spots on {map.name}</h2>
+              <p className="mt-1 text-sm text-muted">
+                {linkedSpots.length > 0
+                  ? `${linkedSpots.length} verified hiding spots linked to this map`
+                  : "No verified hiding spots yet for this map"}
+              </p>
+            </div>
+            {linkedSpots.length > 0 && (
+              <Link
+                href={`/hidden-spots?map=${slug}`}
+                className="text-sm font-medium text-accent hover:underline"
+              >
+                Browse in database →
+              </Link>
+            )}
           </div>
-          {linkedSpots.length > 0 && (
-            <Link
-              href={`/hidden-spots?q=${encodeURIComponent(map.name.toLowerCase())}`}
-              className="mt-6 inline-block text-sm font-medium text-accent hover:underline"
-            >
-              View all {map.name} spots →
-            </Link>
+          {linkedSpots.length > 0 ? (
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {linkedSpots.map((spot, i) => (
+                <SpotCard key={spot.slug} spot={spot} rank={i + 1} />
+              ))}
+            </div>
+          ) : (
+            <p className="mt-6 rounded-xl border border-card-border bg-card p-6 text-sm text-muted">
+              Spot guides for {map.name} are being added. Check back soon or browse{" "}
+              <Link href="/hidden-spots" className="text-accent hover:underline">
+                all hidden spots
+              </Link>
+              .
+            </p>
           )}
         </section>
 

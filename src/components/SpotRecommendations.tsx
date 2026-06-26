@@ -22,7 +22,7 @@ export default function SpotRecommendations({ spot, recommendations }: SpotRecom
       title: "More on This Map",
       description: `Other ${spot.map} hiding spots ranked by guide rating`,
       spots: recommendations.sameMap,
-      viewAllHref: `/hidden-spots?q=${encodeURIComponent(spot.map.toLowerCase())}`,
+      viewAllHref: `/hidden-spots?map=${spot.mapSlug}`,
       viewAllLabel: `View all ${spot.map} spots`,
     },
     {

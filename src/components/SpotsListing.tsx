@@ -11,6 +11,7 @@ export default function SpotsListing() {
   const searchParams = useSearchParams();
   const sort = (searchParams.get("sort") as SpotSortId) || "top-rated";
   const category = searchParams.get("category") as SpotCategoryId | null;
+  const mapSlug = searchParams.get("map") ?? "";
   const q = searchParams.get("q")?.toLowerCase() ?? "";
   const page = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10) || 1);
 
@@ -18,6 +19,9 @@ export default function SpotsListing() {
     let list = sortSpots(sort);
     if (category && ["best", "funny", "impossible", "community"].includes(category)) {
       list = list.filter((s) => s.category === category);
+    }
+    if (mapSlug) {
+      list = list.filter((s) => s.mapSlug === mapSlug);
     }
     if (q) {
       list = list.filter(
@@ -30,7 +34,7 @@ export default function SpotsListing() {
       );
     }
     return list;
-  }, [sort, category, q]);
+  }, [sort, category, mapSlug, q]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / SPOTS_PER_PAGE));
   const currentPage = Math.min(page, totalPages);
@@ -70,9 +74,19 @@ export default function SpotsListing() {
         ))}
       </div>
 
-      {q && (
+      {(q || mapSlug) && (
         <p className="mb-4 text-sm text-muted">
-          Search results for &ldquo;{searchParams.get("q")}&rdquo; — {filtered.length} spots
+          {mapSlug && !q && (
+            <>
+              Showing spots on{" "}
+              <span className="font-medium text-foreground">
+                {filtered[0]?.map ?? mapSlug}
+              </span>
+              {" — "}
+            </>
+          )}
+          {q && <>Search results for &ldquo;{searchParams.get("q")}&rdquo; — </>}
+          {filtered.length} spots
         </p>
       )}
 
