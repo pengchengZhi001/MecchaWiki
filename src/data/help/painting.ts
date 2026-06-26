@@ -27,8 +27,8 @@ export const paintingTopic: HelpTopic = {
         "Perfect hue matters less than matching value (light vs dark). A slightly wrong undertone in shadow survives; a bright sticker on a dark wall dies instantly.",
       ],
       relatedLink: {
-        href: "/guides/color-matching",
-        label: "Advanced color matching guide",
+        href: "/guides/how-to-paint-better",
+        label: "How to paint better — brush size & Spacebar eyedropper",
       },
     },
     {
@@ -36,10 +36,15 @@ export const paintingTopic: HelpTopic = {
       question: "Eyedropper keeps picking the wrong color — what am I doing wrong?",
       tags: ["eyedropper", "sample", "color pick"],
       answer: [
-        "You are probably sampling from across the room or from a lit patch while hiding in shadow. Eyedropper the exact pixel adjacent to where your pose lock places your torso.",
+        "Steam Discussions report wrong colors when clicking the eyedropper — thread replies confirm Spacebar sampling in paint mode reads more accurately. Point at the surface and press Spacebar instead of click-only sampling.",
+        "You may also be sampling from across the room or from a lit patch while hiding in shadow. Eyedropper the exact pixel adjacent to where your pose lock places your torso.",
         "Use middle mouse to orbit the camera while staying in paint mode — sample high pipes or ceiling plaster without walking there during prep.",
         "On gradient walls, corners and baseboards run darker. If you crouch low, sample low. On Backrooms, re-sample every doorway — wallpaper yellow shifts subtly room to room.",
       ],
+      relatedLink: {
+        href: "/guides/how-to-paint-better",
+        label: "Full painting guide — brush size & eyedropper fixes",
+      },
     },
     {
       id: "metallic-roughness",

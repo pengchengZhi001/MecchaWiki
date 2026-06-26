@@ -76,6 +76,20 @@ export const multiplayerTopic: HelpTopic = {
       ],
     },
     {
+      id: "can-play-solo",
+      question: "Can I play MECCHA CHAMELEON solo?",
+      tags: ["solo", "single player", "offline", "bots"],
+      answer: [
+        "No. The Steam store describes an online hide-and-seek game with public matches and streaming support — there is no single-player mode, no AI bots, and no offline play. Community FAQ aggregators and Wikipedia agree: you need real human players and an internet connection.",
+        "Minimum lobby is two players. The developer recommends 2–10 players per room for stable sessions. Bring friends, join public matchmaking, or hop into streamer viewer-participation rooms.",
+        "If you bought the game to practice alone, use a private lobby with one patient friend or join low-population public servers during peak hours.",
+      ],
+      relatedLink: {
+        href: "/guides/private-lobby-guide",
+        label: "Private lobby & friend invite guide",
+      },
+    },
+    {
       id: "player-count-limits",
       question: "How many players can join one room?",
       tags: ["players", "lobby size", "max players"],

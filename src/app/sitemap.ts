@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/maps",
     "/guides",
     "/help",
+    "/demand-library",
   ];
 
   return [

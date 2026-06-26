@@ -17,7 +17,7 @@ export default function GuidesPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <PageHeader
         title="Guides & Strategy"
-        description="Long-form guides built for search — not thin wiki stubs. Start with How To Hide Better."
+        description="Search-driven guides from real player questions — bug fixes, painting, why you keep getting found, map rankings, and private lobbies. See the demand library for our backlog."
       />
       <div className="grid gap-4">
         {guides.map((guide) => (

@@ -69,4 +69,17 @@ export const searchIndex: SearchItem[] = [
       ]),
     ],
   })),
+  {
+    title: "Content Demand Library",
+    href: "/demand-library",
+    type: "Meta",
+    keywords: [
+      "demand library",
+      "content backlog",
+      "player questions",
+      "can't join lobby",
+      "authentication token",
+      "how to paint",
+    ],
+  },
 ];

@@ -1,9 +1,12 @@
 /** Local map hero images (from Steam store screenshots). */
 const MAP_IMAGES: Record<string, string> = {
   mansion: "/images/maps/steam-0.jpg",
+  "indoor-country": "/images/maps/steam-1.jpg",
   sewer: "/images/maps/steam-4.jpg",
   backrooms: "/images/maps/steam-3.jpg",
   "penguin-hotel": "/images/maps/steam-7.jpg",
+  sugarland: "/images/maps/steam-2.jpg",
+  osaka: "/images/maps/steam-8.jpg",
   "cold-storage": "/images/maps/steam-5.jpg",
   "brick-loft": "/images/maps/steam-6.jpg",
 };
@@ -54,6 +57,34 @@ export const maps: GameMap[] = [
       { name: "Main Stair Landing", description: "Seekers sweep here every round." },
     ],
     colorPalette: ["#8B4513", "#D4A574", "#F5DEB3", "#654321", "#2F1810"],
+  },
+  {
+    slug: "indoor-country",
+    name: "Indoor Country",
+    tagline: "Rustic farm · Beginner-friendly",
+    difficulty: "Easy",
+    playerCount: "4–12 players",
+    themeColor: "#6B8E23",
+    accentColor: "#C4A35A",
+    imageUrl: MAP_IMAGES["indoor-country"],
+    description:
+      "Rustic farm interior with hay bales, green crates, cow standees, and teal accent walls. Community map databases rate it Beginner alongside Mansion — large readable color blocks make eyedropper practice forgiving.",
+    tips: [
+      "Sample cow standees and hay-adjacent surfaces when mimicking props.",
+      "Green crates and teal walls are distinct zones — re-sample when rotating.",
+      "Clutter around hay stacks breaks outline better than open barn floor.",
+      "Control guides note Indoor Country standees for eyedropper practice.",
+    ],
+    hotspots: [
+      { name: "Hay Stack Clusters", description: "Visual noise hides outline mistakes.", type: "hot" },
+      { name: "Cow Standee Zone", description: "Prop mimic opportunities near standees.", type: "hot" },
+      { name: "Open Barn Floor", description: "Wide sightlines — cross quickly.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Central Open Floor", description: "Minimal clutter — value errors show instantly." },
+      { name: "Door Thresholds", description: "Seekers pre-aim transitions between rooms." },
+    ],
+    colorPalette: ["#6B8E23", "#C4A35A", "#8FBC8F", "#2E8B8B", "#D2B48C"],
   },
   {
     slug: "sewer",
@@ -138,6 +169,62 @@ export const maps: GameMap[] = [
       { name: "Open Hallways", description: "Long sightlines between themed doors." },
     ],
     colorPalette: ["#4A90D9", "#A8D4F0", "#FFFFFF", "#E8F4FC", "#2E6BA8"],
+  },
+  {
+    slug: "sugarland",
+    name: "Sugarland",
+    tagline: "Candy world · Saturated colors",
+    difficulty: "Medium",
+    playerCount: "4–10 players",
+    themeColor: "#FF69B4",
+    accentColor: "#98FB98",
+    imageUrl: MAP_IMAGES["sugarland"],
+    description:
+      "Bright candy-themed map added in v1.4.0 (June 17, 2026). Saturated pinks, mints, and chocolate browns — community sources rate it Intermediate. Confident color-blocking reads believable; sloppy paint stands out on bright surfaces.",
+    tips: [
+      "Commit to one candy surface color — mid-blend zones read as errors.",
+      "Saturated hues punish white gaps at joints more than muted maps.",
+      "Large flat candy panels need pose discipline — less clutter than Mansion.",
+      "Specific spots still being verified post-launch — test and screenshot.",
+    ],
+    hotspots: [
+      { name: "Candy Wall Panels", description: "Flat saturated blocks — fast sampling.", type: "hot" },
+      { name: "Chocolate Trim Zones", description: "Dual-tone brown/pink edges.", type: "neutral" },
+      { name: "Open Candy Floor", description: "Bright open areas expose value errors.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Central Bright Zones", description: "High saturation exposes unpainted white." },
+      { name: "Long Open Aisles", description: "Seekers sweep bright corridors quickly." },
+    ],
+    colorPalette: ["#FF69B4", "#98FB98", "#D2691E", "#FFB6C1", "#90EE90"],
+  },
+  {
+    slug: "osaka",
+    name: "Osaka",
+    tagline: "Japan streets · Newest official map",
+    difficulty: "Hard",
+    playerCount: "4–8 players",
+    themeColor: "#C41E3A",
+    accentColor: "#1E3A5F",
+    imageUrl: MAP_IMAGES["osaka"],
+    description:
+      "Japan-themed urban map added in v1.7.0 (June 22, 2026). IGN describes it as the smallest official map — signage, storefronts, lanterns, truck bed, and octopus statue zones. Warm lantern reds mix with cool signage blues.",
+    tips: [
+      "Smallest map — pick spots early; open ground is risky.",
+      "Sample exact urban surface — mixed pixels on signs and crates.",
+      "Vertical signage and octopus statue zones reward overhead hides.",
+      "Truck bed/underneath needs shadow-matched paint per IGN.",
+    ],
+    hotspots: [
+      { name: "Shop Wall Clusters", description: "Fans, crates, and storefront clutter.", type: "hot" },
+      { name: "Signage & Octopus Statue", description: "Vertical hides above default sightline.", type: "hot" },
+      { name: "Truck Open Area", description: "Shadow paint critical — lit vs shaded metal.", type: "neutral" },
+    ],
+    dangerZones: [
+      { name: "Open Street Center", description: "Compact map — seekers recycle paths fast." },
+      { name: "Lit Signage Fronts", description: "Neon-adjacent blues expose value mismatch." },
+    ],
+    colorPalette: ["#C41E3A", "#1E3A5F", "#F5F5DC", "#2F4F4F", "#FFD700"],
   },
   {
     slug: "cold-storage",

@@ -126,6 +126,32 @@ export default async function GuideDetailPage({ params }: Props) {
               );
             })}
           </div>
+
+          {guide.sources && guide.sources.length > 0 && (
+            <footer className="mt-12 rounded-xl border border-card-border bg-surface p-6">
+              <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">
+                Sources
+              </h2>
+              <p className="mt-2 text-sm text-muted">
+                Answers on this page trace back to community reports and official
+                references — not invented fixes.
+              </p>
+              <ul className="mt-4 space-y-2">
+                {guide.sources.map((source) => (
+                  <li key={source.url}>
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-accent hover:underline"
+                    >
+                      {source.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </footer>
+          )}
         </div>
       </div>
     </article>

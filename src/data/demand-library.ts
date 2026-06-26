@@ -1,0 +1,174 @@
+export type DemandStatus = "done" | "planned" | "deferred" | "skip";
+
+export type DemandEntry = {
+  /** Player question or search query */
+  question: string;
+  /** 1–5 star search value */
+  searchValue: 1 | 2 | 3 | 4 | 5;
+  status: DemandStatus;
+  /** Route when status is done */
+  href?: string;
+  category: string;
+  notes?: string;
+};
+
+/** Content backlog driven by Steam Discussions, Reddit, and player reviews. */
+export const demandLibrary: DemandEntry[] = [
+  // Bug fixes — highest volume in Steam Discussions
+  {
+    question: "Can't Join Lobby / Can't Connect to Friends",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/fix-cant-join-lobby",
+    category: "Bug Fix",
+  },
+  {
+    question: "Invalid Authentication Token / Can't Login",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/fix-authentication-token",
+    category: "Bug Fix",
+  },
+  {
+    question: "Lag / Blurry Screen / Low FPS",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/fix-lag-blurry-screen",
+    category: "Bug Fix",
+  },
+  {
+    question: "How to Rebind Keys / Change Controls",
+    searchValue: 4,
+    status: "done",
+    href: "/help/controls",
+    category: "Bug Fix",
+    notes: "Covered in Controls help — Esc → Settings → Controls",
+  },
+  // Core strategy
+  {
+    question: "Best Hiding Spots",
+    searchValue: 5,
+    status: "done",
+    href: "/hidden-spots",
+    category: "Strategy",
+  },
+  {
+    question: "How to Paint Better / Eyedropper Wrong Color",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/how-to-paint-better",
+    category: "Painting",
+  },
+  {
+    question: "Best Colors / Color Matching",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/color-matching",
+    category: "Painting",
+  },
+  {
+    question: "Best Pose / Which Pose to Use",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/best-pose-guide",
+    category: "Strategy",
+  },
+  {
+    question: "Why Do I Keep Getting Found?",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/why-keep-getting-found",
+    category: "Strategy",
+  },
+  {
+    question: "How to Win as Hider",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/beginner-basics",
+    category: "Strategy",
+  },
+  {
+    question: "How to Find Hiders Faster (Seeker)",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/hunter-guide",
+    category: "Strategy",
+  },
+  // Maps
+  {
+    question: "All Official Maps List",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/all-official-maps",
+    category: "Maps",
+  },
+  {
+    question: "Best Maps Ranked",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/best-maps-ranked",
+    category: "Maps",
+  },
+  {
+    question: "Osaka / Japan Map Guide",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/osaka-map-guide",
+    category: "Maps",
+  },
+  {
+    question: "Sugarland Map Guide",
+    searchValue: 3,
+    status: "planned",
+    category: "Maps",
+    notes: "Map listed in community databases — spot verification still in progress",
+  },
+  // Multiplayer
+  {
+    question: "Private Lobby / How to Invite Friends",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/private-lobby-guide",
+    category: "Multiplayer",
+  },
+  {
+    question: "Can I Play Solo? / Player Count",
+    searchValue: 4,
+    status: "done",
+    href: "/help/multiplayer",
+    category: "Multiplayer",
+    notes: "Steam store: no solo mode; 2–10 recommended",
+  },
+  {
+    question: "Best Settings for 6 Players",
+    searchValue: 3,
+    status: "deferred",
+    category: "Multiplayer",
+    notes: "No verified community consensus yet — defer until Steam thread exists",
+  },
+  // Deferred / skip
+  {
+    question: "Workshop Tutorial",
+    searchValue: 2,
+    status: "deferred",
+    category: "Workshop",
+    notes: "Lower search volume vs bug fixes and hiding guides",
+  },
+  {
+    question: "Lore / Story",
+    searchValue: 1,
+    status: "skip",
+    category: "Other",
+    notes: "No meaningful search demand in player discussions",
+  },
+];
+
+export function demandByCategory(): Map<string, DemandEntry[]> {
+  const map = new Map<string, DemandEntry[]>();
+  for (const entry of demandLibrary) {
+    const list = map.get(entry.category) ?? [];
+    list.push(entry);
+    map.set(entry.category, list);
+  }
+  return map;
+}

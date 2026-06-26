@@ -4,6 +4,11 @@ export type GuideSection = {
   body: string;
 };
 
+export type GuideSource = {
+  name: string;
+  url: string;
+};
+
 export type Guide = {
   slug: string;
   title: string;
@@ -11,6 +16,8 @@ export type Guide = {
   readTime: string;
   excerpt: string;
   content: GuideSection[];
+  /** External references used to write this guide — no unsourced claims. */
+  sources?: GuideSource[];
 };
 
 export function wordCount(guide: Guide): number {

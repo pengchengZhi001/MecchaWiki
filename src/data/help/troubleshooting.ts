@@ -5,8 +5,48 @@ export const troubleshootingTopic: HelpTopic = {
   title: "Connection Errors, Disconnects & Room Fixes",
   category: "Support",
   excerpt:
-    "Common connection and lobby issues in MECCHA CHAMELEON — what each error usually means and what players can try on their own before giving up on a session.",
+    "Common connection and lobby issues in MECCHA CHAMELEON — version mismatch, auth token errors, lag, and what players report on Steam Discussions.",
   items: [
+    {
+      id: "cant-join-lobby",
+      question: "Can't join any lobby — what should I try first?",
+      tags: ["can't join", "lobby", "connect", "multiplayer"],
+      answer: [
+        "Version mismatch is the #1 cause per community fix guides and v1.1.0 patch notes: everyone closes the game, exits Steam fully, confirms no pending update, then the host creates a brand-new room.",
+        "If Steam invites fail, use the in-game server browser with a unique server name instead — multiple community reports describe black screens and auth failures from desktop invites.",
+        "Test with an official map before blaming workshop subscriptions — every player must subscribe to custom maps the host selects.",
+      ],
+      relatedLink: {
+        href: "/guides/fix-cant-join-lobby",
+        label: "Full Can't Join Lobby fix guide",
+      },
+    },
+    {
+      id: "authentication-token",
+      question: "Invalid or missing authentication token at login",
+      tags: ["authentication", "token", "login", "eos"],
+      answer: [
+        "Steam General Discussions report this when Epic Online Services cannot validate your Steam identity. Most cited fixes: add -dx11 to Steam Launch Options, relink Steam on epicgames.com → Account Settings → Apps and Accounts, and set PenguinHotel.exe compatibility (disable Run as administrator, enable Disable fullscreen optimizations).",
+        "Network blockers matter — one thread reports success on mobile hotspot but failure on home Wi‑Fi; another fixed login by disabling Pi-hole DNS filtering temporarily.",
+      ],
+      relatedLink: {
+        href: "/guides/fix-authentication-token",
+        label: "Full authentication token fix guide",
+      },
+    },
+    {
+      id: "lag-blurry",
+      question: "Game is laggy or paint textures look blurry",
+      tags: ["lag", "fps", "blurry", "stutter"],
+      answer: [
+        "Community testing reports blurry paint often fixes with a display reset: switch to Windowed, apply, wait, switch back to Fullscreen at native resolution.",
+        "Add -dx11 to Launch Options for stuttering and shader hitches. Turn Motion Blur off; lower Global Illumination to Medium. Confirm Windows display scaling is 100% if eyedropper feels misaligned.",
+      ],
+      relatedLink: {
+        href: "/guides/fix-lag-blurry-screen",
+        label: "Full lag & blurry screen fix guide",
+      },
+    },
     {
       id: "disconnected-mid-game",
       question: "I got disconnected mid-game — what now?",

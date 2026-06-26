@@ -8,6 +8,16 @@ import { mansionGuide } from "./guides/mansion-guide";
 import { sewerBackroomsGuide } from "./guides/sewer-backrooms-guide";
 import { penguinHotelGuide } from "./guides/penguin-hotel-guide";
 import { coldStorageBrickGuide } from "./guides/cold-storage-brick-guide";
+import { fixCantJoinLobbyGuide } from "./guides/fix-cant-join-lobby";
+import { fixAuthenticationTokenGuide } from "./guides/fix-authentication-token";
+import { fixLagBlurryScreenGuide } from "./guides/fix-lag-blurry-screen";
+import { whyKeepGettingFoundGuide } from "./guides/why-keep-getting-found";
+import { howToPaintBetterGuide } from "./guides/how-to-paint-better";
+import { bestPoseGuide } from "./guides/best-pose-guide";
+import { allOfficialMapsGuide } from "./guides/all-official-maps";
+import { bestMapsRankedGuide } from "./guides/best-maps-ranked";
+import { osakaMapGuide } from "./guides/osaka-map-guide";
+import { privateLobbyGuide } from "./guides/private-lobby-guide";
 
 export type { Guide } from "./guides/types";
 
@@ -76,6 +86,16 @@ export const guides: Guide[] = [
   sewerBackroomsGuide,
   penguinHotelGuide,
   coldStorageBrickGuide,
+  fixCantJoinLobbyGuide,
+  fixAuthenticationTokenGuide,
+  fixLagBlurryScreenGuide,
+  whyKeepGettingFoundGuide,
+  howToPaintBetterGuide,
+  bestPoseGuide,
+  allOfficialMapsGuide,
+  bestMapsRankedGuide,
+  osakaMapGuide,
+  privateLobbyGuide,
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {
