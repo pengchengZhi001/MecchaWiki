@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { HiddenSpot } from "@/data/hidden-spots";
 import SpotImage from "@/components/SpotImage";
+import SpotRatingBadge from "@/components/SpotRatingBadge";
 
 type SpotCardProps = {
   spot: HiddenSpot;
@@ -32,10 +33,7 @@ export default function SpotCard({ spot, rank }: SpotCardProps) {
       </div>
 
       <div className="p-4">
-        <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-accent">{spot.survivalRate}%</span>
-          <span className="text-xs text-muted">Editorial rating</span>
-        </div>
+        <SpotRatingBadge rating={spot.survivalRate} size="sm" />
         <p className="mt-2 line-clamp-2 text-sm text-muted">{spot.description}</p>
         <p className="mt-2 text-xs text-muted/60">
           via {spot.source} · {spot.author}

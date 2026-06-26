@@ -422,20 +422,24 @@ const SPOT_GUIDES: Partial<Record<string, Omit<SpotGuideSourced, "sources"> & { 
     sources: [
       { name: "TheGamer", url: "https://www.thegamer.com/mecca-chameleon-best-hiding-spots-guide/" },
       { name: "meccha-chameleon.net", url: "https://meccha-chameleon.net/maps/best-hiding-spots/" },
+      { name: "mecchachameleongame.wiki Hider Guide", url: "https://mecchachameleongame.wiki/hider-guide/" },
     ],
     howToWin: [
-      "TheGamer / meccha-chameleon.net: stand deepest in alcove; brick layers create value gradient.",
-      "Sample darkest brick face at torso height, not lighter mortar.",
-      "Second-floor stair sightline may expose — pick alcoves away from stair cone.",
+      "TheGamer / meccha-chameleon.net: stand deepest in alcove; brick layers create value gradient that hides slight hue error.",
+      "Sample darkest brick face at torso height, not lighter mortar — warm brick #A0522D range is the easiest official-map palette to approximate.",
+      "Horizontal course lines on torso break the body read; wall-flat pose with shoulders in the deepest wedge of the alcove.",
+      "Second-floor stair sightline may expose alcoves — pick positions away from iron stair cone and open loft overlooks (meccha-chameleon.net explicit warning).",
+      "Rotate to Pipe Crawl (77%) when seekers push upstairs — ground-floor industrial wall line without crossing loft center.",
     ],
     paintLayers: [
-      { bodyPart: "Torso", sampleFrom: "Darkest brick face at torso height", technique: "Horizontal course lines" },
-      { bodyPart: "Mortar lines", sampleFrom: "Brick course mortar shadow", technique: "Thin horizontal strokes" },
-      { bodyPart: "Alcove depth", sampleFrom: "Recessed shadow", technique: "Shoulders into deepest wedge" },
+      { bodyPart: "Torso", sampleFrom: "Darkest brick face at torso height in alcove recess", technique: "Horizontal course lines matching brick striping" },
+      { bodyPart: "Mortar lines", sampleFrom: "Brick course mortar shadow between faces", technique: "Thin horizontal strokes — never one flat fill" },
+      { bodyPart: "Alcove depth / shoulders", sampleFrom: "Recessed shadow in deepest wedge of wall alcove", technique: "Shoulders pressed into deepest part — TheGamer positioning" },
+      { bodyPart: "Lit brick edge", sampleFrom: "Slightly brighter brick on same course if visible", technique: "HSV Value one step up on lit side only" },
     ],
-    poseAdvice: "Wall-flat in deepest alcove.",
-    finishSettings: ["Brick matte", "Metallic 0"],
-    seekerWindow: "Warm brick is forgiving; open loft sightlines are the main threat.",
+    poseAdvice: "Wall-flat in deepest alcove — pressing into corner removes edges seekers scan for (9Puz / Steam screenshot guidance).",
+    finishSettings: ["Brick matte — metallic 0", "Roughness matched to exposed brick texture"],
+    seekerWindow: "Warm brick forgives minor hue error on round one; open loft second-floor sightlines are the main counter — smart seekers overlook down before clearing ground floor.",
   },
 
   "brick-loft-beam-gap": {
@@ -663,7 +667,7 @@ function buildFallbackGuide(spot: HiddenSpot): SpotGuideSourced {
       "Match metallic / roughness to surface (SlashSkill: sheen mismatch exposes faster than hue error)",
       "Matte wall → low metallic; metal pipe/barrel → medium–high metallic",
     ],
-    seekerWindow: `Editorial ${spot.survivalRate}/100 — guide difficulty tier from ${spot.source}, not live match statistics.`,
+    seekerWindow: `Guide rating ${spot.survivalRate}/100 — difficulty tier from ${spot.source}, not live match statistics.`,
   };
 }
 

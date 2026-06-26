@@ -30,7 +30,7 @@ export default function Header() {
           href="/hidden-spots"
           className="rounded-lg bg-accent px-3.5 py-2 text-sm font-semibold text-background transition hover:bg-accent-dim md:px-4"
         >
-          Browse Spots
+          Browse Best Spots
         </Link>
       </div>
     </header>

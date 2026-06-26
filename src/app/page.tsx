@@ -5,19 +5,35 @@ import SiteSearch from "@/components/SiteSearch";
 import SpotImage from "@/components/SpotImage";
 import Card from "@/components/Card";
 import HomeFaqSection from "@/components/HomeFaqSection";
+import SpotRatingBadge from "@/components/SpotRatingBadge";
 import JsonLd from "@/components/JsonLd";
-import { getTopSpots, getLatestSpots } from "@/data/hidden-spots";
+import { getTopSpots } from "@/data/hidden-spots";
 import { getPopularWorkshopMaps } from "@/data/workshop";
 import { guides } from "@/data/guides";
 import { homeSeoSections } from "@/data/home-seo-content";
+import {
+  getTodaysTip,
+  getWeeklyChallenge,
+  getTodaysSpot,
+  getBestSpotsThisWeek,
+  getMostSuccessfulSpots,
+  getNewCommunityDiscoveries,
+} from "@/data/home-daily-content";
 import { faqPageJsonLd, websiteJsonLd } from "@/lib/json-ld";
+import { siteConfig } from "@/lib/site";
 
 export default function HomePage() {
   const topSpots = getTopSpots(12);
   const spotOfWeek = topSpots[0];
   const popularMaps = getPopularWorkshopMaps(6);
-  const latestSpots = getLatestSpots(6);
   const featuredGuides = guides.slice(0, 4);
+
+  const todaysTip = getTodaysTip();
+  const weeklyChallenge = getWeeklyChallenge();
+  const todaysSpot = getTodaysSpot();
+  const bestThisWeek = getBestSpotsThisWeek(6);
+  const mostSuccessful = getMostSuccessfulSpots(6);
+  const newDiscoveries = getNewCommunityDiscoveries(6);
 
   const faqJsonLd = faqPageJsonLd(
     homeSeoSections.map((section) => ({
@@ -33,72 +49,185 @@ export default function HomePage() {
         <div className="grid-bg absolute inset-0" />
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid items-center gap-10 lg:grid-cols-2">
-            <div>
-              <span className="mb-4 inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent ring-1 ring-accent/30">
-                50 Source-Curated Spots
-              </span>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                MECCHA CHAMELEON{" "}
-                <span className="bg-gradient-to-r from-accent to-purple bg-clip-text text-transparent">
-                  Hidden Spot Database
-                </span>
-              </h1>
-              <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
-                50 hiding spots, workshop maps, editorial ratings, and prop hunt guides —
-                curated from TheGamer, IGN, and community references.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link
-                  href="/hidden-spots"
-                  className="inline-block rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-accent-dim glow-accent"
-                >
-                  Browse All Spots
-                </Link>
-                <Link
-                  href="/workshop-maps"
-                  className="inline-block rounded-lg border border-card-border bg-surface px-5 py-2.5 text-sm font-semibold transition hover:border-accent/30"
-                >
-                  Workshop Maps
-                </Link>
-              </div>
-            </div>
-
-            {spotOfWeek && (
+          <div className="max-w-2xl">
+            <span className="mb-4 inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent ring-1 ring-accent/30">
+              Recommended by Experienced Players
+            </span>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              Win More Games.
+            </h1>
+            <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
+              Discover the best hiding spots, survival strategies, and camouflage tips for{" "}
+              <span className="text-foreground">Meccha Chameleon</span>.{" "}
+              {siteConfig.tagline}.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href={`/hidden-spots/${spotOfWeek.slug}`}
-                className="group relative hidden overflow-hidden rounded-2xl border border-card-border bg-card shadow-xl lg:block"
+                href="/hidden-spots"
+                className="inline-block rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-accent-dim glow-accent"
               >
-                <div className="relative aspect-[4/3]">
-                  <SpotImage
-                    src={spotOfWeek.imageUrl}
-                    alt={`Spot of the Week: ${spotOfWeek.name}`}
-                    className="object-cover transition duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                  <div className="absolute left-4 top-4 rounded-lg bg-accent px-3 py-1 text-xs font-bold text-background">
-                    Spot of the Week
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <p className="text-sm text-white/70">{spotOfWeek.map}</p>
-                    <p className="text-2xl font-bold text-white">{spotOfWeek.name}</p>
-                    <p className="mt-1 text-sm text-accent">
-                      Editorial rating {spotOfWeek.survivalRate}/100
-                    </p>
-                  </div>
-                </div>
+                Browse Best Spots
               </Link>
-            )}
+              <Link
+                href={`/hidden-spots/${spotOfWeek?.slug ?? "mansion-library-shelf"}`}
+                className="inline-block rounded-lg border border-card-border bg-surface px-5 py-2.5 text-sm font-semibold transition hover:border-accent/30"
+              >
+                Spot of the Week
+              </Link>
+            </div>
           </div>
 
           <div className="mt-10">
-            <SiteSearch large placeholder="Search meccha chameleon hiding spots, maps, guides..." />
+            <SiteSearch large placeholder="Search hiding spots, maps, survival tips..." />
           </div>
         </div>
       </section>
 
       <section className="border-b border-card-border bg-surface/30">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+          <div className="grid gap-4 lg:grid-cols-3">
+            <div className="rounded-xl border border-card-border bg-card p-5 lg:col-span-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-accent">Today&apos;s Tip</p>
+              <p className="mt-2 text-sm leading-relaxed text-foreground/90">{todaysTip.tip}</p>
+              <a
+                href={todaysTip.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-muted hover:text-accent"
+              >
+                Source: {todaysTip.source} →
+              </a>
+            </div>
+            <div className="rounded-xl border border-accent/20 bg-accent/5 p-5">
+              <p className="text-xs font-semibold uppercase tracking-wide text-accent">Weekly Challenge</p>
+              <p className="mt-2 font-semibold">{weeklyChallenge.title}</p>
+              <p className="mt-1 text-sm text-muted">{weeklyChallenge.description}</p>
+              <Link
+                href={`/hidden-spots/${weeklyChallenge.spotSlug}`}
+                className="mt-3 inline-block text-sm font-medium text-accent hover:underline"
+              >
+                Try this spot →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {spotOfWeek && (
+        <section className="border-b border-card-border">
+          <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+            <div className="mb-6 flex items-end justify-between">
+              <div>
+                <h2 className="text-2xl font-bold">Spot of the Week</h2>
+                <p className="mt-1 text-sm text-muted">Our top pick to practice this week</p>
+              </div>
+            </div>
+            <Link
+              href={`/hidden-spots/${spotOfWeek.slug}`}
+              className="group grid overflow-hidden rounded-2xl border border-card-border bg-card lg:grid-cols-2"
+            >
+              <div className="relative aspect-video lg:aspect-auto lg:min-h-[280px]">
+                <SpotImage
+                  src={spotOfWeek.imageUrl}
+                  alt={`Spot of the Week: ${spotOfWeek.name}`}
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-6 sm:p-8">
+                <span className="text-sm text-muted">{spotOfWeek.map}</span>
+                <h3 className="mt-1 text-2xl font-bold">{spotOfWeek.name}</h3>
+                <SpotRatingBadge rating={spotOfWeek.survivalRate} size="md" showDisclaimer />
+                <p className="mt-4 text-sm leading-relaxed text-muted">{spotOfWeek.description}</p>
+                <span className="mt-4 text-sm font-medium text-accent group-hover:underline">
+                  Read full strategy guide →
+                </span>
+              </div>
+            </Link>
+          </div>
+        </section>
+      )}
+
+      <section className="border-b border-card-border bg-surface/30">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+          <div className="mb-2 flex items-center gap-2">
+            <span aria-hidden>🔥</span>
+            <h2 className="text-2xl font-bold">Best Spots This Week</h2>
+          </div>
+          <p className="mb-8 text-sm text-muted">
+            Featured and trending spots — ranked by guide rating from TheGamer, IGN, and community references
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {bestThisWeek.map((spot, i) => (
+              <SpotCard key={spot.slug} spot={spot} rank={i + 1} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <div className="mb-2 flex items-center gap-2">
+          <span aria-hidden>🔥</span>
+          <h2 className="text-2xl font-bold">Most Successful Spots</h2>
+        </div>
+        <p className="mb-8 text-sm text-muted">
+          Highest guide-rated hiding spots across all official maps
+        </p>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {mostSuccessful.map((spot, i) => (
+            <SpotCard key={spot.slug} spot={spot} rank={i + 1} />
+          ))}
+        </div>
+        <Link
+          href="/hidden-spots"
+          className="mt-8 inline-block text-sm font-medium text-accent hover:underline"
+        >
+          View all 50 spots →
+        </Link>
+      </section>
+
+      <section className="border-t border-card-border bg-surface/30">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+          <div className="mb-2 flex items-center gap-2">
+            <span aria-hidden>🔥</span>
+            <h2 className="text-2xl font-bold">New Community Discoveries</h2>
+          </div>
+          <p className="mb-8 text-sm text-muted">Recently added spots from community references and guides</p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {newDiscoveries.map((spot) => (
+              <SpotCard key={spot.slug} spot={spot} />
+            ))}
+          </div>
+          <Link
+            href="/hidden-spots?sort=newest"
+            className="mt-8 inline-block text-sm font-medium text-accent hover:underline"
+          >
+            See newest spots →
+          </Link>
+        </div>
+      </section>
+
+      <section className="border-t border-card-border">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+          <div className="mb-6 flex items-end justify-between">
+            <div>
+              <h2 className="text-2xl font-bold">Today&apos;s Spot</h2>
+              <p className="mt-1 text-sm text-muted">A new spot to try every day — come back tomorrow for another</p>
+            </div>
+            <Link
+              href={`/hidden-spots/${todaysSpot.slug}`}
+              className="text-sm font-medium text-accent hover:underline"
+            >
+              Full guide →
+            </Link>
+          </div>
+          <div className="max-w-md">
+            <SpotCard spot={todaysSpot} />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-card-border bg-surface/30">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
           <div className="mb-8 flex items-end justify-between">
             <div>
               <h2 className="text-2xl font-bold">Popular Workshop Maps</h2>
@@ -116,68 +245,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <section className="border-t border-card-border mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <h2 className="text-2xl font-bold">Top Hidden Spots</h2>
+            <h2 className="text-2xl font-bold">Prop Hunt Guides</h2>
             <p className="mt-1 text-sm text-muted">
-              Best Meccha Chameleon hiding spots · Ranked by editorial rating
+              Survival strategies · Color tips · Map tactics
             </p>
           </div>
-          <Link href="/hidden-spots" className="text-sm font-medium text-accent hover:underline">
-            View all →
+          <Link href="/guides" className="text-sm font-medium text-accent hover:underline">
+            All guides →
           </Link>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {topSpots.map((spot, i) => (
-            <SpotCard key={spot.slug} spot={spot} rank={i + 1} />
+        <div className="grid gap-4 sm:grid-cols-2">
+          {featuredGuides.map((guide) => (
+            <Card
+              key={guide.slug}
+              href={`/guides/${guide.slug}`}
+              title={guide.title}
+              description={guide.excerpt}
+              badge={guide.category}
+              badgeColor="bg-purple/10 text-purple ring-purple/30"
+              footer={<span className="text-xs text-muted">{guide.readTime} read</span>}
+            />
           ))}
-        </div>
-      </section>
-
-      <section className="border-t border-card-border mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="mb-8 flex items-end justify-between">
-          <div>
-            <h2 className="text-2xl font-bold">Latest Hidden Spots</h2>
-            <p className="mt-1 text-sm text-muted">Recently added to the database</p>
-          </div>
-          <Link href="/hidden-spots?sort=newest" className="text-sm font-medium text-accent hover:underline">
-            See newest →
-          </Link>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {latestSpots.map((spot) => (
-            <SpotCard key={spot.slug} spot={spot} />
-          ))}
-        </div>
-      </section>
-
-      <section className="border-t border-card-border bg-surface/30">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <div className="mb-8 flex items-end justify-between">
-            <div>
-              <h2 className="text-2xl font-bold">Prop Hunt Guides</h2>
-              <p className="mt-1 text-sm text-muted">
-                Meccha Chameleon hiding guides · Color tips · Map strategies
-              </p>
-            </div>
-            <Link href="/guides" className="text-sm font-medium text-accent hover:underline">
-              All guides →
-            </Link>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {featuredGuides.map((guide) => (
-              <Card
-                key={guide.slug}
-                href={`/guides/${guide.slug}`}
-                title={guide.title}
-                description={guide.excerpt}
-                badge={guide.category}
-                badgeColor="bg-purple/10 text-purple ring-purple/30"
-                footer={<span className="text-xs text-muted">{guide.readTime} read</span>}
-              />
-            ))}
-          </div>
         </div>
       </section>
 

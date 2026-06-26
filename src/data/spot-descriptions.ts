@@ -83,7 +83,7 @@ export const spotDescriptions: Record<string, string> = {
   "brick-loft-beam-gap":
     "Brick beam gap — horizontal striping hides your body.",
   "brick-loft-red-brick-alcove":
-    "Red brick wall alcove with rich color layers.",
+    "Red brick wall alcove with rich color layers — stand in the deepest part of the recess where mortar shadow and brick face create a natural value gradient. Featured in TheGamer's Brick Loft section and meccha-chameleon.net's hard-tier spot cards.",
   "brick-loft-pipe-crawl":
     "Under industrial pipes — community \"plumber chameleon\" meme spot.",
   "brick-loft-window-sill":

@@ -872,6 +872,47 @@ export function getRelatedSpots(spot: HiddenSpot, limit = 4): HiddenSpot[] {
   return [...sameMap, ...sameCategory].slice(0, limit);
 }
 
+export type SpotRecommendations = {
+  sameMap: HiddenSpot[];
+  sameCategory: HiddenSpot[];
+  easySpots: HiddenSpot[];
+  hardSpots: HiddenSpot[];
+  similarRating: HiddenSpot[];
+};
+
+export function getSpotRecommendations(spot: HiddenSpot, limit = 4): SpotRecommendations {
+  const others = hiddenSpots.filter((s) => s.slug !== spot.slug);
+
+  const sameMap = others
+    .filter((s) => s.mapSlug === spot.mapSlug)
+    .sort((a, b) => b.survivalRate - a.survivalRate)
+    .slice(0, limit);
+
+  const sameCategory = others
+    .filter((s) => s.category === spot.category && s.mapSlug !== spot.mapSlug)
+    .sort((a, b) => b.survivalRate - a.survivalRate)
+    .slice(0, limit);
+
+  const easySpots = others
+    .filter((s) => s.survivalRate >= 80)
+    .sort((a, b) => b.survivalRate - a.survivalRate)
+    .slice(0, limit);
+
+  const hardSpots = others
+    .filter((s) => s.survivalRate < 60 || s.category === "impossible")
+    .sort((a, b) => a.survivalRate - b.survivalRate)
+    .slice(0, limit);
+
+  const ratingMin = spot.survivalRate - 12;
+  const ratingMax = spot.survivalRate + 12;
+  const similarRating = others
+    .filter((s) => s.survivalRate >= ratingMin && s.survivalRate <= ratingMax)
+    .sort((a, b) => b.survivalRate - a.survivalRate)
+    .slice(0, limit);
+
+  return { sameMap, sameCategory, easySpots, hardSpots, similarRating };
+}
+
 export function sortSpots(sort: SpotSortId): HiddenSpot[] {
   const list = [...hiddenSpots];
   switch (sort) {

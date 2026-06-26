@@ -25,7 +25,7 @@ export default function HiddenSpotsPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <PageHeader
         title="Hidden Spot Database"
-        description={`${hiddenSpots.length} source-curated hiding spots · TheGamer, IGN, Steam references · Editorial ratings`}
+        description={`${hiddenSpots.length} guide-sourced hiding spots · TheGamer, IGN, community references · Recommended by experienced players`}
       />
 
       <div className="mb-8">

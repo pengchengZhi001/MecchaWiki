@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Meccha Wiki",
-  tagline: "Mecha Chameleon Hidden Spot Database",
+  tagline: "The fastest way to find the best hiding spots in Meccha Chameleon",
   description:
-    "50+ source-curated MECCHA CHAMELEON hiding spots, Steam Workshop maps, editorial ratings, and prop hunt guides. Sewer, Mansion, Cold Storage, and more.",
+    "Win more rounds with 50+ guide-sourced hiding spots, survival strategies, camouflage tips, and map-specific tactics for Meccha Chameleon. Recommended by experienced players.",
   url: "https://meccha.wiki",
   locale: "en-US",
   author: "Meccha Wiki",

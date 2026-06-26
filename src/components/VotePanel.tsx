@@ -16,7 +16,7 @@ export default function VotePanel({ spotName }: VotePanelProps) {
         Did this guide match the spot in-game? Your feedback helps us improve entries.
       </p>
       <p className="mt-2 text-xs text-muted/80">
-        Editorial ratings are estimates from guide sources — not live match statistics.
+        Guide ratings are curated estimates from published walkthroughs — not live match statistics.
       </p>
 
       <div className="mt-4 flex items-center gap-4">

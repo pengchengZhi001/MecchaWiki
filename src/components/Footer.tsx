@@ -35,9 +35,6 @@ export default function Footer() {
             <p className="mt-2 text-sm leading-relaxed text-muted">
               {siteConfig.description}
             </p>
-            <p className="mt-3 text-xs text-muted/80">
-              Unofficial fan site · Not affiliated with lemorion_1224
-            </p>
           </div>
 
           <div>
@@ -100,7 +97,7 @@ export default function Footer() {
             © {currentYear} {siteConfig.name}
           </p>
           <p className="text-xs text-muted">
-            Source-curated guides · Steam Workshop previews · Editorial ratings
+            Guide-sourced spots · Survival strategies · Recommended by experienced players
           </p>
         </div>
       </div>
