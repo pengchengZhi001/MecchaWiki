@@ -8,13 +8,15 @@ const SCRIPT_SRC =
 
 export default function SocialBar() {
   useEffect(() => {
-    if (document.getElementById(SCRIPT_ID)) return;
+    const timer = setTimeout(() => {
+      const script = document.createElement("script");
+      script.id = SCRIPT_ID;
+      script.src = SCRIPT_SRC;
+      script.async = true;
+      document.head.appendChild(script);
+    }, 1000);
 
-    const script = document.createElement("script");
-    script.id = SCRIPT_ID;
-    script.src = SCRIPT_SRC;
-    script.async = true;
-    document.head.appendChild(script);
+    return () => clearTimeout(timer);
   }, []);
 
   return null;
