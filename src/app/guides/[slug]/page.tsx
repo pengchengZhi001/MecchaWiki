@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
-import { InlineAds, SidebarAds } from "@/components/ads";
 import { guides, getGuideBySlug } from "@/data/guides";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
 
@@ -86,7 +85,7 @@ export default async function GuideDetailPage({ params }: Props) {
           </nav>
         </aside>
 
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-10">
           <header className="border-b border-card-border pb-8">
             <div className="flex items-center gap-3">
               <span className="rounded-full bg-purple/10 px-2.5 py-0.5 text-xs font-medium text-purple ring-1 ring-purple/30">
@@ -154,12 +153,6 @@ export default async function GuideDetailPage({ params }: Props) {
             </footer>
           )}
         </div>
-
-        <SidebarAds className="hidden lg:col-span-3 lg:block" />
-      </div>
-
-      <div className="mt-8 lg:hidden">
-        <InlineAds />
       </div>
     </article>
   );

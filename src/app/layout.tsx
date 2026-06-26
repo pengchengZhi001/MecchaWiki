@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { SocialBar } from "@/components/ads";
+import { Popunder, SocialBar } from "@/components/ads";
 import { createMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -47,7 +47,7 @@ export default function RootLayout({
         />
       </head>
       <body className="safe-area-pb flex min-h-full flex-col">
-        <SocialBar />
+        <Popunder />
         <Header />
         <main className="min-w-0 max-w-full flex-1">{children}</main>
         <Footer />

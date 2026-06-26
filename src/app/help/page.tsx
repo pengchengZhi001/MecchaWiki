@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
 import PageHeader from "@/components/PageHeader";
 import Card from "@/components/Card";
-import { Banner728 } from "@/components/ads";
 import { helpTopics } from "@/data/help";
 import { helpTopicQuestionCount } from "@/data/help/types";
 
@@ -29,9 +28,6 @@ export default function HelpPage() {
         title="Help & FAQ"
         description="Answers to real player questions — download, rooms, controls, painting, connection fixes, seeker/hider tips, and viral moments. Every topic is searchable."
       />
-      <div className="mb-8">
-        <Banner728 />
-      </div>
       <div className="grid gap-4 sm:grid-cols-2">
         {helpTopics.map((topic) => (
           <Card

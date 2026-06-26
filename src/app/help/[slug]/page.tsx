@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
-import { InlineAds, SidebarAds } from "@/components/ads";
 import QaImageBlock from "@/components/QaImageBlock";
 import { getHelpTopicBySlug, helpTopics } from "@/data/help";
 import { faqPageJsonLd, breadcrumbJsonLd, articleJsonLd } from "@/lib/json-ld";
@@ -99,7 +98,7 @@ export default async function HelpTopicPage({ params }: Props) {
           </nav>
         </aside>
 
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-10">
           <header className="border-b border-card-border pb-8">
             <div className="flex items-center gap-3">
               <span className="rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-medium text-accent ring-1 ring-accent/30">
@@ -208,12 +207,6 @@ export default async function HelpTopicPage({ params }: Props) {
             ))}
           </div>
         </div>
-
-        <SidebarAds className="hidden lg:col-span-3 lg:block" />
-      </div>
-
-      <div className="mt-8 lg:hidden">
-        <InlineAds />
       </div>
     </article>
   );

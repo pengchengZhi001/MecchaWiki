@@ -7,7 +7,6 @@ import Card from "@/components/Card";
 import HomeFaqSection from "@/components/HomeFaqSection";
 import SpotRatingBadge from "@/components/SpotRatingBadge";
 import JsonLd from "@/components/JsonLd";
-import { Banner728 } from "@/components/ads";
 import { getTopSpots } from "@/data/hidden-spots";
 import { getPopularWorkshopMaps } from "@/data/workshop";
 import { guides } from "@/data/guides";
@@ -81,12 +80,6 @@ export default function HomePage() {
           <div className="mt-10">
             <SiteSearch large placeholder="Search hiding spots, maps, survival tips..." />
           </div>
-        </div>
-      </section>
-
-      <section className="border-b border-card-border">
-        <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
-          <Banner728 />
         </div>
       </section>
 

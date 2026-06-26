@@ -7,7 +7,7 @@ import SpotImage from "@/components/SpotImage";
 import SpotRatingBadge from "@/components/SpotRatingBadge";
 import SpotRecommendations from "@/components/SpotRecommendations";
 import JsonLd from "@/components/JsonLd";
-import { InlineAds, SidebarAds } from "@/components/ads";
+import { SidebarAds } from "@/components/ads";
 import { hiddenSpots, getSpotBySlug, getSpotRecommendations } from "@/data/hidden-spots";
 import { getSpotSeoContent } from "@/data/spot-seo-content";
 import { spotCategories } from "@/lib/site";
@@ -289,10 +289,6 @@ export default async function SpotDetailPage({ params }: Props) {
               </ul>
             </div>
           </SidebarAds>
-        </div>
-
-        <div className="mt-8 lg:hidden">
-          <InlineAds />
         </div>
 
         <div className="mt-16">

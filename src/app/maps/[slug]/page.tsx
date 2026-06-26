@@ -7,7 +7,6 @@ import DifficultyBadge from "@/components/DifficultyBadge";
 import SpotCard from "@/components/SpotCard";
 import { maps, getMapBySlug } from "@/data/maps";
 import { getSpotsByMap } from "@/data/hidden-spots";
-import { InlineAds, SidebarAds } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -63,11 +62,10 @@ export default async function MapDetailPage({ params }: Props) {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="grid gap-8 lg:grid-cols-3">
-          <div className="space-y-12 lg:col-span-2">
-            <p className="max-w-3xl text-lg leading-relaxed text-foreground/80">{map.description}</p>
+        <div className="space-y-12">
+          <p className="max-w-3xl text-lg leading-relaxed text-foreground/80">{map.description}</p>
 
-            <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2">
               {map.colorPalette.map((c) => (
                 <div key={c} className="text-center">
                   <div
@@ -141,13 +139,6 @@ export default async function MapDetailPage({ params }: Props) {
               </section>
             </div>
           </div>
-
-          <SidebarAds className="hidden lg:block" />
-        </div>
-
-        <div className="mt-8 lg:hidden">
-          <InlineAds />
-        </div>
 
         <section className="mt-12">
           <div className="flex flex-wrap items-end justify-between gap-4">
