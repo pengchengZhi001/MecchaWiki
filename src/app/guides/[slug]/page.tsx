@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
+import { Banner300, NativeBanner } from "@/components/ads";
 import { guides, getGuideBySlug } from "@/data/guides";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
 
@@ -97,6 +98,8 @@ export default async function GuideDetailPage({ params }: Props) {
             <p className="mt-3 text-lg text-muted">{guide.excerpt}</p>
           </header>
 
+          <Banner300 />
+
           <nav className="mt-8 rounded-xl border border-card-border bg-card p-5 lg:hidden">
             <p className="text-xs font-semibold uppercase tracking-wider text-muted">
               Table of Contents
@@ -126,6 +129,8 @@ export default async function GuideDetailPage({ params }: Props) {
               );
             })}
           </div>
+
+          <NativeBanner />
 
           {guide.sources && guide.sources.length > 0 && (
             <footer className="mt-12 rounded-xl border border-card-border bg-surface p-6">

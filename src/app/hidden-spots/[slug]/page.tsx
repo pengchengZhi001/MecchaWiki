@@ -7,6 +7,7 @@ import SpotImage from "@/components/SpotImage";
 import SpotRatingBadge from "@/components/SpotRatingBadge";
 import SpotRecommendations from "@/components/SpotRecommendations";
 import JsonLd from "@/components/JsonLd";
+import { Banner300, NativeBanner } from "@/components/ads";
 import { hiddenSpots, getSpotBySlug, getSpotRecommendations } from "@/data/hidden-spots";
 import { getSpotSeoContent } from "@/data/spot-seo-content";
 import { spotCategories } from "@/lib/site";
@@ -130,6 +131,8 @@ export default async function SpotDetailPage({ params }: Props) {
               <h2 className="text-xl font-bold">Location Description</h2>
               <p className="mt-3 leading-relaxed text-foreground/80">{spot.description}</p>
             </section>
+
+            <Banner300 />
 
             <section>
               <h2 className="text-xl font-bold">Why It Works</h2>
@@ -289,6 +292,8 @@ export default async function SpotDetailPage({ params }: Props) {
             </div>
           </div>
         </div>
+
+        <NativeBanner />
 
         <div className="mt-16">
           <h2 className="text-2xl font-bold">Similar Spots</h2>

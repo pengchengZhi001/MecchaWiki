@@ -7,6 +7,7 @@ import DifficultyBadge from "@/components/DifficultyBadge";
 import SpotCard from "@/components/SpotCard";
 import { maps, getMapBySlug } from "@/data/maps";
 import { getSpotsByMap } from "@/data/hidden-spots";
+import { Banner300, NativeBanner } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -64,6 +65,8 @@ export default async function MapDetailPage({ params }: Props) {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <p className="max-w-3xl text-lg leading-relaxed text-foreground/80">{map.description}</p>
 
+        <Banner300 />
+
         <div className="mt-6 flex gap-2">
           {map.colorPalette.map((c) => (
             <div key={c} className="text-center">
@@ -75,42 +78,6 @@ export default async function MapDetailPage({ params }: Props) {
             </div>
           ))}
         </div>
-
-        <section className="mt-12">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <h2 className="text-xl font-bold">Hidden Spots on {map.name}</h2>
-              <p className="mt-1 text-sm text-muted">
-                {linkedSpots.length > 0
-                  ? `${linkedSpots.length} verified hiding spots linked to this map`
-                  : "No verified hiding spots yet for this map"}
-              </p>
-            </div>
-            {linkedSpots.length > 0 && (
-              <Link
-                href={`/hidden-spots?map=${slug}`}
-                className="text-sm font-medium text-accent hover:underline"
-              >
-                Browse in database →
-              </Link>
-            )}
-          </div>
-          {linkedSpots.length > 0 ? (
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {linkedSpots.map((spot, i) => (
-                <SpotCard key={spot.slug} spot={spot} rank={i + 1} />
-              ))}
-            </div>
-          ) : (
-            <p className="mt-6 rounded-xl border border-card-border bg-card p-6 text-sm text-muted">
-              Spot guides for {map.name} are being added. Check back soon or browse{" "}
-              <Link href="/hidden-spots" className="text-accent hover:underline">
-                all hidden spots
-              </Link>
-              .
-            </p>
-          )}
-        </section>
 
         <section className="mt-12">
           <h2 className="text-xl font-bold">Pro Tips</h2>
@@ -173,6 +140,44 @@ export default async function MapDetailPage({ params }: Props) {
             </div>
           </section>
         </div>
+
+        <NativeBanner />
+
+        <section className="mt-12">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <h2 className="text-xl font-bold">Hidden Spots on {map.name}</h2>
+              <p className="mt-1 text-sm text-muted">
+                {linkedSpots.length > 0
+                  ? `${linkedSpots.length} verified hiding spots linked to this map`
+                  : "No verified hiding spots yet for this map"}
+              </p>
+            </div>
+            {linkedSpots.length > 0 && (
+              <Link
+                href={`/hidden-spots?map=${slug}`}
+                className="text-sm font-medium text-accent hover:underline"
+              >
+                Browse in database →
+              </Link>
+            )}
+          </div>
+          {linkedSpots.length > 0 ? (
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {linkedSpots.map((spot, i) => (
+                <SpotCard key={spot.slug} spot={spot} rank={i + 1} />
+              ))}
+            </div>
+          ) : (
+            <p className="mt-6 rounded-xl border border-card-border bg-card p-6 text-sm text-muted">
+              Spot guides for {map.name} are being added. Check back soon or browse{" "}
+              <Link href="/hidden-spots" className="text-accent hover:underline">
+                all hidden spots
+              </Link>
+              .
+            </p>
+          )}
+        </section>
       </div>
     </article>
   );
