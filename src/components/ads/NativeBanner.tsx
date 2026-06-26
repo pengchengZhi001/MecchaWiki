@@ -13,13 +13,12 @@ type NativeBannerProps = {
 
 export default function NativeBanner({ sidebar = false }: NativeBannerProps) {
   const slotRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const slot = slotRef.current;
-    if (!slot) return;
-
-    const container = slot.querySelector<HTMLDivElement>(`#${CONTAINER_ID}`);
-    if (!container) return;
+    const container = containerRef.current;
+    if (!slot || !container) return;
 
     const script = document.createElement("script");
     script.src = INVOKE_SRC;
@@ -36,7 +35,7 @@ export default function NativeBanner({ sidebar = false }: NativeBannerProps) {
   return (
     <AdSlot variant={sidebar ? "sidebar" : "inline"}>
       <div ref={slotRef} className={sidebar ? "w-full" : "w-full max-w-2xl"}>
-        <div id={CONTAINER_ID} />
+        <div ref={containerRef} id={CONTAINER_ID} />
       </div>
     </AdSlot>
   );
