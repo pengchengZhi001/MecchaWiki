@@ -23,7 +23,7 @@ export const metadata: Metadata = createMetadata({
 
 export default function HiddenSpotsPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
       <PageHeader
         title="Hidden Spot Database"
         description={`${hiddenSpots.length} guide-sourced hiding spots · TheGamer, IGN, community references · Recommended by experienced players`}

@@ -93,10 +93,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-card-border pt-8 sm:flex-row">
-          <p className="text-xs text-muted">
+          <p className="text-center text-xs text-muted sm:text-left">
             © {currentYear} {siteConfig.name}
           </p>
-          <p className="text-xs text-muted">
+          <p className="hidden text-center text-xs text-muted sm:block sm:text-right">
             Guide-sourced spots · Survival strategies · Recommended by experienced players
           </p>
         </div>

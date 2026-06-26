@@ -64,7 +64,7 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
 
   return (
     <article>
-      <div className="relative aspect-[21/9] overflow-hidden border-b border-card-border">
+      <div className="relative aspect-[16/9] overflow-hidden border-b border-card-border sm:aspect-[21/9]">
         <Image
           src={map.imageUrl}
           alt={map.title}
@@ -74,7 +74,7 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-10">
+        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-10">
           <div className="mx-auto max-w-6xl">
             <Link href="/workshop-maps" className="text-sm text-muted transition hover:text-accent">
               ← Back to Workshop Maps
@@ -90,8 +90,8 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
                 {map.curated ? "Steam Workshop" : "Coming Soon"}
               </span>
             </div>
-            <h1 className="mt-3 text-4xl font-bold">{map.title}</h1>
-            <p className="mt-2 text-lg text-muted">{seo.tagline}</p>
+            <h1 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">{map.title}</h1>
+            <p className="mt-2 text-base text-muted sm:text-lg">{seo.tagline}</p>
             <p className="mt-1 text-sm text-muted">
               by {map.author} · {map.colors} colors · {seo.lobbySize}
             </p>

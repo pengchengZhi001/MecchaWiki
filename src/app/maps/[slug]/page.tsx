@@ -37,7 +37,7 @@ export default async function MapDetailPage({ params }: Props) {
 
   return (
     <article>
-      <div className="relative aspect-[21/9] overflow-hidden border-b border-card-border">
+      <div className="relative aspect-[16/9] overflow-hidden border-b border-card-border sm:aspect-[21/9]">
         <Image
           src={map.imageUrl}
           alt={`${map.name} map screenshot`}
@@ -47,7 +47,7 @@ export default async function MapDetailPage({ params }: Props) {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-10">
+        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-10">
           <div className="mx-auto max-w-6xl">
             <Link href="/maps" className="text-sm text-muted transition hover:text-accent">
               ← Back to Maps
@@ -56,8 +56,8 @@ export default async function MapDetailPage({ params }: Props) {
               <DifficultyBadge difficulty={map.difficulty} />
               <span className="text-sm text-muted">{map.playerCount}</span>
             </div>
-            <h1 className="mt-3 text-4xl font-bold">{map.name}</h1>
-            <p className="mt-2 text-lg text-muted">{map.tagline}</p>
+            <h1 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">{map.name}</h1>
+            <p className="mt-2 text-base text-muted sm:text-lg">{map.tagline}</p>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default async function MapDetailPage({ params }: Props) {
           <div className="space-y-12 lg:col-span-2">
             <p className="max-w-3xl text-lg leading-relaxed text-foreground/80">{map.description}</p>
 
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {map.colorPalette.map((c) => (
                 <div key={c} className="text-center">
                   <div

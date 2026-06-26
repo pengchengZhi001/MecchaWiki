@@ -106,7 +106,7 @@ export default function SpotsListing() {
       </div>
 
       {totalPages > 1 && (
-        <nav className="mt-10 flex items-center justify-center gap-2" aria-label="Pagination">
+        <nav className="mt-10 flex flex-wrap items-center justify-center gap-2" aria-label="Pagination">
           {currentPage > 1 && (
             <Link
               href={pageHref(currentPage - 1)}

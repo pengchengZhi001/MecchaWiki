@@ -75,7 +75,7 @@ export default async function SpotDetailPage({ params }: Props) {
           }),
         ]}
       />
-      <div className="relative aspect-[21/9] overflow-hidden border-b border-card-border">
+      <div className="relative aspect-[16/9] overflow-hidden border-b border-card-border sm:aspect-[21/9]">
         <SpotImage
           src={spot.imageUrl}
           alt={`${spot.name} hiding spot on ${spot.map} — Meccha Wiki guide`}
@@ -83,7 +83,7 @@ export default async function SpotDetailPage({ params }: Props) {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-10">
+        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-10">
           <div className="mx-auto max-w-6xl">
             <Link href="/hidden-spots" className="text-sm text-muted transition hover:text-accent">
               ← Back to Best Spots
@@ -101,8 +101,8 @@ export default async function SpotDetailPage({ params }: Props) {
                 </span>
               )}
             </div>
-            <h1 className="mt-3 text-4xl font-bold">{spot.name}</h1>
-            <div className="mt-4 flex flex-wrap items-center gap-6">
+            <h1 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">{spot.name}</h1>
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
               <SpotRatingBadge rating={spot.survivalRate} size="lg" showDisclaimer />
               <div className="text-sm text-muted">
                 via{" "}
@@ -126,7 +126,7 @@ export default async function SpotDetailPage({ params }: Props) {
 
       <div className="mx-auto max-w-6xl px-4 pb-12 sm:px-6">
         <div className="grid gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-2 space-y-8">
+          <div className="order-2 space-y-8 lg:order-1 lg:col-span-2">
             <section>
               <h2 className="text-xl font-bold">Location Description</h2>
               <p className="mt-3 leading-relaxed text-foreground/80">{spot.description}</p>
@@ -255,7 +255,7 @@ export default async function SpotDetailPage({ params }: Props) {
             </section>
           </div>
 
-          <SidebarAds>
+          <SidebarAds className="order-1 lg:order-2">
             <VotePanel spotName={spot.name} />
             <div className="rounded-xl border border-card-border bg-card p-5">
               <h3 className="text-sm font-semibold">Quick Links</h3>

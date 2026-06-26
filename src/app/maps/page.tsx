@@ -55,7 +55,7 @@ export default async function MapsPage({ searchParams }: Props) {
 
       {showOfficial && (
         <section className="mt-10">
-          <div className="mb-6 flex items-end justify-between">
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="text-xl font-bold">Official Maps</h2>
               <p className="mt-1 text-sm text-muted">
@@ -100,7 +100,7 @@ export default async function MapsPage({ searchParams }: Props) {
 
       {showWorkshop && (
         <section className={showOfficial ? "mt-16 border-t border-card-border pt-12" : "mt-10"}>
-          <div className="mb-6 flex items-end justify-between">
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="text-xl font-bold">Workshop Maps</h2>
               <p className="mt-1 text-sm text-muted">

@@ -46,7 +46,7 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={[websiteJsonLd(), faqJsonLd]} />
-      <section className="relative overflow-hidden border-b border-card-border py-16 sm:py-20">
+      <section className="relative overflow-hidden border-b border-card-border py-12 sm:py-20">
         <div className="grid-bg absolute inset-0" />
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
@@ -54,7 +54,7 @@ export default function HomePage() {
             <span className="mb-4 inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent ring-1 ring-accent/30">
               Recommended by Experienced Players
             </span>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
               Win More Games.
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
@@ -123,7 +123,7 @@ export default function HomePage() {
       {spotOfWeek && (
         <section className="border-b border-card-border">
           <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-            <div className="mb-6 flex items-end justify-between">
+            <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <h2 className="text-2xl font-bold">Spot of the Week</h2>
                 <p className="mt-1 text-sm text-muted">Our top pick to practice this week</p>
@@ -235,7 +235,7 @@ export default function HomePage() {
 
       <section className="border-t border-card-border bg-surface/30">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-          <div className="mb-8 flex items-end justify-between">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="text-2xl font-bold">Popular Workshop Maps</h2>
               <p className="mt-1 text-sm text-muted">Curated from Steam Workshop · Real preview images</p>
@@ -253,7 +253,7 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-card-border mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="mb-8 flex items-end justify-between">
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-2xl font-bold">Prop Hunt Guides</h2>
             <p className="mt-1 text-sm text-muted">

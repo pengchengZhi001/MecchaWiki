@@ -19,7 +19,7 @@ export default function VotePanel({ spotName }: VotePanelProps) {
         Guide ratings are curated estimates from published walkthroughs — not live match statistics.
       </p>
 
-      <div className="mt-4 flex items-center gap-4">
+      <div className="mt-4 flex flex-wrap items-center gap-3">
         <button
           onClick={() => setFeedback("helpful")}
           disabled={feedback !== null}
