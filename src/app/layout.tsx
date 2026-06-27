@@ -41,14 +41,18 @@ export default function RootLayout({
     >
       <head>
         <script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="253851"
+          async
+          data-cfasync="false"
+        />
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967304417583767"
           crossOrigin="anonymous"
         />
       </head>
       <body className="safe-area-pb flex min-h-full flex-col">
-        <SocialBar />
-        <Popunder />
         <Header />
         <main className="min-w-0 max-w-full flex-1">{children}</main>
         <Footer />
