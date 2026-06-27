@@ -40,13 +40,15 @@
   "cold-storage-meat-shelf": "/images/spots/cold-storage-meat-shelf.jpg",
   "cold-storage-gas-cylinder": "/images/spots/cold-storage-gas-cylinder.jpg",
   "cold-storage-tile-grid": "/images/spots/cold-storage-tile-grid.jpg",
-  "cold-storage-under-shelf": "/images/spots/cold-storage-under-shelf.jpg",
   "cold-storage-shelf-back-row": "/images/spots/cold-storage-shelf-back-row.jpg",
-  "brick-loft-beam-gap": "/images/spots/brick-loft-beam-gap.jpg",
   "brick-loft-red-brick-alcove": "/images/spots/brick-loft-red-brick-alcove.jpg",
   "brick-loft-pipe-crawl": "/images/spots/brick-loft-pipe-crawl.jpg",
   "brick-loft-window-sill": "/images/spots/brick-loft-window-sill.jpg",
   "brick-loft-iron-stair": "/images/spots/brick-loft-iron-stair.jpg",
   "party-room-neon-absence": "/images/spots/party-room-neon-absence.png",
-  "white-elbow-trap": "/images/spots/white-elbow-trap.jpg"
+  "white-elbow-trap": "/images/spots/white-elbow-trap.jpg",
+  "indoor-country-barn-hay-edge": "/images/spots/indoor-country-barn-hay-edge.jpg",
+  "indoor-country-balloon-cluster": "/images/spots/mansion-balloon-banner.png",
+  "indoor-country-mud-patch": "/images/spots/indoor-country-mud-patch.jpg",
+  "sugarland-gingerbread-circle": "/images/spots/party-room-neon-absence.png"
 }

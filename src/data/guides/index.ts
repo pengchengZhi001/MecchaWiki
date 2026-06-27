@@ -19,3 +19,7 @@ export { allOfficialMapsGuide } from "./all-official-maps";
 export { bestMapsRankedGuide } from "./best-maps-ranked";
 export { osakaMapGuide } from "./osaka-map-guide";
 export { privateLobbyGuide } from "./private-lobby-guide";
+export { sugarlandMapGuide } from "./sugarland-map-guide";
+export { indoorCountryMapGuide } from "./indoor-country-map-guide";
+export { gameModesGuide } from "./game-modes-guide";
+export { publicLobbyGuide } from "./public-lobby-guide";

@@ -442,22 +442,6 @@ const SPOT_GUIDES: Partial<Record<string, Omit<SpotGuideSourced, "sources"> & { 
     seekerWindow: "Warm brick forgives minor hue error on round one; open loft second-floor sightlines are the main counter — smart seekers overlook down before clearing ground floor.",
   },
 
-  "brick-loft-beam-gap": {
-    sources: [{ name: "meccha-chameleon.net", url: "https://meccha-chameleon.net/maps/best-hiding-spots/" }],
-    howToWin: [
-      "Beam gap + horizontal brick striping — body disappears into the pattern.",
-      "Dual-sample mortar shadow + brick face; horizontal pose follows brick courses.",
-    ],
-    paintLayers: [
-      { bodyPart: "Torso", sampleFrom: "Brick face inside beam gap", technique: "Horizontal bands" },
-      { bodyPart: "Mortar", sampleFrom: "Mortar shadow", technique: "Align courses" },
-      { bodyPart: "Gap shadow", sampleFrom: "Gap depth shadow", technique: "Blocks side approach" },
-    ],
-    poseAdvice: "Crouch horizontal — striping breaks torso read.",
-    finishSettings: ["Brick matte"],
-    seekerWindow: "Side approach blocked by gap depth; second-floor overlook is the counter.",
-  },
-
   "mansion-kitchen-poster": {
     sources: [{ name: "TheGamer", url: "https://www.thegamer.com/mecca-chameleon-best-hiding-spots-guide/" }],
     howToWin: [

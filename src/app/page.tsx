@@ -3,6 +3,7 @@ import SpotCard from "@/components/SpotCard";
 import WorkshopMapCard from "@/components/WorkshopMapCard";
 import SiteSearch from "@/components/SiteSearch";
 import SpotImage from "@/components/SpotImage";
+import HomeHeroVisual from "@/components/HomeHeroVisual";
 import Card from "@/components/Card";
 import HomeFaqSection from "@/components/HomeFaqSection";
 import SpotRatingBadge from "@/components/SpotRatingBadge";
@@ -49,32 +50,36 @@ export default function HomePage() {
         <div className="grid-bg absolute inset-0" />
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="max-w-2xl">
-            <span className="mb-4 inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent ring-1 ring-accent/30">
-              Recommended by Experienced Players
-            </span>
-            <h1 className="text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Win More Games.
-            </h1>
-            <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
-              Discover the best hiding spots, survival strategies, and camouflage tips for{" "}
-              <span className="text-foreground">Meccha Chameleon</span>.{" "}
-              {siteConfig.tagline}.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/hidden-spots"
-                className="inline-block rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-accent-dim glow-accent"
-              >
-                Browse Best Spots
-              </Link>
-              <Link
-                href={`/hidden-spots/${spotOfWeek?.slug ?? "mansion-library-shelf"}`}
-                className="inline-block rounded-lg border border-card-border bg-surface px-5 py-2.5 text-sm font-semibold transition hover:border-accent/30"
-              >
-                Spot of the Week
-              </Link>
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
+            <div>
+              <span className="mb-4 inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent ring-1 ring-accent/30">
+                Recommended by Experienced Players
+              </span>
+              <h1 className="text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                Win More Games.
+              </h1>
+              <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
+                Discover the best hiding spots, survival strategies, and camouflage tips for{" "}
+                <span className="text-foreground">Meccha Chameleon</span>.{" "}
+                {siteConfig.tagline}.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link
+                  href="/hidden-spots"
+                  className="inline-block rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-accent-dim glow-accent"
+                >
+                  Browse Best Spots
+                </Link>
+                <Link
+                  href={`/hidden-spots/${spotOfWeek?.slug ?? "mansion-library-shelf"}`}
+                  className="inline-block rounded-lg border border-card-border bg-surface px-5 py-2.5 text-sm font-semibold transition hover:border-accent/30"
+                >
+                  Spot of the Week
+                </Link>
+              </div>
             </div>
+
+            <HomeHeroVisual topSpots={topSpots.slice(0, 3)} popularMaps={popularMaps.slice(0, 1)} />
           </div>
 
           <div className="mt-10">
@@ -154,7 +159,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold">Best Spots This Week</h2>
           </div>
           <p className="mb-8 text-sm text-muted">
-            Featured and trending spots — ranked by guide rating from TheGamer, IGN, and community references
+            Featured and trending spots this week — community picks beyond the all-time top rated
           </p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {bestThisWeek.map((spot, i) => (

@@ -96,5 +96,39 @@ export const hiderFaqTopic: HelpTopic = {
         label: "Beginner hiding guide",
       },
     },
+    {
+      id: "mix-up-spots",
+      question: "Should I reuse the same hiding spot every round?",
+      tags: ["mix up", "habits", "rotation", "meta"],
+      answer: [
+        "DualShockers' top tip: never hide in the same place twice with the same group — previous spots become first-check zones on repeat maps. Switch height (under bed → ceiling perch), texture type (plush → metal pipe), and room zone each round.",
+        "Same-map marathon sessions punish habit hiders hardest. Keep two backup spots per map from our hidden spots database so prep never becomes a scramble.",
+        "Seekers should apply the same logic in reverse — after a friend wins from a ceiling perch, check ceilings earlier next round on that map.",
+      ],
+    },
+    {
+      id: "too-buried-warning",
+      question: "What does the \"too buried\" or \"too covered\" warning mean?",
+      tags: ["too buried", "too covered", "warning", "clip"],
+      answer: [
+        "DualShockers and dq7reimagined.com describe the warning when you wedge too deep into walls, shelves, or props — staying too long can auto-reveal your position to seekers.",
+        "GameRant's Mansion balloon banner note: hide at the tallest natural balloon point; too low triggers the covered warning. Wiggle in small increments to find a wedged position that clears the warning without giving up the hide.",
+        "Prep Phase Mastery on this site covers the full too-buried checklist — depth is a tool, not the goal; prefer believable placement with clean exit over maximum clip.",
+      ],
+      relatedLink: {
+        href: "/guides/prep-phase-guide",
+        label: "Prep phase & too-buried section",
+      },
+    },
+    {
+      id: "exposed-spot-scoring",
+      question: "Do exposed spots give more points?",
+      tags: ["points", "score", "exposed", "plain sight"],
+      answer: [
+        "GameRant's strategy section states hiding in plain sight on hunter sightlines grants more points — but only if camouflage is excellent. High wall positions can stay in sight yet avoid direct scrutiny.",
+        "GameRant also notes you can keep painting after hunters release if base color is done — risky but valid for finishing edges when seekers sweep elsewhere first.",
+        "If you know you've been seen, GameRant recommends running — movement can earn points in view and sometimes breaks a bad tag attempt. Weigh risk vs your lobby's seeker skill.",
+      ],
+    },
   ],
 };

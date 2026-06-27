@@ -47,7 +47,7 @@ const WEEKLY_CHALLENGES = [
   },
   {
     title: "Master dual-tone sampling",
-    description: "Hide on Cold Storage Shelf Back Row or Brick Loft Beam Gap. Sample shadow + face separately — depth beats hue (meccha-chameleon.net).",
+    description: "Hide on Cold Storage Shelf Back Row or Brick Loft Red Brick Alcove. Sample shadow + face separately — depth beats hue (meccha-chameleon.net).",
     spotSlug: "cold-storage-shelf-back-row",
   },
   {
@@ -82,12 +82,27 @@ export function getTodaysSpot(): HiddenSpot {
   return [...hiddenSpots].sort((a, b) => a.slug.localeCompare(b.slug))[idx];
 }
 
-/** Featured + trending spots, ranked by guide rating — "Best This Week". */
+/** Featured + trending picks rotated weekly — excludes the all-time survival leaderboard. */
 export function getBestSpotsThisWeek(limit = 6): HiddenSpot[] {
-  return [...hiddenSpots]
-    .filter((s) => s.featured || s.trending)
-    .sort((a, b) => b.survivalRate - a.survivalRate)
-    .slice(0, limit);
+  const excludeSlugs = new Set(getTopSpots(limit).map((s) => s.slug));
+  const week = Math.floor(dayIndex() / 7);
+
+  const pool = [...hiddenSpots]
+    .filter((s) => (s.featured || s.trending) && !excludeSlugs.has(s.slug))
+    .sort(
+      (a, b) =>
+        Number(b.trending) - Number(a.trending) ||
+        b.votes - a.votes ||
+        b.survivalRate - a.survivalRate
+    );
+
+  if (pool.length === 0) {
+    return getTopSpots(limit);
+  }
+
+  const maxOffset = Math.max(1, pool.length - limit + 1);
+  const offset = week % maxOffset;
+  return pool.slice(offset, offset + limit);
 }
 
 /** Highest guide-rated spots — "Most Successful". */
@@ -95,10 +110,20 @@ export function getMostSuccessfulSpots(limit = 6): HiddenSpot[] {
   return getTopSpots(limit);
 }
 
-/** Recently added community-sourced entries. */
+/** Recently added community-sourced entries (unique thumbnails only). */
 export function getNewCommunityDiscoveries(limit = 6): HiddenSpot[] {
   const community = getLatestSpots(limit * 2).filter(
     (s) => s.category === "community" || s.source === "Community"
   );
-  return (community.length >= 3 ? community : getLatestSpots(limit)).slice(0, limit);
+  const pool = community.length >= 3 ? community : getLatestSpots(limit);
+  const seen = new Set<string>();
+  const unique: HiddenSpot[] = [];
+  for (const spot of pool) {
+    const key = spot.imageUrl.split("?")[0];
+    if (seen.has(key)) continue;
+    seen.add(key);
+    unique.push(spot);
+    if (unique.length >= limit) break;
+  }
+  return unique;
 }

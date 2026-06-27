@@ -76,12 +76,8 @@ export const spotDescriptions: Record<string, string> = {
     "Gas cylinder corner — seekers tunnel on shelves and miss utilities.",
   "cold-storage-tile-grid":
     "Tile wall grid — pose must respect tile lines.",
-  "cold-storage-under-shelf":
-    "Dark zone under lower shelf after meat row inspection.",
   "cold-storage-shelf-back-row":
     "Deepest rear shelf row. Top community survival rate on this map.",
-  "brick-loft-beam-gap":
-    "Brick beam gap — horizontal striping hides your body.",
   "brick-loft-red-brick-alcove":
     "Red brick wall alcove with rich color layers — stand in the deepest part of the recess where mortar shadow and brick face create a natural value gradient. Featured in TheGamer's Brick Loft section and meccha-chameleon.net's hard-tier spot cards.",
   "brick-loft-pipe-crawl":
@@ -100,4 +96,12 @@ export const spotDescriptions: Record<string, string> = {
     "Stand under buzzing fluorescent — harsh light can hide imperfect paint.",
   "penguin-pool-drain":
     "Pool drain corner meme — \"best spot is in the water\" jokes.",
+  "indoor-country-barn-hay-edge":
+    "Barn-side position shielded by hay bales, cow signs, or pumpkins — looks open but blocks foot traffic.",
+  "indoor-country-balloon-cluster":
+    "Middle of a ground balloon pile — outer balloons hide your outline from perimeter scans.",
+  "indoor-country-mud-patch":
+    "Pattern-painted mud floor with surrounding clutter — GameRant farm map pick.",
+  "sugarland-gingerbread-circle":
+    "Inside the gingerbread men ring on the floor — prop silhouettes break your outline.",
 };

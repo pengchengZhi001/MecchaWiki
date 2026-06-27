@@ -18,6 +18,10 @@ import { allOfficialMapsGuide } from "./guides/all-official-maps";
 import { bestMapsRankedGuide } from "./guides/best-maps-ranked";
 import { osakaMapGuide } from "./guides/osaka-map-guide";
 import { privateLobbyGuide } from "./guides/private-lobby-guide";
+import { sugarlandMapGuide } from "./guides/sugarland-map-guide";
+import { indoorCountryMapGuide } from "./guides/indoor-country-map-guide";
+import { gameModesGuide } from "./guides/game-modes-guide";
+import { publicLobbyGuide } from "./guides/public-lobby-guide";
 
 export type { Guide } from "./guides/types";
 
@@ -96,6 +100,10 @@ export const guides: Guide[] = [
   bestMapsRankedGuide,
   osakaMapGuide,
   privateLobbyGuide,
+  sugarlandMapGuide,
+  indoorCountryMapGuide,
+  gameModesGuide,
+  publicLobbyGuide,
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

@@ -99,5 +99,33 @@ export const multiplayerTopic: HelpTopic = {
         "Streamer lobbies should invite in waves and hide room passwords on stream until rules are explained; late joiners during prep phase ruin hide setups.",
       ],
     },
+    {
+      id: "public-lobby-griefing",
+      question: "Why do public lobbies feel broken or toxic?",
+      tags: ["public", "griefing", "toxic", "spectator", "moderation"],
+      answer: [
+        "Steam's top helpful reviews cite specific public-lobby problems: players in the lobby using mic or chat to leak hider positions to active hunters, late joiners seeing full-map player positions, and repeat offenders rejoining after kicks because no ban system exists at community report time.",
+        "Gamepressure's review summary also lists inappropriate usernames and drawn content in public rooms — expected in free-draw party games but worth knowing before queuing with kids.",
+        "Update v1.7.0 (June 22, 2026) added an in-game report feature per patch coverage — update clients and use report when available. Practical fix for most groups: password private lobbies with friends instead of random matchmaking.",
+      ],
+      relatedLink: {
+        href: "/guides/public-lobby-guide",
+        label: "Public lobby griefing & safer play guide",
+      },
+    },
+    {
+      id: "game-modes-host",
+      question: "Which game mode should the host pick?",
+      tags: ["basic", "infection", "double", "game mode"],
+      answer: [
+        "GameRant documents three host modes: Basic (fixed hunter/hider teams), Infection (found players become hunters), and Double (everyone hides then everyone hunts — most tags wins). mecchachameleon.io labels these Normal, Increasing Oni, and Double with the same role logic.",
+        "New groups learning paint: Basic/Normal in a private room. Large public lobbies that drag: Infection so seeker count rises as players are tagged. Balanced friend nights: Double so everyone gets both roles.",
+        "Hosts also configure Forced Taunt whistle intervals and optional map filters (Monochrome, Horror, Mosaic) in Configure Map — see our game modes guide for details.",
+      ],
+      relatedLink: {
+        href: "/guides/game-modes-guide",
+        label: "Game modes explained",
+      },
+    },
   ],
 };

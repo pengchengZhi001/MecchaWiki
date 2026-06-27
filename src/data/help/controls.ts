@@ -92,5 +92,29 @@ export const controlsTopic: HelpTopic = {
         "Many groups run Discord alongside Steam voice. Mute one source to avoid echo. Streamers should use push-to-talk so paint-phase whispers do not leak strats.",
       ],
     },
+    {
+      id: "whistle-taunt-key",
+      question: "How do I whistle or use forced taunt?",
+      tags: ["whistle", "taunt", "forced taunt", "1 key"],
+      answer: [
+        "GameRant's control notes cite the 1 key for manual whistling when hosts enable taunt-related settings. Confirm your bind in Esc → Settings → Controls after patches — community guides warn keybinds can shift between updates.",
+        "Forced Taunt is a host lobby option: when enabled, players auto-whistle on an interval (allthings.how reports ~45 seconds by default) to give seekers audio hints in large groups. Manual whistles reset that countdown so you pick a safer moment to make noise.",
+        "DualShockers notes the whistle is louder or softer by distance but does not pinpoint your exact position — some hiders use it to misdirect seekers toward the wrong room.",
+      ],
+      relatedLink: {
+        href: "/guides/game-modes-guide",
+        label: "Game modes & forced taunt guide",
+      },
+    },
+    {
+      id: "free-camera",
+      question: "What is free camera after I hide?",
+      tags: ["free camera", "spectator", "4 key", "5 key"],
+      answer: [
+        "GameRant: once hidden and the hunt phase starts, press 5 to target and follow hunters, or press 4 for full free-roam camera — you can watch the map without moving your body.",
+        "After elimination, free-fly spectator camera unlocks fully; whistle becomes cosmetic taunt only (meccha-chameleon.wiki mechanics page) with no effect on hide timers.",
+        "Use free camera to learn seeker sweep patterns between rounds — do not confuse spectator vision with fair competitive rules in public lobbies where late joiners reportedly see live positions (see Public Lobby Guide).",
+      ],
+    },
   ],
 };
