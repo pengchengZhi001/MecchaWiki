@@ -48,8 +48,13 @@ export default function RootLayout({
         />
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967304417583767"
           crossOrigin="anonymous"
+          src="https://pl29908360.effectivecpmnetwork.com/b4/81/0f/b4810ff4487e3687e89055dbfa93af1b.js"
+        />
+        <script
+          async
+          crossOrigin="anonymous"
+          src="https://pl29903820.effectivecpmnetwork.com/40/0c/ef/400cef333756e0813e54102a8c7c1f87.js"
         />
       </head>
       <body className="safe-area-pb flex min-h-full flex-col">
