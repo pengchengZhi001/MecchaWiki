@@ -3,7 +3,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Popunder, SocialBar } from "@/components/ads";
 import { createMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -40,12 +39,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <script
-          src="https://quge5.com/88/tag.min.js"
-          data-zone="253851"
-          async
-          data-cfasync="false"
-        />
         <script
           async
           crossOrigin="anonymous"

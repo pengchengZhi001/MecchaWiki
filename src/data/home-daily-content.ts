@@ -37,6 +37,21 @@ const DAILY_TIPS = [
     source: "meccha-chameleon.net",
     sourceUrl: "https://meccha-chameleon.net/maps/best-hiding-spots/",
   },
+  {
+    tip: "No paint undo at launch — sample with Spacebar, shrink brush (RMB + drag left), and overpaint mistakes before hunt (Steam reviews).",
+    source: "Steam Reviews",
+    sourceUrl: "https://steamcommunity.com/app/4704690/reviews/?browsefilter=toprated",
+  },
+  {
+    tip: "Public lobbies with noclip bird's-eye seekers? Leave and host a password private room — community consensus, not a client toggle (Steam + mecchachameleon.net).",
+    source: "mecchachameleon.net",
+    sourceUrl: "https://mecchachameleon.net/tips-and-tricks/movement-tips",
+  },
+  {
+    tip: "EULA mismatch blocks friend lobbies — both players must accept current terms; restart game if the prompt was skipped (Steam Discussions).",
+    source: "Steam Discussions",
+    sourceUrl: "https://steamcommunity.com/app/4704690/discussions/0/571541539431442266/",
+  },
 ] as const;
 
 const WEEKLY_CHALLENGES = [

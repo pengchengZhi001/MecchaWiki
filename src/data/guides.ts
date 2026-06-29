@@ -22,6 +22,8 @@ import { sugarlandMapGuide } from "./guides/sugarland-map-guide";
 import { indoorCountryMapGuide } from "./guides/indoor-country-map-guide";
 import { gameModesGuide } from "./guides/game-modes-guide";
 import { publicLobbyGuide } from "./guides/public-lobby-guide";
+import { noclipExploitsGuide } from "./guides/noclip-exploits-guide";
+import { cheatersFairPlayGuide } from "./guides/cheaters-fair-play-guide";
 
 export type { Guide } from "./guides/types";
 
@@ -104,6 +106,8 @@ export const guides: Guide[] = [
   indoorCountryMapGuide,
   gameModesGuide,
   publicLobbyGuide,
+  noclipExploitsGuide,
+  cheatersFairPlayGuide,
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

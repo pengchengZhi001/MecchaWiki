@@ -17,8 +17,12 @@ export const fixCantJoinLobbyGuide: Guide = {
       url: "https://2upskill.com/how-to-fix-meccha-chameleon-multiplayer-not-working-cant-join-friends-private-lobby-bugs-and-server-errors-solved/",
     },
     {
-      name: "Steam store page — player count & room notes",
-      url: "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+      name: "Steam Discussions — Can't join friends server (EULA)",
+      url: "https://steamcommunity.com/app/4704690/discussions/0/571541539431442266/",
+    },
+    {
+      name: "Steam Discussions — IN-GAME INVITE NOT WORKING",
+      url: "https://steamcommunity.com/app/4704690/discussions/0/562534659773185812/",
     },
   ],
   content: [
@@ -40,7 +44,12 @@ export const fixCantJoinLobbyGuide: Guide = {
     {
       id: "stale-invites",
       heading: "Step 3 — Fresh Room, Not Stale Invites",
-      body: "Many players report Steam invites failing after the host changes map, password, or privacy settings. Old invites point at dead sessions. Fix: host recreates the room, sends a new invite, and friends accept from the Steam overlay while at the main menu — not while stuck inside another lobby. If invites keep failing, skip them entirely: host sets a unique server name, friends open Find Server → Search Public Servers, and join by name through the in-game browser. Community reports describe black screens and auth failures specifically when accepting desktop Steam invites mid-session.",
+      body: "Many players report Steam invites failing after the host changes map, password, or privacy settings. Old invites point at dead sessions. Fix: host recreates the room, sends a new invite, and friends accept from the Steam overlay while at the main menu — not while stuck inside another lobby. Steam thread \"IN-GAME INVITE NOT WORKING\" confirms invites work more reliably when friends stay on the Find Server screen before the host sends in-game invites via Esc. If invites keep failing, skip them entirely: host sets a unique server name, friends open Find Server → Search Public Servers, and join by name through the in-game browser. Community reports describe black screens and auth failures specifically when accepting desktop Steam invites mid-session.",
+    },
+    {
+      id: "eula-agreement",
+      heading: "Step 3b — EULA Agreement (Both Players)",
+      body: "Steam thread \"Can't join friends server\" reports that if both parties have not agreed to the new EULA, they cannot play in the same lobby — one player restarting and accepting the prompt fixed the issue for that group. If a friend accepted a non-English EULA at random during install and the prompt does not reappear, verify game files or reinstall so the agreement screen returns. Everyone in the party should confirm they saw and accepted the current terms before debugging network settings.",
     },
     {
       id: "workshop-maps",

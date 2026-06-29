@@ -93,6 +93,30 @@ export const paintingTopic: HelpTopic = {
       ],
     },
     {
+      id: "no-undo-paint",
+      question: "Is there an undo button if I paint the wrong color?",
+      tags: ["undo", "mistake", "repaint", "wrong color"],
+      answer: [
+        "Steam reviews note there is no paint undo at launch — if you sample or brush the wrong color, you must paint over it manually before hunt phase. Budget extra prep seconds for touch-up passes on joints and edges.",
+        "Use Spacebar eyedropper to re-sample the correct pixel, then shrink brush size (hold right mouse, drag left) for precise overpaints on elbows, knees, and neck gaps.",
+        "Emergency workflow during hunt: nearest surface sample → quick brush → pose lock → freeze. See our emergency recolor section in the painting help topic.",
+      ],
+      relatedLink: {
+        href: "/guides/how-to-paint-better",
+        label: "How to paint better — brush size & workflow",
+      },
+    },
+    {
+      id: "brush-resolution-limits",
+      question: "Why do straight lines and fine details look pixelated?",
+      tags: ["resolution", "pixelated", "brush", "detail", "lines"],
+      answer: [
+        "A top Steam helpful review (104 votes) reports player model brushes lack enough resolution for detailed straight lines — strokes look pixelated and some hiding spots become impractical without accepting blocky camouflage.",
+        "Community workaround: prioritize spot choice and silhouette breaking over fine art. Cluttered zones (bookshelves, graffiti, chair stacks) forgive low-resolution strokes better than flat walls requiring crisp edges.",
+        "Shrink brush for joint gaps; use eyedropper plus HSV nudge instead of hand-drawing patterns the model texture cannot support at current fidelity.",
+      ],
+    },
+    {
       id: "fix-bad-paint-mid-round",
       question: "Can I repaint after hunt phase starts?",
       tags: ["recolor", "emergency", "mid round"],

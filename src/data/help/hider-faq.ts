@@ -121,6 +121,34 @@ export const hiderFaqTopic: HelpTopic = {
       },
     },
     {
+      id: "round-end-gallery",
+      question: "Can everyone see my hide spot when I get eliminated?",
+      tags: ["elimination", "reveal", "gallery", "round end", "spot"],
+      answer: [
+        "Steam reviews request a round-end gallery or elimination snapshot so all players — not just the tagging seeker — can appreciate clever hides. At community report time, only the seeker who tags you typically sees the full reveal in live play.",
+        "Use free camera (4 key) after elimination to spectate remaining hiders and learn their setups for next round — documented in our Controls help.",
+        "Streamers and clip channels fill the gap: iconic moments on this site link verified viral hides you can study between matches.",
+      ],
+      relatedLink: {
+        href: "/help/iconic-moments",
+        label: "Iconic moments & viral clips",
+      },
+    },
+    {
+      id: "whistle-hidden-score",
+      question: "Does whistling add to my hidden score?",
+      tags: ["whistle", "score", "points", "hidden", "taunt"],
+      answer: [
+        "A Steam review notes whistling should add points to your hidden score based on seeker proximity but did not appear to work in their sessions — treat scoring as inconsistent until patch notes confirm fixes.",
+        "GameRant documents exposed plain-sight spots granting more points when camouflage holds under hunter sightlines — a separate scoring path from whistle mechanics.",
+        "Forced Taunt auto-whistle is a host setting for audio hints, not a guaranteed score boost. See Game Modes guide for interval configuration.",
+      ],
+      relatedLink: {
+        href: "/guides/game-modes-guide",
+        label: "Game modes & forced taunt guide",
+      },
+    },
+    {
       id: "exposed-spot-scoring",
       question: "Do exposed spots give more points?",
       tags: ["points", "score", "exposed", "plain sight"],

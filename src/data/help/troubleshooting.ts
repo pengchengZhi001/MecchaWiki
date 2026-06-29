@@ -8,6 +8,34 @@ export const troubleshootingTopic: HelpTopic = {
     "Common connection and lobby issues in MECCHA CHAMELEON — version mismatch, auth token errors, lag, and what players report on Steam Discussions.",
   items: [
     {
+      id: "eula-cant-join",
+      question: "Friend can't join after EULA — we picked random language",
+      tags: ["eula", "terms", "agreement", "can't join"],
+      answer: [
+        "Steam thread \"Can't join friends server\" reports both parties must agree to the current EULA before sharing a lobby — one friend restarting and accepting the prompt fixed the issue.",
+        "If someone accepted a non-English EULA at random during install and the popup never returns, verify game files in Steam or reinstall so the agreement screen reappears.",
+        "After EULA parity, still confirm same game version and create a fresh room — EULA blocks look like generic invite failures.",
+      ],
+      relatedLink: {
+        href: "/guides/fix-cant-join-lobby",
+        label: "Full Can't Join Lobby fix guide",
+      },
+    },
+    {
+      id: "pc-overheating",
+      question: "Game heats my PC / runs very hot — is that normal?",
+      tags: ["overheat", "hot", "temperature", "fan", "performance"],
+      answer: [
+        "Steam General Discussions include reports of the game heating PCs heavily during launch week — UE5 hide-and-seek with full lobbies can spike GPU and CPU load similar to other Unreal titles.",
+        "Try the same settings from our lag guide: -dx11 launch option, lower Global Illumination, disable Motion Blur, cap FPS if your driver supports it, and ensure vents are clear.",
+        "If thermals throttle performance, reduce lobby size or resolution before blaming network — stutter from heat can feel like desync.",
+      ],
+      relatedLink: {
+        href: "/guides/fix-lag-blurry-screen",
+        label: "Lag & performance settings guide",
+      },
+    },
+    {
       id: "cant-join-lobby",
       question: "Can't join any lobby — what should I try first?",
       tags: ["can't join", "lobby", "connect", "multiplayer"],

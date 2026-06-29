@@ -92,6 +92,23 @@ export const iconicMoments: IconicMoment[] = [
     tags: ["sewer", "ceiling", "competitive"],
   },
   {
+    id: "viral-horse-statue-meta",
+    title: "Viral Horse Statue Meta (Kotaku / Northernlion)",
+    description:
+      "Mansion's rearing horse statue became launch-week social media fuel when players discovered a pose that, attached to the statue's underside, reads as an absurd prop-mimic gag — Northernlion and TikTok reposts pushed it beyond ordinary hide-and-seek clips.",
+    map: "Mansion",
+    whyItWentViral:
+      "Kotaku (June 2026) traced the meme to Mansion's horse statue geometry plus pose options that blend into the steed's underside at a glance. SteamDB peak concurrency passed 244k the same week. The joke hide spread faster than competitive spots because clip payoff is instant — even when seekers know the meta, the visual gag still lands on stream.",
+    image: {
+      src: "/images/spots/mansion-horse-statue.jpg",
+      alt: "Mansion horse statue — launch-week viral meme spot",
+    },
+    watchUrl: "https://kotaku.com/meccha-chameleon-steam-download-horse-clips-northernlion-2000708169",
+    relatedHref: "/hidden-spots/mansion-horse-statue",
+    relatedLabel: "Horse statue spot page",
+    tags: ["viral", "meme", "kotaku", "streamers"],
+  },
+  {
     id: "horse-statue-mimic",
     title: "Horse Statue Prop Mimic",
     description:

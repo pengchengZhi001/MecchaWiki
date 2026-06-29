@@ -23,3 +23,5 @@ export { sugarlandMapGuide } from "./sugarland-map-guide";
 export { indoorCountryMapGuide } from "./indoor-country-map-guide";
 export { gameModesGuide } from "./game-modes-guide";
 export { publicLobbyGuide } from "./public-lobby-guide";
+export { noclipExploitsGuide } from "./noclip-exploits-guide";
+export { cheatersFairPlayGuide } from "./cheaters-fair-play-guide";
