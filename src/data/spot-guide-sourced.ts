@@ -606,6 +606,24 @@ const MAP_FALLBACK: Record<
     poseNote: "Horizontal for beam gap, wall-flat for alcove; window zones punish movement.",
     winTips: ["Second floor gives Seekers height advantage.", "Window sill: sample shadow underside, not sunlit top brick."],
   },
+  sugarland: {
+    sources: [
+      { name: "IGN Sugarland section", url: "https://www.ign.com/wikis/meccha-chameleon/All_Maps_in_Meccha_Chameleon:_Best_Hiding_Spots" },
+      { name: "GameRant Sugarland spots", url: "https://gamerant.com/meccha-chameleon-best-hiding-spots/" },
+    ],
+    paintNote: "Saturated candy surfaces — sample one panel exactly; white joint gaps read instantly on bright hues.",
+    poseNote: "Vertical cake tiers and locker climbs need prep finished before hunt; ground gingerbread ring favors crouch.",
+    winTips: ["IGN: gumdrop center and cake tree are high-traffic community picks.", "Lower metallic on glossy candy props (GameRant chocolate fountain note)."],
+  },
+  osaka: {
+    sources: [
+      { name: "IGN Osaka section", url: "https://www.ign.com/wikis/meccha-chameleon/All_Maps_in_Meccha_Chameleon:_Best_Hiding_Spots" },
+      { name: "ASCII.jp — Osaka map launch", url: "https://ascii.jp/elem/000/004/412/4412748/" },
+    ],
+    paintNote: "Mixed lantern reds and signage blues — commit to one surface, never mid-blend urban pixels.",
+    poseNote: "Truck bed needs shadow values; signage/octopus zone rewards vertical prep before hunt phase.",
+    winTips: ["Smallest official map — seekers re-check areas fast (IGN).", "JP community highlights Uni Douraku storefront disguises near shop clutter."],
+  },
 };
 
 const PAINT_SYSTEM_SOURCE: GuideSource = {

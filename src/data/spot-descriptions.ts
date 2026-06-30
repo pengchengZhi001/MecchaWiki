@@ -104,4 +104,22 @@ export const spotDescriptions: Record<string, string> = {
     "Pattern-painted mud floor with surrounding clutter — GameRant farm map pick.",
   "sugarland-gingerbread-circle":
     "Inside the gingerbread men ring on the floor — prop silhouettes break your outline.",
+  "sugarland-cake-tree":
+    "Central white cake and candy tree — hide under branches or mimic a strawberry topper.",
+  "sugarland-gumdrop-pile":
+    "Center gumdrop mountain cluster — shadow-side sampling beats flat pink fills.",
+  "sugarland-candy-houses":
+    "Corner candy houses beside chocolate hill — vertical roof hides or wedge between buildings.",
+  "sugarland-candy-locker":
+    "Tall candy locker next to the mountain — high angle or ground tuck at locker base.",
+  "osaka-truck-bed":
+    "Open-area truck bed or undercarriage — IGN top pick for shadow-matched urban hides.",
+  "osaka-signage-above":
+    "Overhead signage or octopus wall statue — Osaka's signature vertical hide zone.",
+  "osaka-shop-clutter":
+    "Open shop fronts with fans and crates — includes the community-favorite Uni Douraku storefront zone.",
+  "osaka-trash-corner":
+    "Plywood, crate, and trash-bag corner — trash-can mimic memes from day-one Osaka lobbies.",
+  "osaka-alleyway-nook":
+    "Narrow alley nook with mixed lantern light — smallest map, high seeker recycle rate.",
 };
