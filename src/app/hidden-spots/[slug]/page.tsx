@@ -7,7 +7,7 @@ import SpotImage from "@/components/SpotImage";
 import SpotRatingBadge from "@/components/SpotRatingBadge";
 import SpotRecommendations from "@/components/SpotRecommendations";
 import JsonLd from "@/components/JsonLd";
-import { SidebarAds } from "@/components/ads";
+import { SidebarAds, NativeBanner } from "@/components/ads";
 import { hiddenSpots, getSpotBySlug, getSpotRecommendations } from "@/data/hidden-spots";
 import { getSpotSeoContent } from "@/data/spot-seo-content";
 import { spotCategories } from "@/lib/site";
@@ -256,6 +256,7 @@ export default async function SpotDetailPage({ params }: Props) {
           </div>
 
           <SidebarAds className="order-1 lg:order-2">
+            <NativeBanner sidebar />
             <VotePanel spotName={spot.name} />
             <div className="rounded-xl border border-card-border bg-card p-5">
               <h3 className="text-sm font-semibold">Quick Links</h3>

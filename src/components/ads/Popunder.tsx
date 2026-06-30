@@ -1,27 +1,35 @@
-"use client";
+'use client';
+import { useEffect } from 'react';
 
-import { useEffect } from "react";
-
-const SCRIPT_ID = "popunder-adsterra";
-const SCRIPT_SRC =
-  "https://pl29908360.effectivecpmnetwork.com/b4/81/0f/b4810ff4487e3687e89055dbfa93af1b.js";
+const TIER1_COUNTRIES = ['US', 'CA', 'GB', 'FR', 'DE', 'AU'];
 
 export default function Popunder() {
   useEffect(() => {
-    // 防止重复加载
-    if (document.getElementById(SCRIPT_ID)) return;
-
-    const script = document.createElement("script");
-    script.id = SCRIPT_ID;
-    script.src = SCRIPT_SRC;
-    // 移除 async，保证弹窗正常唤起，不被浏览器拦截
-    document.body.appendChild(script);
-
-    return () => {
-      // 可选：组件卸载时清理脚本
-      const el = document.getElementById(SCRIPT_ID);
-      if (el) el.remove();
+    const loadScript = (src: string) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+      document.body.appendChild(script);
     };
+
+    const fetchCountry = async () => {
+      try {
+        const res = await fetch('https://ipapi.co/json/');
+        const data = await res.json();
+        const country = data.country_code;
+
+        if (TIER1_COUNTRIES.includes(country)) {
+          loadScript('https://pl29908360.effectivecpmnetwork.com/b4/81/0f/b4810ff4487e3687e89055dbfa93af1b.js');
+        }
+        loadScript('https://pl29903820.effectivecpmnetwork.com/40/0c/ef/400cef333756e0813e54102a8c7c1f87.js');
+      } catch {
+        // 接口打不开，只加载社交栏，不弹低价弹窗
+        loadScript('https://pl29903820.effectivecpmnetwork.com/40/0c/ef/400cef333756e0813e54102a8c7c1f87.js');
+      }
+    };
+
+    fetchCountry();
   }, []);
 
   return null;

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
+import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
   title: "Disclaimer",
@@ -14,6 +15,8 @@ export default function DisclaimerPage() {
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       <h1 className="text-3xl font-bold">Disclaimer</h1>
       <p className="mt-2 text-sm text-muted">Last updated: June 25, 2026</p>
+
+      <NativeBanner />
 
       <div className="mt-8 space-y-6 text-sm leading-relaxed text-foreground/80">
         <section>

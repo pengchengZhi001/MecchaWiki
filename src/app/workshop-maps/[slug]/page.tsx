@@ -15,7 +15,7 @@ import {
 } from "@/data/workshop-seo-content";
 import { getSteamSubscribeUrl } from "@/lib/steam-workshop";
 import { workshopCategories } from "@/lib/site";
-import { SidebarAds } from "@/components/ads";
+import { SidebarAds, NativeBanner } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -235,6 +235,7 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
           </div>
 
           <SidebarAds>
+            <NativeBanner sidebar />
             <div className="rounded-xl border border-card-border bg-card p-5">
               <h2 className="text-sm font-semibold text-muted">Steam Stats</h2>
               <dl className="mt-4 space-y-3">

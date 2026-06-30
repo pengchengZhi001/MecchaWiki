@@ -8,6 +8,7 @@ import WorkshopMapCard from "@/components/WorkshopMapCard";
 import { maps } from "@/data/maps";
 import { workshopMaps } from "@/data/workshop";
 import { getSpotCountByMap } from "@/data/hidden-spots";
+import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
   title: "Map Guides — Official & Workshop",
@@ -52,6 +53,8 @@ export default async function MapsPage({ searchParams }: Props) {
       />
 
       <MapsPageTabs active={tab} counts={counts} />
+
+      <NativeBanner />
 
       {showOfficial && (
         <section className="mt-10">

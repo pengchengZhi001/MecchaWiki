@@ -7,6 +7,7 @@ import DifficultyBadge from "@/components/DifficultyBadge";
 import SpotCard from "@/components/SpotCard";
 import { maps, getMapBySlug } from "@/data/maps";
 import { getSpotsByMap } from "@/data/hidden-spots";
+import { NativeBanner } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -64,6 +65,8 @@ export default async function MapDetailPage({ params }: Props) {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="space-y-12">
           <p className="max-w-3xl text-lg leading-relaxed text-foreground/80">{map.description}</p>
+
+          <NativeBanner />
 
           <div className="flex flex-wrap gap-2">
               {map.colorPalette.map((c) => (

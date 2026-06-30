@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import Card from "@/components/Card";
 import { helpTopics } from "@/data/help";
 import { helpTopicQuestionCount } from "@/data/help/types";
+import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
   title: "Help & FAQ — Real Player Questions Answered",
@@ -28,6 +29,9 @@ export default function HelpPage() {
         title="Help & FAQ"
         description="Answers to real player questions — download, rooms, controls, painting, connection fixes, seeker/hider tips, and viral moments. Every topic is searchable."
       />
+
+      <NativeBanner />
+
       <div className="grid gap-4 sm:grid-cols-2">
         {helpTopics.map((topic) => (
           <Card

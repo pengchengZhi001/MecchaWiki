@@ -3,6 +3,7 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 import PageHeader from "@/components/PageHeader";
 import { demandLibrary, demandByCategory } from "@/data/demand-library";
+import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
   title: "Content Demand Library — Player Questions We Track",
@@ -37,6 +38,8 @@ export default function DemandLibraryPage() {
         Workflow: check what players asked today → verify answers in discussions or
         official sources → publish or defer. No invented fixes.
       </p>
+
+      <NativeBanner />
 
       {[...byCategory.entries()].map(([category, entries]) => (
         <section key={category} className="mb-10">

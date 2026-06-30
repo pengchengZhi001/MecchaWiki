@@ -22,6 +22,7 @@ import {
 } from "@/data/home-daily-content";
 import { faqPageJsonLd, websiteJsonLd } from "@/lib/json-ld";
 import { siteConfig } from "@/lib/site";
+import { NativeBanner } from "@/components/ads";
 
 export default function HomePage() {
   const topSpots = getTopSpots(12);
@@ -117,6 +118,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <NativeBanner />
+      </div>
 
       {spotOfWeek && (
         <section className="border-b border-card-border">

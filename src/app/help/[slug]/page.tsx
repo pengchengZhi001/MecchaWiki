@@ -6,6 +6,7 @@ import JsonLd from "@/components/JsonLd";
 import QaImageBlock from "@/components/QaImageBlock";
 import { getHelpTopicBySlug, helpTopics } from "@/data/help";
 import { faqPageJsonLd, breadcrumbJsonLd, articleJsonLd } from "@/lib/json-ld";
+import { NativeBanner } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -116,6 +117,8 @@ export default async function HelpTopicPage({ params }: Props) {
               </div>
             )}
           </header>
+
+          <NativeBanner />
 
           <nav className="mt-8 rounded-xl border border-card-border bg-card p-5 lg:hidden">
             <p className="text-xs font-semibold uppercase tracking-wider text-muted">

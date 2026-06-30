@@ -3,6 +3,7 @@ import { createMetadata } from "@/lib/metadata";
 import PageHeader from "@/components/PageHeader";
 import Card from "@/components/Card";
 import { guides } from "@/data/guides";
+import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
   title: "Guides & Strategy",
@@ -19,6 +20,9 @@ export default function GuidesPage() {
         title="Guides & Strategy"
         description="Search-driven guides from real player questions — bug fixes, painting, why you keep getting found, map rankings, and private lobbies. See the demand library for our backlog."
       />
+
+      <NativeBanner />
+
       <div className="grid gap-4">
         {guides.map((guide) => (
           <Card

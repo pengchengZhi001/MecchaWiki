@@ -5,6 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
 import { guides, getGuideBySlug } from "@/data/guides";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
+import { NativeBanner } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -96,6 +97,8 @@ export default async function GuideDetailPage({ params }: Props) {
             <h1 className="mt-4 break-words text-3xl font-bold sm:text-4xl">{guide.title}</h1>
             <p className="mt-3 break-words text-lg text-muted">{guide.excerpt}</p>
           </header>
+
+          <NativeBanner />
 
           <nav className="mt-8 rounded-xl border border-card-border bg-card p-5 lg:hidden">
             <p className="text-xs font-semibold uppercase tracking-wider text-muted">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
+import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
   title: "Privacy Policy",
@@ -13,6 +14,8 @@ export default function PrivacyPage() {
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       <h1 className="text-3xl font-bold">Privacy Policy</h1>
       <p className="mt-2 text-sm text-muted">Last updated: June 25, 2026</p>
+
+      <NativeBanner />
 
       <div className="prose prose-invert mt-8 max-w-none space-y-6 text-sm leading-relaxed text-foreground/80">
         <section>

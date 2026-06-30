@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import WorkshopMapCard from "@/components/WorkshopMapCard";
 import { workshopMaps, getWorkshopByCategory } from "@/data/workshop";
 import { workshopCategories } from "@/lib/site";
+import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
   title: "Workshop Maps Database",
@@ -28,6 +29,8 @@ export default function WorkshopMapsPage() {
         title="Workshop Maps Database"
         description={`${curatedCount} curated Steam Workshop maps · Subscribe to download · Real preview images`}
       />
+
+      <NativeBanner />
 
       {workshopCategories.map((cat) => {
         const maps = getWorkshopByCategory(cat.id, 5);
