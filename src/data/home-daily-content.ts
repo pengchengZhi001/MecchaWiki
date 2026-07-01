@@ -48,9 +48,29 @@ const DAILY_TIPS = [
     sourceUrl: "https://mecchachameleon.net/tips-and-tricks/movement-tips",
   },
   {
-    tip: "EULA mismatch blocks friend lobbies — both players must accept current terms; restart game if the prompt was skipped (Steam Discussions).",
+    tip: "Hide as objects in clutter clusters — cow standees, hay piles, gumdrop mounds — not flat walls. Shape beats colour when seekers scan (Mobalytics + Games Fuze).",
+    source: "Games Fuze",
+    sourceUrl: "https://gamesfuze.com/guides/meccha-chameleon-best-hiding-spots/",
+  },
+  {
+    tip: "Study the results screen after each round — answer check reveals every hide and missed seeker zones (SlashSkill + mecchachameleonwiki.com).",
+    source: "SlashSkill",
+    sourceUrl: "https://www.slashskill.com/meccha-chameleon-answer-check-and-color-picker-explained-master-the-eyedropper-and-color-matching/",
+  },
+  {
+    tip: "v1.8.0 added 11 emotes to the R-key wheel — right/left click swaps wheel pages; survival poses still beat funny emotes in prep (GameRant + mecchachameleon.net).",
+    source: "mecchachameleon.net",
+    sourceUrl: "https://mecchachameleon.net/updates",
+  },
+  {
+    tip: "No texture brush yet — Steam threads ask for wallpaper/checkerboard copy; use eyedropper + pattern-aligned poses until patch notes add tools.",
     source: "Steam Discussions",
-    sourceUrl: "https://steamcommunity.com/app/4704690/discussions/0/571541539431442266/",
+    sourceUrl: "https://steamcommunity.com/app/4704690/discussions/0/571541539431537412/",
+  },
+  {
+    tip: "No native controller support — Steam Deck is Playable via Steam Input with trackpad-as-mouse for painting (SlashSkill).",
+    source: "SlashSkill",
+    sourceUrl: "https://www.slashskill.com/does-meccha-chameleon-have-controller-support-steam-deck-setup-and-why-keyboard-still-wins/",
   },
 ] as const;
 

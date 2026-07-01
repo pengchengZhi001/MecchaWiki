@@ -75,13 +75,32 @@ export const controlsTopic: HelpTopic = {
       ],
     },
     {
+      id: "invert-y-axis",
+      question: "Is there an invert Y axis / invert mouse option?",
+      tags: ["invert", "y axis", "mouse", "controls", "settings"],
+      answer: [
+        "Steam General Discussions thread \"Needs Invert Y Axis option Please\" (June 2026) reports no native invert-Y setting at community report time — multiple players say the game is difficult or unplayable without it after decades of inverted-mouse muscle memory.",
+        "A parallel \"Invert Mouse?\" thread includes players requesting a simple flip on raw Y input; replies note third-party mouse tools did not reliably fix in-game camera for everyone.",
+        "Check Esc → Settings → Controls after each patch for a newly added invert toggle — community pressure is high but verify in your build before assuming it exists. Until then, KB+M players who require invert Y may need to wait for a settings update or use private lobbies with patient friends while testing workarounds.",
+      ],
+      relatedLink: {
+        href: "https://steamcommunity.com/app/4704690/discussions/0/571541224066004561/",
+        label: "Steam Discussions — invert Y axis thread",
+      },
+    },
+    {
       id: "controller-support",
       question: "Does MECCHA CHAMELEON support controllers?",
-      tags: ["controller", "gamepad", "xbox controller"],
+      tags: ["controller", "gamepad", "xbox controller", "steam deck"],
       answer: [
-        "Steam does not list official full controller support. The game is built around keyboard and mouse — paint menus, eyedropper precision, and camera orbit expect a mouse.",
-        "Third-party tools can map gamepads manually, but competitive prep timing is harder without mouse aim for sampling. Stick to KB+M for serious sessions.",
+        "SlashSkill and NeonLightsMedia confirm no native gamepad support — Steam does not list controller compatibility and menus offer no gamepad toggle at community report time.",
+        "Workaround: Steam Input layouts map pad buttons to keyboard/mouse; Steam Deck is Playable (not Verified) when right trackpad emulates mouse for painting.",
+        "Competitive prep still favors KB+M or Deck trackpad — thumbstick painting struggles with eyedropper precision and brush resize. See our Controller Support guide for layout tips.",
       ],
+      relatedLink: {
+        href: "/guides/controller-support-guide",
+        label: "Controller & Steam Deck setup guide",
+      },
     },
     {
       id: "chat-voice",

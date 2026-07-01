@@ -117,6 +117,39 @@ export const paintingTopic: HelpTopic = {
       ],
     },
     {
+      id: "emote-wheel",
+      question: "How do I use emotes and the pose wheel?",
+      tags: ["emote", "pose wheel", "r key", "v1.8.0", "11 emotes"],
+      image: {
+        src: "/images/spots/mansion-horse-statue.jpg",
+        alt: "Mansion horse statue — prop mimic poses from the R wheel",
+        caption: "Hold R for the pose/emote wheel — pick shapes that match your hide geometry, not just funny emotes.",
+      },
+      answer: [
+        "Update v1.8.0 (June 24, 2026) added 11 emotes into the existing wheel per mecchachameleon.net — hold R, highlight a segment, release when blue (GameRant). Right/left click while holding R cycles additional wheel pages.",
+        "Survival prep still uses silhouette poses (wall-flat, crouch, floor profile); social emotes shine after elimination or in casual lobbies. Whistle/taunt is separate on the 1 key — see Game Modes guide for forced taunt.",
+        "If taunt works in lobby but not in-match, see Troubleshooting — Steam reported a June 2026 regression thread.",
+      ],
+      relatedLink: {
+        href: "/guides/emotes-poses-guide",
+        label: "Emotes & pose wheel guide",
+      },
+    },
+    {
+      id: "texture-brush-request",
+      question: "Can I copy wallpaper or checkerboard patterns onto my body?",
+      tags: ["texture brush", "pattern", "checkerboard", "wallpaper", "wishlist"],
+      answer: [
+        "Not as a one-click tool at community report time. Steam reviews and the \"Texture Brush Possibility?\" thread request texture brushes, pattern copy, spray alpha, and brush shapes — menu trailer art shows brick-textured characters players cannot fully replicate in matches.",
+        "Workaround today: Spacebar eyedropper plus manual brush strokes, HSV nudges, metallic/roughness, and pose alignment with grout/brick lines (see Color Matching guide). Brush resolution limits make tiny checkers pixelated — clutter clusters forgive rough strokes better than flat walls.",
+        "Track patch notes before assuming a wishlist feature shipped — our Pattern & Texture Wishlist guide separates requests from live tools.",
+      ],
+      relatedLink: {
+        href: "/guides/pattern-texture-wishlist-guide",
+        label: "Pattern tools — what works vs requests",
+      },
+    },
+    {
       id: "fix-bad-paint-mid-round",
       question: "Can I repaint after hunt phase starts?",
       tags: ["recolor", "emergency", "mid round"],

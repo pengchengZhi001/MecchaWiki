@@ -606,6 +606,19 @@ const MAP_FALLBACK: Record<
     poseNote: "Horizontal for beam gap, wall-flat for alcove; window zones punish movement.",
     winTips: ["Second floor gives Seekers height advantage.", "Window sill: sample shadow underside, not sunlit top brick."],
   },
+  "indoor-country": {
+    sources: [
+      { name: "TheGamer — Indoor Country (Jun 27, 2026)", url: "https://www.thegamer.com/mecca-chameleon-best-hiding-spots-guide/" },
+      { name: "IGN Indoor Country section", url: "https://www.ign.com/wikis/meccha-chameleon/All_Maps_in_Meccha_Chameleon:_Best_Hiding_Spots" },
+      { name: "GameRant Indoor Country spots", url: "https://gamerant.com/meccha-chameleon-best-hiding-spots/" },
+    ],
+    paintNote: "Hay gold, teal accent, and standee surfaces each need separate samples — one barn brown fill fails on prop mimics.",
+    poseNote: "Prop mimic on cow standees; crouch on fallen standees; ceiling balloons need prep finished before hunt.",
+    winTips: [
+      "TheGamer 6/27: cow standee and hay-barn dual-tone are top new-map picks.",
+      "IGN: pumpkin patch and hay pile draw seeker checks — rotate after one successful round.",
+    ],
+  },
   sugarland: {
     sources: [
       { name: "IGN Sugarland section", url: "https://www.ign.com/wikis/meccha-chameleon/All_Maps_in_Meccha_Chameleon:_Best_Hiding_Spots" },

@@ -99,9 +99,17 @@ export const spotDescriptions: Record<string, string> = {
   "indoor-country-barn-hay-edge":
     "Barn-side position shielded by hay bales, cow signs, or pumpkins — looks open but blocks foot traffic.",
   "indoor-country-balloon-cluster":
-    "Middle of a ground balloon pile — outer balloons hide your outline from perimeter scans.",
+    "Ceiling balloon row near the cloud backdrop — TheGamer 6/27 vertical hide on Indoor Country.",
   "indoor-country-mud-patch":
     "Pattern-painted mud floor with surrounding clutter — GameRant farm map pick.",
+  "indoor-country-cow-standee":
+    "Cow standee prop mimic — perch on a standee and sample its surface, not the barn behind you.",
+  "indoor-country-fallen-standee":
+    "Toppled standee crouch zone near horse props — low debris pose breaks the human read.",
+  "indoor-country-hay-bales-pile":
+    "Massive hay bale stack beside the barn — dual-tone barn panel + straw sampling required.",
+  "indoor-country-pumpkin-patch":
+    "Pumpkin patch corner with fence-line dirt — orange prop mimic or soil shadow pose.",
   "sugarland-gingerbread-circle":
     "Inside the gingerbread men ring on the floor — prop silhouettes break your outline.",
   "sugarland-cake-tree":

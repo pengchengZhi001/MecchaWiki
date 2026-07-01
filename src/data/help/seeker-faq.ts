@@ -80,6 +80,34 @@ export const seekerFaqTopic: HelpTopic = {
       ],
     },
     {
+      id: "black-paint-shadows",
+      question: "How do I find hiders who paint pure black in deep shadows?",
+      tags: ["black paint", "shadow", "illegal", "dark", "spray"],
+      answer: [
+        "Steam top reviews describe hiders wedging behind items with pure black paint as extremely hard to see — community calls these spots frustrating though not always geometry exploits.",
+        "Counter: crouch-sweep shadow gaps and shelf backs after chest-height passes; compare floor-line edges where black blobs meet props; listen for pose-break audio when you pressure the zone.",
+        "Hosts who want fewer shadow-camp rounds can enable hunter ammo limits (v2.3.0 optional setting) so seekers must confirm tells before tagging — see Hunter Ammo Limit guide.",
+      ],
+      relatedLink: {
+        href: "/guides/hunter-ammo-limit-guide",
+        label: "Hunter shot limit settings",
+      },
+    },
+    {
+      id: "ammo-limit-lobbies",
+      question: "Our lobby enabled hunter ammo limits — how should I seek?",
+      tags: ["ammo", "shot limit", "conservation", "tags"],
+      answer: [
+        "Treat every tag as a resource: value mismatch confirmation before click, not spray-and-pray on shadows.",
+        "Prioritize single-approach choke points (Sewer junction, Cold Storage aisle mouths) where one confirmed tag clears rotation paths.",
+        "Missed Spot data from the results screen shows which zones you skipped — pre-aim those next round instead of wasting shots on already-cleared rooms.",
+      ],
+      relatedLink: {
+        href: "/guides/results-screen-guide",
+        label: "Results screen & missed spots",
+      },
+    },
+    {
       id: "team-coordination",
       question: "How should our seeker team split rooms?",
       tags: ["team", "coordination", "sweep", "voice"],

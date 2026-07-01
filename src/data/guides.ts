@@ -24,6 +24,12 @@ import { gameModesGuide } from "./guides/game-modes-guide";
 import { publicLobbyGuide } from "./guides/public-lobby-guide";
 import { noclipExploitsGuide } from "./guides/noclip-exploits-guide";
 import { cheatersFairPlayGuide } from "./guides/cheaters-fair-play-guide";
+import { propMimicClusterGuide } from "./guides/prop-mimic-cluster-guide";
+import { hunterAmmoLimitGuide } from "./guides/hunter-ammo-limit-guide";
+import { resultsScreenGuide } from "./guides/results-screen-guide";
+import { emotesPosesGuide } from "./guides/emotes-poses-guide";
+import { patternTextureWishlistGuide } from "./guides/pattern-texture-wishlist-guide";
+import { controllerSupportGuide } from "./guides/controller-support-guide";
 
 export type { Guide } from "./guides/types";
 
@@ -108,6 +114,12 @@ export const guides: Guide[] = [
   publicLobbyGuide,
   noclipExploitsGuide,
   cheatersFairPlayGuide,
+  propMimicClusterGuide,
+  hunterAmmoLimitGuide,
+  resultsScreenGuide,
+  emotesPosesGuide,
+  patternTextureWishlistGuide,
+  controllerSupportGuide,
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

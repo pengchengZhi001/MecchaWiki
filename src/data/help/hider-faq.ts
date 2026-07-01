@@ -97,6 +97,25 @@ export const hiderFaqTopic: HelpTopic = {
       },
     },
     {
+      id: "prop-mimic-cluster",
+      question: "Should I hide flat on a wall or mimic a prop in a cluster?",
+      tags: ["prop mimic", "cluster", "cow", "object", "clutter"],
+      image: {
+        src: "/images/spots/indoor-country-cow-standee.png",
+        alt: "Indoor Country cow standee prop mimic — community-rated cluster hide",
+        caption: "Games Fuze: cow cutout mimic with black-and-white blocks beats flat barn walls when pose matches the standee curve.",
+      },
+      answer: [
+        "Mobalytics and 9Puz recommend hiding as an object inside visual clutter, not flat against open walls — clusters forgive imperfect hue when silhouette merges with props.",
+        "Games Fuze ranks Indoor Country cow cutouts among the strongest mimics: lie-down on standee, sample standee surface, paint large black-and-white patches matching the cutout — not barn wall behind you.",
+        "mecchachameleongame.org cluster tip: groups of identical objects (hay, balloons, gumdrops) beat solo props because seekers compare duplicates for outline errors.",
+      ],
+      relatedLink: {
+        href: "/guides/prop-mimic-cluster-guide",
+        label: "Prop mimic & cluster hiding guide",
+      },
+    },
+    {
       id: "mix-up-spots",
       question: "Should I reuse the same hiding spot every round?",
       tags: ["mix up", "habits", "rotation", "meta"],
@@ -122,16 +141,16 @@ export const hiderFaqTopic: HelpTopic = {
     },
     {
       id: "round-end-gallery",
-      question: "Can everyone see my hide spot when I get eliminated?",
-      tags: ["elimination", "reveal", "gallery", "round end", "spot"],
+      question: "Can everyone see my hide spot when the round ends?",
+      tags: ["elimination", "reveal", "gallery", "round end", "spot", "results screen", "answer check"],
       answer: [
-        "Steam reviews request a round-end gallery or elimination snapshot so all players — not just the tagging seeker — can appreciate clever hides. At community report time, only the seeker who tags you typically sees the full reveal in live play.",
-        "Use free camera (4 key) after elimination to spectate remaining hiders and learn their setups for next round — documented in our Controls help.",
-        "Streamers and clip channels fill the gap: iconic moments on this site link verified viral hides you can study between matches.",
+        "SlashSkill and mecchachameleonwiki.com document a full results screen — the answer check — after the seeking phase ends: every hider's final position, paint colour, and pose are revealed to the lobby, often with a Missed Spot ranking for seekers (v1.2.0+, toggleable in v1.2.1–v1.2.2).",
+        "Steam reviews still request mid-round elimination snapshots so players tagged early see the same appreciation beat; until that ships, use free camera (4 key) after elimination to spectate remaining hiders — documented in Controls help.",
+        "See our Results Screen guide for how to turn reveals into a practice loop without spoiling the next round's meta.",
       ],
       relatedLink: {
-        href: "/help/iconic-moments",
-        label: "Iconic moments & viral clips",
+        href: "/guides/results-screen-guide",
+        label: "Results screen & answer check guide",
       },
     },
     {

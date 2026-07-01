@@ -150,6 +150,34 @@ export const troubleshootingTopic: HelpTopic = {
       ],
     },
     {
+      id: "taunt-not-working",
+      question: "Whistle / taunt works in lobby but not on the map",
+      tags: ["taunt", "whistle", "not working", "bug", "emote"],
+      answer: [
+        "Steam thread \"TAUNT IS NOT WORKING!\" (June 23, 2026) reports widespread issues where manual taunt/whistle worked in the lobby but failed during live matches — dozens of players confirmed the same build-day regression.",
+        "Community workaround at report time: hosts increased seeking time or disabled forced-taunt reliance until patches landed; verify your client version against friends before blaming individual keybinds.",
+        "After elimination, whistle reverts to spectator taunt only (allthings.how) — during hunt phase, confirm Esc → Settings → Controls still maps the whistle key (often 1) and that forced taunt host settings match your lobby rules.",
+      ],
+      relatedLink: {
+        href: "https://steamcommunity.com/app/4704690/discussions/0/571541826108933277/",
+        label: "Steam Discussions — taunt not working thread",
+      },
+    },
+    {
+      id: "hunter-black-void",
+      question: "Seeker sees a black void — hiders floating in empty space",
+      tags: ["black void", "map load", "workshop", "seeker", "glitch"],
+      answer: [
+        "Steam cheating threads note an alternative explanation for \"ESP\" behaviour: on custom maps the hunter's stage sometimes fails to load, leaving a black void while hider models appear scattered — cross-map tags then look like hacks but may be a load desync.",
+        "Fix path: every player subscribes to the workshop map, restarts the game after download completes, host tests with an official map (Mansion) first, then re-selects the custom map with a fresh room.",
+        "If only the host sees void while hiders play normally, host should verify files, lower graphics preset once, and recreate lobby — do not report players for cheating until load parity is confirmed.",
+      ],
+      relatedLink: {
+        href: "/help/troubleshooting#workshop-map-wont-load",
+        label: "Workshop map won't load checklist",
+      },
+    },
+    {
       id: "desync-lobby",
       question: "Everyone is standing still but the round feels desynced",
       tags: ["desync", "lag", "rubber band"],

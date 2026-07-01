@@ -114,6 +114,34 @@ export const multiplayerTopic: HelpTopic = {
       },
     },
     {
+      id: "host-kick-players",
+      question: "How does the host kick AFK or disruptive players?",
+      tags: ["kick", "host", "afk", "ban", "moderation"],
+      answer: [
+        "Steam thread \"Add kick option for owner of the server\" was answered by community members: press Esc or Tab to open the player list — a kick button appears next to player names for the host.",
+        "Kicks are session-level at community report time — kicked players can rejoin the same public server unless you change password or recreate the room. See Public Lobby Guide for password rotation after toxic kicks.",
+        "v1.7.0 added in-game reporting per patch coverage; use report for repeat offenders and combine with private passwords for friend groups. Vote-kick for non-hosts is still a frequent Steam review request, not a documented default feature.",
+      ],
+      relatedLink: {
+        href: "/guides/public-lobby-guide",
+        label: "Public lobby moderation guide",
+      },
+    },
+    {
+      id: "hunter-ammo-limit",
+      question: "Can hosts limit hunter shots / stop random spraying?",
+      tags: ["ammo", "shot limit", "hunter", "spray", "lobby settings"],
+      answer: [
+        "Steam Discussions thread \"Unlimited Hunter firing should be LIMITED\" argues random seeker tags hurt hiders; replies favor an optional setting rather than a forced global cap.",
+        "Community reports describe update v2.3.0 adding optional hunter ammo limits in Configure Map (blue lobby button → map configuration → ammo limit at bottom of left column).",
+        "Hosts enable limits for teaching lobbies; keep unlimited for chaos rooms. See our Hunter Ammo Limit guide for Prop Hunt comparisons and when to toggle the setting.",
+      ],
+      relatedLink: {
+        href: "/guides/hunter-ammo-limit-guide",
+        label: "Hunter ammo limit guide",
+      },
+    },
+    {
       id: "game-modes-host",
       question: "Which game mode should the host pick?",
       tags: ["basic", "infection", "double", "game mode"],

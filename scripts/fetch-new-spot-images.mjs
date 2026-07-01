@@ -12,6 +12,12 @@ const IGN = "https://oyster.ignimgs.com/mediawiki/apis.ign.com/meccha-chameleon"
 
 /** slug → remote image URL (each URL must be unique content) */
 const NEW_SPOT_SOURCES = {
+  // ── Indoor Country (TheGamer 6/27 + IGN) ──
+  "indoor-country-cow-standee": `${IGN}/2/2d/Country_Cow_Corner_Chameleon.png`,
+  "indoor-country-fallen-standee": `${IGN}/5/58/Country_Horses_Chameleon.png`,
+  "indoor-country-hay-bales-pile": `${IGN}/a/aa/Country_Hay_Bales_Chameleon.png`,
+  "indoor-country-pumpkin-patch": `${IGN}/b/bf/Country_Pumpkin_Chameleon.png`,
+
   // ── Osaka (IGN v1.7.0) ──
   "osaka-truck-bed": `${IGN}/7/74/Osaka_Open_Area_Chameleon.png`,
   "osaka-signage-above": `${IGN}/5/5c/Osaka_Above_Chameleon.png`,

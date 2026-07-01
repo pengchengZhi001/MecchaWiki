@@ -18,6 +18,10 @@ const sectionLinks: Record<string, { href: string; label: string }> = {
     href: "/workshop-maps",
     label: "Workshop map directory",
   },
+  "fair-play-community-concerns": {
+    href: "/demand-library",
+    label: "Player demand library",
+  },
 };
 
 function ChevronIcon() {
