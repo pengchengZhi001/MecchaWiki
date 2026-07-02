@@ -9,16 +9,17 @@ import { hiddenSpots } from "@/data/hidden-spots";
 import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
-  title: "Hidden Spots Database",
+  title: "Best Meccha Chameleon Hiding Spots — Full Database",
   description:
-    "Meccha Chameleon hiding spot database. Best, funniest, and expert spots — curated from TheGamer, IGN, and community guides with editorial ratings.",
+    "Best Meccha Chameleon hiding spots database: Mansion, Sewer, Backrooms, and more — curated from TheGamer, IGN, and community guides with survival ratings.",
   path: "/hidden-spots",
   keywords: [
+    "best hiding spots",
     "hiding spots",
-    "best hiding spots mansion",
-    "funniest hiding spots",
-    "impossible hiding spots",
-    "meccha chameleon guides",
+    "Mansion hiding spots",
+    "Sewer hiding spots",
+    "Mecha Chameleon",
+    "prop hunt",
   ],
 });
 

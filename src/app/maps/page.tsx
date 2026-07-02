@@ -11,11 +11,18 @@ import { getSpotCountByMap } from "@/data/hidden-spots";
 import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
-  title: "Map Guides — Official & Workshop",
+  title: "Meccha Chameleon Maps — Best Hiding Spots by Map",
   description:
-    "All Meccha Chameleon maps: six official guides plus 29+ Steam Workshop community maps with subscribe links, hiding tips, and difficulty ratings.",
+    "All Meccha Chameleon maps with best hiding spots: official map guides plus Steam Workshop community maps with subscribe links and difficulty ratings.",
   path: "/maps",
-  keywords: ["maps", "workshop maps", "official maps", "Mansion", "Minecraft", "map guide"],
+  keywords: [
+    "maps",
+    "all maps",
+    "hiding spots",
+    "Mansion hiding spots",
+    "workshop maps",
+    "map guide",
+  ],
 });
 
 const difficultyColors: Record<string, string> = {

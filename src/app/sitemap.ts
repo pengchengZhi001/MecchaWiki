@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/maps",
     "/guides",
     "/help",
-    "/demand-library",
   ];
 
   return [
@@ -46,9 +45,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...guides.map((g) => ({
       url: `${siteConfig.url}/guides/${g.slug}`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-07-02"),
       changeFrequency: "monthly" as const,
-      priority: 0.5,
+      priority: g.slug === "how-to-play" || g.slug === "tips-and-tricks" ? 0.85 : 0.5,
     })),
     ...helpTopics.map((t) => ({
       url: `${siteConfig.url}/help/${t.slug}`,

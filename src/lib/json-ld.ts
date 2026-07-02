@@ -38,20 +38,34 @@ export function articleJsonLd({
   title,
   description,
   path,
+  datePublished,
   dateModified,
+  image,
 }: {
   title: string;
   description: string;
   path: string;
+  datePublished?: string;
   dateModified?: string;
+  image?: string;
 }) {
+  const url = `${siteConfig.url}${path}`;
+  const imageUrl = image
+    ? image.startsWith("http")
+      ? image
+      : `${siteConfig.url}${image}`
+    : undefined;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
-    url: `${siteConfig.url}${path}`,
-    dateModified: dateModified ?? new Date().toISOString().split("T")[0],
+    url,
+    mainEntityOfPage: url,
+    ...(datePublished ? { datePublished } : {}),
+    dateModified: dateModified ?? datePublished ?? new Date().toISOString().split("T")[0],
+    ...(imageUrl ? { image: imageUrl } : {}),
     author: {
       "@type": "Organization",
       name: siteConfig.author,

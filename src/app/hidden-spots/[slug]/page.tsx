@@ -27,10 +27,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const seo = getSpotSeoContent(spot);
 
   return createMetadata({
-    title: `${spot.name} — ${spot.map} Hiding Spot Guide`,
-    description: `${spot.name} on ${spot.map}: guide rating ${spot.survivalRate}/100. ${seo.whyItWorks.slice(0, 140)}…`,
+    title: `${spot.name} — Best ${spot.map} Hiding Spot | Meccha Chameleon`,
+    description: `${spot.name} on ${spot.map} in Meccha Chameleon: guide rating ${spot.survivalRate}/100. ${seo.whyItWorks.slice(0, 120)}…`,
     path: `/hidden-spots/${slug}`,
-    keywords: [spot.name, spot.map, "meccha chameleon hiding spot", "prop hunt", spot.category],
+    keywords: [
+      spot.name,
+      spot.map,
+      `${spot.map} hiding spots`,
+      "Meccha Chameleon hiding spot",
+      "best hiding spots",
+      spot.category,
+    ],
     image: spot.imageUrl.startsWith("/") ? spot.imageUrl.split("?")[0] : undefined,
     imageAlt: `${spot.name} on ${spot.map} — Meccha Wiki guide`,
   });

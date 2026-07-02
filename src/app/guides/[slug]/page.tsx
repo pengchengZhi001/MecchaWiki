@@ -22,7 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: guide.title,
     description: guide.excerpt,
     path: `/guides/${slug}`,
-    keywords: [guide.category, "guide", "Meccha Chameleon"],
+    keywords: [
+      guide.category,
+      "guide",
+      "Meccha Chameleon",
+      ...(guide.seoKeywords ?? []),
+    ],
   });
 }
 
@@ -56,6 +61,7 @@ export default async function GuideDetailPage({ params }: Props) {
             title: guide.title,
             description: guide.excerpt,
             path: `/guides/${slug}`,
+            datePublished: "2026-07-02",
           }),
         ]}
       />

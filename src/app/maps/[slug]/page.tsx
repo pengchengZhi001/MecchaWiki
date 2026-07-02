@@ -5,8 +5,10 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 import DifficultyBadge from "@/components/DifficultyBadge";
 import SpotCard from "@/components/SpotCard";
+import JsonLd from "@/components/JsonLd";
 import { maps, getMapBySlug } from "@/data/maps";
 import { getSpotsByMap } from "@/data/hidden-spots";
+import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
 import { NativeBanner } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -21,10 +23,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!map) return {};
 
   return createMetadata({
-    title: `${map.name} Map Guide — Best Hiding Spots`,
-    description: map.description,
+    title: `${map.name} Best Hiding Spots in Meccha Chameleon — Map Guide`,
+    description: `${map.name} map guide for Meccha Chameleon: ${map.description}`,
     path: `/maps/${slug}`,
-    keywords: [map.name, map.difficulty, "map guide", "hiding spots"],
+    keywords: [
+      map.name,
+      `${map.name} hiding spots`,
+      "Meccha Chameleon map guide",
+      map.difficulty,
+      "best hiding spots",
+    ],
+    image: map.imageUrl,
+    imageAlt: `${map.name} — Meccha Chameleon map screenshot`,
   });
 }
 
@@ -37,6 +47,22 @@ export default async function MapDetailPage({ params }: Props) {
 
   return (
     <article>
+      <JsonLd
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Maps", path: "/maps" },
+            { name: map.name, path: `/maps/${slug}` },
+          ]),
+          articleJsonLd({
+            title: `${map.name} Best Hiding Spots in Meccha Chameleon`,
+            description: map.description,
+            path: `/maps/${slug}`,
+            datePublished: "2026-06-20",
+            image: map.imageUrl,
+          }),
+        ]}
+      />
       <div className="relative aspect-[16/9] overflow-hidden border-b border-card-border sm:aspect-[21/9]">
         <Image
           src={map.imageUrl}
@@ -56,7 +82,10 @@ export default async function MapDetailPage({ params }: Props) {
               <DifficultyBadge difficulty={map.difficulty} />
               <span className="text-sm text-muted">{map.playerCount}</span>
             </div>
-            <h1 className="mt-3 break-words text-2xl font-bold sm:text-3xl md:text-4xl">{map.name}</h1>
+            <h1 className="mt-3 break-words text-2xl font-bold sm:text-3xl md:text-4xl">
+              {map.name} — Best Hiding Spots
+            </h1>
+            <p className="mt-1 text-sm text-muted">Meccha Chameleon map guide</p>
             <p className="mt-2 text-base text-muted sm:text-lg">{map.tagline}</p>
           </div>
         </div>

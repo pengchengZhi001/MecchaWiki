@@ -6,11 +6,18 @@ import { guides } from "@/data/guides";
 import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
-  title: "Guides & Strategy",
+  title: "Meccha Chameleon Guides — How to Play, Tips & Strategy",
   description:
-    "In-depth Meccha Chameleon guides: how to hide better, color matching, seeker strategies, map tactics, and workshop tips.",
+    "Meccha Chameleon guides: how to play, tips and tricks, controls, hiding spots, seeker strategies, patch notes, and workshop tips.",
   path: "/guides",
-  keywords: ["guide", "beginner", "hiding tips", "seeker", "strategy"],
+  keywords: [
+    "how to play",
+    "tips and tricks",
+    "controls",
+    "guide",
+    "beginner",
+    "Mecha Chameleon",
+  ],
 });
 
 export default function GuidesPage() {

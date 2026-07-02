@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { createMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/JsonLd";
 import WorkshopMapCard from "@/components/WorkshopMapCard";
 import {
   workshopMaps,
@@ -15,6 +16,7 @@ import {
 } from "@/data/workshop-seo-content";
 import { getSteamSubscribeUrl } from "@/lib/steam-workshop";
 import { workshopCategories } from "@/lib/site";
+import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
 import { SidebarAds, NativeBanner } from "@/components/ads";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -31,10 +33,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const seo = getWorkshopSeoContent(map);
 
   return createMetadata({
-    title: `${map.title} — Workshop Map Guide`,
+    title: `${map.title} — Meccha Chameleon Workshop Map Guide`,
     description: seo.overview.slice(0, 160),
     path: `/workshop-maps/${slug}`,
-    keywords: [map.title, "workshop", "workshop map guide", ...map.tags],
+    keywords: [
+      map.title,
+      "Meccha Chameleon workshop",
+      "workshop map",
+      "custom map",
+      ...map.tags,
+    ],
+    image: map.imageUrl.startsWith("/") ? map.imageUrl : undefined,
+    imageAlt: `${map.title} — Meccha Chameleon Steam Workshop map`,
   });
 }
 
@@ -65,6 +75,22 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
 
   return (
     <article>
+      <JsonLd
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Workshop Maps", path: "/workshop-maps" },
+            { name: map.title, path: `/workshop-maps/${slug}` },
+          ]),
+          articleJsonLd({
+            title: `${map.title} — Meccha Chameleon Workshop Map`,
+            description: seo.overview.slice(0, 200),
+            path: `/workshop-maps/${slug}`,
+            datePublished: map.submittedAt,
+            image: map.imageUrl,
+          }),
+        ]}
+      />
       <div className="relative aspect-[16/9] overflow-hidden border-b border-card-border sm:aspect-[21/9]">
         <Image
           src={map.imageUrl}

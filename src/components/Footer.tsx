@@ -10,10 +10,10 @@ const popularMaps = [
 ] as const;
 
 const topGuides = [
+  { href: "/guides/how-to-play", label: "How to Play" },
+  { href: "/guides/tips-and-tricks", label: "Tips & Tricks" },
   { href: "/hidden-spots?category=best", label: "Best Hiding Spots" },
-  { href: "/guides/color-matching", label: "Color Guide" },
-  { href: "/guides/beginner-basics", label: "Beginner Guide" },
-  { href: "/workshop-maps", label: "Workshop Maps" },
+  { href: "/guides/controls-guide", label: "Controls Guide" },
 ] as const;
 
 const legalLinks = [

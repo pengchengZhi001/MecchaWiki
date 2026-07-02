@@ -16,6 +16,8 @@ export type Guide = {
   readTime: string;
   excerpt: string;
   content: GuideSection[];
+  /** Extra search terms for page metadata — beyond default site keywords. */
+  seoKeywords?: string[];
   /** External references used to write this guide — no unsourced claims. */
   sources?: GuideSource[];
 };

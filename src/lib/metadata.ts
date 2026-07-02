@@ -10,6 +10,7 @@ type PageMeta = {
   keywords?: string[];
   image?: string;
   imageAlt?: string;
+  noIndex?: boolean;
 };
 
 export function createMetadata({
@@ -19,6 +20,7 @@ export function createMetadata({
   keywords = [],
   image = DEFAULT_OG_IMAGE,
   imageAlt = siteConfig.tagline,
+  noIndex = false,
 }: PageMeta): Metadata {
   const url = `${siteConfig.url}${path}`;
   const fullTitle =
@@ -57,9 +59,8 @@ export function createMetadata({
       description,
       images: [image],
     },
-    robots: {
-      index: true,
-      follow: true,
-    },
+    robots: noIndex
+      ? { index: false, follow: false }
+      : { index: true, follow: true },
   };
 }

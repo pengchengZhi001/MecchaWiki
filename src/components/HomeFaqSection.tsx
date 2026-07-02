@@ -3,24 +3,24 @@ import { homeSeoSections } from "@/data/home-seo-content";
 
 const sectionLinks: Record<string, { href: string; label: string }> = {
   "what-is-mecha-chameleon": {
-    href: "/guides/beginner-basics",
-    label: "Full beginner guide",
+    href: "/guides/how-to-play",
+    label: "How to play guide",
   },
   "best-hiding-spots-guide": {
     href: "/hidden-spots",
     label: "Browse hiding spots",
   },
   "beginner-tips": {
-    href: "/guides/color-matching",
-    label: "Color matching guide",
+    href: "/guides/tips-and-tricks",
+    label: "Tips and tricks",
   },
   "workshop-maps-explained": {
     href: "/workshop-maps",
     label: "Workshop map directory",
   },
   "fair-play-community-concerns": {
-    href: "/demand-library",
-    label: "Player demand library",
+    href: "/guides/updates",
+    label: "Updates & patch notes",
   },
 };
 

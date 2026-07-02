@@ -11,6 +11,7 @@ export const metadata: Metadata = createMetadata({
     "Search-driven backlog for Meccha Wiki: Steam Discussions, Reddit, and review themes mapped to pages — one player question, one article.",
   path: "/demand-library",
   keywords: ["content plan", "faq backlog", "player questions", "search demand"],
+  noIndex: true,
 });
 
 const statusLabel: Record<string, { text: string; className: string }> = {

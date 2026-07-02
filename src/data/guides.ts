@@ -30,10 +30,24 @@ import { resultsScreenGuide } from "./guides/results-screen-guide";
 import { emotesPosesGuide } from "./guides/emotes-poses-guide";
 import { patternTextureWishlistGuide } from "./guides/pattern-texture-wishlist-guide";
 import { controllerSupportGuide } from "./guides/controller-support-guide";
+import { howToPlayGuide } from "./guides/how-to-play";
+import { tipsAndTricksGuide } from "./guides/tips-and-tricks";
+import { controlsGuide } from "./guides/controls-guide";
+import { trelloGuide } from "./guides/trello-guide";
+import { discordCommunityGuide } from "./guides/discord-community-guide";
+import { worthItBuyersGuide } from "./guides/worth-it-buyers-guide";
+import { updatesGuide } from "./guides/updates-guide";
 
 export type { Guide } from "./guides/types";
 
 export const guides: Guide[] = [
+  howToPlayGuide,
+  tipsAndTricksGuide,
+  controlsGuide,
+  updatesGuide,
+  worthItBuyersGuide,
+  trelloGuide,
+  discordCommunityGuide,
   {
     slug: "beginner-basics",
     title: "How To Hide Better In Meccha Chameleon",
