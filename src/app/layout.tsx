@@ -49,6 +49,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967304417583767"
           crossOrigin="anonymous"
         />
+        <Autotag />
       </head>
       <body className="safe-area-pb flex min-h-full flex-col">
         <Header />
@@ -56,7 +57,6 @@ export default function RootLayout({
         <Popunder />
         <Footer />
         <Analytics />
-        <Autotag />
       </body>
     </html>
   );
