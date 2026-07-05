@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import WorkshopMapCard from "@/components/WorkshopMapCard";
 import { workshopMaps, getCuratedWorkshopMaps, getWorkshopByCategory } from "@/data/workshop";
 import { workshopCategories } from "@/lib/site";
+import { getLaunchMaps } from "@/lib/workshop-launch";
 import { NativeBanner } from "@/components/ads";
 
 export const metadata: Metadata = createMetadata({
@@ -23,6 +24,7 @@ export const metadata: Metadata = createMetadata({
 export default function WorkshopMapsPage() {
   const curatedCount = workshopMaps.filter((m) => m.curated).length;
   const topBySubs = getCuratedWorkshopMaps().slice(0, 8);
+  const launchMaps = getLaunchMaps(workshopMaps, 8);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -32,6 +34,25 @@ export default function WorkshopMapsPage() {
       />
 
       <NativeBanner />
+
+      {launchMaps.length > 0 && (
+        <section id="launch-guides" className="mb-16 scroll-mt-24">
+          <div className="mb-2 flex items-center gap-2">
+            <span className="rounded-full bg-purple/10 px-2.5 py-0.5 text-xs font-semibold text-purple ring-1 ring-purple/30">
+              Launch Guides
+            </span>
+          </div>
+          <h2 className="text-xl font-bold">New This Week — First-Week Hiding Spot Guides</h2>
+          <p className="mt-1 text-sm text-muted">
+            Fresh workshop drops with scout checklists — publish within 48h of Steam listing for best SEO
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {launchMaps.map((map) => (
+              <WorkshopMapCard key={map.id} map={map} showLaunchBadge showSubscriptions />
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mb-16">
         <h2 className="text-xl font-bold">Most Subscribed</h2>

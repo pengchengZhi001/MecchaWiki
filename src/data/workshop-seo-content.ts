@@ -1,5 +1,7 @@
 import type { WorkshopMap } from "./workshop";
 import { generateWorkshopSeoFromMap } from "./workshop-seo-generator";
+import { enrichLaunchGuide } from "@/lib/workshop-launch";
+import { LAUNCH_CONTENT } from "./workshop-launch-content";
 
 export type WorkshopSeoContent = {
   tagline: string;
@@ -13,6 +15,10 @@ export type WorkshopSeoContent = {
   lobbySize: string;
   seekerLean: "Hider-favored" | "Balanced" | "Seeker-favored";
   comments: { author: string; text: string }[];
+  /** First-week launch guide fields — set by enrichLaunchGuide */
+  isLaunchGuide?: boolean;
+  firstWeekChecklist?: string[];
+  scoutPriorities?: string[];
 };
 
 const CONTENT: Record<string, WorkshopSeoContent> = {
@@ -739,9 +745,10 @@ const CONTENT: Record<string, WorkshopSeoContent> = {
 };
 
 export function getWorkshopSeoContent(map: WorkshopMap): WorkshopSeoContent {
-  const content = CONTENT[map.slug];
-  if (content) return content;
-  return generateWorkshopSeoFromMap(map);
+  const manual = CONTENT[map.slug];
+  const launch = LAUNCH_CONTENT[map.slug];
+  const base = manual ?? launch ?? generateWorkshopSeoFromMap(map);
+  return enrichLaunchGuide(base, map);
 }
 
 export function formatWorkshopStat(n: number): string {

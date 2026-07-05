@@ -9,7 +9,7 @@ import HomeFaqSection from "@/components/HomeFaqSection";
 import SpotRatingBadge from "@/components/SpotRatingBadge";
 import JsonLd from "@/components/JsonLd";
 import { getTopSpots } from "@/data/hidden-spots";
-import { getPopularWorkshopMaps } from "@/data/workshop";
+import { getPopularWorkshopMaps, workshopMaps } from "@/data/workshop";
 import { guides } from "@/data/guides";
 import { homeSeoSections } from "@/data/home-seo-content";
 import {
@@ -23,6 +23,8 @@ import {
 import { faqPageJsonLd, websiteJsonLd } from "@/lib/json-ld";
 import { siteConfig } from "@/lib/site";
 import { NativeBanner } from "@/components/ads";
+import PatchAlertBanner from "@/components/PatchAlertBanner";
+import { getLaunchMaps } from "@/lib/workshop-launch";
 
 export default function HomePage() {
   const topSpots = getTopSpots(12);
@@ -37,6 +39,7 @@ export default function HomePage() {
   const bestThisWeek = getBestSpotsThisWeek(6);
   const mostSuccessful = getMostSuccessfulSpots(6);
   const newDiscoveries = getNewCommunityDiscoveries(6);
+  const launchMaps = getLaunchMaps(workshopMaps, 4);
 
   const faqJsonLd = faqPageJsonLd(
     homeSeoSections.map((section) => ({
@@ -48,6 +51,7 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={[websiteJsonLd(), faqJsonLd]} />
+      <PatchAlertBanner />
       <section className="relative overflow-hidden border-b border-card-border py-12 sm:py-20">
         <div className="grid-bg absolute inset-0" />
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent" />
@@ -92,6 +96,34 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {launchMaps.length > 0 && (
+        <section className="border-b border-purple/20 bg-purple/5">
+          <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+            <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="rounded-full bg-purple/10 px-2.5 py-0.5 text-xs font-semibold text-purple ring-1 ring-purple/30">
+                    Launch Guides
+                  </span>
+                </div>
+                <h2 className="text-2xl font-bold">New Workshop Maps — First-Week Guides</h2>
+                <p className="mt-1 text-sm text-muted">
+                  Scout new Steam Workshop drops before seeker meta solidifies
+                </p>
+              </div>
+              <Link href="/workshop-maps#launch-guides" className="text-sm font-medium text-accent hover:underline">
+                All launch guides →
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {launchMaps.map((map) => (
+                <WorkshopMapCard key={map.id} map={map} showLaunchBadge />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="border-b border-card-border bg-surface/40">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">

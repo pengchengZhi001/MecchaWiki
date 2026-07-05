@@ -37,6 +37,8 @@ import { trelloGuide } from "./guides/trello-guide";
 import { discordCommunityGuide } from "./guides/discord-community-guide";
 import { worthItBuyersGuide } from "./guides/worth-it-buyers-guide";
 import { updatesGuide } from "./guides/updates-guide";
+import { patchFixesHubGuide } from "./guides/patch-fixes-hub";
+import { problemsAfterUpdateGuide } from "./guides/problems-after-update";
 
 export type { Guide } from "./guides/types";
 
@@ -45,6 +47,8 @@ export const guides: Guide[] = [
   tipsAndTricksGuide,
   controlsGuide,
   updatesGuide,
+  patchFixesHubGuide,
+  problemsAfterUpdateGuide,
   worthItBuyersGuide,
   trelloGuide,
   discordCommunityGuide,

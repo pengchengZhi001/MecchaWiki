@@ -2,18 +2,24 @@ import Link from "next/link";
 import Image from "next/image";
 import type { WorkshopMap } from "@/data/workshop";
 import { formatWorkshopSubscriptions } from "@/data/workshop";
+import { isLaunchMap } from "@/lib/workshop-launch";
+import { getWorkshopImageUrl, isLocalWorkshopImage } from "@/lib/workshop-images";
 
 type WorkshopMapCardProps = {
   map: WorkshopMap;
   rank?: number;
   showSubscriptions?: boolean;
+  showLaunchBadge?: boolean;
 };
 
 export default function WorkshopMapCard({
   map,
   rank,
   showSubscriptions = false,
+  showLaunchBadge = false,
 }: WorkshopMapCardProps) {
+  const launch = showLaunchBadge || isLaunchMap(map);
+  const imageSrc = getWorkshopImageUrl(map);
   return (
     <Link
       href={`/workshop-maps/${map.slug}`}
@@ -21,17 +27,23 @@ export default function WorkshopMapCard({
     >
       <div className="relative aspect-video overflow-hidden">
         <Image
-          src={map.imageUrl}
+          src={imageSrc}
           alt={`${map.title} workshop map`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover"
+          unoptimized={isLocalWorkshopImage(imageSrc)}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         <div className="absolute left-3 top-3 flex flex-wrap gap-2">
           {rank != null && (
             <span className="rounded-lg bg-accent/90 px-2 py-1 text-xs font-bold text-background">
               #{rank}
+            </span>
+          )}
+          {launch && (
+            <span className="rounded-lg bg-purple/90 px-2 py-1 text-xs font-bold text-white">
+              Launch
             </span>
           )}
           <span className="rounded-lg bg-black/50 px-2 py-1 text-xs font-medium text-white/90 backdrop-blur-sm">

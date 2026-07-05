@@ -83,7 +83,7 @@ export const updatesGuide: Guide = {
     {
       id: "after-update",
       heading: "Checklist After Every Update",
-      body: "Step one: Steam → Downloads → confirm game updated. Step two: restart game and Steam. Step three: recreate private room; re-invite friends. Step four: re-test three favorite database spots on current map. Step five: read Steam News for map or control changes. Step six: update workshop subscriptions if creators patched exploits. Searching Meccha Chameleon update, Mecha Chameleon patch notes, or メッチャカメレオン アップデート should land on this page plus Steam News.",
+      body: "Step one: Steam → Downloads → confirm game updated. Step two: restart game and Steam. Step three: recreate private room; re-invite friends. Step four: re-test three favorite database spots on current map. Step five: read Steam News for map or control changes. Step six: update workshop subscriptions if creators patched exploits. For patch-week fix guides (can't join, auth token, lag, workshop void), see our Patch Fixes Hub at /guides/patch-fixes and Problems After Update checklist at /guides/problems-after-update. Searching Meccha Chameleon update, Mecha Chameleon patch notes, or メッチャカメレオン アップデート should land on this page plus Steam News.",
     },
   ],
 };

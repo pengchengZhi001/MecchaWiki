@@ -17,6 +17,8 @@ import {
   formatWorkshopStat,
 } from "@/data/workshop-seo-content";
 import { getSteamSubscribeUrl } from "@/lib/steam-workshop";
+import { launchGuideTitle } from "@/lib/workshop-launch";
+import { getWorkshopImageUrl, isLocalWorkshopImage } from "@/lib/workshop-images";
 import { workshopCategories } from "@/lib/site";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
 import { SidebarAds, NativeBanner } from "@/components/ads";
@@ -33,9 +35,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!map) return {};
 
   const seo = getWorkshopSeoContent(map);
+  const heroImage = getWorkshopImageUrl(map);
 
   return createMetadata({
-    title: `${map.title} — Meccha Chameleon Workshop Map Guide`,
+    title: launchGuideTitle(map),
     description: seo.overview.slice(0, 160),
     path: `/workshop-maps/${slug}`,
     keywords: [
@@ -43,9 +46,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "Meccha Chameleon workshop",
       "workshop map",
       "custom map",
+      ...(seo.isLaunchGuide ? ["new map", "launch guide", "hiding spots"] : []),
       ...map.tags,
     ],
-    image: map.imageUrl.startsWith("/") ? map.imageUrl : undefined,
+    image: heroImage.startsWith("/") ? heroImage : undefined,
     imageAlt: `${map.title} — Meccha Chameleon Steam Workshop map`,
   });
 }
@@ -75,6 +79,7 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
   const categoryLabel = workshopCategories.find((c) => c.id === map.category);
   const relatedMaps = getRelatedWorkshopMaps(slug);
   const mapSpots = getSpotsByMap(slug);
+  const heroImage = getWorkshopImageUrl(map);
 
   return (
     <article>
@@ -90,18 +95,19 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
             description: seo.overview.slice(0, 200),
             path: `/workshop-maps/${slug}`,
             datePublished: map.submittedAt,
-            image: map.imageUrl,
+            image: heroImage,
           }),
         ]}
       />
       <div className="relative aspect-[16/9] overflow-hidden border-b border-card-border sm:aspect-[21/9]">
         <Image
-          src={map.imageUrl}
+          src={heroImage}
           alt={map.title}
           fill
           priority
           sizes="100vw"
           className="object-cover"
+          unoptimized={isLocalWorkshopImage(heroImage)}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-10">
@@ -116,6 +122,11 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
                 </span>
               )}
               <SeekerLeanBadge lean={seo.seekerLean} />
+              {seo.isLaunchGuide && (
+                <span className="rounded-full bg-purple/10 px-3 py-1 text-sm font-medium text-purple ring-1 ring-purple/30">
+                  Launch Guide
+                </span>
+              )}
               <span className="rounded-full bg-surface/80 px-3 py-1 text-sm font-medium backdrop-blur-sm">
                 {map.curated ? "Steam Workshop" : "Coming Soon"}
               </span>
@@ -141,6 +152,44 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
               <h2 className="text-xl font-bold">Why Play This Map</h2>
               <p className="mt-3 leading-relaxed text-foreground/80">{seo.whyPlay}</p>
             </section>
+
+            {seo.isLaunchGuide && seo.firstWeekChecklist && (
+              <section className="rounded-xl border border-purple/20 bg-purple/5 p-6">
+                <h2 className="text-xl font-bold">First-Week Scout Checklist</h2>
+                <p className="mt-2 text-sm text-muted">
+                  Launch guide — spots are community-scouted. Verify across two seeker sweeps before
+                  sharing in Discord.
+                </p>
+                <ol className="mt-4 space-y-3">
+                  {seo.firstWeekChecklist.map((step, i) => (
+                    <li
+                      key={step}
+                      className="flex gap-3 text-sm leading-relaxed text-foreground/80"
+                    >
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-purple/10 text-xs font-bold text-purple">
+                        {i + 1}
+                      </span>
+                      {step}
+                    </li>
+                  ))}
+                </ol>
+                {seo.scoutPriorities && (
+                  <div className="mt-6">
+                    <h3 className="text-sm font-semibold text-muted">Priority zones to scout</h3>
+                    <ul className="mt-2 flex flex-wrap gap-2">
+                      {seo.scoutPriorities.map((zone) => (
+                        <li
+                          key={zone}
+                          className="rounded-full bg-surface px-3 py-1 text-xs text-muted ring-1 ring-card-border"
+                        >
+                          {zone}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </section>
+            )}
 
             {mapSpots.length > 0 ? (
               <section>

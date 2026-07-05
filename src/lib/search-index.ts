@@ -70,6 +70,19 @@ export const searchIndex: SearchItem[] = [
     ],
   })),
   {
+    title: "Patch Fixes Hub",
+    href: "/guides/patch-fixes",
+    type: "Guide",
+    keywords: [
+      "patch fix",
+      "after update",
+      "not working",
+      "broken",
+      "can't join lobby",
+      "authentication token",
+    ],
+  },
+  {
     title: "Content Demand Library",
     href: "/demand-library",
     type: "Meta",

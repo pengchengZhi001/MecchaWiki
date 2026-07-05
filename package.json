@@ -12,6 +12,8 @@
     "fetch:art-gallery-spots": "node scripts/fetch-art-gallery-spot-images.mjs",
     "fetch:workshop": "node scripts/fetch-workshop.mjs",
     "generate:workshop": "node scripts/generate-workshop.mjs",
+    "generate:launch-guides": "node scripts/generate-workshop-launch.mjs",
+    "scaffold:patch": "node scripts/scaffold-patch-fix.mjs",
     "sync:workshop": "powershell -ExecutionPolicy Bypass -File scripts/sync-workshop.ps1"
   },
   "dependencies": {
