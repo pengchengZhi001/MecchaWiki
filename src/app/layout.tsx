@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { createMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
-import { Popunder } from "@/components/ads";
+import { Autotag, Popunder } from "@/components/ads";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,6 +56,7 @@ export default function RootLayout({
         <Popunder />
         <Footer />
         <Analytics />
+        <Autotag />
       </body>
     </html>
   );
