@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
+import { getPopularWorkshopMaps } from "@/data/workshop";
 
-const popularMaps = [
-  { href: "/maps/sewer", label: "Sewer" },
-  { href: "/maps/mansion", label: "Mansion" },
-  { href: "/maps/cold-storage", label: "Cold Storage" },
-  { href: "/maps/brick-loft", label: "Brick Loft" },
-  { href: "/maps/backrooms", label: "Backrooms" },
-] as const;
+const popularWorkshopMaps = getPopularWorkshopMaps(5).map((m) => ({
+  href: `/workshop-maps/${m.slug}`,
+  label: m.title,
+}));
 
 const topGuides = [
   { href: "/guides/how-to-play", label: "How to Play" },
@@ -39,10 +37,10 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-muted">
-              Popular Maps
+              Popular Workshop Maps
             </p>
             <ul className="mt-3 space-y-2">
-              {popularMaps.map((link) => (
+              {popularWorkshopMaps.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

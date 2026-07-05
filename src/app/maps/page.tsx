@@ -6,7 +6,7 @@ import Card from "@/components/Card";
 import MapsPageTabs from "@/components/MapsPageTabs";
 import WorkshopMapCard from "@/components/WorkshopMapCard";
 import { maps } from "@/data/maps";
-import { workshopMaps } from "@/data/workshop";
+import { getCuratedWorkshopMaps } from "@/data/workshop";
 import { getSpotCountByMap } from "@/data/hidden-spots";
 import { NativeBanner } from "@/components/ads";
 
@@ -42,7 +42,7 @@ function parseTab(tab?: string): "all" | "official" | "workshop" {
 export default async function MapsPage({ searchParams }: Props) {
   const { tab: tabParam } = await searchParams;
   const tab = parseTab(tabParam);
-  const curatedWorkshop = workshopMaps.filter((m) => m.curated);
+  const curatedWorkshop = getCuratedWorkshopMaps();
   const counts = {
     all: maps.length + curatedWorkshop.length,
     official: maps.length,
@@ -123,7 +123,7 @@ export default async function MapsPage({ searchParams }: Props) {
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {curatedWorkshop.map((map) => (
-              <WorkshopMapCard key={map.id} map={map} />
+              <WorkshopMapCard key={map.id} map={map} showSubscriptions />
             ))}
           </div>
         </section>

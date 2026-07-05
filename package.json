@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "fetch:images": "node scripts/fetch-spot-images.mjs",
+    "fetch:workshop-spots": "node scripts/fetch-workshop-spot-images.mjs",
+    "fetch:art-gallery-spots": "node scripts/fetch-art-gallery-spot-images.mjs",
     "fetch:workshop": "node scripts/fetch-workshop.mjs",
     "generate:workshop": "node scripts/generate-workshop.mjs",
     "sync:workshop": "powershell -ExecutionPolicy Bypass -File scripts/sync-workshop.ps1"

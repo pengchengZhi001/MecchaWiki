@@ -664,6 +664,78 @@ const CONTENT: Record<string, WorkshopSeoContent> = {
       { author: "MW2Fan", text: "Gate row hide survived two full sweeps in our lobby." },
     ],
   },
+  "bikini-bottom": {
+    tagline: "SpongeBob IP · Cartoon landmarks",
+    overview:
+      "Bikini Bottom recreates SpongeBob SquarePants' underwater town with the pineapple house, Krusty Krab, and bright cartoon props. Six saturated colors reward confident sampling — bold hues punish white gaps but simple shapes read as props when matched locally.",
+    whyPlay:
+      "GAMES.GG ranks Bikini Bottom among the top IP workshop picks. Fans recognize landmarks instantly; seekers sweep iconic spots first (pineapple, Krusty Krab) while hiders rotate to lesser-known corners. Perfect for content-creation lobbies.",
+    tips: [
+      "Sample pineapple orange and sand beige separately — dual-tone landmark cover.",
+      "Krusty Krab exterior red differs from interior wood — re-sample entering.",
+      "Cartoon props break outline at crouch height when colors match locally.",
+      "Bright palette punishes unpainted joints — commit to one surface color.",
+      "Rotate away from pineapple after first sweep — seekers check it every round.",
+    ],
+    bestColors: ["Sand Beige", "Pineapple Orange", "Ocean Blue", "Krusty Red", "Cartoon Green", "Cloud White"],
+    commonMistakes: [
+      "Camping open sand paths without prop mimic",
+      "Using one orange sample for pineapple and Krusty Krab zones",
+      "Standing at default height on flat cartoon terrain",
+      "Ignoring underwater blue tones near map edges",
+    ],
+    hotspots: [
+      { name: "Pineapple House Wall", description: "Iconic landmark with dual-tone fruit texture.", type: "hot" },
+      { name: "Krusty Krab Interior", description: "Dense kitchen props and counter clutter.", type: "hot" },
+      { name: "Sand Path Edge", description: "Prop mimic near path borders.", type: "neutral" },
+    ],
+    dangerZones: [
+      { name: "Open Sand Center", description: "Wide flat terrain with minimal cover." },
+      { name: "Map Entrance", description: "First sweep zone every round." },
+    ],
+    lobbySize: "4–10 players",
+    seekerLean: "Hider-favored",
+    comments: [
+      { author: "BikiniFan", text: "Pineapple wall hide is content gold — sample the fruit dots, not just orange." },
+      { author: "SpongeLobby", text: "Increase hunter wait — cartoon maps need paint time." },
+    ],
+  },
+  "peak-airport": {
+    tagline: "PEAK-inspired · Large terminal",
+    overview:
+      "Peak Airport is a PEAK-inspired airport terminal with dense interior props across gates, shops, and corridors. Five dominant grays and fabric tones suit organized seeker sweeps in 8+ player lobbies.",
+    whyPlay:
+      "TheGamer and community rankings highlight Peak Airport for groups wanting MW2 Terminal-scale competitive play with a fresh aesthetic. Large footprint rewards rotation paths and gate seating prop mimics.",
+    tips: [
+      "Gate seating fabric + metal dual-tone — sample locally at each row.",
+      "Shop storefront clutter breaks outline at crouch height.",
+      "Establish rotation during prep — map size punishes static camps.",
+      "Sample terminal gray from trim, not floor tiles.",
+      "Corridor chokes favor quick crosses over open camping.",
+    ],
+    bestColors: ["Terminal Gray", "Seat Fabric", "Floor Tile", "Shop Glass", "Trim Silver"],
+    commonMistakes: [
+      "Hosting with fewer than 8 players — map feels empty",
+      "Camping open concourse without seat prop cover",
+      "One gray sample for shops and gates",
+      "Skipping prep walk on this map size",
+    ],
+    hotspots: [
+      { name: "Gate Seating Row", description: "Fabric props with controlled sightlines.", type: "hot" },
+      { name: "Shop Storefront", description: "Shelf clutter and glass tones.", type: "hot" },
+      { name: "Terminal Connector", description: "Rotation path between wings.", type: "neutral" },
+    ],
+    dangerZones: [
+      { name: "Central Concourse", description: "Wide open with long sightlines." },
+      { name: "Security Checkpoint", description: "High-traffic sweep zone." },
+    ],
+    lobbySize: "8–12 players",
+    seekerLean: "Balanced",
+    comments: [
+      { author: "PeakFlyer", text: "Gate row survived two sweeps — sample fabric, not metal armrest." },
+      { author: "AirportMain", text: "8+ players minimum. Worth the lobby setup." },
+    ],
+  },
 };
 
 export function getWorkshopSeoContent(map: WorkshopMap): WorkshopSeoContent {

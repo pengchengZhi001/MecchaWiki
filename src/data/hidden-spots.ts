@@ -2,6 +2,9 @@ import type { SpotCategoryId } from "@/lib/site";
 import type { SpotSortId } from "@/lib/site";
 import { spotDescriptions } from "@/data/spot-descriptions";
 import { getSpotImageUrl } from "@/data/spot-images";
+import { workshopHiddenSpots } from "@/data/workshop-hidden-spots";
+import { getMapBySlug } from "@/data/maps";
+import { getWorkshopMapBySlug } from "@/data/workshop";
 
 export type HiddenSpot = {
   slug: string;
@@ -1073,6 +1076,7 @@ export const hiddenSpots: HiddenSpot[] = [
     source: "Community",
     sourceUrl: "https://www.ign.com/wikis/meccha-chameleon/All_Maps_in_Meccha_Chameleon:_Best_Hiding_Spots",
   }),
+  ...workshopHiddenSpots,
 ];
 
 export function getSpotBySlug(slug: string): HiddenSpot | undefined {
@@ -1103,6 +1107,36 @@ export function getSpotsByMap(mapSlug: string): HiddenSpot[] {
 
 export function getSpotCountByMap(mapSlug: string): number {
   return hiddenSpots.filter((s) => s.mapSlug === mapSlug).length;
+}
+
+export type SpotMapFilterOption = {
+  slug: string;
+  name: string;
+  isWorkshop: boolean;
+  count: number;
+};
+
+/** Maps that have at least one hiding spot — official + workshop, sorted by spot count. */
+export function getSpotFilterMaps(): SpotMapFilterOption[] {
+  const bySlug = new Map<string, SpotMapFilterOption>();
+
+  for (const spot of hiddenSpots) {
+    const existing = bySlug.get(spot.mapSlug);
+    if (existing) {
+      existing.count += 1;
+      continue;
+    }
+    const official = getMapBySlug(spot.mapSlug);
+    const workshop = getWorkshopMapBySlug(spot.mapSlug);
+    bySlug.set(spot.mapSlug, {
+      slug: spot.mapSlug,
+      name: official?.name ?? workshop?.title ?? spot.map,
+      isWorkshop: Boolean(workshop && !official),
+      count: 1,
+    });
+  }
+
+  return [...bySlug.values()].sort((a, b) => b.count - a.count);
 }
 
 export function getRelatedSpots(spot: HiddenSpot, limit = 4): HiddenSpot[] {

@@ -1,12 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { WorkshopMap } from "@/data/workshop";
+import { formatWorkshopSubscriptions } from "@/data/workshop";
 
 type WorkshopMapCardProps = {
   map: WorkshopMap;
+  rank?: number;
+  showSubscriptions?: boolean;
 };
 
-export default function WorkshopMapCard({ map }: WorkshopMapCardProps) {
+export default function WorkshopMapCard({
+  map,
+  rank,
+  showSubscriptions = false,
+}: WorkshopMapCardProps) {
   return (
     <Link
       href={`/workshop-maps/${map.slug}`}
@@ -21,7 +28,12 @@ export default function WorkshopMapCard({ map }: WorkshopMapCardProps) {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-        <div className="absolute left-3 top-3">
+        <div className="absolute left-3 top-3 flex flex-wrap gap-2">
+          {rank != null && (
+            <span className="rounded-lg bg-accent/90 px-2 py-1 text-xs font-bold text-background">
+              #{rank}
+            </span>
+          )}
           <span className="rounded-lg bg-black/50 px-2 py-1 text-xs font-medium text-white/90 backdrop-blur-sm">
             {map.curated ? "Steam Workshop" : "Coming Soon"}
           </span>
@@ -36,6 +48,11 @@ export default function WorkshopMapCard({ map }: WorkshopMapCardProps) {
           <span className="text-muted">by {map.author}</span>
           <span className="text-muted">{map.colors} colors</span>
         </div>
+        {showSubscriptions && map.subscriptions > 0 && (
+          <p className="mt-1.5 text-xs font-medium text-accent">
+            {formatWorkshopSubscriptions(map.subscriptions)} Steam subscribers
+          </p>
+        )}
         <p className="mt-2 line-clamp-2 text-sm text-muted">{map.description}</p>
         <div className="mt-3 flex flex-wrap gap-1.5">
           {map.tags.slice(0, 3).map((tag) => (

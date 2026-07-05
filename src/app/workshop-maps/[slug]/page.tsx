@@ -10,6 +10,8 @@ import {
   getWorkshopMapBySlug,
   getRelatedWorkshopMaps,
 } from "@/data/workshop";
+import { getSpotsByMap } from "@/data/hidden-spots";
+import SpotCard from "@/components/SpotCard";
 import {
   getWorkshopSeoContent,
   formatWorkshopStat,
@@ -72,6 +74,7 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
   const seo = getWorkshopSeoContent(map);
   const categoryLabel = workshopCategories.find((c) => c.id === map.category);
   const relatedMaps = getRelatedWorkshopMaps(slug);
+  const mapSpots = getSpotsByMap(slug);
 
   return (
     <article>
@@ -138,6 +141,43 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
               <h2 className="text-xl font-bold">Why Play This Map</h2>
               <p className="mt-3 leading-relaxed text-foreground/80">{seo.whyPlay}</p>
             </section>
+
+            {mapSpots.length > 0 ? (
+              <section>
+                <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                  <div>
+                    <h2 className="text-xl font-bold">Best Hiding Spots on {map.title}</h2>
+                    <p className="mt-1 text-sm text-muted">
+                      {mapSpots.length} guide-sourced spots — TheGamer, Polygon, GAMES.GG, Steam
+                      Workshop
+                    </p>
+                  </div>
+                  <Link
+                    href={`/hidden-spots?map=${slug}`}
+                    className="text-sm font-medium text-accent hover:underline"
+                  >
+                    View all {mapSpots.length} →
+                  </Link>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {mapSpots.map((spot, i) => (
+                    <SpotCard key={spot.slug} spot={spot} rank={i + 1} />
+                  ))}
+                </div>
+              </section>
+            ) : (
+              <section className="rounded-xl border border-dashed border-card-border bg-surface/30 p-6">
+                <h2 className="text-xl font-bold">Hiding Spot Guides</h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  Verified hiding spot entries for {map.title} are coming soon. Use the hot zones
+                  below and our{" "}
+                  <Link href="/guides/workshop-meta" className="text-accent hover:underline">
+                    Workshop Meta Guide
+                  </Link>{" "}
+                  to scout positions yourself.
+                </p>
+              </section>
+            )}
 
             <section>
               <h2 className="text-xl font-bold">Best Colors</h2>
@@ -247,17 +287,6 @@ export default async function WorkshopMapDetailPage({ params }: Props) {
               </section>
             )}
 
-            <section className="rounded-xl border border-card-border bg-card p-5">
-              <h2 className="text-sm font-semibold text-muted">Hiding Spot Guides</h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                Verified hiding spot entries for {map.title} are coming soon. Until then, use the
-                hot zones above and our{" "}
-                <Link href="/guides/workshop-meta" className="text-accent hover:underline">
-                  Workshop Meta Guide
-                </Link>{" "}
-                to scout positions yourself.
-              </p>
-            </section>
           </div>
 
           <SidebarAds>

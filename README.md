@@ -4,12 +4,13 @@
 
 ## Data
 
-### Hidden spots (50+)
-- Sources: **TheGamer**, **IGN**, **meccha-chameleon.net**, **YouTube community**
+### Hidden spots (90+)
+- **Official maps:** TheGamer, IGN, meccha-chameleon.net, YouTube community
+- **Workshop maps:** TheGamer, Polygon, GAMES.GG, GameRant — Minecraft, Art Gallery, Swimming Pool, and more
 - Each entry includes traceable `source` + `sourceUrl`
 - Screenshots: Steam official CDN (`shared.akamai.steamstatic.com`)
 
-### Workshop maps (29)
+### Workshop maps (31)
 - Live Steam Workshop data (subscriptions, preview images)
 - Preview images from `images.steamusercontent.com`
 - Run `npm run fetch:workshop` to refresh from the Steam API

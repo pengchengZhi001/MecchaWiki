@@ -2,12 +2,11 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { maps } from "@/data/maps";
-import { getSpotCountByMap } from "@/data/hidden-spots";
-
+import { getSpotFilterMaps } from "@/data/hidden-spots";
 export default function SpotMapFilter() {
   const searchParams = useSearchParams();
   const activeMap = searchParams.get("map") ?? "all";
+  const filterMaps = getSpotFilterMaps();
 
   function mapHref(slug: string) {
     const params = new URLSearchParams(searchParams.toString());
@@ -26,16 +25,15 @@ export default function SpotMapFilter() {
       <FilterLink href={mapHref("all")} active={activeMap === "all"}>
         All Maps
       </FilterLink>
-      {maps.map((map) => {
-        const count = getSpotCountByMap(map.slug);
-        if (count === 0) return null;
-        return (
-          <FilterLink key={map.slug} href={mapHref(map.slug)} active={activeMap === map.slug}>
-            {map.name}
-            <span className="ml-1.5 text-xs opacity-70">{count}</span>
-          </FilterLink>
-        );
-      })}
+      {filterMaps.map((map) => (
+        <FilterLink key={map.slug} href={mapHref(map.slug)} active={activeMap === map.slug}>
+          {map.name}
+          {map.isWorkshop && (
+            <span className="ml-1 text-[10px] uppercase opacity-60">WS</span>
+          )}
+          <span className="ml-1.5 text-xs opacity-70">{map.count}</span>
+        </FilterLink>
+      ))}
     </div>
   );
 }

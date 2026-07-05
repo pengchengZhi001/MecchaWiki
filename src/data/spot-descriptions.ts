@@ -130,4 +130,64 @@ export const spotDescriptions: Record<string, string> = {
     "Plywood, crate, and trash-bag corner — trash-can mimic memes from day-one Osaka lobbies.",
   "osaka-alleyway-nook":
     "Narrow alley nook with mixed lantern light — smallest map, high seeker recycle rate.",
+  "minecraft-crafting-table":
+    "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
+  "minecraft-village-tree-line":
+    "Village tree line with blocky trunks breaking outline at default camera height.",
+  "minecraft-grass-torch-yard":
+    "Outdoor torch, flower, or grass block mimic in the Minecraft village yard.",
+  "minecraft-indoor-wood-room":
+    "Indoor wood room with furniture stacks — re-sample from grass green to oak brown.",
+  "swimming-pool-deck-chair":
+    "Pool deck chair stack by the diving board — sample deck white, not pool tile blue.",
+  "swimming-pool-wall-art":
+    "Hand-drawn wall art zone — paint matching cartoon patterns on stylized walls.",
+  "swimming-pool-changing-room":
+    "Changing room corner with tight painted walls and strong color blocks.",
+  "swimming-pool-lane-divider":
+    "Lane divider wall creating false leads — avoid open pool center.",
+  "art-gallery-mona-lisa":
+    "Paint yourself into the Mona Lisa frame — Polygon's signature Art Gallery pick.",
+  "art-gallery-portrait-row":
+    "The Last Supper wall — hide in Jesus robes or table legs; hunters stand far from this massive painting.",
+  "art-gallery-sculpture-niche":
+    "St. John the Baptist canvas beside spawn — dark tones hide value errors; paint into body or hand.",
+  "art-gallery-floor-mosaic":
+    "Security camera above spawn door — paint wall color on body, black on head. Hunters scan paintings, not fixtures.",
+  "art-gallery-twelve-apostles":
+    "Garbage can hide — curl inside with bag-color paint; overlooked while hunters rush paintings.",
+  "art-gallery-large-canvas":
+    "Last Day in Pompeii — furthest room; top-left shadow, fire stone, or crowd zones fit multiple hiders.",
+  "art-gallery-lesser-known-wing":
+    "Monet's Impression, Sunrise wing — visible from door so hunters think they already checked it.",
+  "art-gallery-gilded-frame-corner":
+    "The Annunciation shadow beside the winged figure — sideways pose in the dark strip.",
+  "meeting-room-cubicle-maze":
+    "Office cubicle maze with partition walls and desk clutter at crouch height.",
+  "meeting-room-conference-corner":
+    "Conference room corner with controlled sightlines — community-tested survival spot.",
+  "meeting-room-reception-desk":
+    "Reception counter dual-tone cover — sample counter top, not carpet floor.",
+  "cs2-mirage-a-site-ledge":
+    "A-site ledge elevation hide with sand tan trim sampling at crouch height.",
+  "cs2-mirage-connector":
+    "Connector corridor choke point — rotate before second seeker pass.",
+  "cs2-mirage-mid-boxes":
+    "Mid box stack prop mimic — match box tan exactly, avoid open mid lane.",
+  "minecraft-house-torch-flower":
+    "Survival house yard torch and flower prop mimic — Polygon verified outside hide.",
+  "minecraft-house-grass-block":
+    "Grass block yard edge hide against fence line on the Minecraft House map.",
+  "simpsons-couch-living-room":
+    "Living room couch — TV's most famous sofa. Sample orange and wall pink separately.",
+  "simpsons-kitchen-clutter":
+    "Kitchen prop cluster despite bold Simpsons palette — local sampling wins.",
+  "peak-airport-gate-seating":
+    "Airport gate seating row — sample fabric, not metal armrest.",
+  "peak-airport-shop-storefront":
+    "Duty-free shop storefront with shelf clutter at crouch height.",
+  "bikini-bottom-pineapple-wall":
+    "Pineapple house wall — sample fruit orange and sand beige separately.",
+  "bikini-bottom-krusty-krab":
+    "Krusty Krab kitchen counter clutter — re-sample when entering from outside.",
 };

@@ -34,8 +34,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3743061744",
     submittedAt: "2026-06-11",
     curated: true,
-    subscriptions: 2679271,
-    views: 2325173,
+    subscriptions: 4085689,
+    views: 3604976,
   },
   {
     id: "3744444104",
@@ -51,8 +51,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3744444104",
     submittedAt: "2026-06-13",
     curated: true,
-    subscriptions: 1977654,
-    views: 1696238,
+    subscriptions: 2452520,
+    views: 2136743,
   },
   {
     id: "3745249764",
@@ -68,8 +68,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3745249764",
     submittedAt: "2026-06-14",
     curated: true,
-    subscriptions: 2021627,
-    views: 1761176,
+    subscriptions: 3052878,
+    views: 2695166,
   },
   {
     id: "3742794683",
@@ -85,8 +85,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3742794683",
     submittedAt: "2026-06-11",
     curated: true,
-    subscriptions: 2129109,
-    views: 1818274,
+    subscriptions: 3267278,
+    views: 2835857,
   },
   {
     id: "3742253936",
@@ -102,8 +102,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3742253936",
     submittedAt: "2026-06-10",
     curated: true,
-    subscriptions: 346197,
-    views: 369988,
+    subscriptions: 408793,
+    views: 424811,
   },
   {
     id: "3742454367",
@@ -119,8 +119,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3742454367",
     submittedAt: "2026-06-10",
     curated: true,
-    subscriptions: 393003,
-    views: 406703,
+    subscriptions: 460258,
+    views: 466942,
   },
   {
     id: "3744930374",
@@ -136,8 +136,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3744930374",
     submittedAt: "2026-06-14",
     curated: true,
-    subscriptions: 0,
-    views: 0,
+    subscriptions: 3459531,
+    views: 3027765,
   },
   {
     id: "3745371103",
@@ -153,8 +153,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3745371103",
     submittedAt: "2026-06-15",
     curated: true,
-    subscriptions: 244424,
-    views: 217798,
+    subscriptions: 333531,
+    views: 293656,
   },
   {
     id: "3745442455",
@@ -170,8 +170,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3745442455",
     submittedAt: "2026-06-22",
     curated: true,
-    subscriptions: 865194,
-    views: 733590,
+    subscriptions: 1190673,
+    views: 1023266,
   },
   {
     id: "3745191968",
@@ -187,8 +187,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3745191968",
     submittedAt: "2026-06-23",
     curated: true,
-    subscriptions: 936717,
-    views: 768724,
+    subscriptions: 1224799,
+    views: 1012452,
   },
   {
     id: "3745736909",
@@ -204,8 +204,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3745736909",
     submittedAt: "2026-06-12",
     curated: true,
-    subscriptions: 927961,
-    views: 754110,
+    subscriptions: 1504047,
+    views: 1250265,
   },
   {
     id: "3746319788",
@@ -221,8 +221,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3746319788",
     submittedAt: "2026-06-25",
     curated: false,
-    subscriptions: 40183,
-    views: 35031,
+    subscriptions: 60141,
+    views: 53220,
   },
   {
     id: "3744672676",
@@ -238,8 +238,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3744672676",
     submittedAt: "2026-06-12",
     curated: true,
-    subscriptions: 1986485,
-    views: 1504601,
+    subscriptions: 4328741,
+    views: 3481327,
   },
   {
     id: "3743930257",
@@ -255,8 +255,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3743930257",
     submittedAt: "2026-06-11",
     curated: true,
-    subscriptions: 677797,
-    views: 637741,
+    subscriptions: 902821,
+    views: 844442,
   },
   {
     id: "3746909981",
@@ -272,8 +272,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3746909981",
     submittedAt: "2026-06-16",
     curated: true,
-    subscriptions: 1129286,
-    views: 976766,
+    subscriptions: 2312563,
+    views: 2063601,
   },
   {
     id: "3747815568",
@@ -289,13 +289,13 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3747815568",
     submittedAt: "2026-06-20",
     curated: true,
-    subscriptions: 784068,
-    views: 661830,
+    subscriptions: 2044704,
+    views: 1788899,
   },
   {
     id: "3749628558",
     slug: "fall-guys-level",
-    title: "Fall Guys Level [QOL UPDATE]",
+    title: "Fall Guys Level",
     author: "ArenaCloser12",
     category: "funny",
     colors: 5,
@@ -306,8 +306,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3749628558",
     submittedAt: "2026-06-24",
     curated: true,
-    subscriptions: 287944,
-    views: 259508,
+    subscriptions: 701347,
+    views: 645567,
   },
   {
     id: "3747027518",
@@ -323,8 +323,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3747027518",
     submittedAt: "2026-06-18",
     curated: true,
-    subscriptions: 727099,
-    views: 645528,
+    subscriptions: 1348496,
+    views: 1216805,
   },
   {
     id: "3746389744",
@@ -340,8 +340,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3746389744",
     submittedAt: "2026-06-16",
     curated: true,
-    subscriptions: 1787146,
-    views: 1468701,
+    subscriptions: 2452604,
+    views: 2066514,
   },
   {
     id: "3744346760",
@@ -357,25 +357,25 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3744346760",
     submittedAt: "2026-06-13",
     curated: true,
-    subscriptions: 442451,
-    views: 383417,
+    subscriptions: 582298,
+    views: 500165,
   },
   {
     id: "3745148802",
     slug: "mw2-terminal",
-    title: "MW2 Terminal (WILDCAT UPDATE)",
+    title: "MW2 Terminal (Interior Only)",
     author: "vegal",
     category: "competitive",
     colors: 5,
     description: "Modern Warfare 2 airport terminal interior. Large map with dense hiding spots — recommend 8+ players.",
     tags: ["FPS","Large map","Steam Workshop"],
-    imageUrl: "https://images.steamusercontent.com/ugc/13029862137680470128/AE60FA893FB9F901B5BBEF8AC3BC84D4A4828040/",
+    imageUrl: "https://images.steamusercontent.com/ugc/16544677459338956082/AE60FA893FB9F901B5BBEF8AC3BC84D4A4828040/",
     workshopUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3745148802",
     workshopId: "3745148802",
     submittedAt: "2026-06-14",
     curated: true,
-    subscriptions: 793518,
-    views: 694360,
+    subscriptions: 1064855,
+    views: 941515,
   },
   {
     id: "3743176754",
@@ -391,8 +391,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3743176754",
     submittedAt: "2026-06-10",
     curated: true,
-    subscriptions: 653961,
-    views: 598652,
+    subscriptions: 796831,
+    views: 724455,
   },
   {
     id: "3744197529",
@@ -408,8 +408,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3744197529",
     submittedAt: "2026-06-13",
     curated: true,
-    subscriptions: 629468,
-    views: 577960,
+    subscriptions: 759714,
+    views: 691355,
   },
   {
     id: "3745738734",
@@ -425,8 +425,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3745738734",
     submittedAt: "2026-06-15",
     curated: true,
-    subscriptions: 720946,
-    views: 638955,
+    subscriptions: 1353294,
+    views: 1235981,
   },
   {
     id: "3742153036",
@@ -442,13 +442,13 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3742153036",
     submittedAt: "2026-06-10",
     curated: true,
-    subscriptions: 20826,
-    views: 40384,
+    subscriptions: 24510,
+    views: 42593,
   },
   {
     id: "3744068706",
     slug: "courage-cowardly-dog",
-    title: "Courage the Cowardly Dog  [v1.4.2]",
+    title: "Courage the Cowardly Dog  [v1.4.4]",
     author: "Community",
     category: "horror",
     colors: 5,
@@ -459,8 +459,8 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3744068706",
     submittedAt: "2026-06-12",
     curated: true,
-    subscriptions: 266309,
-    views: 262755,
+    subscriptions: 477832,
+    views: 463839,
   },
   {
     id: "3742926910",
@@ -482,19 +482,19 @@ export const workshopMaps: WorkshopMap[] = [
   {
     id: "3744940322",
     slug: "black-ops-2-raid",
-    title: "Black Ops 2 Raid",
+    title: "Black Ops 2 Raid Fixed",
     author: "Community",
     category: "competitive",
     colors: 5,
     description: "Call of Duty Black Ops 2 Raid layout. Tactical lanes and elevation for competitive seeker sweeps.",
     tags: ["FPS","Competitive","Steam Workshop"],
-    imageUrl: "https://images.steamusercontent.com/ugc/17650518085133223476/58BEEE096F2AFE471DFEBAB3C8BB56BB2965B36B/",
+    imageUrl: "https://images.steamusercontent.com/ugc/13975350799901819109/BEFD6DC85AD66DEB8BD90920AB17700E0FEDE9C1/",
     workshopUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3744940322",
     workshopId: "3744940322",
     submittedAt: "2026-06-14",
     curated: true,
-    subscriptions: 0,
-    views: 0,
+    subscriptions: 43264,
+    views: 47123,
   },
   {
     id: "3746167196",
@@ -510,10 +510,58 @@ export const workshopMaps: WorkshopMap[] = [
     workshopId: "3746167196",
     submittedAt: "2026-06-21",
     curated: true,
-    subscriptions: 756250,
-    views: 690624,
+    subscriptions: 1306161,
+    views: 1212031,
+  },
+  {
+    id: "3746264505",
+    slug: "bikini-bottom",
+    title: "Bikini Bottom",
+    author: "GewoonKerin",
+    category: "funny",
+    colors: 6,
+    description: "SpongeBob SquarePants Bikini Bottom recreation. Pineapple house, Krusty Krab, and cartoon props — bright palette with iconic IP landmarks.",
+    tags: ["Funny","IP","SpongeBob","Steam Workshop"],
+    imageUrl: "https://images.steamusercontent.com/ugc/14906373178721883619/7B48EE463C3200694958EE62186D86200C32C574/",
+    workshopUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3746264505",
+    workshopId: "3746264505",
+    submittedAt: "2026-06-22",
+    curated: true,
+    subscriptions: 3277507,
+    views: 2862488,
+  },
+  {
+    id: "3749899550",
+    slug: "peak-airport",
+    title: "Peak Airport [RE-FOLLOW TO UPDATE]",
+    author: "Community",
+    category: "competitive",
+    colors: 5,
+    description: "PEAK-inspired airport terminal with dense interior props. Large competitive layout for organized seeker sweeps.",
+    tags: ["Airport","Large map","Steam Workshop"],
+    imageUrl: "https://images.steamusercontent.com/ugc/17063689919572783334/D34552C7189ED3DD7F01ADD774FA370E94DC156C/",
+    workshopUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3749899550",
+    workshopId: "3749899550",
+    submittedAt: "2026-06-28",
+    curated: true,
+    subscriptions: 1990515,
+    views: 1802369,
   },
 ];
+
+export function formatWorkshopSubscriptions(count: number): string {
+  if (count >= 1_000_000) return `${(count / 1_000_000).toFixed(1)}M`;
+  if (count >= 1_000) return `${Math.round(count / 1_000)}K`;
+  return String(count);
+}
+
+export function sortWorkshopBySubscriptions(maps: WorkshopMap[]): WorkshopMap[] {
+  return [...maps].sort((a, b) => b.subscriptions - a.subscriptions);
+}
+
+export function getCuratedWorkshopMaps(): WorkshopMap[] {
+  return sortWorkshopBySubscriptions(workshopMaps.filter((m) => m.curated));
+}
 
 export function getWorkshopMapBySlug(slug: string): WorkshopMap | undefined {
   return workshopMaps.find((m) => m.slug === slug);
@@ -523,16 +571,13 @@ export function getWorkshopByCategory(
   category: WorkshopCategoryId,
   limit = 5
 ): WorkshopMap[] {
-  return workshopMaps
-    .filter((m) => m.category === category && m.curated)
-    .slice(0, limit);
+  return sortWorkshopBySubscriptions(
+    workshopMaps.filter((m) => m.category === category && m.curated)
+  ).slice(0, limit);
 }
 
 export function getPopularWorkshopMaps(limit = 6): WorkshopMap[] {
-  return [...workshopMaps]
-    .filter((m) => m.curated)
-    .sort((a, b) => b.subscriptions - a.subscriptions)
-    .slice(0, limit);
+  return getCuratedWorkshopMaps().slice(0, limit);
 }
 
 export function getRelatedWorkshopMaps(
@@ -542,7 +587,7 @@ export function getRelatedWorkshopMaps(
   const current = getWorkshopMapBySlug(slug);
   if (!current) return [];
 
-  return workshopMaps
-    .filter((m) => m.slug !== slug && m.category === current.category)
-    .slice(0, limit);
+  return sortWorkshopBySubscriptions(
+    workshopMaps.filter((m) => m.slug !== slug && m.category === current.category)
+  ).slice(0, limit);
 }

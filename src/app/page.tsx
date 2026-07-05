@@ -27,7 +27,8 @@ import { NativeBanner } from "@/components/ads";
 export default function HomePage() {
   const topSpots = getTopSpots(12);
   const spotOfWeek = topSpots[0];
-  const popularMaps = getPopularWorkshopMaps(6);
+  const popularMaps = getPopularWorkshopMaps(12);
+  const topWorkshopMaps = popularMaps.slice(0, 8);
   const featuredGuides = guides.slice(0, 4);
 
   const todaysTip = getTodaysTip();
@@ -80,11 +81,35 @@ export default function HomePage() {
               </div>
             </div>
 
-            <HomeHeroVisual topSpots={topSpots.slice(0, 3)} popularMaps={popularMaps.slice(0, 1)} />
+            <HomeHeroVisual
+              topSpots={topSpots.slice(0, 3)}
+              popularMaps={popularMaps.slice(0, 4)}
+            />
           </div>
 
           <div className="mt-10">
             <SiteSearch large placeholder="Search hiding spots, maps, survival tips..." />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-card-border bg-surface/40">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 className="text-2xl font-bold">Most Subscribed Workshop Maps</h2>
+              <p className="mt-1 text-sm text-muted">
+                Sorted by Steam subscribers — Minecraft, Swimming Pool, Art Gallery & more
+              </p>
+            </div>
+            <Link href="/workshop-maps" className="text-sm font-medium text-accent hover:underline">
+              Full workshop database →
+            </Link>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {topWorkshopMaps.map((map, i) => (
+              <WorkshopMapCard key={map.id} map={map} rank={i + 1} showSubscriptions />
+            ))}
           </div>
         </div>
       </section>
@@ -241,15 +266,17 @@ export default function HomePage() {
           <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="text-2xl font-bold">Popular Workshop Maps</h2>
-              <p className="mt-1 text-sm text-muted">Curated from Steam Workshop · Real preview images</p>
+              <p className="mt-1 text-sm text-muted">
+                Top Steam Workshop maps by subscriber count · Curated guides & hiding spots
+              </p>
             </div>
             <Link href="/workshop-maps" className="text-sm font-medium text-accent hover:underline">
               View all →
             </Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {popularMaps.map((map) => (
-              <WorkshopMapCard key={map.id} map={map} />
+            {popularMaps.map((map, i) => (
+              <WorkshopMapCard key={map.id} map={map} rank={i + 1} showSubscriptions />
             ))}
           </div>
         </div>

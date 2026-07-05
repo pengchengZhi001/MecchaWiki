@@ -207,6 +207,20 @@ export const workshopMaps: WorkshopMap[] = [
 ${entries.map(toTsObject).join("\n")}
 ];
 
+export function formatWorkshopSubscriptions(count: number): string {
+  if (count >= 1_000_000) return \`\${(count / 1_000_000).toFixed(1)}M\`;
+  if (count >= 1_000) return \`\${Math.round(count / 1_000)}K\`;
+  return String(count);
+}
+
+export function sortWorkshopBySubscriptions(maps: WorkshopMap[]): WorkshopMap[] {
+  return [...maps].sort((a, b) => b.subscriptions - a.subscriptions);
+}
+
+export function getCuratedWorkshopMaps(): WorkshopMap[] {
+  return sortWorkshopBySubscriptions(workshopMaps.filter((m) => m.curated));
+}
+
 export function getWorkshopMapBySlug(slug: string): WorkshopMap | undefined {
   return workshopMaps.find((m) => m.slug === slug);
 }
@@ -215,16 +229,13 @@ export function getWorkshopByCategory(
   category: WorkshopCategoryId,
   limit = 5
 ): WorkshopMap[] {
-  return workshopMaps
-    .filter((m) => m.category === category && m.curated)
-    .slice(0, limit);
+  return sortWorkshopBySubscriptions(
+    workshopMaps.filter((m) => m.category === category && m.curated)
+  ).slice(0, limit);
 }
 
 export function getPopularWorkshopMaps(limit = 6): WorkshopMap[] {
-  return [...workshopMaps]
-    .filter((m) => m.curated)
-    .sort((a, b) => b.subscriptions - a.subscriptions)
-    .slice(0, limit);
+  return getCuratedWorkshopMaps().slice(0, limit);
 }
 
 export function getRelatedWorkshopMaps(
@@ -234,9 +245,9 @@ export function getRelatedWorkshopMaps(
   const current = getWorkshopMapBySlug(slug);
   if (!current) return [];
 
-  return workshopMaps
-    .filter((m) => m.slug !== slug && m.category === current.category)
-    .slice(0, limit);
+  return sortWorkshopBySubscriptions(
+    workshopMaps.filter((m) => m.slug !== slug && m.category === current.category)
+  ).slice(0, limit);
 }
 `;
 

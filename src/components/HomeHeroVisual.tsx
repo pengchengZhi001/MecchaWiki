@@ -55,7 +55,7 @@ function HeroTile({
 
 export default function HomeHeroVisual({ topSpots, popularMaps }: HomeHeroVisualProps) {
   const [main, second, third] = topSpots;
-  const topMap = popularMaps[0];
+  const [map1, map2, map3, map4] = popularMaps;
 
   if (!main) return null;
 
@@ -66,14 +66,14 @@ export default function HomeHeroVisual({ topSpots, popularMaps }: HomeHeroVisual
         className="pointer-events-none absolute -inset-6 rounded-3xl bg-gradient-to-br from-accent/10 via-transparent to-purple/10 blur-2xl"
       />
 
-      <div className="relative grid h-[280px] grid-cols-12 grid-rows-6 gap-2 sm:h-[340px] sm:gap-2.5 lg:h-[380px]">
+      <div className="relative grid h-[320px] grid-cols-12 grid-rows-8 gap-2 sm:h-[380px] sm:gap-2.5 lg:h-[420px]">
         <HeroTile
           href={`/hidden-spots/${main.slug}`}
           badge="#1 Top Spot"
           badgeClass="bg-accent/20 text-accent ring-1 ring-accent/40"
           title={main.name}
           subtitle={main.map}
-          className="col-span-7 row-span-6"
+          className="col-span-7 row-span-5"
         >
           <SpotImage
             src={main.imageUrl}
@@ -83,18 +83,38 @@ export default function HomeHeroVisual({ topSpots, popularMaps }: HomeHeroVisual
           />
         </HeroTile>
 
-        {topMap && (
+        {map1 && (
           <HeroTile
-            href={`/workshop-maps/${topMap.slug}`}
-            badge="Popular Map"
+            href={`/workshop-maps/${map1.slug}`}
+            badge="#1 Workshop"
             badgeClass="bg-purple/20 text-purple ring-1 ring-purple/40"
-            title={topMap.title}
-            subtitle="Steam Workshop"
-            className="col-span-5 row-span-3"
+            title={map1.title}
+            subtitle="Most subscribed"
+            className="col-span-5 row-span-2"
           >
             <Image
-              src={topMap.imageUrl}
-              alt={topMap.title}
+              src={map1.imageUrl}
+              alt={map1.title}
+              fill
+              sizes="(max-width: 1024px) 40vw, 240px"
+              className="object-cover transition duration-500 group-hover:scale-105"
+              priority
+            />
+          </HeroTile>
+        )}
+
+        {map2 && (
+          <HeroTile
+            href={`/workshop-maps/${map2.slug}`}
+            badge="#2 Workshop"
+            badgeClass="bg-purple/20 text-purple ring-1 ring-purple/40"
+            title={map2.title}
+            subtitle="Steam Workshop"
+            className="col-span-5 row-span-2"
+          >
+            <Image
+              src={map2.imageUrl}
+              alt={map2.title}
               fill
               sizes="(max-width: 1024px) 40vw, 240px"
               className="object-cover transition duration-500 group-hover:scale-105"
@@ -106,11 +126,11 @@ export default function HomeHeroVisual({ topSpots, popularMaps }: HomeHeroVisual
         {second && (
           <HeroTile
             href={`/hidden-spots/${second.slug}`}
-            badge="#2"
+            badge="#2 Spot"
             badgeClass="bg-black/50 text-white/90 ring-1 ring-white/20"
             title={second.name}
             subtitle={second.map}
-            className="col-span-3 row-span-3"
+            className="col-span-4 row-span-3"
           >
             <SpotImage
               src={second.imageUrl}
@@ -120,19 +140,57 @@ export default function HomeHeroVisual({ topSpots, popularMaps }: HomeHeroVisual
           </HeroTile>
         )}
 
+        {map3 && (
+          <HeroTile
+            href={`/workshop-maps/${map3.slug}`}
+            badge="#3 Workshop"
+            badgeClass="bg-purple/20 text-purple ring-1 ring-purple/40"
+            title={map3.title}
+            subtitle="Steam Workshop"
+            className="col-span-4 row-span-3"
+          >
+            <Image
+              src={map3.imageUrl}
+              alt={map3.title}
+              fill
+              sizes="(max-width: 1024px) 30vw, 200px"
+              className="object-cover transition duration-500 group-hover:scale-105"
+            />
+          </HeroTile>
+        )}
+
         {third && (
           <HeroTile
             href={`/hidden-spots/${third.slug}`}
-            badge="#3"
+            badge="#3 Spot"
             badgeClass="bg-black/50 text-white/90 ring-1 ring-white/20"
             title={third.name}
             subtitle={third.map}
-            className="col-span-2 row-span-3"
+            className="col-span-3 row-span-3"
           >
             <SpotImage
               src={third.imageUrl}
               alt={`${third.name} on ${third.map}`}
               className="transition duration-500 group-hover:scale-105"
+            />
+          </HeroTile>
+        )}
+
+        {map4 && (
+          <HeroTile
+            href={`/workshop-maps/${map4.slug}`}
+            badge="#4 Workshop"
+            badgeClass="bg-purple/20 text-purple ring-1 ring-purple/40"
+            title={map4.title}
+            subtitle="Steam Workshop"
+            className="col-span-4 row-span-3"
+          >
+            <Image
+              src={map4.imageUrl}
+              alt={map4.title}
+              fill
+              sizes="(max-width: 1024px) 30vw, 200px"
+              className="object-cover transition duration-500 group-hover:scale-105"
             />
           </HeroTile>
         )}
