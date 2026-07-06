@@ -40,16 +40,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <meta
-          name="impact-site-verification"
-          content="009d07ae-ef87-4df4-a4ce-f5f1ddd59e49"
-        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967304417583767"
           crossOrigin="anonymous"
         />
-        <Autotag />
       </head>
       <body className="safe-area-pb flex min-h-full flex-col">
         <Header />
