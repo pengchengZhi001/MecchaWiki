@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 import JsonLd from "@/components/JsonLd";
+import QaImageBlock from "@/components/QaImageBlock";
 import { guides, getGuideBySlug } from "@/data/guides";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
 import { NativeBanner } from "@/components/ads";
@@ -102,6 +103,11 @@ export default async function GuideDetailPage({ params }: Props) {
             </div>
             <h1 className="mt-4 break-words text-3xl font-bold sm:text-4xl">{guide.title}</h1>
             <p className="mt-3 break-words text-lg text-muted">{guide.excerpt}</p>
+            {guide.heroImage && (
+              <div className="mt-6">
+                <QaImageBlock image={guide.heroImage} priority />
+              </div>
+            )}
           </header>
 
           <NativeBanner />
@@ -130,6 +136,7 @@ export default async function GuideDetailPage({ params }: Props) {
               return (
                 <section key={id} id={id} className="scroll-mt-24">
                   <h2 className="break-words text-xl font-bold">{section.heading}</h2>
+                  {section.image && <QaImageBlock image={section.image} />}
                   <p className="mt-4 break-words leading-relaxed text-foreground/80">{section.body}</p>
                 </section>
               );

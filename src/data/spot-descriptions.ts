@@ -162,6 +162,12 @@ export const spotDescriptions: Record<string, string> = {
     "Monet's Impression, Sunrise wing — visible from door so hunters think they already checked it.",
   "art-gallery-gilded-frame-corner":
     "The Annunciation shadow beside the winged figure — sideways pose in the dark strip.",
+  "art-gallery-dark-boat":
+    "Dark boat canvas beside Monet's Impression, Sunrise — single-tone lay-flat hide hunters overlook.",
+  "art-gallery-burial-ornans":
+    "A Burial at Ornans in the dark spawn-side room — blend into mourners' black dresses from any distance.",
+  "art-gallery-napoleon-cape":
+    "Napoleon on horseback in the piano room — cape edge and background cross-sections hide the silhouette.",
   "meeting-room-cubicle-maze":
     "Office cubicle maze with partition walls and desk clutter at crouch height.",
   "meeting-room-conference-corner":

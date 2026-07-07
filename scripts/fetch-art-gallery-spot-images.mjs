@@ -27,6 +27,9 @@ const ART_GALLERY_SOURCES = {
     "meccha-chameleon-art-gallery-hiding-impression-sunrise.jpg",
   "art-gallery-large-canvas":
     "meccha-chameleon-art-gallery-hiding-spots-pompeii.jpg",
+  "art-gallery-dark-boat": "meccha-chameleon-art-gallery-hiding-boat.jpg",
+  "art-gallery-burial-ornans": "meccha-chameleon-art-gallery-hiding-nun.jpg",
+  "art-gallery-napoleon-cape": "meccha-chameleon-art-gallery-hiding-napoleon.jpg",
 };
 
 function md5(buf) {

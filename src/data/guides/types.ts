@@ -1,7 +1,14 @@
+export type QaImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
 export type GuideSection = {
   id?: string;
   heading: string;
   body: string;
+  image?: QaImage;
 };
 
 export type GuideSource = {
@@ -16,6 +23,8 @@ export type Guide = {
   readTime: string;
   excerpt: string;
   content: GuideSection[];
+  /** Optional hero image for the guide header. */
+  heroImage?: QaImage;
   /** Extra search terms for page metadata — beyond default site keywords. */
   seoKeywords?: string[];
   /** External references used to write this guide — no unsourced claims. */
