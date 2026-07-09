@@ -446,6 +446,46 @@ export const demandLibrary: DemandEntry[] = [
     category: "Other",
     notes: "No meaningful search demand in player discussions",
   },
+  {
+    question: "Is Meccha Chameleon on Nintendo Switch / PS5 / Xbox?",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/platforms-guide",
+    category: "Setup",
+    notes: "SlashSkill + Insider Gaming — PC-only Steam exclusive July 2026",
+  },
+  {
+    question: "Why Did Meccha Chameleon Go Viral / 15 Million Sales?",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/viral-success-guide",
+    category: "Community",
+    notes: "GamesRadar + PC Gamer + Reddit formula threads",
+  },
+  {
+    question: "Japanese Star Collaboration / Hatsune Miku Tease",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/viral-success-guide",
+    category: "Community",
+    notes: "Steam 15M post + IGN fan theories — unconfirmed partner",
+  },
+  {
+    question: "Steam Feature Requests — Matchmaking, Parental Safety, Bots",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/player-wishlist-guide",
+    category: "Community",
+    notes: "Live General Discussions threads July 2026",
+  },
+  {
+    question: "Silhouette & Shadow Hiding (Japanese Community Meta)",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/silhouette-shadow-guide",
+    category: "Strategy",
+    notes: "note.com + Gamerch + mecchachameleon.blog — chair-leg tactics",
+  },
 ];
 
 export function demandByCategory(): Map<string, DemandEntry[]> {

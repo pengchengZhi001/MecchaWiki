@@ -36,6 +36,11 @@ export const updatesGuide: Guide = {
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
     },
     {
+      id: "v250",
+      heading: "v2.5.0 — Osaka Rework & Collaboration Map Tease",
+      body: "consolepcgaming.com documents update 2.5.0: reworked Osaka official map, improved paint brush resolution, experimental color palette for upcoming controller support, 3D color picker stability fixes, and Gyakusan Chicken Race collision/paint sync fixes. The same post teased a collaboration map arriving mid-week — see Viral Success guide for the Japanese star announcement context from the 15M sales milestone. Re-test Osaka signage and truck-bed spots after the rework; subscribe to new workshop or official maps via Steam News when the collab ships.",
+    },
+    {
       id: "v230",
       heading: "v2.3.0 — Hunter Ammo Limit",
       body: "Steam community threads complained about unlimited seeker spraying — hosts gained a lobby setting to cap hunter ammo. See Hunter Ammo Limit Guide for host menu path and recommended values for 6–10 player lobbies. Seekers must aim more deliberately; hiders in open Mansion ballrooms benefit when spam tagging ends.",

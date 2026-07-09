@@ -39,6 +39,10 @@ import { worthItBuyersGuide } from "./guides/worth-it-buyers-guide";
 import { updatesGuide } from "./guides/updates-guide";
 import { patchFixesHubGuide } from "./guides/patch-fixes-hub";
 import { problemsAfterUpdateGuide } from "./guides/problems-after-update";
+import { platformsGuide } from "./guides/platforms-guide";
+import { viralSuccessGuide } from "./guides/viral-success-guide";
+import { playerWishlistGuide } from "./guides/player-wishlist-guide";
+import { silhouetteShadowGuide } from "./guides/silhouette-shadow-guide";
 
 export type { Guide } from "./guides/types";
 
@@ -52,6 +56,10 @@ export const guides: Guide[] = [
   worthItBuyersGuide,
   trelloGuide,
   discordCommunityGuide,
+  platformsGuide,
+  viralSuccessGuide,
+  playerWishlistGuide,
+  silhouetteShadowGuide,
   {
     slug: "beginner-basics",
     title: "How To Hide Better In Meccha Chameleon",

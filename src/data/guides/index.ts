@@ -31,3 +31,7 @@ export { resultsScreenGuide } from "./results-screen-guide";
 export { emotesPosesGuide } from "./emotes-poses-guide";
 export { patternTextureWishlistGuide } from "./pattern-texture-wishlist-guide";
 export { controllerSupportGuide } from "./controller-support-guide";
+export { platformsGuide } from "./platforms-guide";
+export { viralSuccessGuide } from "./viral-success-guide";
+export { playerWishlistGuide } from "./player-wishlist-guide";
+export { silhouetteShadowGuide } from "./silhouette-shadow-guide";
