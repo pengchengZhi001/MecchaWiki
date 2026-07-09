@@ -208,7 +208,7 @@ export const maps: GameMap[] = [
     accentColor: "#1E3A5F",
     imageUrl: MAP_IMAGES["osaka"],
     description:
-      "Japan-themed urban map added in v1.7.0 (June 22, 2026). IGN describes it as the smallest official map — signage, storefronts, lanterns, truck bed, and octopus statue zones. Warm lantern reds mix with cool signage blues.",
+      "Japan-themed urban map added in v1.7.0 (June 22, 2026), reworked in v2.5.0 (July 2026). IGN describes it as the smallest official map — signage, storefronts, lanterns, truck bed, and octopus statue zones. Re-test database spots after the rework; layout and clutter zones may have shifted.",
     tips: [
       "Smallest map — pick spots early; open ground is risky.",
       "Sample exact urban surface — mixed pixels on signs and crates.",

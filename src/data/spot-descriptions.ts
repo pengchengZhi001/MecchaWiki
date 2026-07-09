@@ -196,4 +196,12 @@ export const spotDescriptions: Record<string, string> = {
     "Pineapple house wall — sample fruit orange and sand beige separately.",
   "bikini-bottom-krusty-krab":
     "Krusty Krab kitchen counter clutter — re-sample when entering from outside.",
+  "minecraft-village-crafting-table":
+    "Minecraft Village crafting table — GAMES.GG's top-tested blend on the #8 ranked workshop map.",
+  "minecraft-village-tree-canopy":
+    "Tree canopy perch above default sightline — GAMES.GG warns hunters to look up.",
+  "megamall-grocery-shelf":
+    "MegaMall grocery aisle shelf row — TheGamer mall guide's primary replayable hide.",
+  "megamall-arcade-cluster":
+    "Arcade cabinet cluster in MegaMall — colorful machine faces break outline.",
 };

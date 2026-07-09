@@ -58,6 +58,7 @@ const WORKSHOP_SPOT_SOURCES = {
     "https://images.steamusercontent.com/ugc/14906373178721883619/7B48EE463C3200694958EE62186D86200C32C574/",
   "bikini-bottom-krusty-krab":
     "https://images.steamusercontent.com/ugc/14906373178721883619/7B48EE463C3200694958EE62186D86200C32C574/",
+  // minecraft-village-*, megamall-* → scripts/crop-workshop-spot-previews.mjs
 };
 
 function extFromContentType(type) {

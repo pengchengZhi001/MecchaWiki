@@ -635,7 +635,11 @@ const MAP_FALLBACK: Record<
     ],
     paintNote: "Mixed lantern reds and signage blues — commit to one surface, never mid-blend urban pixels.",
     poseNote: "Truck bed needs shadow values; signage/octopus zone rewards vertical prep before hunt phase.",
-    winTips: ["Smallest official map — seekers re-check areas fast (IGN).", "JP community highlights Uni Douraku storefront disguises near shop clutter."],
+    winTips: [
+      "Smallest official map — seekers re-check areas fast (IGN).",
+      "JP community highlights Uni Douraku storefront disguises near shop clutter.",
+      "v2.5.0 (July 2026) reworked Osaka geometry — re-verify truck bed, signage, and alley spots in a private lobby before ranked play.",
+    ],
   },
 };
 

@@ -486,6 +486,29 @@ export const demandLibrary: DemandEntry[] = [
     category: "Strategy",
     notes: "note.com + Gamerch + mecchachameleon.blog — chair-leg tactics",
   },
+  {
+    question: "Japanese Star Collaboration Map (Official)",
+    searchValue: 5,
+    status: "planned",
+    category: "Maps",
+    notes: "Teased mid-week July 2026 in Steam 15M post + v2.5.0 — not shipped as of Jul 9",
+  },
+  {
+    question: "MegaMall / Minecraft Village Workshop Spots",
+    searchValue: 4,
+    status: "done",
+    href: "/hidden-spots",
+    category: "Workshop",
+    notes: "TheGamer mall guide + GAMES.GG #8 Minecraft Village — Jul 2026 sync",
+  },
+  {
+    question: "Osaka v2.5.0 Rework — Re-test Hiding Spots",
+    searchValue: 4,
+    status: "done",
+    href: "/maps/osaka",
+    category: "Maps",
+    notes: "consolepcgaming.com v2.5.0 rework — spot tips flagged for re-verify",
+  },
 ];
 
 export function demandByCategory(): Map<string, DemandEntry[]> {
