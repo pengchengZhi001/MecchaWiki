@@ -17,6 +17,7 @@ const topGuides = [
 const legalLinks = [
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/disclaimer", label: "Disclaimer" },
+  { href: `mailto:${siteConfig.contactEmail}`, label: "Contact Us" },
 ] as const;
 
 export default function Footer() {
@@ -78,12 +79,21 @@ export default function Footer() {
             <ul className="mt-3 space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-foreground/70 transition hover:text-accent"
-                  >
-                    {link.label}
-                  </Link>
+                  {link.href.startsWith("mailto:") ? (
+                    <a
+                      href={link.href}
+                      className="text-sm text-foreground/70 transition hover:text-accent"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="text-sm text-foreground/70 transition hover:text-accent"
+                    >
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

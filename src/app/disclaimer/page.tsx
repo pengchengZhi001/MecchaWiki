@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { createMetadata } from "@/lib/metadata";
 import { NativeBanner } from "@/components/ads";
+import { createMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = createMetadata({
   title: "Disclaimer",
@@ -71,6 +72,20 @@ export default function DisclaimerPage() {
           <p className="mt-2">
             See our <Link href="/privacy" className="text-accent hover:underline">Privacy Policy</Link>{" "}
             for data handling practices.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold text-foreground">Contact</h2>
+          <p className="mt-2">
+            For corrections, takedown requests, or general inquiries, email{" "}
+            <a
+              href={`mailto:${siteConfig.contactEmail}`}
+              className="text-accent hover:underline"
+            >
+              {siteConfig.contactEmail}
+            </a>
+            .
           </p>
         </section>
       </div>

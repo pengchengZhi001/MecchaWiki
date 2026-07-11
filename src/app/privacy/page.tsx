@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { createMetadata } from "@/lib/metadata";
 import { NativeBanner } from "@/components/ads";
+import { createMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = createMetadata({
   title: "Privacy Policy",
@@ -83,8 +84,14 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-lg font-semibold text-foreground">Contact</h2>
           <p>
-            Questions about this policy can be sent through the contact method listed on the site
-            footer when available.
+            Questions about this policy can be sent to{" "}
+            <a
+              href={`mailto:${siteConfig.contactEmail}`}
+              className="text-accent underline-offset-2 hover:underline"
+            >
+              {siteConfig.contactEmail}
+            </a>
+            .
           </p>
         </section>
       </div>

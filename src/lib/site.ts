@@ -6,6 +6,7 @@ export const siteConfig = {
   url: "https://meccha.wiki",
   locale: "en-US",
   author: "Meccha Wiki",
+  contactEmail: "contact@meccha.wiki",
 } as const;
 
 export const navLinks = [
