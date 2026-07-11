@@ -38,7 +38,7 @@ export const updatesGuide: Guide = {
     {
       id: "v250",
       heading: "v2.5.0 — Osaka Rework & Collaboration Map Tease",
-      body: "consolepcgaming.com documents update 2.5.0: reworked Osaka official map, improved paint brush resolution, experimental color palette for upcoming controller support, 3D color picker stability fixes, and Gyakusan Chicken Race collision/paint sync fixes. The same post teased a collaboration map arriving mid-week — see Viral Success guide for the Japanese star announcement context from the 15M sales milestone. Re-test Osaka signage and truck-bed spots after the rework; subscribe to new workshop or official maps via Steam News when the collab ships.",
+      body: "consolepcgaming.com documents update 2.5.0: reworked Osaka official map, improved paint brush resolution, experimental color palette for upcoming controller support, 3D color picker stability fixes, and Gyakusan Chicken Race collision/paint sync fixes. The same post teased a collaboration map arriving mid-week — see Viral Success guide for the Japanese star announcement context from the 15M sales milestone. Re-test Osaka signage and truck-bed spots after the rework; subscribe to new workshop or official maps via Steam News when the collab ships. Post-update troubleshooting: Problems After v2.5.0 fix guide.",
     },
     {
       id: "v230",

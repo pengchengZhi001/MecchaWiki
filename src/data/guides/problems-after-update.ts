@@ -29,12 +29,17 @@ export const problemsAfterUpdateGuide: Guide = {
     {
       id: "first-60-seconds",
       heading: "First 60 Seconds — Do This Before Anything Else",
-      body: `Released ${latestPatch.releasedAt}: ${latestPatch.headline}. Close the game fully (not minimized). Exit Steam and reopen it. Confirm Meccha Chameleon shows no pending download. Relaunch from the Steam library — not a desktop shortcut to an old build. Have every friend repeat these steps. One outdated player breaks private lobbies even when passwords and server names are correct.`,
+      body: `Released ${latestPatch.releasedAt}: ${latestPatch.headline}. Close the game fully (not minimized). Exit Steam and reopen it. Confirm Meccha Chameleon shows no pending download. Relaunch from the Steam library — not a desktop shortcut to an old build. Have every friend repeat these steps. One outdated player breaks private lobbies even when passwords and server names are correct. For v2.5.0-specific issues (Osaka rework, paint brush, Chicken Race), see the full v2.5.0 fix guide.`,
+    },
+    {
+      id: "v250-specific",
+      heading: `${latestPatch.version} — Version-Specific Issues`,
+      body: "Update 2.5.0 reworked Osaka, improved brush resolution and 3D color picker stability, and fixed Gyakusan Chicken Race desync. Spots filmed before the rework may fail legitimately — not a corrupt install. Full symptom-by-symptom walkthrough: Problems After v2.5.0 guide (/guides/problems-after-v2-5-0).",
     },
     {
       id: "lobby-broken",
       heading: "Multiplayer Broken After Patch",
-      body: "Symptoms: version mismatch, black screen on join, friend cannot see your room, infinite loading. Fix order: (1) everyone on same build, (2) host creates a new room with a fresh invite, (3) test Mansion before workshop, (4) verify game files. Full walkthrough: Can't Join Lobby guide. EULA blocks also appear after some updates — both players must accept current terms.",
+      body: "Symptoms: version mismatch, black screen on join, friend cannot see your room, infinite loading. Fix order: (1) everyone on same build, (2) host creates a new room with a fresh invite, (3) test Mansion before workshop, (4) verify game files. Full walkthrough: Can't Join Lobby guide. EULA blocks also appear after some updates — both players must accept current terms: EULA Fix guide.",
     },
     {
       id: "auth-token",

@@ -56,7 +56,7 @@ export const firstMatchChecklistGuide: Guide = {
     {
       id: "step-3-eula",
       heading: "Step 3 — Accept EULA and Link Accounts",
-      body: "First successful boot may show terms agreement — accept in a language you understand. Steam thread reports friends cannot share lobbies until both accepted current EULA. If you picked random language at install and prompt vanished, verify game files to restore agreement screen. Epic Online Services links Steam identity for multiplayer — if token errors persist after Step 2, relink Steam at epicgames.com before friend invites.",
+      body: "First successful boot may show terms agreement — accept in a language you understand. Steam thread reports friends cannot share lobbies until both accepted current EULA. If you picked random language at install and prompt vanished, verify game files to restore agreement screen — full walkthrough: EULA Fix guide. Epic Online Services links Steam identity for multiplayer — if token errors persist after Step 2, relink Steam at epicgames.com before friend invites.",
     },
     {
       id: "step-4-controls",

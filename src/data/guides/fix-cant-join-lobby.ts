@@ -49,7 +49,7 @@ export const fixCantJoinLobbyGuide: Guide = {
     {
       id: "eula-agreement",
       heading: "Step 3b — EULA Agreement (Both Players)",
-      body: "Steam thread \"Can't join friends server\" reports that if both parties have not agreed to the new EULA, they cannot play in the same lobby — one player restarting and accepting the prompt fixed the issue for that group. If a friend accepted a non-English EULA at random during install and the prompt does not reappear, verify game files or reinstall so the agreement screen returns. Everyone in the party should confirm they saw and accepted the current terms before debugging network settings.",
+      body: "Steam thread \"Can't join friends server\" reports that if both parties have not agreed to the new EULA, they cannot play in the same lobby — one player restarting and accepting the prompt fixed the issue for that group. If a friend accepted a non-English EULA at random during install and the prompt does not reappear, verify game files or reinstall so the agreement screen returns. Everyone in the party should confirm they saw and accepted the current terms before debugging network settings. Full EULA-only walkthrough: EULA Fix guide (/guides/fix-eula-cant-join).",
     },
     {
       id: "workshop-maps",

@@ -59,7 +59,7 @@ export const fixSteamInviteNotWorkingGuide: Guide = {
     {
       id: "eula-block",
       heading: "Step 5 — EULA Agreement on Both Accounts",
-      body: "Steam thread Can't join friends server reports both parties must accept the current EULA before sharing a lobby — symptoms mimic invite failure with no clear error. Each player launches solo once, accepts any terms prompt, restarts game. If someone picked a random language at install and the popup never returns, verify game files to force the agreement screen. After EULA parity, still create a fresh room — EULA blocks do not fix themselves on old sessions.",
+      body: "Steam thread Can't join friends server reports both parties must accept the current EULA before sharing a lobby — symptoms mimic invite failure with no clear error. Each player launches solo once, accepts any terms prompt, restarts game. If someone picked a random language at install and the popup never returns, verify game files to force the agreement screen. Full walkthrough: EULA Fix guide. After EULA parity, still create a fresh room — EULA blocks do not fix themselves on old sessions.",
     },
     {
       id: "workshop-invite",

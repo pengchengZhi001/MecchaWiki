@@ -253,9 +253,17 @@ export const demandLibrary: DemandEntry[] = [
     question: "EULA Blocks Friend Lobby Join",
     searchValue: 4,
     status: "done",
-    href: "/guides/fix-cant-join-lobby",
+    href: "/guides/fix-eula-cant-join",
     category: "Bug Fix",
     notes: "Steam Can't join friends server thread",
+  },
+  {
+    question: "v2.5.0 Update Problems — Osaka, Paint, Chicken Race",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/problems-after-v2-5-0",
+    category: "Bug Fix",
+    notes: "Steam News update 2.5.0 + PatchDiff Jul 4 2026",
   },
   {
     question: "PC Overheating / Runs Very Hot",

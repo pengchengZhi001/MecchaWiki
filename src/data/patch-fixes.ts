@@ -70,6 +70,18 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     category: "Workshop",
     searchValue: 4,
   },
+  {
+    slug: "fix-eula-cant-join",
+    title: "EULA Blocks Friend Lobby",
+    category: "Multiplayer",
+    searchValue: 4,
+  },
+  {
+    slug: "problems-after-v2-5-0",
+    title: "v2.5.0 Update Problems — Full Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
 ];
 
 /**
@@ -78,7 +90,7 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  */
 export const latestPatch: GamePatch = {
   version: "v2.5.0",
-  releasedAt: "2026-07-09",
+  releasedAt: "2026-07-04",
   headline: "Osaka map rework, brush resolution improvements, and collaboration map tease",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
@@ -122,6 +134,18 @@ export const latestPatch: GamePatch = {
       symptom: "Steam invite not working / black screen on join",
       searchTerms: ["invite not working", "in-game invite", "join failed"],
       fixGuideSlug: "fix-steam-invite-not-working",
+      priority: "medium",
+    },
+    {
+      symptom: "Friend can't join — EULA or terms not accepted",
+      searchTerms: ["EULA", "terms", "agreement", "can't join friends"],
+      fixGuideSlug: "fix-eula-cant-join",
+      priority: "high",
+    },
+    {
+      symptom: "Post-2.5.0 Osaka spots or paint tools feel broken",
+      searchTerms: ["Osaka rework", "v2.5.0", "paint brush", "color picker"],
+      fixGuideSlug: "problems-after-v2-5-0",
       priority: "medium",
     },
     {

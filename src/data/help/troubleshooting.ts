@@ -17,8 +17,8 @@ export const troubleshootingTopic: HelpTopic = {
         "After EULA parity, still confirm same game version and create a fresh room — EULA blocks look like generic invite failures.",
       ],
       relatedLink: {
-        href: "/guides/fix-cant-join-lobby",
-        label: "Full Can't Join Lobby fix guide",
+        href: "/guides/fix-eula-cant-join",
+        label: "Full EULA fix guide",
       },
     },
     {
