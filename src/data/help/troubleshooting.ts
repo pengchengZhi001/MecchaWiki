@@ -116,8 +116,8 @@ export const troubleshootingTopic: HelpTopic = {
         "Use a unique server name plus password for private tests so friends confirm they landed in the right lobby before prep starts.",
       ],
       relatedLink: {
-        href: "/help/multiplayer",
-        label: "Multiplayer & room setup guide",
+        href: "/guides/fix-steam-invite-not-working",
+        label: "Steam invite fix guide",
       },
     },
     {
@@ -135,8 +135,8 @@ export const troubleshootingTopic: HelpTopic = {
         "If load fails repeatedly, switch to an official map (Mansion, Sewer) to verify connectivity, then re-add workshop once base multiplayer works.",
       ],
       relatedLink: {
-        href: "/workshop-maps",
-        label: "Browse curated workshop maps",
+        href: "/guides/fix-workshop-map-loading",
+        label: "Workshop map loading fix guide",
       },
     },
     {
@@ -173,8 +173,8 @@ export const troubleshootingTopic: HelpTopic = {
         "If only the host sees void while hiders play normally, host should verify files, lower graphics preset once, and recreate lobby — do not report players for cheating until load parity is confirmed.",
       ],
       relatedLink: {
-        href: "/help/troubleshooting#workshop-map-wont-load",
-        label: "Workshop map won't load checklist",
+        href: "/guides/fix-workshop-map-loading",
+        label: "Workshop map loading fix guide",
       },
     },
     {

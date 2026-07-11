@@ -89,8 +89,8 @@ export const gettingStartedTopic: HelpTopic = {
         "If you see \"invalid authentication token\" instead of a hard crash, that is an Epic Online Services login issue — follow the dedicated auth fix guide rather than reinstalling blindly.",
       ],
       relatedLink: {
-        href: "/guides/fix-authentication-token",
-        label: "Authentication token fix guide",
+        href: "/guides/fix-game-wont-launch",
+        label: "Full won't launch fix guide",
       },
     },
     {
@@ -162,8 +162,8 @@ export const gettingStartedTopic: HelpTopic = {
         "Host should pick an official map for the first session — add workshop maps only after everyone confirms subscriptions downloaded.",
       ],
       relatedLink: {
-        href: "/guides/beginner-basics",
-        label: "Full beginner hiding guide",
+        href: "/guides/first-match-checklist",
+        label: "Full first match checklist",
       },
     },
     {

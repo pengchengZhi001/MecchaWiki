@@ -38,7 +38,7 @@ export const howToPlayGuide: Guide = {
     {
       id: "buy-install",
       heading: "How to Buy and Install",
-      body: "Search \"MECCHA CHAMELEON\" in the Steam store or open App ID 4704690 directly. Add to cart, complete checkout, and launch from your Steam Library. The game is PC-only — no PlayStation, Xbox, Switch, or mobile version at launch, so cross-platform play is not supported. Minimum specs are modest; if you see lag or blurry shaders on first launch, try Launch Options -dx11 (see our lag fix guide).",
+      body: "Search \"MECCHA CHAMELEON\" in the Steam store or open App ID 4704690 directly. Add to cart, complete checkout, and launch from your Steam Library. The game is PC-only — no PlayStation, Xbox, Switch, or mobile version at launch, so cross-platform play is not supported. Minimum specs are modest; if you see lag or blurry shaders on first launch, try Launch Options -dx11 (see our lag fix guide). Full install-to-first-match order: First Match Checklist.",
     },
     {
       id: "first-lobby",
@@ -78,7 +78,7 @@ export const howToPlayGuide: Guide = {
     {
       id: "next-steps",
       heading: "What to Read Next",
-      body: "After your first match: Tips and Tricks for quick wins, Color Matching for survival rates, Private Lobby Guide for friend nights, and our hidden spot database filtered by map. If you cannot join friends, read the can't join lobby fix before changing firewall settings. Search \"Meccha Chameleon\" or the common misspellings — this wiki covers all three.",
+      body: "New players: start with the First Match Checklist for install-to-lobby order, then Tips and Tricks for quick wins, Color Matching for survival rates, Private Lobby Guide for friend nights, and our hidden spot database filtered by map. If you cannot join friends, read the can't join lobby fix before changing firewall settings. Search \"Meccha Chameleon\" or the common misspellings — this wiki covers all three.",
     },
   ],
 };

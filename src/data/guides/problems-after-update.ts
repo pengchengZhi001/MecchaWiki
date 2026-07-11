@@ -49,7 +49,7 @@ export const problemsAfterUpdateGuide: Guide = {
     {
       id: "workshop-void",
       heading: "Workshop Map Black Void / Failed to Load",
-      body: "After updates, workshop file paths can desync. Every player must re-subscribe on Steam Workshop, restart the game, and wait for download completion before the host selects the map. Test with an official map first to isolate workshop vs multiplayer issues. Host should pick a map everyone has locally — Seeker Black Void threads often trace to one missing subscription.",
+      body: "After updates, workshop file paths can desync. Every player must re-subscribe on Steam Workshop, restart the game, and wait for download completion before the host selects the map. Test with an official map first to isolate workshop vs multiplayer issues. Host should pick a map everyone has locally — Seeker Black Void threads often trace to one missing subscription. Full walkthrough: Workshop Map Loading fix guide.",
     },
     {
       id: "taunt-broken",

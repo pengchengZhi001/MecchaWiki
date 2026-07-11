@@ -52,6 +52,24 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     category: "Patch",
     searchValue: 5,
   },
+  {
+    slug: "fix-game-wont-launch",
+    title: "Won't Launch / Crashes on Startup",
+    category: "Launch",
+    searchValue: 5,
+  },
+  {
+    slug: "fix-steam-invite-not-working",
+    title: "Steam Invite Not Working",
+    category: "Multiplayer",
+    searchValue: 4,
+  },
+  {
+    slug: "fix-workshop-map-loading",
+    title: "Workshop Map Won't Load / Black Void",
+    category: "Workshop",
+    searchValue: 4,
+  },
 ];
 
 /**
@@ -59,9 +77,9 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v2.4.0",
-  releasedAt: "2026-06-28",
-  headline: "Stability hotfix — lobby sync, workshop load, and spot geometry tweaks",
+  version: "v2.5.0",
+  releasedAt: "2026-07-09",
+  headline: "Osaka map rework, brush resolution improvements, and collaboration map tease",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
     {
@@ -91,7 +109,19 @@ export const latestPatch: GamePatch = {
     {
       symptom: "Workshop map black void / failed to load",
       searchTerms: ["workshop load fail", "black void", "map not loading"],
-      fixGuideSlug: "problems-after-update",
+      fixGuideSlug: "fix-workshop-map-loading",
+      priority: "high",
+    },
+    {
+      symptom: "Game won't launch or crashes on startup",
+      searchTerms: ["won't launch", "crash on startup", "not starting"],
+      fixGuideSlug: "fix-game-wont-launch",
+      priority: "high",
+    },
+    {
+      symptom: "Steam invite not working / black screen on join",
+      searchTerms: ["invite not working", "in-game invite", "join failed"],
+      fixGuideSlug: "fix-steam-invite-not-working",
       priority: "medium",
     },
     {
@@ -102,9 +132,9 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Backrooms bike wall and office corner clips — geometry adjusted in recent hotfixes",
-    "Mansion bathroom tile reflectivity — re-sample with metallic slider",
-    "Workshop maps with recent creator patches — check Steam comments before hosting",
+    "Osaka signage and truck-bed spots — reworked geometry in v2.5.0 per consolepcgaming.com",
+    "Mansion bathroom tile reflectivity — re-sample with metallic slider after brush resolution changes",
+    "Workshop maps with recent creator patches — check Steam comments before hosting post-update",
   ],
 };
 

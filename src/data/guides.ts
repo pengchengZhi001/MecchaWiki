@@ -43,10 +43,15 @@ import { platformsGuide } from "./guides/platforms-guide";
 import { viralSuccessGuide } from "./guides/viral-success-guide";
 import { playerWishlistGuide } from "./guides/player-wishlist-guide";
 import { silhouetteShadowGuide } from "./guides/silhouette-shadow-guide";
+import { firstMatchChecklistGuide } from "./guides/first-match-checklist";
+import { fixGameWontLaunchGuide } from "./guides/fix-game-wont-launch";
+import { fixWorkshopMapLoadingGuide } from "./guides/fix-workshop-map-loading";
+import { fixSteamInviteNotWorkingGuide } from "./guides/fix-steam-invite-not-working";
 
 export type { Guide } from "./guides/types";
 
 export const guides: Guide[] = [
+  firstMatchChecklistGuide,
   howToPlayGuide,
   tipsAndTricksGuide,
   controlsGuide,
@@ -126,6 +131,9 @@ export const guides: Guide[] = [
   coldStorageBrickGuide,
   fixCantJoinLobbyGuide,
   fixAuthenticationTokenGuide,
+  fixGameWontLaunchGuide,
+  fixSteamInviteNotWorkingGuide,
+  fixWorkshopMapLoadingGuide,
   fixLagBlurryScreenGuide,
   whyKeepGettingFoundGuide,
   howToPaintBetterGuide,
