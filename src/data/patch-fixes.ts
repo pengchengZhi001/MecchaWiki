@@ -82,6 +82,12 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     category: "Patch",
     searchValue: 5,
   },
+  {
+    slug: "problems-after-v2-7-0",
+    title: "v2.7.0 Update Problems — Egypt / HIKAKIN Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
 ];
 
 /**
@@ -89,9 +95,9 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v2.5.0",
-  releasedAt: "2026-07-04",
-  headline: "Osaka map rework, brush resolution improvements, and collaboration map tease",
+  version: "v2.7.0",
+  releasedAt: "2026-07-12",
+  headline: "Egypt map, random-map lottery toggles, Penguin Hotel randomization, HIKAKIN wall fix",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
     {
@@ -110,6 +116,18 @@ export const latestPatch: GamePatch = {
       symptom: "Blurry screen or sudden FPS drop after patch",
       searchTerms: ["blurry screen", "lag", "low fps", "dx12"],
       fixGuideSlug: "fix-lag-blurry-screen",
+      priority: "high",
+    },
+    {
+      symptom: "HIKAKIN Museum missing from random map lottery",
+      searchTerms: ["collaboration map off", "HIKAKIN missing", "random map toggle"],
+      fixGuideSlug: "problems-after-v2-7-0",
+      priority: "high",
+    },
+    {
+      symptom: "Penguin Hotel hiding spots feel randomized / broken",
+      searchTerms: ["Penguin Hotel random", "furniture moved", "Hotel spot gone"],
+      fixGuideSlug: "problems-after-v2-7-0",
       priority: "high",
     },
     {
@@ -143,6 +161,12 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
+      symptom: "Stuck in HIKAKIN Museum walls after collab map",
+      searchTerms: ["HIKAKIN stuck", "wall clip museum", "collision museum"],
+      fixGuideSlug: "problems-after-v2-7-0",
+      priority: "medium",
+    },
+    {
       symptom: "Post-2.5.0 Osaka spots or paint tools feel broken",
       searchTerms: ["Osaka rework", "v2.5.0", "paint brush", "color picker"],
       fixGuideSlug: "problems-after-v2-5-0",
@@ -156,9 +180,10 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Osaka signage and truck-bed spots — reworked geometry in v2.5.0 per consolepcgaming.com",
-    "Mansion bathroom tile reflectivity — re-sample with metallic slider after brush resolution changes",
-    "Workshop maps with recent creator patches — check Steam comments before hosting post-update",
+    "Egypt pillar / alcove / hieroglyph spots — brand-new v2.7.0 map; early community meta only",
+    "Penguin Hotel ice sculpture and plush rooms — random elements added in v2.7.0; scout during prep",
+    "HIKAKIN Museum photo walls and Misokin displays — avoid deep wall clips after collision fix",
+    "Random lottery — enable collaboration maps manually; they default OFF",
   ],
 };
 

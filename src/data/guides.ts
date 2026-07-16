@@ -49,6 +49,7 @@ import { fixWorkshopMapLoadingGuide } from "./guides/fix-workshop-map-loading";
 import { fixSteamInviteNotWorkingGuide } from "./guides/fix-steam-invite-not-working";
 import { fixEulaCantJoinGuide } from "./guides/fix-eula-cant-join";
 import { problemsAfterV250Guide } from "./guides/problems-after-v2-5-0";
+import { problemsAfterV270Guide } from "./guides/problems-after-v2-7-0";
 
 export type { Guide } from "./guides/types";
 
@@ -60,6 +61,7 @@ export const guides: Guide[] = [
   updatesGuide,
   patchFixesHubGuide,
   problemsAfterUpdateGuide,
+  problemsAfterV270Guide,
   problemsAfterV250Guide,
   worthItBuyersGuide,
   trelloGuide,

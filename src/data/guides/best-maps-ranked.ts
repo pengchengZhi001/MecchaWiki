@@ -40,12 +40,12 @@ export const bestMapsRankedGuide: Guide = {
     {
       id: "b-tier-advanced",
       heading: "Advanced — High Pressure Maps",
-      body: "7) Penguin Hotel — Advanced / v1.2.0. Ice blues, plush interiors, seeker-favored ballroom. 8) Osaka — Advanced / v1.7.0. IGN: smallest official map — clever positioning required; truck bed, signage height, shop clutter. Limited space means seekers re-check areas faster.",
+      body: "7) Penguin Hotel — Advanced / v1.2.0 (random elements in v2.7.0 — re-scout props). Ice blues, plush interiors, seeker-favored ballroom. 8) Osaka — Advanced / v1.7.0. IGN: smallest official map — clever positioning required; truck bed, signage height, shop clutter. 9) Egypt — Advanced / v2.7.0. Desert tomb palette; early pillar and alcove meta, open sand is lethal. 10) HIKAKIN Museum — Medium collab / v2.6.0. Photo walls and exhibit props; lottery default OFF in random mode.",
     },
     {
       id: "expert-tier",
       heading: "Expert — Minimal Forgiveness",
-      body: "9) Cold Storage — Expert per site map data. Cold steel gray mandatory; almost no decorative clutter — positioning and shelf shadows do all the work. Warm tones pop instantly. Best for players who already win on Sewer and Backrooms.",
+      body: "11) Cold Storage — Expert per site map data. Cold steel gray mandatory; almost no decorative clutter — positioning and shelf shadows do all the work. Warm tones pop instantly. Best for players who already win on Sewer and Backrooms.",
     },
     {
       id: "seeker-perspective",

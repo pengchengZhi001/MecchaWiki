@@ -36,9 +36,24 @@ export const updatesGuide: Guide = {
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
     },
     {
+      id: "v270",
+      heading: "v2.7.0 — Egypt Map & Random Lottery Toggles",
+      body: "Steam News (July 12, 2026): new official map Egypt; per-map ON/OFF toggles for random lottery with collaboration maps default OFF; random elements added to Penguin Hotel; HIKAKIN Museum wall-stuck collision fixed. Community focus this week centers on Egypt pillar/alcove learning, enabling HIKAKIN in lottery settings, and re-scouting Hotel props each lobby. Post-update troubleshooting: Problems After v2.7.0 fix guide. IGN patch hub and FandomWire/consolepcgaming summarize the same notes.",
+    },
+    {
+      id: "v260",
+      heading: "v2.6.0 — HIKAKIN Museum Collaboration",
+      body: "Steam News + AUTOMATON (July 10–11, 2026): collaboration map HIKAKIN Museum with special gimmicks, HIKAKIN/SEIKIN photo walls, Misokin and ONICHA exhibits; controller support alpha (UI not supported); Japan/South Korea/East Asia region tags; clone collision fix when hidden; Hunter FOV 100→105. Japanese Twitter and YouTube coverage spiked around the HIKAKIN partnership — the mid-week collab teased after 15M sales. See Viral Success guide and HIKAKIN Museum map page.",
+    },
+    {
+      id: "v251",
+      heading: "v2.5.1 — Anti-Cheat Countermeasures",
+      body: "Steam News fix2.5.1: countermeasures against excessive recommendation cheats and rapid-fire cheats; Osaka out-of-bounds fix. Pair with Cheaters & Fair Play guide when lobbies feel unfair after viral weeks.",
+    },
+    {
       id: "v250",
       heading: "v2.5.0 — Osaka Rework & Collaboration Map Tease",
-      body: "consolepcgaming.com documents update 2.5.0: reworked Osaka official map, improved paint brush resolution, experimental color palette for upcoming controller support, 3D color picker stability fixes, and Gyakusan Chicken Race collision/paint sync fixes. The same post teased a collaboration map arriving mid-week — see Viral Success guide for the Japanese star announcement context from the 15M sales milestone. Re-test Osaka signage and truck-bed spots after the rework; subscribe to new workshop or official maps via Steam News when the collab ships. Post-update troubleshooting: Problems After v2.5.0 fix guide.",
+      body: "consolepcgaming.com documents update 2.5.0: reworked Osaka official map, improved paint brush resolution, experimental color palette for upcoming controller support, 3D color picker stability fixes, and Gyakusan Chicken Race collision/paint sync fixes. The same post teased a collaboration map arriving mid-week — that shipped as HIKAKIN Museum in v2.6.0. Re-test Osaka signage and truck-bed spots after the rework. Post-update troubleshooting: Problems After v2.5.0 fix guide.",
     },
     {
       id: "v230",

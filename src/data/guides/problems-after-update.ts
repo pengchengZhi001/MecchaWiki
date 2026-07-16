@@ -29,12 +29,12 @@ export const problemsAfterUpdateGuide: Guide = {
     {
       id: "first-60-seconds",
       heading: "First 60 Seconds — Do This Before Anything Else",
-      body: `Released ${latestPatch.releasedAt}: ${latestPatch.headline}. Close the game fully (not minimized). Exit Steam and reopen it. Confirm Meccha Chameleon shows no pending download. Relaunch from the Steam library — not a desktop shortcut to an old build. Have every friend repeat these steps. One outdated player breaks private lobbies even when passwords and server names are correct. For v2.5.0-specific issues (Osaka rework, paint brush, Chicken Race), see the full v2.5.0 fix guide.`,
+      body: `Released ${latestPatch.releasedAt}: ${latestPatch.headline}. Close the game fully (not minimized). Exit Steam and reopen it. Confirm Meccha Chameleon shows no pending download. Relaunch from the Steam library — not a desktop shortcut to an old build. Have every friend repeat these steps. One outdated player breaks private lobbies even when passwords and server names are correct. For v2.7.0-specific issues (Egypt, random lottery, Penguin Hotel randomization, HIKAKIN), see the full v2.7.0 fix guide.`,
     },
     {
-      id: "v250-specific",
+      id: "version-specific",
       heading: `${latestPatch.version} — Version-Specific Issues`,
-      body: "Update 2.5.0 reworked Osaka, improved brush resolution and 3D color picker stability, and fixed Gyakusan Chicken Race desync. Spots filmed before the rework may fail legitimately — not a corrupt install. Full symptom-by-symptom walkthrough: Problems After v2.5.0 guide (/guides/problems-after-v2-5-0).",
+      body: "Update 2.7.0 adds Egypt, per-map random lottery toggles (collab maps default OFF), Penguin Hotel random elements, and a HIKAKIN Museum wall-stuck fix. Spots filmed before Hotel randomization may fail legitimately. Full symptom-by-symptom walkthrough: Problems After v2.7.0 guide (/guides/problems-after-v2-7-0). Older Osaka/paint issues: Problems After v2.5.0.",
     },
     {
       id: "lobby-broken",

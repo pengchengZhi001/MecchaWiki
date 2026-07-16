@@ -641,6 +641,31 @@ const MAP_FALLBACK: Record<
       "v2.5.0 (July 2026) reworked Osaka geometry — re-verify truck bed, signage, and alley spots in a private lobby before ranked play.",
     ],
   },
+  egypt: {
+    sources: [
+      { name: "Steam News — update 2.7.0", url: "https://store.steampowered.com/news/app/4704690" },
+      { name: "consolepcgaming.com — Egypt map", url: "https://consolepcgaming.com/meccha-chameleon-adds-egypt-and-more-random-map-options/" },
+      { name: "IGN Patch Notes July 12, 2026", url: "https://www.ign.com/wikis/meccha-chameleon/Meccha_Chameleon_Patch_Notes_July_12,_2026" },
+    ],
+    paintNote: "Sand floor vs pillar shadow are different values — sample the stone you touch, not open courtyard sand.",
+    poseNote: "Vertical pillar wraps and alcove depth beat open floor camps; hieroglyph walls need pattern-aligned poses.",
+    winTips: [
+      "v2.7.0 brand-new map — treat early spots as starting points and re-verify in your lobby.",
+      "Seekers clear bright sand first; commit to pillars, alcoves, or prop clusters during prep.",
+    ],
+  },
+  "hikakin-museum": {
+    sources: [
+      { name: "AUTOMATON — HIKAKIN Museum", url: "https://automaton-media.com/articles/newsjp/20260711-454477/" },
+      { name: "Steam News — update 2.6.0 / 2.7.0", url: "https://store.steampowered.com/news/app/4704690" },
+    ],
+    paintNote: "Photo-wall prints and frames need dual samples; glass cases punish high metallic.",
+    poseNote: "Flat wall blends on portrait rows; crouch prop-mimic at Misokin / ONICHA displays.",
+    winTips: [
+      "Collaboration maps default OFF in v2.7.0 random lottery — enable in settings if hosting.",
+      "v2.7.0 fixed deep wall-stuck — prefer surface blends over geometry abuse.",
+    ],
+  },
 };
 
 const PAINT_SYSTEM_SOURCE: GuideSource = {

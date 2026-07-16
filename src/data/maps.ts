@@ -1,4 +1,4 @@
-/** Local map hero images (from Steam store screenshots). */
+/** Local map hero images (from Steam store screenshots + press stills for newest maps). */
 const MAP_IMAGES: Record<string, string> = {
   mansion: "/images/maps/steam-0.jpg",
   "indoor-country": "/images/maps/steam-1.jpg",
@@ -9,6 +9,8 @@ const MAP_IMAGES: Record<string, string> = {
   osaka: "/images/maps/steam-8.jpg",
   "cold-storage": "/images/maps/steam-5.jpg",
   "brick-loft": "/images/maps/steam-6.jpg",
+  egypt: "/images/maps/egypt.jpg",
+  "hikakin-museum": "/images/maps/hikakin-museum.jpg",
 };
 
 export type MapDifficulty = "Easy" | "Medium" | "Hard" | "Expert";
@@ -152,12 +154,13 @@ export const maps: GameMap[] = [
     accentColor: "#A8D4F0",
     imageUrl: MAP_IMAGES["penguin-hotel"],
     description:
-      "Polar resort aesthetic with ice sculptures, plush rooms, and a chaotic ballroom. Blue-white palette with strong prop mimic opportunities.",
+      "Polar resort aesthetic with ice sculptures, plush rooms, and a chaotic ballroom. Blue-white palette with strong prop mimic opportunities. v2.7.0 added random furniture/layout elements — re-test database spots each lobby rather than memorizing one fixed path.",
     tips: [
       "Switch between ice blue and white often near sculptures.",
       "Ballroom is seeker-favored — cross fast or use ceiling/rafters.",
       "Plush rooms reward object mimic poses.",
       "Pool tiles are highly reflective — minimize time there.",
+      "v2.7.0 random elements: scout prop positions during prep before committing.",
     ],
     hotspots: [
       { name: "Ice Sculpture Lobby", description: "Signature blend zone behind sculptures.", type: "hot" },
@@ -201,7 +204,7 @@ export const maps: GameMap[] = [
   {
     slug: "osaka",
     name: "Osaka",
-    tagline: "Japan streets · Newest official map",
+    tagline: "Japan streets · Compact urban",
     difficulty: "Hard",
     playerCount: "4–8 players",
     themeColor: "#C41E3A",
@@ -281,6 +284,62 @@ export const maps: GameMap[] = [
       { name: "Window Wall", description: "Backlit players glow." },
     ],
     colorPalette: ["#A0522D", "#CD853F", "#8B4513", "#D2691E", "#5C3317"],
+  },
+  {
+    slug: "egypt",
+    name: "Egypt",
+    tagline: "Desert tombs · Newest official map",
+    difficulty: "Hard",
+    playerCount: "4–10 players",
+    themeColor: "#C4A35A",
+    accentColor: "#2E5A4C",
+    imageUrl: MAP_IMAGES["egypt"],
+    description:
+      "Official desert / tomb-themed map added in v2.7.0 (July 12, 2026 per Steam News). Sandy stone, pillar shadows, hieroglyph walls, and prop clusters reward value-matched paints over bright accent mistakes. Early community consensus: vertical pillars and alcove depth beat open sand floors — re-verify spots as lobby meta settles.",
+    tips: [
+      "Sample stone and sand separately — warm floor vs cool pillar shadow are different values.",
+      "Pillar and statue plinths sit above default seeker eye height when you climb during prep.",
+      "Hieroglyph walls need pattern-aligned poses; flat fill on busy relief reads as a sticker.",
+      "Open sand corridors are transit only — camp clutter or vertical geometry instead.",
+    ],
+    hotspots: [
+      { name: "Pillar Shadow Rings", description: "Column bases and mid-height wraps hide outline in dark stone.", type: "hot" },
+      { name: "Sarcophagus / Alcove Depth", description: "Recessed props break silhouette from foyer angles.", type: "hot" },
+      { name: "Open Sand Floor", description: "Bright value + no clutter — seekers clear first.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Central Courtyard Sand", description: "Wide sightlines punish imperfect paint." },
+      { name: "Lit Hieroglyph Fronts", description: "Strong front lighting exposes value mismatch on relief walls." },
+    ],
+    colorPalette: ["#C4A35A", "#2E5A4C", "#8B6914", "#E8D5A3", "#3D2B1F"],
+  },
+  {
+    slug: "hikakin-museum",
+    name: "HIKAKIN Museum",
+    tagline: "Collab museum · Special gimmicks",
+    difficulty: "Medium",
+    playerCount: "4–12 players",
+    themeColor: "#1A1A2E",
+    accentColor: "#E8B923",
+    imageUrl: MAP_IMAGES["hikakin-museum"],
+    description:
+      "Official collaboration map with YouTuber HIKAKIN, shipped in v2.6.0 (July 10–11, 2026). Museum halls feature HIKAKIN and SEIKIN photo walls, Misokin and ONICHA exhibit props, plus collab-exclusive gimmicks. Random lottery excludes collaboration maps by default in v2.7.0 — enable manually in map lottery settings. v2.7.0 also fixed wall-stuck collision on this map.",
+    tips: [
+      "Photo-wall mimics need frame + print dual sampling — white mat borders expose elbows.",
+      "Exhibit cases and Misokin displays reward prop-mimic poses at crouch height.",
+      "Do not force deep wall clips — v2.7.0 patched stuck-in-wall collision; use surface blends.",
+      "Collab lobbies are loud and meme-heavy — rotate spots after one viral find.",
+    ],
+    hotspots: [
+      { name: "HIKAKIN / SEIKIN Photo Walls", description: "Portrait rows and gallery lighting for flat wall blends.", type: "hot" },
+      { name: "Misokin & ONICHA Exhibits", description: "Themed prop clusters break outline like Art Gallery canvases.", type: "hot" },
+      { name: "Open Museum Floor", description: "Wide halls favor seekers after first photo-wall check.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Central Atrium", description: "Long sightlines across exhibit floors." },
+      { name: "Glass Case Fronts", description: "Specular glass punishes high metallic paint." },
+    ],
+    colorPalette: ["#1A1A2E", "#E8B923", "#F5F5F5", "#4A5568", "#C41E3A"],
   },
 ];
 

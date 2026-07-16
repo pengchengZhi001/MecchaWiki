@@ -94,8 +94,8 @@ export const viralSuccessGuide: Guide = {
     },
     {
       id: "collaboration-tease",
-      heading: "Japanese Star Collaboration — What We Know",
-      body: "PC Gamer, IGN, and GAMES.GG document the developer tease without naming the collaborator. IGN notes the Japanese announcement wording suggests a real person rather than a crossover game character. Community guesses circulating in press roundups include YouTuber Hikakin, watercolor creator Harumichi Shibasaki (prior Minecraft anniversary collaboration), and virtual singer Hatsune Miku — PC Gamer's uneducated guess leans Miku given recent Fortnite and Sonic crossovers. None are confirmed until Steam News publishes the partner. consolepcgaming.com's v2.5.0 patch post separately teased a collaboration map arriving mid-week alongside Osaka rework — watch Steam Workshop and News for the shipped map name.",
+      heading: "Japanese Star Collaboration — HIKAKIN Museum Shipped",
+      body: "PC Gamer, IGN, and GAMES.GG documented the 15M sales tease without naming the partner — community guesses included HIKAKIN and Hatsune Miku. AUTOMATON and Steam News confirm the mid-week drop shipped as the HIKAKIN Museum collaboration map in v2.6.0 (July 10–11, 2026) with SEIKIN photos, Misokin/ONICHA exhibits, and special gimmicks. v2.7.0 keeps collab maps OFF by default in random lottery. See /maps/hikakin-museum and Problems After v2.7.0 for lottery toggles.",
     },
     {
       id: "collaboration-purpose",

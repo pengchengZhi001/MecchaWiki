@@ -17,6 +17,7 @@ export { fixWorkshopMapLoadingGuide } from "./fix-workshop-map-loading";
 export { fixLagBlurryScreenGuide } from "./fix-lag-blurry-screen";
 export { fixEulaCantJoinGuide } from "./fix-eula-cant-join";
 export { problemsAfterV250Guide } from "./problems-after-v2-5-0";
+export { problemsAfterV270Guide } from "./problems-after-v2-7-0";
 export { whyKeepGettingFoundGuide } from "./why-keep-getting-found";
 export { howToPaintBetterGuide } from "./how-to-paint-better";
 export { bestPoseGuide } from "./best-pose-guide";

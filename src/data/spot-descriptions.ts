@@ -130,6 +130,26 @@ export const spotDescriptions: Record<string, string> = {
     "Plywood, crate, and trash-bag corner — trash-can mimic memes from day-one Osaka lobbies.",
   "osaka-alleyway-nook":
     "Narrow alley nook with mixed lantern light — smallest map, high seeker recycle rate.",
+  "egypt-pillar-shadow":
+    "Wrap mid-height on Egypt pillars in shadow stone — newest v2.7.0 vertical meta.",
+  "egypt-sarcophagus-alcove":
+    "Recessed sarcophagus / tomb alcove — keep the body inside the niche silhouette.",
+  "egypt-hieroglyph-wall":
+    "Hieroglyph relief wall blend — align pose with carved pattern, dual-sample recesses.",
+  "egypt-sand-prop-cluster":
+    "Crouch among urn and crate clutter on sand — sample props, not open floor.",
+  "egypt-statue-plinth":
+    "Statue plinth mimic or perch — meme-tier once hunters start looking up.",
+  "hikakin-photo-wall":
+    "Flat HIKAKIN portrait-wall blend — frame and print dual-sample, watch white mats.",
+  "hikakin-misokin-display":
+    "Misokin exhibit prop cluster — packaging colors and crouch density camouflage.",
+  "hikakin-exhibit-case":
+    "Beside glass exhibit cases — lower metallic; use surface blends after wall-stuck fix.",
+  "hikakin-seikin-gallery":
+    "SEIKIN gallery wing photo wall — rotate when HIKAKIN wall gets first-cleared.",
+  "hikakin-onicha-corner":
+    "ONICHA-themed corner props — strong in meme lobbies, rotate after round one.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":

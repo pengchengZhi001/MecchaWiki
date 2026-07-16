@@ -4,9 +4,9 @@ export const allOfficialMapsGuide: Guide = {
   slug: "all-official-maps",
   title: "All Official Maps in Meccha Chameleon",
   category: "Maps",
-  readTime: "9 min",
+  readTime: "10 min",
   excerpt:
-    "Every official map as of v1.7.0 — launch maps, post-launch additions (Penguin Hotel, Sugarland, Osaka), and links to map pages on this site.",
+    "Every official map as of v2.7.0 — launch roster, post-launch additions (Penguin Hotel, Sugarland, Osaka), HIKAKIN Museum collab, and Egypt — with links to map pages on this site.",
   sources: [
     {
       name: "Wikipedia — Meccha Chameleon (map list)",
@@ -21,15 +21,19 @@ export const allOfficialMapsGuide: Guide = {
       url: "https://www.ign.com/wikis/meccha-chameleon/All_Maps_in_Meccha_Chameleon:_Best_Hiding_Spots",
     },
     {
-      name: "Steam v1.7.0 announcement — Osaka added",
-      url: "https://consolepcgaming.com/osaka-arrives-in-meccha-chameleons-1-7-0-update/",
+      name: "Steam v2.7.0 — Egypt map",
+      url: "https://consolepcgaming.com/meccha-chameleon-adds-egypt-and-more-random-map-options/",
+    },
+    {
+      name: "AUTOMATON — HIKAKIN Museum",
+      url: "https://automaton-media.com/articles/newsjp/20260711-454477/",
     },
   ],
   content: [
     {
       id: "overview",
       heading: "How Many Official Maps Exist?",
-      body: "Wikipedia and community map databases list nine playable official maps as of the v1.7.0 update (June 22, 2026): Hide-and-Seek Mansion, Indoor Country, Sewer, Backrooms, Penguin Hotel, Sugarland, Osaka, plus Cold Storage and Brick Loft from the launch roster. Custom community maps add unlimited variety through Steam Workshop — subscribe before joining lobbies that use them.",
+      body: "As of v2.7.0 (July 12, 2026), the official pool includes the launch roster (Mansion, Indoor Country, Sewer, Backrooms, Cold Storage, Brick Loft), post-launch stages Penguin Hotel, Sugarland, and Osaka, plus Egypt (v2.7.0) and the HIKAKIN Museum collaboration map (v2.6.0). Press often counts Egypt as the newest numbered official stage; collaboration maps can be excluded from random lottery by default. Custom maps add unlimited variety through Steam Workshop.",
     },
     {
       id: "launch-maps",
@@ -39,12 +43,12 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "post-launch",
       heading: "Post-Launch Maps",
-      body: "Penguin Hotel — added v1.2.0 (June 13, 2026 per Japanese gaming press cited on Wikipedia): ice-hotel theme, ballroom and ice sculptures. Sugarland — added v1.4.0 (June 17, 2026): candy-themed saturated pinks, mints, and chocolates; intermediate. Osaka — added v1.7.0 (June 22, 2026): Japan-themed streets with signage, storefronts, and lanterns; smallest official map per IGN, advanced difficulty.",
+      body: "Penguin Hotel — added v1.2.0; ice-hotel theme; v2.7.0 adds random furniture elements so spots must be re-scouted. Sugarland — added v1.4.0: candy-themed saturated colors. Osaka — added v1.7.0, reworked v2.5.0: compact Japan streets. Egypt — added v2.7.0: desert/tomb palette, early pillar and alcove meta. HIKAKIN Museum — added v2.6.0 collab: photo walls, Misokin/ONICHA exhibits, special gimmicks; lottery default OFF in v2.7.0.",
     },
     {
       id: "why-maps-matter",
       heading: "Why Map Choice Changes Your Hide",
-      body: "mecha-chameleon.net: camouflage that works in one room gets you spotted instantly in another because each map has distinct surfaces, lighting, and palettes. Mansion teaches sampling speed; Sewer and Backrooms punish lazy one-sample hides; Sugarland and Osaka reward bold, exact color reads on saturated or mixed urban surfaces.",
+      body: "mecha-chameleon.net: camouflage that works in one room gets you spotted instantly in another because each map has distinct surfaces, lighting, and palettes. Mansion teaches sampling speed; Sewer and Backrooms punish lazy one-sample hides; Sugarland, Osaka, and Egypt reward exact color reads on saturated or mixed surfaces; HIKAKIN Museum rewards photo-wall and exhibit prop mimics.",
     },
     {
       id: "workshop",
@@ -54,7 +58,7 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "on-this-site",
       heading: "Map Pages on Meccha Wiki",
-      body: "Browse /maps for per-map difficulty, color palettes, hotspots, and danger zones. Use /hidden-spots filtered by map for curated positions with source attribution. New maps Osaka, Sugarland, and Indoor Country have map overview pages; spot databases expand as community verification continues.",
+      body: "Browse /maps for per-map difficulty, color palettes, hotspots, and danger zones. Use /hidden-spots filtered by map for curated positions with source attribution. Newest pages cover Egypt and HIKAKIN Museum; spot databases expand as community verification continues.",
     },
   ],
 };
