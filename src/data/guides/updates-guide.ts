@@ -36,6 +36,11 @@ export const updatesGuide: Guide = {
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
     },
     {
+      id: "v280",
+      heading: "v2.8.0 — Death Burger Map & Chat Safety",
+      body: "Steam News (July 17, 2026): new official map Death Burger; inappropriate and stream-prohibited words blocked in nameplates and text chat; spectator UI hide restored with Control+Shift+H; Paint Mode mod download screen button lockup fixed. Japanese Twitter and 4gamer/Game*Spark coverage describe clown mascots, eyeball burgers, and a fried-chicken merry-go-round — early camouflage meta focuses on color-boundary paints and prop mimics, not fixed coordinates. Post-update troubleshooting: Problems After v2.8.0 fix guide.",
+    },
+    {
       id: "v270",
       heading: "v2.7.0 — Egypt Map & Random Lottery Toggles",
       body: "Steam News (July 12, 2026): new official map Egypt; per-map ON/OFF toggles for random lottery with collaboration maps default OFF; random elements added to Penguin Hotel; HIKAKIN Museum wall-stuck collision fixed. Community focus this week centers on Egypt pillar/alcove learning, enabling HIKAKIN in lottery settings, and re-scouting Hotel props each lobby. Post-update troubleshooting: Problems After v2.7.0 fix guide. IGN patch hub and FandomWire/consolepcgaming summarize the same notes.",

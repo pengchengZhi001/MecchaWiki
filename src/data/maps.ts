@@ -11,6 +11,7 @@ const MAP_IMAGES: Record<string, string> = {
   "brick-loft": "/images/maps/steam-6.jpg",
   egypt: "/images/maps/egypt.jpg",
   "hikakin-museum": "/images/maps/hikakin-museum.jpg",
+  "death-burger": "/images/maps/death-burger.jpg",
 };
 
 export type MapDifficulty = "Easy" | "Medium" | "Hard" | "Expert";
@@ -288,7 +289,7 @@ export const maps: GameMap[] = [
   {
     slug: "egypt",
     name: "Egypt",
-    tagline: "Desert tombs · Newest official map",
+    tagline: "Desert tombs · Tomb palette",
     difficulty: "Hard",
     playerCount: "4–10 players",
     themeColor: "#C4A35A",
@@ -340,6 +341,34 @@ export const maps: GameMap[] = [
       { name: "Glass Case Fronts", description: "Specular glass punishes high metallic paint." },
     ],
     colorPalette: ["#1A1A2E", "#E8B923", "#F5F5F5", "#4A5568", "#C41E3A"],
+  },
+  {
+    slug: "death-burger",
+    name: "Death Burger",
+    tagline: "Burger horror park · Newest official map",
+    difficulty: "Hard",
+    playerCount: "4–12 players",
+    themeColor: "#C41E3A",
+    accentColor: "#FFD700",
+    imageUrl: MAP_IMAGES["death-burger"],
+    description:
+      "Official burger-chain-themed horror amusement park added in v2.8.0 (July 17, 2026 per Steam News). Japanese outlets 4gamer and Game*Spark describe clown mascots, eyeball burgers, and a fried-chicken merry-go-round amid loud signage and saturated props. Early community meta favors dual-color boundary paints and prop-mimic clutter over flat wall fills — treat every database spot as experimental until lobby screenshots confirm it.",
+    tips: [
+      "Paint across color boundaries — sign edge + wall, not one flat tone (Gamee blog v2.8.0 tips).",
+      "Prop-mimic beside clown mascots, menu boards, and food signage beats open walkway camping.",
+      "Have a friend check your silhouette from seeker approach angles — loud scenery still exposes outlines.",
+      "Open carnival midways are transit only; commit to signage clusters or ride-base clutter during prep.",
+    ],
+    hotspots: [
+      { name: "Clown Mascot Row", description: "Dense mascot props break outline when dual-sampled.", type: "hot" },
+      { name: "Fried-Chicken Carousel Base", description: "Ride clutter and vertical posts hide crouch poses.", type: "hot" },
+      { name: "Open Midway Walkway", description: "Bright open sightlines — cross fast or avoid.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Central Midway Strip", description: "Wide sightlines punish imperfect paint on saturated floors." },
+      { name: "Lit Signage Fronts", description: "Neon-adjacent reds and yellows expose value mismatch." },
+    ],
+    colorPalette: ["#C41E3A", "#FFD700", "#FF6B35", "#2D1B0E", "#F5F5DC"],
   },
 ];
 

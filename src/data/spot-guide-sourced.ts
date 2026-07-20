@@ -666,6 +666,20 @@ const MAP_FALLBACK: Record<
       "v2.7.0 fixed deep wall-stuck — prefer surface blends over geometry abuse.",
     ],
   },
+  "death-burger": {
+    sources: [
+      { name: "4gamer — Death Burger map", url: "https://www.4gamer.net/games/007/G100712/20260717040/" },
+      { name: "Gamee blog — v2.8.0 camouflage tips", url: "https://blog.gamee.games/meccha-chameleon-death-burger-update-2026-en/" },
+      { name: "consolepcgaming.com — update 2.8.0", url: "https://consolepcgaming.com/meccha-chameleon-adds-a-new-map-called-death-burger-in-update-2-8-0/" },
+    ],
+    paintNote: "Loud signage needs boundary paints — sample both sides of wall/sign seams, not one saturated fill.",
+    poseNote: "Prop-mimic at clown mascots, carousel posts, and food signage; crouch in ride-base clutter.",
+    winTips: [
+      "v2.8.0 brand-new map — all spots experimental until community screenshots confirm them.",
+      "Gamee: check silhouette from seeker approach angles; flat color match fails on busy carnival scenery.",
+      "Open midway walkways are lethal — commit to mascot rows or carousel clutter during prep.",
+    ],
+  },
 };
 
 const PAINT_SYSTEM_SOURCE: GuideSource = {

@@ -68,9 +68,14 @@ const DAILY_TIPS = [
     sourceUrl: "https://steamcommunity.com/app/4704690/discussions/0/571541539431537412/",
   },
   {
-    tip: "No native controller support — Steam Deck is Playable via Steam Input with trackpad-as-mouse for painting (SlashSkill).",
-    source: "SlashSkill",
-    sourceUrl: "https://www.slashskill.com/does-meccha-chameleon-have-controller-support-steam-deck-setup-and-why-keyboard-still-wins/",
+    tip: "v2.8.0 Death Burger: paint across sign/wall color boundaries instead of one flat fill — Gamee blog + 4gamer early meta for the new carnival map.",
+    source: "Gamee blog",
+    sourceUrl: "https://blog.gamee.games/meccha-chameleon-death-burger-update-2026-en/",
+  },
+  {
+    tip: "v2.8.0 blocks inappropriate and stream-prohibited words in nameplates and chat — use neutral nicknames in public lobbies (Steam News).",
+    source: "Steam News",
+    sourceUrl: "https://store.steampowered.com/news/app/4704690",
   },
 ] as const;
 
@@ -91,9 +96,9 @@ const WEEKLY_CHALLENGES = [
     spotSlug: "mansion-library-shelf",
   },
   {
-    title: "Backrooms doorway discipline",
-    description: "Pick Yellow Wall Nook or Office Corner. Re-sample wallpaper at every threshold — yellow shifts room to room (mecchachameleongame.wiki).",
-    spotSlug: "backrooms-yellow-nook",
+    title: "Scout Death Burger clown row",
+    description: "Try Clown Mascot Row or Menu Color Boundary on the v2.8.0 map. Dual-sample signage edges — flat fills fail on loud carnival scenery (Gamee + 4gamer).",
+    spotSlug: "death-burger-clown-mascot-row",
   },
 ] as const;
 

@@ -150,6 +150,20 @@ export const spotDescriptions: Record<string, string> = {
     "SEIKIN gallery wing photo wall — rotate when HIKAKIN wall gets first-cleared.",
   "hikakin-onicha-corner":
     "ONICHA-themed corner props — strong in meme lobbies, rotate after round one.",
+  "death-burger-clown-mascot-row":
+    "Clown mascot prop row — dual-sample mascot plastic and wall trim at crouch height.",
+  "death-burger-chicken-carousel":
+    "Fried-chicken merry-go-round base clutter — sample ride posts, not open midway.",
+  "death-burger-eyeball-burger-sign":
+    "Eyeball burger signage blend — sign mid-tone plus frame edge dual-sample.",
+  "death-burger-menu-boundary":
+    "Menu-board color boundary paint — recreate wall/sign seam to break silhouette.",
+  "death-burger-amusement-clutter":
+    "Dense amusement corner clutter — prop-mimic beside ride or food decor.",
+  "egypt-tomb-entrance-lintel":
+    "Tomb doorway lintel recess — shadow stone on header, limbs inside frame.",
+  "penguin-ballroom-random-plush":
+    "Ballroom random plush cluster — v2.7.0 layout shifts; scout during prep.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":

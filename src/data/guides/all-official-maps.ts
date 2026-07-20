@@ -6,7 +6,7 @@ export const allOfficialMapsGuide: Guide = {
   category: "Maps",
   readTime: "10 min",
   excerpt:
-    "Every official map as of v2.7.0 — launch roster, post-launch additions (Penguin Hotel, Sugarland, Osaka), HIKAKIN Museum collab, and Egypt — with links to map pages on this site.",
+    "Every official map as of v2.8.0 — launch roster, post-launch additions (Penguin Hotel, Sugarland, Osaka), HIKAKIN Museum collab, Egypt, and Death Burger — with links to map pages on this site.",
   sources: [
     {
       name: "Wikipedia — Meccha Chameleon (map list)",
@@ -33,7 +33,7 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "overview",
       heading: "How Many Official Maps Exist?",
-      body: "As of v2.7.0 (July 12, 2026), the official pool includes the launch roster (Mansion, Indoor Country, Sewer, Backrooms, Cold Storage, Brick Loft), post-launch stages Penguin Hotel, Sugarland, and Osaka, plus Egypt (v2.7.0) and the HIKAKIN Museum collaboration map (v2.6.0). Press often counts Egypt as the newest numbered official stage; collaboration maps can be excluded from random lottery by default. Custom maps add unlimited variety through Steam Workshop.",
+      body: "As of v2.8.0 (July 17, 2026), the official pool includes the launch roster (Mansion, Indoor Country, Sewer, Backrooms, Cold Storage, Brick Loft), post-launch stages Penguin Hotel, Sugarland, and Osaka, plus HIKAKIN Museum (v2.6.0 collab), Egypt (v2.7.0), and Death Burger (v2.8.0). Press often counts Death Burger as the newest numbered official stage; collaboration maps can be excluded from random lottery by default. Custom maps add unlimited variety through Steam Workshop.",
     },
     {
       id: "launch-maps",
@@ -43,7 +43,7 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "post-launch",
       heading: "Post-Launch Maps",
-      body: "Penguin Hotel — added v1.2.0; ice-hotel theme; v2.7.0 adds random furniture elements so spots must be re-scouted. Sugarland — added v1.4.0: candy-themed saturated colors. Osaka — added v1.7.0, reworked v2.5.0: compact Japan streets. Egypt — added v2.7.0: desert/tomb palette, early pillar and alcove meta. HIKAKIN Museum — added v2.6.0 collab: photo walls, Misokin/ONICHA exhibits, special gimmicks; lottery default OFF in v2.7.0.",
+      body: "Penguin Hotel — added v1.2.0; ice-hotel theme; v2.7.0 adds random furniture elements so spots must be re-scouted. Sugarland — added v1.4.0: candy-themed saturated colors. Osaka — added v1.7.0, reworked v2.5.0: compact Japan streets. Egypt — added v2.7.0: desert/tomb palette, early pillar and alcove meta. HIKAKIN Museum — added v2.6.0 collab: photo walls, Misokin/ONICHA exhibits, special gimmicks; lottery default OFF in v2.7.0. Death Burger — added v2.8.0: burger horror amusement park; clown mascots and signage clutter; all spots experimental.",
     },
     {
       id: "why-maps-matter",
@@ -58,7 +58,7 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "on-this-site",
       heading: "Map Pages on Meccha Wiki",
-      body: "Browse /maps for per-map difficulty, color palettes, hotspots, and danger zones. Use /hidden-spots filtered by map for curated positions with source attribution. Newest pages cover Egypt and HIKAKIN Museum; spot databases expand as community verification continues.",
+      body: "Browse /maps for per-map difficulty, color palettes, hotspots, and danger zones. Use /hidden-spots filtered by map for curated positions with source attribution. Newest pages cover Death Burger, Egypt, and HIKAKIN Museum; spot databases expand as community verification continues.",
     },
   ],
 };

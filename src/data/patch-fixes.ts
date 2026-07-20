@@ -83,6 +83,12 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     searchValue: 5,
   },
   {
+    slug: "problems-after-v2-8-0",
+    title: "v2.8.0 Update Problems — Death Burger / Chat Filter Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
+  {
     slug: "problems-after-v2-7-0",
     title: "v2.7.0 Update Problems — Egypt / HIKAKIN Fix Guide",
     category: "Patch",
@@ -95,9 +101,9 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v2.7.0",
-  releasedAt: "2026-07-12",
-  headline: "Egypt map, random-map lottery toggles, Penguin Hotel randomization, HIKAKIN wall fix",
+  version: "v2.8.0",
+  releasedAt: "2026-07-17",
+  headline: "Death Burger map, nameplate/chat word filter, spectator UI hide fix, Paint Mode mod-screen fix",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
     {
@@ -119,16 +125,40 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
+      symptom: "Nameplate or chat message blocked after update",
+      searchTerms: ["name blocked", "chat filter", "word filter", "can't type"],
+      fixGuideSlug: "problems-after-v2-8-0",
+      priority: "high",
+    },
+    {
+      symptom: "Spectator UI won't hide with Ctrl+Shift+H",
+      searchTerms: ["spectator UI", "control shift h", "hide UI stream"],
+      fixGuideSlug: "problems-after-v2-8-0",
+      priority: "high",
+    },
+    {
+      symptom: "Paint Mode buttons unclickable after mod download screen",
+      searchTerms: ["paint mode stuck", "mod download", "buttons unclickable"],
+      fixGuideSlug: "problems-after-v2-8-0",
+      priority: "high",
+    },
+    {
+      symptom: "Death Burger hiding spots feel unknown / all fail",
+      searchTerms: ["Death Burger spots", "new map hide", "デスバーガー"],
+      fixGuideSlug: "problems-after-v2-8-0",
+      priority: "medium",
+    },
+    {
       symptom: "HIKAKIN Museum missing from random map lottery",
       searchTerms: ["collaboration map off", "HIKAKIN missing", "random map toggle"],
       fixGuideSlug: "problems-after-v2-7-0",
-      priority: "high",
+      priority: "medium",
     },
     {
       symptom: "Penguin Hotel hiding spots feel randomized / broken",
       searchTerms: ["Penguin Hotel random", "furniture moved", "Hotel spot gone"],
       fixGuideSlug: "problems-after-v2-7-0",
-      priority: "high",
+      priority: "medium",
     },
     {
       symptom: "Favorite hiding spot stopped working",
@@ -161,12 +191,6 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
-      symptom: "Stuck in HIKAKIN Museum walls after collab map",
-      searchTerms: ["HIKAKIN stuck", "wall clip museum", "collision museum"],
-      fixGuideSlug: "problems-after-v2-7-0",
-      priority: "medium",
-    },
-    {
       symptom: "Post-2.5.0 Osaka spots or paint tools feel broken",
       searchTerms: ["Osaka rework", "v2.5.0", "paint brush", "color picker"],
       fixGuideSlug: "problems-after-v2-5-0",
@@ -180,10 +204,10 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Egypt pillar / alcove / hieroglyph spots — brand-new v2.7.0 map; early community meta only",
-    "Penguin Hotel ice sculpture and plush rooms — random elements added in v2.7.0; scout during prep",
-    "HIKAKIN Museum photo walls and Misokin displays — avoid deep wall clips after collision fix",
-    "Random lottery — enable collaboration maps manually; they default OFF",
+    "Death Burger clown mascot, carousel, and signage spots — brand-new v2.8.0 map; all positions experimental",
+    "Egypt tomb lintel and pillar meta — week-two community spots; re-verify after 2.8.0 lobbies",
+    "Penguin Hotel ballroom random plush — v2.7.0 randomization still shifts furniture each lobby",
+    "Chat/nameplate filter — use neutral display names if messages are rejected in public rooms",
   ],
 };
 

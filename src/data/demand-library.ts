@@ -566,6 +566,38 @@ export const demandLibrary: DemandEntry[] = [
     category: "Maps",
     notes: "consolepcgaming.com v2.5.0 rework — spot tips flagged for re-verify",
   },
+  {
+    question: "Death Burger Map Guide / Best Hiding Spots",
+    searchValue: 5,
+    status: "done",
+    href: "/maps/death-burger",
+    category: "Maps",
+    notes: "v2.8.0 tenth official map — clown mascots, carousel, signage; spots experimental",
+  },
+  {
+    question: "v2.8.0 Chat Filter / Nameplate Blocked",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/problems-after-v2-8-0",
+    category: "Bug Fix",
+    notes: "Steam reviews + 2.8.0 patch — inappropriate/stream-prohibited word blocking",
+  },
+  {
+    question: "Spectator UI Hide Ctrl+Shift+H Not Working",
+    searchValue: 3,
+    status: "done",
+    href: "/guides/problems-after-v2-8-0",
+    category: "Bug Fix",
+    notes: "Fixed in v2.8.0 — streamers and screenshot takers",
+  },
+  {
+    question: "Paint Mode Buttons Stuck After Mod Download",
+    searchValue: 4,
+    status: "done",
+    href: "/guides/problems-after-v2-8-0",
+    category: "Bug Fix",
+    notes: "v2.8.0 fix — mod browser input lock during Paint Mode",
+  },
 ];
 
 export function demandByCategory(): Map<string, DemandEntry[]> {
