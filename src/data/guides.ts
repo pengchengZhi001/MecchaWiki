@@ -51,6 +51,7 @@ import { fixEulaCantJoinGuide } from "./guides/fix-eula-cant-join";
 import { problemsAfterV250Guide } from "./guides/problems-after-v2-5-0";
 import { problemsAfterV270Guide } from "./guides/problems-after-v2-7-0";
 import { problemsAfterV280Guide } from "./guides/problems-after-v2-8-0";
+import { problemsAfterV300Guide } from "./guides/problems-after-v3-0-0";
 
 export type { Guide } from "./guides/types";
 
@@ -62,6 +63,7 @@ export const guides: Guide[] = [
   updatesGuide,
   patchFixesHubGuide,
   problemsAfterUpdateGuide,
+  problemsAfterV300Guide,
   problemsAfterV280Guide,
   problemsAfterV270Guide,
   problemsAfterV250Guide,

@@ -29,12 +29,12 @@ export const problemsAfterUpdateGuide: Guide = {
     {
       id: "first-60-seconds",
       heading: "First 60 Seconds — Do This Before Anything Else",
-      body: `Released ${latestPatch.releasedAt}: ${latestPatch.headline}. Close the game fully (not minimized). Exit Steam and reopen it. Confirm Meccha Chameleon shows no pending download. Relaunch from the Steam library — not a desktop shortcut to an old build. Have every friend repeat these steps. One outdated player breaks private lobbies even when passwords and server names are correct. For v2.8.0-specific issues (Death Burger, chat filter, spectator UI, Paint Mode), see the full v2.8.0 fix guide.`,
+      body: `Released ${latestPatch.releasedAt}: ${latestPatch.headline}. Close the game fully (not minimized). Exit Steam and reopen it. Confirm Meccha Chameleon shows no pending download. Relaunch from the Steam library — not a desktop shortcut to an old build. Have every friend repeat these steps. One outdated player breaks private lobbies even when passwords and server names are correct. For v3.0.0-specific issues (Greece, glow/emissive paint, EOS maintenance confusion), see the full v3.0.0 fix guide.`,
     },
     {
       id: "version-specific",
       heading: `${latestPatch.version} — Version-Specific Issues`,
-      body: "Update 2.8.0 adds Death Burger, nameplate/chat word filtering, spectator UI hide (Ctrl+Shift+H), and a Paint Mode mod-screen button fix. Egypt, HIKAKIN lottery toggles, and Penguin Hotel randomization from 2.7.0 still apply on the same build. Full symptom-by-symptom walkthrough: Problems After v2.8.0 guide (/guides/problems-after-v2-8-0). Older Egypt/HIKAKIN issues: Problems After v2.7.0. Osaka/paint issues: Problems After v2.5.0.",
+      body: "Update 3.0.0 adds Greece as the 11th official map. v2.9.0 (July 19) added glow/emissive paint via the Emissive slider, a slight paint performance bump, and a HIKAKIN Museum taunt volume tweak. EOS maintenance on July 21 is completed — lingering join failures are usually version mismatch. Full symptom-by-symptom walkthrough: Problems After v3.0.0 guide (/guides/problems-after-v3-0-0). Death Burger / chat filter: Problems After v2.8.0. Egypt/HIKAKIN: Problems After v2.7.0. Osaka/paint: Problems After v2.5.0.",
     },
     {
       id: "lobby-broken",

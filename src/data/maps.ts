@@ -12,6 +12,7 @@ const MAP_IMAGES: Record<string, string> = {
   egypt: "/images/maps/egypt.jpg",
   "hikakin-museum": "/images/maps/hikakin-museum.jpg",
   "death-burger": "/images/maps/death-burger.jpg",
+  greece: "/images/maps/greece.jpg",
 };
 
 export type MapDifficulty = "Easy" | "Medium" | "Hard" | "Expert";
@@ -345,7 +346,7 @@ export const maps: GameMap[] = [
   {
     slug: "death-burger",
     name: "Death Burger",
-    tagline: "Burger horror park · Newest official map",
+    tagline: "Burger horror park · Carnival clutter",
     difficulty: "Hard",
     playerCount: "4–12 players",
     themeColor: "#C41E3A",
@@ -369,6 +370,34 @@ export const maps: GameMap[] = [
       { name: "Lit Signage Fronts", description: "Neon-adjacent reds and yellows expose value mismatch." },
     ],
     colorPalette: ["#C41E3A", "#FFD700", "#FF6B35", "#2D1B0E", "#F5F5DC"],
+  },
+  {
+    slug: "greece",
+    name: "Greece",
+    tagline: "Santorini streets · Newest official map",
+    difficulty: "Hard",
+    playerCount: "4–10 players",
+    themeColor: "#1E5F8A",
+    accentColor: "#F5F5F0",
+    imageUrl: MAP_IMAGES["greece"],
+    description:
+      "Official Santorini-inspired map added in v3.0.0 (July 20, 2026 per Steam News). Japanese outlets Denfaminicogamer, 4gamer, and Game*Spark describe blue-and-white contrasting buildings, beautiful sunset lighting, and a compact globe-shaped layout with tight streets. Community chatter (including Chinese and JP social threads) compares the central circular pit to Overwatch's Ilios — treat that as meme lore, not a verified hide. Early meta pairs white plaster / blue dome dual-samples with v2.9.0 emissive (glow) paint on lit sunset surfaces.",
+    tips: [
+      "Dual-sample white plaster and blue dome/trim — flat single fills read as stickers on Santorini contrast (JP press theme).",
+      "Sunset-lit doorways and warm walls pair with v2.9.0 emissive paint — match glow intensity to the lit object, not max emissive everywhere.",
+      "Tight alley nooks beat open courtyard floors; Game*Spark notes a small, intricate layout.",
+      "Central pit rim is high-meme traffic after Ilios comparisons — rotate early if seekers spam the hole.",
+    ],
+    hotspots: [
+      { name: "Blue Dome / Roof Trim", description: "Blue-on-white contrast zones for dual-tone blends.", type: "hot" },
+      { name: "Sunset Alley Nooks", description: "Tight street recesses with warm evening light.", type: "hot" },
+      { name: "Central Circular Pit", description: "Open sightlines + meme traffic after Ilios comparisons.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Open Courtyard Floor", description: "Bright white floors expose value and outline mistakes." },
+      { name: "Pit Rim Camping", description: "Seekers check the hole early once social clips spread." },
+    ],
+    colorPalette: ["#1E5F8A", "#F5F5F0", "#E8C07A", "#4A90A4", "#2C3E50"],
   },
 ];
 

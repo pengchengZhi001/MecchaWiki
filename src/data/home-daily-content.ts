@@ -77,6 +77,16 @@ const DAILY_TIPS = [
     source: "Steam News",
     sourceUrl: "https://store.steampowered.com/news/app/4704690",
   },
+  {
+    tip: "v3.0.0 Greece: dual-sample white plaster and blue dome trim — Santorini contrast seams beat flat fills (Denfaminicogamer + Game*Spark).",
+    source: "Denfaminicogamer",
+    sourceUrl: "https://news.denfaminicogamer.jp/news/260720y",
+  },
+  {
+    tip: "v2.9.0 emissive paint: tune the Emissive slider to match lit objects — partial-body glow works; max glow everywhere looks fake (Denfaminicogamer).",
+    source: "Denfaminicogamer",
+    sourceUrl: "https://news.denfaminicogamer.jp/news/260719d",
+  },
 ] as const;
 
 const WEEKLY_CHALLENGES = [
@@ -99,6 +109,11 @@ const WEEKLY_CHALLENGES = [
     title: "Scout Death Burger clown row",
     description: "Try Clown Mascot Row or Menu Color Boundary on the v2.8.0 map. Dual-sample signage edges — flat fills fail on loud carnival scenery (Gamee + 4gamer).",
     spotSlug: "death-burger-clown-mascot-row",
+  },
+  {
+    title: "Practice Greece blue-white seams",
+    description: "Hide on Blue Dome Trim or White Plaster Ledge on the v3.0.0 map. Dual-sample Santorini contrast; add Emissive only on lit doorways (Denfaminicogamer + Game*Spark).",
+    spotSlug: "greece-blue-dome-trim",
   },
 ] as const;
 

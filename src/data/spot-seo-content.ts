@@ -77,6 +77,21 @@ const MAP_WHEN_TO_USE: Record<string, string[]> = {
     "Warm brick palette maps where horizontal course lines break torso read",
     "When stair sight cones are clear — alcoves visible from iron stair are death traps",
   ],
+  greece: [
+    "When you can dual-sample blue dome / white plaster seams — Santorini contrast is the map identity (Denfaminicogamer)",
+    "Sunset-lit doorway or warm wall sessions where v2.9.0 Emissive matches the light source",
+    "Round one before seekers learn alley and ledge meta — open courtyard still loses",
+  ],
+  "death-burger": [
+    "When you can dual-sample sign/wall boundaries — flat carnival fills fail (Gamee)",
+    "Clown mascot or carousel clutter rounds before meme spots get first-cleared",
+    "Prop-mimic practice lobbies — open midway is transit only",
+  ],
+  egypt: [
+    "Pillar and alcove rounds when seekers clear sand floors first",
+    "Hieroglyph walls when you can align pose to relief pattern",
+    "Early lobbies before Egypt meta settles — screenshot your own perch",
+  ],
 };
 
 const MAP_WHEN_NOT_TO_USE: Record<string, string[]> = {
@@ -110,6 +125,21 @@ const MAP_WHEN_NOT_TO_USE: Record<string, string[]> = {
     "Window sill long camps — sunlit top brick vs shadow underside mismatch",
     "Alcoves directly in second-floor stair sight cone — meccha-chameleon.net explicit warning",
   ],
+  greece: [
+    "Central pit rim camping after social Ilios clips — seekers check the hole early (udn)",
+    "Open white courtyard floors — bright value exposes outline and paint errors",
+    "Max emissive on matte plaster — fake glow reads instantly to hunters",
+  ],
+  "death-burger": [
+    "Open midway walkways as long camps — wide sightlines punish imperfect paint",
+    "Same clown mascot perch three rounds — meme lobbies clear loud props first",
+    "Single flat fill across menu sign and wall — boundary paints are required",
+  ],
+  egypt: [
+    "Open sand courtyard camping — seekers clear bright floors first",
+    "Deep wall clips after v2.7.0 HIKAKIN-style collision fixes — prefer surface blends",
+    "Flat hieroglyph fills without pattern alignment — relief walls expose stickers",
+  ],
 };
 
 const MAP_COUNTER_STRATEGY: Record<string, string[]> = {
@@ -142,6 +172,21 @@ const MAP_COUNTER_STRATEGY: Record<string, string[]> = {
     "Second-floor overlook into ground-floor alcoves — open loft sightlines counter wall-flat hides (meccha-chameleon.net)",
     "Scan beam gaps at horizontal striping level — torso breaks course lines when misaligned",
     "Iron stair is a predictable rotation path — sweep it before clearing pipe clusters below",
+  ],
+  greece: [
+    "Check blue dome and plaster ledge seams on first pass — dual-tone hides dominate early meta",
+    "Scan sunset alley nooks and stair shadow bands before assuming courtyards are empty",
+    "Pit rim is predictable meme traffic — glance once, then clear building edges",
+  ],
+  "death-burger": [
+    "Clear clown mascot rows and carousel bases before midway assumptions",
+    "Scan menu-board color boundaries for dual-tone paints at crouch height",
+    "Loud signage fronts: look for frame-edge mismatches and outline pops",
+  ],
+  egypt: [
+    "Look up pillars and statue plinths on first pass — vertical meta beats sand floors",
+    "Crouch-inspect sarcophagus alcoves and tomb lintels",
+    "Hieroglyph walls: fit-check pattern alignment before leaving the room",
   ],
 };
 

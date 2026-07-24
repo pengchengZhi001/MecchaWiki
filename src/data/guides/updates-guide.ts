@@ -11,8 +11,11 @@ export const updatesGuide: Guide = {
     "update",
     "patch notes",
     "version",
-    "v1.8.0",
-    "v2.3.0",
+    "v3.0.0",
+    "v2.9.0",
+    "v2.8.0",
+    "Greece",
+    "glow paint",
     "changelog",
   ],
   sources: [
@@ -34,6 +37,16 @@ export const updatesGuide: Guide = {
       id: "why-updates-matter",
       heading: "Why Patch Notes Matter for Hiders",
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
+    },
+    {
+      id: "v300",
+      heading: "v3.0.0 — Greece Map (11th Official)",
+      body: "Steam News (July 20, 2026): new official map Greece. Denfaminicogamer, 4gamer, and Game*Spark describe Santorini-inspired blue-and-white buildings, sunset lighting, and a compact globe-shaped layout well-suited to v2.9.0 glow paint. Social threads (udn Game and others) compare the central circular pit to Overwatch Ilios — meme traffic, not verified hide meta. Changelog also announced EOS maintenance on July 21 (now completed). Post-update troubleshooting: Problems After v3.0.0 fix guide.",
+    },
+    {
+      id: "v290",
+      heading: "v2.9.0 — Glow / Emissive Paint",
+      body: "Steam News (July 19, 2026): glow-in-the-dark paint is available. Denfaminicogamer: adjust the Emissive value in Paint Mode; partial-body glow works with normal paint. Game*Spark frames intent as mimicking glowing objects to deceive hunters. Also: slight paint performance improvement; HIKAKIN Museum exclusive taunt volume adjusted. No new maps in this build — map count stayed at 10 until Greece the next day.",
     },
     {
       id: "v280",

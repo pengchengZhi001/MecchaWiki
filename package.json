@@ -16,6 +16,7 @@
     "scaffold:patch": "node scripts/scaffold-patch-fix.mjs",
     "fetch:egypt-hikakin": "node scripts/fetch-egypt-hikakin-images.mjs",
     "fetch:death-burger": "node scripts/fetch-death-burger-images.mjs",
+    "fetch:greece": "node scripts/fetch-greece-images.mjs",
     "check:dup-images": "node scripts/check-dup-spots.mjs",
     "sync:workshop": "powershell -ExecutionPolicy Bypass -File scripts/sync-workshop.ps1"
   },

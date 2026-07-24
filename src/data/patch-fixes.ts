@@ -83,6 +83,12 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     searchValue: 5,
   },
   {
+    slug: "problems-after-v3-0-0",
+    title: "v3.0.0 Update Problems — Greece / Glow Paint Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
+  {
     slug: "problems-after-v2-8-0",
     title: "v2.8.0 Update Problems — Death Burger / Chat Filter Fix Guide",
     category: "Patch",
@@ -101,9 +107,9 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v2.8.0",
-  releasedAt: "2026-07-17",
-  headline: "Death Burger map, nameplate/chat word filter, spectator UI hide fix, Paint Mode mod-screen fix",
+  version: "v3.0.0",
+  releasedAt: "2026-07-20",
+  headline: "Greece map (11th official), after v2.9.0 glow/emissive paint — EOS maintenance window completed",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
     {
@@ -125,26 +131,32 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
+      symptom: "Can't matchmake — think EOS maintenance is still running",
+      searchTerms: ["EOS maintenance", "server down", "July 21", "matchmaking"],
+      fixGuideSlug: "problems-after-v3-0-0",
+      priority: "high",
+    },
+    {
+      symptom: "Glow / emissive paint too bright or useless",
+      searchTerms: ["glow paint", "emissive", "発光ペイント", "glow in the dark"],
+      fixGuideSlug: "problems-after-v3-0-0",
+      priority: "high",
+    },
+    {
+      symptom: "Greece hiding spots feel unknown / all fail",
+      searchTerms: ["Greece spots", "ギリシャ", "Santorini hide", "new map hide"],
+      fixGuideSlug: "problems-after-v3-0-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Workshop map black void / failed to load after 3.0.0",
+      searchTerms: ["workshop load fail", "black void", "map not loading", "GeForce Now"],
+      fixGuideSlug: "fix-workshop-map-loading",
+      priority: "high",
+    },
+    {
       symptom: "Nameplate or chat message blocked after update",
       searchTerms: ["name blocked", "chat filter", "word filter", "can't type"],
-      fixGuideSlug: "problems-after-v2-8-0",
-      priority: "high",
-    },
-    {
-      symptom: "Spectator UI won't hide with Ctrl+Shift+H",
-      searchTerms: ["spectator UI", "control shift h", "hide UI stream"],
-      fixGuideSlug: "problems-after-v2-8-0",
-      priority: "high",
-    },
-    {
-      symptom: "Paint Mode buttons unclickable after mod download screen",
-      searchTerms: ["paint mode stuck", "mod download", "buttons unclickable"],
-      fixGuideSlug: "problems-after-v2-8-0",
-      priority: "high",
-    },
-    {
-      symptom: "Death Burger hiding spots feel unknown / all fail",
-      searchTerms: ["Death Burger spots", "new map hide", "デスバーガー"],
       fixGuideSlug: "problems-after-v2-8-0",
       priority: "medium",
     },
@@ -167,12 +179,6 @@ export const latestPatch: GamePatch = {
       priority: "medium",
     },
     {
-      symptom: "Workshop map black void / failed to load",
-      searchTerms: ["workshop load fail", "black void", "map not loading"],
-      fixGuideSlug: "fix-workshop-map-loading",
-      priority: "high",
-    },
-    {
       symptom: "Game won't launch or crashes on startup",
       searchTerms: ["won't launch", "crash on startup", "not starting"],
       fixGuideSlug: "fix-game-wont-launch",
@@ -191,9 +197,9 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
-      symptom: "Post-2.5.0 Osaka spots or paint tools feel broken",
-      searchTerms: ["Osaka rework", "v2.5.0", "paint brush", "color picker"],
-      fixGuideSlug: "problems-after-v2-5-0",
+      symptom: "Death Burger or chat-filter issues from 2.8.0",
+      searchTerms: ["Death Burger", "v2.8.0", "spectator UI", "Paint Mode"],
+      fixGuideSlug: "problems-after-v2-8-0",
       priority: "medium",
     },
     {
@@ -204,10 +210,10 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Death Burger clown mascot, carousel, and signage spots — brand-new v2.8.0 map; all positions experimental",
-    "Egypt tomb lintel and pillar meta — week-two community spots; re-verify after 2.8.0 lobbies",
-    "Penguin Hotel ballroom random plush — v2.7.0 randomization still shifts furniture each lobby",
-    "Chat/nameplate filter — use neutral display names if messages are rejected in public rooms",
+    "Greece blue dome, white plaster ledge, and sunset alley spots — brand-new v3.0.0 map; all positions experimental",
+    "v2.9.0 emissive/glow paint — match intensity to lit objects; practice on Greece sunset doorways",
+    "Central pit rim is meme traffic after Ilios comparisons — do not treat as a survival staple",
+    "Death Burger / Egypt / HIKAKIN spots still valid starting points on the same July build family",
   ],
 };
 

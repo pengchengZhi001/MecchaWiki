@@ -164,6 +164,18 @@ export const spotDescriptions: Record<string, string> = {
     "Tomb doorway lintel recess — shadow stone on header, limbs inside frame.",
   "penguin-ballroom-random-plush":
     "Ballroom random plush cluster — v2.7.0 layout shifts; scout during prep.",
+  "greece-blue-dome-trim":
+    "Blue dome / roof trim seam on Santorini white plaster — dual-sample the contrast edge.",
+  "greece-white-plaster-ledge":
+    "Building ledge or terrace lip — sunlit white vs underside shadow dual-tone.",
+  "greece-sunset-alley-nook":
+    "Tight alley nook under sunset warm light — re-sample sun vs shade values.",
+  "greece-emissive-doorway":
+    "Lit doorway mimic with v2.9.0 emissive paint — match glow intensity to the light source.",
+  "greece-central-pit-rim":
+    "Central circular pit rim — high-meme Ilios comparison traffic; survival rate low.",
+  "greece-stair-terrace-shadow":
+    "Stair or terrace shadow band on white walls — keep limbs inside the dark strip.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":

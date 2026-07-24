@@ -680,6 +680,21 @@ const MAP_FALLBACK: Record<
       "Open midway walkways are lethal — commit to mascot rows or carousel clutter during prep.",
     ],
   },
+  greece: {
+    sources: [
+      { name: "Denfaminicogamer — Greece map", url: "https://news.denfaminicogamer.jp/news/260720y" },
+      { name: "consolepcgaming.com — update 3.0.0", url: "https://consolepcgaming.com/meccha-chameleon-update-3-0-0-brings-players-to-greece/" },
+      { name: "Denfaminicogamer — emissive paint (v2.9.0)", url: "https://news.denfaminicogamer.jp/news/260719d" },
+      { name: "udn Game — Ilios comparison chatter", url: "https://game.udn.com/game/story/122089/9642052" },
+    ],
+    paintNote: "Blue dome vs white plaster dual-sample; sunset lit props need v2.9.0 Emissive matching, not max glow.",
+    poseNote: "Ledge/terrace crouches and tight alley nooks; avoid open courtyard and pit-rim meme camps.",
+    winTips: [
+      "v3.0.0 brand-new map — all spots experimental until community screenshots confirm them.",
+      "JP press: compact Santorini streetscape with sunset light — re-sample when crossing sun/shade.",
+      "Central pit rim is social-meme traffic after Overwatch Ilios comparisons — clip once, then rotate.",
+    ],
+  },
 };
 
 const PAINT_SYSTEM_SOURCE: GuideSource = {

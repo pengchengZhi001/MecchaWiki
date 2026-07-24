@@ -24,6 +24,10 @@ export const howToPaintBetterGuide: Guide = {
       name: "SlashSkill — Color picker explained",
       url: "https://www.slashskill.com/meccha-chameleon-answer-check-and-color-picker-explained-master-the-eyedropper-and-color-matching/",
     },
+    {
+      name: "Denfaminicogamer — glow / emissive paint (v2.9.0)",
+      url: "https://news.denfaminicogamer.jp/news/260719d",
+    },
   ],
   content: [
     {
@@ -50,6 +54,11 @@ export const howToPaintBetterGuide: Guide = {
       id: "metallic-roughness",
       heading: "Metallic and Roughness — Stop the Shimmer",
       body: "Games Fuze: many new players skip metallic and roughness sliders, but a hue-perfect match can still look unnatural if sheen does not match the surface. Matte walls (plaster, wallpaper, wood): keep roughness relatively high, metallic low. Metal pipes and barrels: sample color first, then adjust roughness until specular highlights stop catching seeker FOV. When unsure, dull correct gray beats shiny perfect gray.",
+    },
+    {
+      id: "emissive-glow",
+      heading: "Glow / Emissive Paint (v2.9.0)",
+      body: "Update 2.9.0 adds glow-in-the-dark paint. Denfaminicogamer: open Paint Mode and adjust the Emissive value — you can glow only part of the body while the rest stays matte. Game*Spark frames the intent as mimicking glowing objects to deceive hunters. Match intensity to the lit prop (sunset doorway on Greece, neon signage, lamps); max emissive on dark plaster looks fake. Pair with Greece map practice after v3.0.0 — see Problems After v3.0.0 if glow feels broken after updating.",
     },
     {
       id: "prep-workflow",

@@ -598,6 +598,38 @@ export const demandLibrary: DemandEntry[] = [
     category: "Bug Fix",
     notes: "v2.8.0 fix — mod browser input lock during Paint Mode",
   },
+  {
+    question: "Greece Map Guide / Best Hiding Spots",
+    searchValue: 5,
+    status: "done",
+    href: "/maps/greece",
+    category: "Maps",
+    notes: "v3.0.0 11th official map — Santorini blue-white, sunset, glow paint; spots experimental",
+  },
+  {
+    question: "Glow / Emissive Paint How To Use",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/how-to-paint-better",
+    category: "Mechanics",
+    notes: "v2.9.0 — Denfaminicogamer Emissive slider; partial-body glow; Game*Spark intent",
+  },
+  {
+    question: "v3.0.0 Update Problems / Can't Join After Greece",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/problems-after-v3-0-0",
+    category: "Bug Fix",
+    notes: "Greece, EOS maintenance confusion, Workshop black void, glow paint misuse",
+  },
+  {
+    question: "Greece Central Pit / Overwatch Ilios Comparison",
+    searchValue: 3,
+    status: "done",
+    href: "/hidden-spots/greece-central-pit-rim",
+    category: "Maps",
+    notes: "Social meme (udn) — pit rim high traffic, low survival; not a meta camp",
+  },
 ];
 
 export function demandByCategory(): Map<string, DemandEntry[]> {
