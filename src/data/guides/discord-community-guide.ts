@@ -29,6 +29,11 @@ export const discordCommunityGuide: Guide = {
       body: "Community wikis report that English-language coordination for MECCHA CHAMELEON happens primarily through the official Discord server linked from the Steam store page and community hub — not through Trello or a second official forum. Discord is where players ask quick patch questions, share clips, report lobby bugs, and find friend groups between matches. Search \"Meccha Chameleon Discord\" or \"Mecha Chameleon Discord\" — verify you joined via Steam or the developer's linked invite, not copy-paste invites from scam reposts.",
     },
     {
+      id: "discord-hack-july-2026",
+      heading: "July 25–26 Discord Breach — What Happened",
+      body: "On July 25, 2026 the official Discord was briefly compromised while developers investigated malicious Workshop maps. Steam clarifications (TheGamer / Polygon / KeenGamer coverage): the game itself has no RAT; Discord is not integrated with the client; hacker messages telling players to \"follow steps to remove a RAT from the update\" were false panic. Steam News July 26: server restored, hackers banned, fresh invite https://discord.gg/kUh2PNPjpq. Always verify Discord links from Steam News or the store page — never from random DMs during a crisis.",
+    },
+    {
       id: "steam-discussions",
       heading: "Steam Discussions — Best for Bug Fixes",
       body: "Steam Community Discussions remain the highest-volume archive for connectivity issues: can't join lobby, authentication token errors, EULA blocks, taunt not working, invert Y requests. Our fix guides trace back to named threads — use Discussions when your exact error string matches a recent post. Patch days flood General and Help forums; search App 4704690 discussions before opening a duplicate thread.",
@@ -36,7 +41,7 @@ export const discordCommunityGuide: Guide = {
     {
       id: "workshop-community",
       heading: "Workshop Comments & Map Makers",
-      body: "Custom map questions — subscribe errors, black void load fails, exploit reports — belong in each map's Steam Workshop discussion tab. Map creators patch holes when players comment. Meccha Wiki workshop directory links subscribe URLs; after subscribing, test in a private lobby before forcing the map on a full friend group.",
+      body: "Custom map questions — subscribe errors, black void load fails, exploit reports — belong in each map's Steam Workshop discussion tab. Map creators patch holes when players comment. After late-July 2026 malware reports (Laser Tag Neon and copycats), prefer maps with an established player base and active comments; avoid brand-new uploaders who disabled discussion. Meccha Wiki workshop directory links subscribe URLs; after subscribing, test in a private lobby before forcing the map on a full friend group. Security patch shipped in v3.1.0 — see Problems After v3.1–3.3.",
     },
     {
       id: "english-vs-japanese",

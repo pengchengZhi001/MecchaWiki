@@ -82,6 +82,11 @@ const MAP_WHEN_TO_USE: Record<string, string[]> = {
     "Sunset-lit doorway or warm wall sessions where v2.9.0 Emissive matches the light source",
     "Round one before seekers learn alley and ledge meta — open courtyard still loses",
   ],
+  "garten-of-banban": [
+    "When you can blend into mascot murals — dual-sample character art + trim (Game*Spark)",
+    "BANBAN's Kindergarten signage seams before meme lobbies clear the entrance",
+    "Poster / color-theme walls when seekers tunnel open hall floors first",
+  ],
   "death-burger": [
     "When you can dual-sample sign/wall boundaries — flat carnival fills fail (Gamee)",
     "Clown mascot or carousel clutter rounds before meme spots get first-cleared",
@@ -130,6 +135,11 @@ const MAP_WHEN_NOT_TO_USE: Record<string, string[]> = {
     "Open white courtyard floors — bright value exposes outline and paint errors",
     "Max emissive on matte plaster — fake glow reads instantly to hunters",
   ],
+  "garten-of-banban": [
+    "Open hallway floors as long camps — wide sightlines punish imperfect paint",
+    "Same mural perch three rounds — meme lobbies clear Banban art first",
+    "Single flat fill across busy character murals — pattern alignment is required",
+  ],
   "death-burger": [
     "Open midway walkways as long camps — wide sightlines punish imperfect paint",
     "Same clown mascot perch three rounds — meme lobbies clear loud props first",
@@ -177,6 +187,11 @@ const MAP_COUNTER_STRATEGY: Record<string, string[]> = {
     "Check blue dome and plaster ledge seams on first pass — dual-tone hides dominate early meta",
     "Scan sunset alley nooks and stair shadow bands before assuming courtyards are empty",
     "Pit rim is predictable meme traffic — glance once, then clear building edges",
+  ],
+  "garten-of-banban": [
+    "Clear mascot murals and BANBAN's Kindergarten signage on first pass — early meta lives on walls",
+    "Scan hallway poster rows at crouch height before assuming halls are empty",
+    "Classroom clutter corners: fit-check prop mimics before leaving the room",
   ],
   "death-burger": [
     "Clear clown mascot rows and carousel bases before midway assumptions",

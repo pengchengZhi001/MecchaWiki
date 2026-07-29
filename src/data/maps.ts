@@ -13,6 +13,7 @@ const MAP_IMAGES: Record<string, string> = {
   "hikakin-museum": "/images/maps/hikakin-museum.jpg",
   "death-burger": "/images/maps/death-burger.jpg",
   greece: "/images/maps/greece.jpg",
+  "garten-of-banban": "/images/maps/garten-of-banban.jpg",
 };
 
 export type MapDifficulty = "Easy" | "Medium" | "Hard" | "Expert";
@@ -374,14 +375,14 @@ export const maps: GameMap[] = [
   {
     slug: "greece",
     name: "Greece",
-    tagline: "Santorini streets · Newest official map",
+    tagline: "Santorini streets · Sunset glow meta",
     difficulty: "Hard",
     playerCount: "4–10 players",
     themeColor: "#1E5F8A",
     accentColor: "#F5F5F0",
     imageUrl: MAP_IMAGES["greece"],
     description:
-      "Official Santorini-inspired map added in v3.0.0 (July 20, 2026 per Steam News). Japanese outlets Denfaminicogamer, 4gamer, and Game*Spark describe blue-and-white contrasting buildings, beautiful sunset lighting, and a compact globe-shaped layout with tight streets. Community chatter (including Chinese and JP social threads) compares the central circular pit to Overwatch's Ilios — treat that as meme lore, not a verified hide. Early meta pairs white plaster / blue dome dual-samples with v2.9.0 emissive (glow) paint on lit sunset surfaces.",
+      "Official Santorini-inspired map added in v3.0.0 (July 20, 2026 per Steam News). Japanese outlets Denfaminicogamer, 4gamer, and Game*Spark describe blue-and-white contrasting buildings, beautiful sunset lighting, and a compact globe-shaped layout with tight streets. Community chatter (including Chinese and JP social threads) compares the central circular pit to Overwatch's Ilios — treat that as meme lore, not a verified hide. Early meta pairs white plaster / blue dome dual-samples with v2.9.0 emissive (glow) paint on lit sunset surfaces. Week-two scouting adds shutter recesses, rooftop chimney clusters, and balcony rail shadows.",
     tips: [
       "Dual-sample white plaster and blue dome/trim — flat single fills read as stickers on Santorini contrast (JP press theme).",
       "Sunset-lit doorways and warm walls pair with v2.9.0 emissive paint — match glow intensity to the lit object, not max emissive everywhere.",
@@ -398,6 +399,34 @@ export const maps: GameMap[] = [
       { name: "Pit Rim Camping", description: "Seekers check the hole early once social clips spread." },
     ],
     colorPalette: ["#1E5F8A", "#F5F5F0", "#E8C07A", "#4A90A4", "#2C3E50"],
+  },
+  {
+    slug: "garten-of-banban",
+    name: "Garten of Banban",
+    tagline: "Banban's Kindergarten · Newest collab map",
+    difficulty: "Hard",
+    playerCount: "4–12 players",
+    themeColor: "#C41E3A",
+    accentColor: "#7CFC00",
+    imageUrl: MAP_IMAGES["garten-of-banban"],
+    description:
+      "Official collaboration map with Euphoric Brothers' Garten of Banban, shipped in v3.1.0 (July 25, 2026 per Steam News). Japanese outlets Game*Spark, Denfaminicogamer, and 4gamer describe a high-fidelity recreation of Banban's Kindergarten — wall murals of Banban mascots, \"BANBAN's Kindergarten\" signage, and colorful character art that fits paint-and-hide perfectly. Second official collab after HIKAKIN Museum; expect lottery default OFF for collaboration maps unless you toggle it on. All hiding spots remain experimental until lobby screenshots settle the meta.",
+    tips: [
+      "Paint into mascot murals and poster walls — dual-sample character colors plus wall trim, not one flat fill (Game*Spark theme).",
+      "Look for BANBAN's Kindergarten lettering and entrance branding as landmark dual-tone seams.",
+      "Color-themed kindergarten props reward pattern-aligned poses; flat fills on busy murals read as stickers.",
+      "Collaboration maps may be OFF in random lottery by default (v2.7.0 rule) — enable Garten of Banban manually if your group wants it.",
+    ],
+    hotspots: [
+      { name: "Mascot Mural Walls", description: "Banban character wall art — dense color for mural blends.", type: "hot" },
+      { name: "Kindergarten Signage", description: "BANBAN's Kindergarten text and entrance branding seams.", type: "hot" },
+      { name: "Open Hall Floors", description: "Bright hallway sightlines — cross fast or avoid.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Central Hallway Strip", description: "Wide sightlines punish imperfect paint on bright floors." },
+      { name: "Lit Mural Fronts", description: "Strong front lighting exposes value mismatch on character art." },
+    ],
+    colorPalette: ["#C41E3A", "#7CFC00", "#FF69B4", "#1E90FF", "#FFD700"],
   },
 ];
 

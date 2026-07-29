@@ -45,7 +45,7 @@ export const fixWorkshopMapLoadingGuide: Guide = {
     {
       id: "subscribe-all",
       heading: "Step 1 — Every Player Subscribes on Steam Workshop",
-      body: "Host shares the Steam Workshop URL in Discord before the session — not mid-invite. Each player clicks Subscribe on the workshop item page, waits for Steam Downloads to finish (watch the bottom-right Steam notification), then fully restarts MECCHA CHAMELEON so local cache refreshes. Subscribing without restart leaves stale file paths — especially common after game patches that change workshop storage layout. Popular maps like Art Gallery need this from all four to ten lobby members, not just the host.",
+      body: "Host shares the Steam Workshop URL in Discord before the session — not mid-invite. Each player clicks Subscribe on the workshop item page, waits for Steam Downloads to finish (watch the bottom-right Steam notification), then fully restarts MECCHA CHAMELEON so local cache refreshes. Subscribing without restart leaves stale file paths — especially common after game patches that change workshop storage layout. Popular maps like Art Gallery need this from all four to ten lobby members, not just the host. After late-July 2026 malware reports, prefer established maps with active comments; avoid brand-new uploaders who disabled discussion. v3.1.0+ ships a MOD-map security patch — see Problems After v3.1–3.3.",
     },
     {
       id: "test-official",

@@ -2,12 +2,20 @@ import type { Guide } from "./types";
 
 export const emotesPosesGuide: Guide = {
   slug: "emotes-poses-guide",
-  title: "Emotes & Pose Wheel — v1.8.0's 11 New Emotes Explained",
+  title: "Emotes & Pose Wheel — From v1.8.0's 11 Emotes to v3.2.0's +12",
   category: "Mechanics",
   readTime: "8 min",
   excerpt:
-    "Update v1.8.0 added 11 emotes to the R-key pose wheel. GameRant, 9Puz, and mecchachameleon.net document multi-wheel navigation, whistle/taunt on 1, and spectator emotes after elimination.",
+    "Update v1.8.0 added 11 emotes to the R-key pose wheel; v3.2.0 adds 12 more. GameRant, 9Puz, Steam News, and mecchachameleon.net document multi-wheel navigation, whistle/taunt on 1, and spectator emotes after elimination.",
   sources: [
+    {
+      name: "MECCHA CHAMELEON Steam News — update 3.2.0 (12 emotes)",
+      url: "https://store.steampowered.com/news/app/4704690",
+    },
+    {
+      name: "consolepcgaming.com — update 3.2.0",
+      url: "https://consolepcgaming.com/meccha-chameleon-update-3-2-0-brings-12-more-emotes-and-a-safety-reminder/",
+    },
     {
       name: "mecchachameleon.net — v1.8.0 patch notes (11 emotes)",
       url: "https://mecchachameleon.net/updates",
@@ -38,6 +46,11 @@ export const emotesPosesGuide: Guide = {
       id: "v18-emotes",
       heading: "What v1.8.0 Added (June 24, 2026)",
       body: "mecchachameleon.net and FandomWire describe update v1.8.0 as the largest single social content drop since launch: 11 brand-new emotes added alongside Osaka clip fixes and a Basic Mode elimination visibility fix. Official patch notes at community report time do not list individual emote names — players discover them through the same pose wheel used for hide shapes. Treat the batch as extra social and silhouette options in the R menu, not a separate emote shop. Verify your client build shows v1.8.0+ before expecting the expanded wheel.",
+    },
+    {
+      id: "v32-emotes",
+      heading: "What v3.2.0 Added (July 26, 2026)",
+      body: "Steam News update 3.2.0 adds 12 more emotes on top of the v1.8.0 batch — another social-expression drop, still without a published per-emote name list. ConsolePCGaming summarizes the patch as playful communication plus a palette UI change (eyedropper button removed). Survival poses still beat funny emotes in prep; use the new pages for spectator taunts and friend-lobby chaos after you lock a competitive freeze pose.",
     },
     {
       id: "open-wheel",

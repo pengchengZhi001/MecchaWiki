@@ -87,6 +87,26 @@ const DAILY_TIPS = [
     source: "Denfaminicogamer",
     sourceUrl: "https://news.denfaminicogamer.jp/news/260719d",
   },
+  {
+    tip: "v3.1.0 Garten of Banban: paint into mascot murals and BANBAN's Kindergarten signage seams — dual-sample art + trim (Game*Spark).",
+    source: "Game*Spark",
+    sourceUrl: "https://www.gamespark.jp/article/2026/07/25/169747.html",
+  },
+  {
+    tip: "After Workshop malware reports: only subscribe to popular maps with established uploaders; v3.1.0+ blocks malware execution (Steam + TheGamer).",
+    source: "TheGamer",
+    sourceUrl: "https://www.thegamer.com/meccha-chameleon-dev-responds-malware-maps/",
+  },
+  {
+    tip: "v3.2.0 removed the eyedropper button from the palette — use Spacebar quick sample / 3D eyedropper instead (Steam News).",
+    source: "Steam News",
+    sourceUrl: "https://store.steampowered.com/news/app/4704690",
+  },
+  {
+    tip: "v3.3.0 Plump body changes your silhouette — re-check wall-flat and prop-mimic outlines after switching body types (Steam News).",
+    source: "Steam News",
+    sourceUrl: "https://consolepcgaming.com/meccha-chameleon-update-3-3-0-gives-characters-a-plumper-look/",
+  },
 ] as const;
 
 const WEEKLY_CHALLENGES = [

@@ -89,6 +89,12 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     searchValue: 5,
   },
   {
+    slug: "problems-after-v3-3-0",
+    title: "v3.1–3.3 Update Problems — Banban / Malware / Discord Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
+  {
     slug: "problems-after-v2-8-0",
     title: "v2.8.0 Update Problems — Death Burger / Chat Filter Fix Guide",
     category: "Patch",
@@ -107,9 +113,10 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v3.0.0",
-  releasedAt: "2026-07-20",
-  headline: "Greece map (11th official), after v2.9.0 glow/emissive paint — EOS maintenance window completed",
+  version: "v3.3.0",
+  releasedAt: "2026-07-26",
+  headline:
+    "Plump body type — after Banban collab (3.1.0), 12 emotes + eyedropper UI change (3.2.0), Workshop malware fix & Discord restored",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
     {
@@ -125,31 +132,55 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
+      symptom: "Worried about Workshop malware / RAT rumors",
+      searchTerms: ["workshop malware", "RAT", "virus", "Laser Tag Neon", "game safety"],
+      fixGuideSlug: "problems-after-v3-3-0",
+      priority: "high",
+    },
+    {
+      symptom: "Discord hack scam links / fake fix instructions",
+      searchTerms: ["Discord hack", "RAT fix steps", "official Discord", "scam link"],
+      fixGuideSlug: "problems-after-v3-3-0",
+      priority: "high",
+    },
+    {
+      symptom: "Eyedropper button missing from color palette",
+      searchTerms: ["eyedropper removed", "no eyedropper button", "color palette", "3.2.0"],
+      fixGuideSlug: "problems-after-v3-3-0",
+      priority: "high",
+    },
+    {
       symptom: "Blurry screen or sudden FPS drop after patch",
       searchTerms: ["blurry screen", "lag", "low fps", "dx12"],
       fixGuideSlug: "fix-lag-blurry-screen",
       priority: "high",
     },
     {
-      symptom: "Can't matchmake — think EOS maintenance is still running",
-      searchTerms: ["EOS maintenance", "server down", "July 21", "matchmaking"],
-      fixGuideSlug: "problems-after-v3-0-0",
-      priority: "high",
+      symptom: "Garten of Banban missing from random lottery",
+      searchTerms: ["Banban missing", "collaboration map off", "kindergarten map", "random map toggle"],
+      fixGuideSlug: "problems-after-v3-3-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Banban / Greece hiding spots feel unknown / all fail",
+      searchTerms: ["Banban spots", "Garten hide", "Greece spots", "new map hide"],
+      fixGuideSlug: "problems-after-v3-3-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Controller paint brush speed feels FPS-tied",
+      searchTerms: ["controller paint", "brush speed", "gamepad FPS", "3.1.0"],
+      fixGuideSlug: "problems-after-v3-3-0",
+      priority: "medium",
     },
     {
       symptom: "Glow / emissive paint too bright or useless",
       searchTerms: ["glow paint", "emissive", "発光ペイント", "glow in the dark"],
       fixGuideSlug: "problems-after-v3-0-0",
-      priority: "high",
-    },
-    {
-      symptom: "Greece hiding spots feel unknown / all fail",
-      searchTerms: ["Greece spots", "ギリシャ", "Santorini hide", "new map hide"],
-      fixGuideSlug: "problems-after-v3-0-0",
       priority: "medium",
     },
     {
-      symptom: "Workshop map black void / failed to load after 3.0.0",
+      symptom: "Workshop map black void / failed to load after patch",
       searchTerms: ["workshop load fail", "black void", "map not loading", "GeForce Now"],
       fixGuideSlug: "fix-workshop-map-loading",
       priority: "high",
@@ -210,10 +241,11 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Greece blue dome, white plaster ledge, and sunset alley spots — brand-new v3.0.0 map; all positions experimental",
-    "v2.9.0 emissive/glow paint — match intensity to lit objects; practice on Greece sunset doorways",
-    "Central pit rim is meme traffic after Ilios comparisons — do not treat as a survival staple",
-    "Death Burger / Egypt / HIKAKIN spots still valid starting points on the same July build family",
+    "Garten of Banban mural, signage, and poster spots — brand-new v3.1.0 collab; all positions experimental",
+    "Greece week-two shutter / rooftop / balcony spots after early Santorini meta",
+    "Plump body (3.3.0) changes silhouette — re-check wall-flat and prop-mimic outlines",
+    "Eyedropper palette button removed in 3.2.0 — use Spacebar / 3D eyedropper instead",
+    "Only subscribe to trusted Workshop maps after the malware incident — prefer established uploaders",
   ],
 };
 

@@ -58,7 +58,7 @@ export const howToPaintBetterGuide: Guide = {
     {
       id: "emissive-glow",
       heading: "Glow / Emissive Paint (v2.9.0)",
-      body: "Update 2.9.0 adds glow-in-the-dark paint. Denfaminicogamer: open Paint Mode and adjust the Emissive value — you can glow only part of the body while the rest stays matte. Game*Spark frames the intent as mimicking glowing objects to deceive hunters. Match intensity to the lit prop (sunset doorway on Greece, neon signage, lamps); max emissive on dark plaster looks fake. Pair with Greece map practice after v3.0.0 — see Problems After v3.0.0 if glow feels broken after updating.",
+      body: "Update 2.9.0 adds glow-in-the-dark paint. Denfaminicogamer: open Paint Mode and adjust the Emissive value — you can glow only part of the body while the rest stays matte. Game*Spark frames the intent as mimicking glowing objects to deceive hunters. Match intensity to the lit prop (sunset doorway on Greece, neon signage, lamps); max emissive on dark plaster looks fake. Pair with Greece map practice after v3.0.0 — see Problems After v3.0.0 if glow feels broken after updating. Note: v3.2.0 removed the eyedropper button from the color palette UI — Spacebar quick sample and the 3D eyedropper remain (confirm binds after patching).",
     },
     {
       id: "prep-workflow",

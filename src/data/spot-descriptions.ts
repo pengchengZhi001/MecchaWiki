@@ -176,6 +176,24 @@ export const spotDescriptions: Record<string, string> = {
     "Central circular pit rim — high-meme Ilios comparison traffic; survival rate low.",
   "greece-stair-terrace-shadow":
     "Stair or terrace shadow band on white walls — keep limbs inside the dark strip.",
+  "greece-blue-shutter-recess":
+    "Blue shutter / window recess — dual-sample shutter blue and plaster reveal.",
+  "greece-rooftop-chimney-cluster":
+    "Rooftop chimney or vent cluster above eye height — stone vs white roof dual-tone.",
+  "greece-balcony-rail-shadow":
+    "Balcony rail shadow strip on white façades — keep limbs inside the dark band.",
+  "banban-kindergarten-mural":
+    "Banban mascot wall mural blend — dual-sample character colors and wall trim.",
+  "banban-welcome-signage":
+    "BANBAN's Kindergarten entrance lettering seam — recreate text/wall boundary paint.",
+  "banban-mascot-prop-cluster":
+    "Kindergarten mascot prop cluster — sample prop plastic and floor separately.",
+  "banban-hallway-poster-wall":
+    "Hallway poster / illustration wall — pattern-align pose to poster edges.",
+  "banban-color-theme-wall":
+    "Saturated color-theme wall block — match Banban-style color puzzle values tightly.",
+  "banban-classroom-clutter":
+    "Classroom clutter corner — prop-mimic beside desks and toys for clip rounds.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":

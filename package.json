@@ -17,6 +17,7 @@
     "fetch:egypt-hikakin": "node scripts/fetch-egypt-hikakin-images.mjs",
     "fetch:death-burger": "node scripts/fetch-death-burger-images.mjs",
     "fetch:greece": "node scripts/fetch-greece-images.mjs",
+    "fetch:banban": "node scripts/fetch-banban-images.mjs",
     "check:dup-images": "node scripts/check-dup-spots.mjs",
     "sync:workshop": "powershell -ExecutionPolicy Bypass -File scripts/sync-workshop.ps1"
   },

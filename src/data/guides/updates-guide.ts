@@ -6,14 +6,17 @@ export const updatesGuide: Guide = {
   category: "Mechanics",
   readTime: "10 min",
   excerpt:
-    "Meccha Chameleon patch history: v1.8.0 emotes, v2.3.0 hunter ammo, v1.7.0 reporting, v1.2.0 wall-clip fixes, map additions, and what to re-test after each update.",
+    "Meccha Chameleon patch history: v3.3.0 Plump, v3.2.0 emotes & eyedropper UI, v3.1.0 Banban + Workshop security, v3.0.0 Greece, glow paint, Death Burger, and what to re-test after each update.",
   seoKeywords: [
     "update",
     "patch notes",
     "version",
+    "v3.3.0",
+    "v3.2.0",
+    "v3.1.0",
     "v3.0.0",
-    "v2.9.0",
-    "v2.8.0",
+    "Garten of Banban",
+    "workshop malware",
     "Greece",
     "glow paint",
     "changelog",
@@ -37,6 +40,21 @@ export const updatesGuide: Guide = {
       id: "why-updates-matter",
       heading: "Why Patch Notes Matter for Hiders",
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
+    },
+    {
+      id: "v330",
+      heading: "v3.3.0 — Plump Body Type",
+      body: "Steam News (July 26, 2026): new character body type Plump. Silhouette and prop-mimic outlines change — re-check wall-flat and cluster hides after switching body types. Ships the same day as Discord restoration news. Post-update troubleshooting for the whole late-July wave: Problems After v3.1–3.3 fix guide.",
+    },
+    {
+      id: "v320",
+      heading: "v3.2.0 — 12 Emotes, Eyedropper UI Change & Safety Note",
+      body: "Steam News (July 26, 2026): 12 new emotes; eyedropper button removed from the color palette (Spacebar / 3D eyedropper sampling remain — confirm binds); safety note that malware execution from mod maps was already blocked in the previous version, confirmed with Steam Support. Pair with Emotes & Pose Wheel guide.",
+    },
+    {
+      id: "v310",
+      heading: "v3.1.0 — Garten of Banban + Workshop Security + Controller",
+      body: "Steam News (July 25, 2026): official collab map Garten of Banban (Banban's Kindergarten per JP press); non-UI operations on gamepad; Medium shadow quality; controller paint FPS brush-speed fix; GPU performance; 3D eyedropper sampling-position fix; security patch for MOD maps. Same day community coverage of Workshop malware maps and a temporary official Discord breach — game itself remains safe per Steam clarifications. Game*Spark / Denfaminicogamer / 4gamer cover the kindergarten murals and signage. Post-update troubleshooting: Problems After v3.1–3.3.",
     },
     {
       id: "v300",

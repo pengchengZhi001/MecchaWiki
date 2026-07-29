@@ -29,12 +29,12 @@ export const problemsAfterUpdateGuide: Guide = {
     {
       id: "first-60-seconds",
       heading: "First 60 Seconds — Do This Before Anything Else",
-      body: `Released ${latestPatch.releasedAt}: ${latestPatch.headline}. Close the game fully (not minimized). Exit Steam and reopen it. Confirm Meccha Chameleon shows no pending download. Relaunch from the Steam library — not a desktop shortcut to an old build. Have every friend repeat these steps. One outdated player breaks private lobbies even when passwords and server names are correct. For v3.0.0-specific issues (Greece, glow/emissive paint, EOS maintenance confusion), see the full v3.0.0 fix guide.`,
+      body: `Released ${latestPatch.releasedAt}: ${latestPatch.headline}. Close the game fully (not minimized). Exit Steam and reopen it. Confirm Meccha Chameleon shows no pending download. Relaunch from the Steam library — not a desktop shortcut to an old build. Have every friend repeat these steps. One outdated player breaks private lobbies even when passwords and server names are correct. For late-July 3.1–3.3 issues (Banban, Workshop malware panic, Discord scam links, eyedropper UI change, Plump), see the v3.1–3.3 fix guide. For Greece / glow paint from 3.0.0 / 2.9.0, see Problems After v3.0.0.`,
     },
     {
       id: "version-specific",
       heading: `${latestPatch.version} — Version-Specific Issues`,
-      body: "Update 3.0.0 adds Greece as the 11th official map. v2.9.0 (July 19) added glow/emissive paint via the Emissive slider, a slight paint performance bump, and a HIKAKIN Museum taunt volume tweak. EOS maintenance on July 21 is completed — lingering join failures are usually version mismatch. Full symptom-by-symptom walkthrough: Problems After v3.0.0 guide (/guides/problems-after-v3-0-0). Death Burger / chat filter: Problems After v2.8.0. Egypt/HIKAKIN: Problems After v2.7.0. Osaka/paint: Problems After v2.5.0.",
+      body: "Update 3.3.0 adds the Plump body type. 3.2.0 adds 12 emotes and removes the eyedropper button from the color palette (sampling via Spacebar / 3D eyedropper remains). 3.1.0 adds Garten of Banban, expands controller non-UI support, and ships the MOD-map security patch after Workshop malware reports. Full symptom walkthrough: Problems After v3.1–3.3 (/guides/problems-after-v3-3-0). Greece / glow: Problems After v3.0.0. Death Burger / chat filter: Problems After v2.8.0. Egypt/HIKAKIN: Problems After v2.7.0. Osaka/paint: Problems After v2.5.0.",
     },
     {
       id: "lobby-broken",

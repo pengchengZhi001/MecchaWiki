@@ -2,73 +2,64 @@ import type { Guide } from "./types";
 
 export const controllerSupportGuide: Guide = {
   slug: "controller-support-guide",
-  title: "Controller & Steam Deck Support — Steam Input Setup",
-  category: "Setup",
-  readTime: "10 min",
+  title: "Controller & Steam Deck — After v3.1.0 Non-UI Gamepad Support",
+  category: "Mechanics",
+  readTime: "9 min",
   excerpt:
-    "No native gamepad support on Steam — SlashSkill, NeonLightsMedia, and Game-Meta document Steam Input workarounds, Steam Deck Playable status, and why mouse or trackpad still wins for painting.",
+    "Update 3.1.0 makes non-UI operations controllable with a gamepad and fixes controller paint brush speed vs FPS. Steam Deck still benefits from trackpad precision for eyedropper work — here's what changed and what still favors mouse.",
   sources: [
     {
-      name: "SlashSkill — Controller support & Steam Deck",
+      name: "MECCHA CHAMELEON Steam News — update 3.1.0",
+      url: "https://store.steampowered.com/news/app/4704690",
+    },
+    {
+      name: "consolepcgaming.com — Garten of Banban / controller patch",
+      url: "https://consolepcgaming.com/meccha-chameleon-update-3-1-0-adds-a-garten-of-banban-map/",
+    },
+    {
+      name: "SlashSkill — pre-3.1.0 Steam Input / Deck setup",
       url: "https://www.slashskill.com/does-meccha-chameleon-have-controller-support-steam-deck-setup-and-why-keyboard-still-wins/",
     },
     {
-      name: "NeonLightsMedia — PC controls & controller answer",
-      url: "https://www.neonlightsmedia.com/blog/meccha-chameleon-pc-controls-keybinds",
-    },
-    {
-      name: "Game-Meta — Steam Deck layout guide (2026)",
+      name: "Game-Meta — Steam Deck layout guide",
       url: "https://game-meta.com/best-meccha-chameleon-steam-deck-controller-layout-settings-guide-2026/",
-    },
-    {
-      name: "Steam Discussions — 3M copies / controller support request",
-      url: "https://steamcommunity.com/app/4704690/discussions/0/571541224066004561/",
-    },
-    {
-      name: "dq7reimagined.com — Beginner controls table",
-      url: "https://dq7reimagined.com/meccha-chameleon/beginner-guide/",
     },
   ],
   content: [
     {
       id: "native-support",
-      heading: "Native Controller Support: No",
-      body: "SlashSkill's direct answer: MECCHA CHAMELEON has no native gamepad support. The Steam store page does not list controller compatibility, in-game menus expose no gamepad toggle, and developer lemorion_1224 has not announced official support at community report time. NeonLightsMedia agrees — the title is built entirely around keyboard and mouse, with paint menus, eyedropper precision, and camera orbit expecting a mouse. Steam Discussions near 3M sales include players asking for controller support now that the game exploded — treat that as ongoing community pressure, not a shipped feature.",
+      heading: "Native Gamepad Support After v3.1.0",
+      body: "Steam News update 3.1.0 (July 25, 2026): non-UI operations are now controllable with a game controller — a major change from launch-week guides that said \"no native gamepad support.\" ConsolePCGaming notes the patch also expands controller functionality beyond menus and fixes brush movement speed that previously varied with FPS when painting on a pad. Pre-3.1.0 sources (SlashSkill) documenting Steam-Input-only workarounds remain useful for Deck layouts and bind fine-tuning, but treat \"no native support\" claims as outdated if your client is 3.1.0+.",
     },
     {
-      id: "steam-input-desktop",
-      heading: "Desktop PC — Steam Input Workaround",
-      body: "SlashSkill: you can still use a controller by creating a Steam Input layout that maps gamepad buttons to keyboard and mouse actions. Enable controller support in Steam Settings → Controller, ensure Steam Input is on for the game (controller icon in library), and apply a community or custom layout. YouTube setup guides walk through enabling Xbox/PlayStation types and applying layouts before launch. Expect a setup job, not plug-and-play — test paint (F), pose wheel (hold R), and eyedropper in a private lobby before public matchmaking. Third-party mapping tools exist but add another failure layer; Steam Input is the documented community path.",
+      id: "what-still-hard",
+      heading: "What Still Favors Mouse / Trackpad",
+      body: "Competitive prep still leans on precise eyedropper sampling, brush resize, and middle-mouse orbit checks. Update 3.2.0 removed the eyedropper button from the color palette — confirm Spacebar quick sample and 3D eyedropper binds after patching. Thumbstick painting can work in casual friend lobbies; sweaty public prep timers still favor KB+M or Steam Deck trackpad-as-mouse hybrids. Paint Mode menus may still need cursor navigation depending on your build — test in a private lobby before ranked nights.",
     },
     {
-      id: "steam-deck",
-      heading: "Steam Deck — Playable, Not Verified",
-      body: "SlashSkill and NeonLightsMedia: Steam Deck lists the game as Playable, not Verified, because painting needs mouse-like input. Game-Meta's 2026 layout guide recommends right trackpad as mouse, gyro while touching trackpad for fine aim, left stick move, right stick camera, back buttons for utility shortcuts, and radial menus for paint tools. Community reports occasional launches stuck in keyboard-only mode until Steam Input is forced and the game restarts. Deck touchscreen can supplement sampling when trackpad sensitivity is tuned low.",
+      id: "steam-input",
+      heading: "Steam Input & Deck Layouts Still Help",
+      body: "SlashSkill's Steam Input workflow still applies for custom button maps: enable controller support in Steam Settings → Controller, ensure Steam Input is on for the game, and apply a community or custom layout. Map back grips to paint menu or pose shortcuts (Game-Meta). After any Steam Input import — and after 3.1.0 / 3.2.0 — open Esc → Settings → Controls and confirm F, R, Spacebar eyedropper, and whistle before inviting friends.",
     },
     {
-      id: "why-mouse-wins",
-      heading: "Why Keyboard + Mouse Still Wins",
-      body: "Painting is the bottleneck: brush resize (right mouse drag), Spacebar eyedropper accuracy, middle-mouse orbit checks, and metallic slider tweaks need precision thumbsticks cannot match. SlashSkill: competitive hiding leans hard on mouse, trackpad, or touchscreen — not analog stick painting. NeonLightsMedia warns thumbsticks are too clumsy for color matching that survives seeker sweeps. Controller layouts work for movement, pose wheel, and social emotes; serious prep timing still favors KB+M or Deck trackpad hybrids.",
+      id: "brush-fps-fix",
+      heading: "Controller Brush Speed vs FPS (Fixed in 3.1.0)",
+      body: "Official 3.1.0 notes: fixed an issue where brush movement speed varied based on FPS when painting with a controller. If your pad brush still feels frame-tied, confirm you are on 3.1.0+, lock a stable FPS, and retest in Paint Mode. GPU performance improvements in the same patch help low-end Deck / laptop sessions.",
     },
     {
-      id: "sample-binds",
-      heading: "Community Bind Examples (Verify Yours)",
-      body: "dq7reimagined.com beginner table lists Y for whistle/taunt when using controller-style mappings — your layout may differ. Game-Meta maps back grips to paint menu or pose shortcuts. 9Puz HUD defaults: F paint, R pose/emote wheel, 1 taunt, SHIFT surface attach. After any Steam Input import, open Esc → Settings → Controls and confirm F, R, and eyedropper before inviting friends. Invert Y axis remains a separate Steam Discussion request — check Controls help for mouse invert status; controller invert depends on your Steam Input gyro/trackpad profile.",
-    },
-    {
-      id: "invert-left-handed",
-      heading: "Invert Y & Accessibility Notes",
-      body: "Steam threads \"Needs Invert Y Axis option Please\" report players who cannot play without inverted mouse — no native menu toggle at report time. Left-handed and decades-long invert users ask for a simple flip on raw Y input. Controller users inheriting mouse emulation inherit the same gap unless Steam Input profile adds invert. Document honestly: verify each patch for a new Settings toggle before assuming the issue persists.",
+      id: "shadow-medium",
+      heading: "Medium Shadow Quality (3.1.0)",
+      body: "3.1.0 adds a Medium setting for shadow quality — useful on Deck and mid-range GPUs when High shadows tank FPS during paint checks. Pair with the GPU performance improvements from the same build before blaming controller input lag.",
     },
     {
       id: "when-controller-ok",
-      heading: "When Controller-Style Play Is Fine",
-      body: "Casual friend lobbies learning movement and emotes; seeker role with reduced paint demand; streamer couch co-op where one player paints on mouse and others use pads for chaos; Steam Deck handheld sessions with trackpad-as-mouse configured. Avoid controller-only prep in sweaty public lobbies where mouse hiders finish paint with seconds to spare. Pair with How to Paint Better and Emotes & Pose Wheel guides once binds are stable.",
+      heading: "When Controller Is Fine",
+      body: "Casual friend lobbies learning movement and emotes; seeker role with reduced paint demand; streamer couch co-op; Steam Deck handheld sessions. Avoid controller-only prep in sweaty public lobbies where mouse hiders finish paint with seconds to spare. Pair with How to Paint Better and Emotes & Pose Wheel guides once binds are stable.",
     },
     {
       id: "next-steps",
       heading: "Next Steps",
-      body: "Read Controls help for full default keybind list. If join fails on Deck, see Can't Join Lobby fix guide — version mismatch hits portable PCs the same as desktop. For painting fundamentals without controller friction, practice Mansion bathroom tiles on KB+M first, then migrate binds to Steam Input.",
+      body: "Read Controls help for default keybind list. If join fails on Deck, see Can't Join Lobby — version mismatch hits portable PCs the same as desktop. For Banban / late-July patch issues: Problems After v3.1–3.3. Practice Mansion bathroom tiles first, then migrate to Garten of Banban mural blends.",
     },
   ],
 };
