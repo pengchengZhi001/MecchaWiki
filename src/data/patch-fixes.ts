@@ -89,6 +89,12 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     searchValue: 5,
   },
   {
+    slug: "problems-after-v3-5-0",
+    title: "v3.4–3.5 Update Problems — Exit 8 / Friend Search / Voice Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
+  {
     slug: "problems-after-v3-3-0",
     title: "v3.1–3.3 Update Problems — Banban / Malware / Discord Fix Guide",
     category: "Patch",
@@ -113,10 +119,10 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v3.3.0",
-  releasedAt: "2026-07-26",
+  version: "v3.5.1",
+  releasedAt: "2026-08-02",
   headline:
-    "Plump body type — after Banban collab (3.1.0), 12 emotes + eyedropper UI change (3.2.0), Workshop malware fix & Discord restored",
+    "Exit 8 collab + friend-server search (3.5.0), Friend List restored (3.5.1), hunter body types (3.4.0), voice chat rework",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
     {
@@ -130,6 +136,54 @@ export const latestPatch: GamePatch = {
       searchTerms: ["authentication token", "can't login", "epic online services"],
       fixGuideSlug: "fix-authentication-token",
       priority: "high",
+    },
+    {
+      symptom: "Friend List missing from options after 3.5.0",
+      searchTerms: ["Friend List gone", "no friend list", "options FAQ removed", "3.5.1"],
+      fixGuideSlug: "problems-after-v3-5-0",
+      priority: "high",
+    },
+    {
+      symptom: "Can't find friends' servers / invite fails",
+      searchTerms: ["friend server search", "find friend server", "invite not working"],
+      fixGuideSlug: "problems-after-v3-5-0",
+      priority: "high",
+    },
+    {
+      symptom: "Proximity voice chat not working / silent lobby",
+      searchTerms: ["voice chat disabled", "proximity voice", "mic not working", "3.3.2"],
+      fixGuideSlug: "problems-after-v3-5-0",
+      priority: "high",
+    },
+    {
+      symptom: "Microphone starts muted every match",
+      searchTerms: ["mic muted by default", "unmute microphone", "3.5.0"],
+      fixGuideSlug: "problems-after-v3-5-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Exit 8 missing from random lottery",
+      searchTerms: ["Exit 8 missing", "8番出口", "collaboration map off", "random map toggle"],
+      fixGuideSlug: "problems-after-v3-5-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Exit 8 / Banban hiding spots feel unknown / all fail",
+      searchTerms: ["Exit 8 spots", "8番出口 hide", "Banban spots", "new map hide"],
+      fixGuideSlug: "problems-after-v3-5-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Hunter body type wrong in FPS / Cube Plump seeker",
+      searchTerms: ["hunter body type", "FPS default body", "Plump hunter", "3.4.0"],
+      fixGuideSlug: "problems-after-v3-5-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Controller zoom not working / Paint Mode cursor lag",
+      searchTerms: ["controller zoom", "paint mode 30 fps", "brush zoom", "3.5.0"],
+      fixGuideSlug: "problems-after-v3-5-0",
+      priority: "medium",
     },
     {
       symptom: "Worried about Workshop malware / RAT rumors",
@@ -158,18 +212,6 @@ export const latestPatch: GamePatch = {
     {
       symptom: "Garten of Banban missing from random lottery",
       searchTerms: ["Banban missing", "collaboration map off", "kindergarten map", "random map toggle"],
-      fixGuideSlug: "problems-after-v3-3-0",
-      priority: "medium",
-    },
-    {
-      symptom: "Banban / Greece hiding spots feel unknown / all fail",
-      searchTerms: ["Banban spots", "Garten hide", "Greece spots", "new map hide"],
-      fixGuideSlug: "problems-after-v3-3-0",
-      priority: "medium",
-    },
-    {
-      symptom: "Controller paint brush speed feels FPS-tied",
-      searchTerms: ["controller paint", "brush speed", "gamepad FPS", "3.1.0"],
       fixGuideSlug: "problems-after-v3-3-0",
       priority: "medium",
     },
@@ -241,10 +283,10 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Garten of Banban mural, signage, and poster spots — brand-new v3.1.0 collab; all positions experimental",
-    "Greece week-two shutter / rooftop / balcony spots after early Santorini meta",
-    "Plump body (3.3.0) changes silhouette — re-check wall-flat and prop-mimic outlines",
-    "Eyedropper palette button removed in 3.2.0 — use Spacebar / 3D eyedropper instead",
+    "Exit 8 tile / anomaly / signage spots — brand-new v3.5.0 collab; all positions experimental",
+    "Garten of Banban mural, signage, door-frame spots after early kindergarten meta",
+    "Hunter Cube/Plump (3.4.0) and FPS default body (3.5.0) change seeker silhouettes",
+    "Mic muted by default (3.5.0); proximity voice still disabled pending rework (3.3.2)",
     "Only subscribe to trusted Workshop maps after the malware incident — prefer established uploaders",
   ],
 };

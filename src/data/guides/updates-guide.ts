@@ -6,15 +6,18 @@ export const updatesGuide: Guide = {
   category: "Mechanics",
   readTime: "10 min",
   excerpt:
-    "Meccha Chameleon patch history: v3.3.0 Plump, v3.2.0 emotes & eyedropper UI, v3.1.0 Banban + Workshop security, v3.0.0 Greece, glow paint, Death Burger, and what to re-test after each update.",
+    "Meccha Chameleon patch history: v3.5.1 Friend List restore, v3.5.0 Exit 8 + friend-server search, v3.4.0 hunter body types, v3.3.x Plump / voice rework, Banban, Greece, glow paint, and what to re-test after each update.",
   seoKeywords: [
     "update",
     "patch notes",
     "version",
+    "v3.5.1",
+    "v3.5.0",
+    "v3.4.0",
+    "Exit 8",
+    "8番出口",
+    "friend server search",
     "v3.3.0",
-    "v3.2.0",
-    "v3.1.0",
-    "v3.0.0",
     "Garten of Banban",
     "workshop malware",
     "Greece",
@@ -42,9 +45,29 @@ export const updatesGuide: Guide = {
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
     },
     {
+      id: "v351",
+      heading: "v3.5.1 — Friend List Restored & Spectator Sensitivity",
+      body: "Steam News fix3.5.1 (August 2, 2026): Friend List re-added after 3.5.0 removed it from options; online users prioritized at the top; camera sensitivity settings now apply in Spectator Mode; color palette adjusted. Post-update troubleshooting for the whole early-August wave: Problems After v3.4–3.5 fix guide.",
+    },
+    {
+      id: "v350",
+      heading: "v3.5.0 — Exit 8 Collab Map & Friend Server Search",
+      body: "Steam News update 3.5.0 (August 1, 2026): official collab map Exit 8 (The Exit 8 / 8番出口); friend-server search; color palette UI tweak; FAQ and Friend List removed from options (Friend List returns in 3.5.1); server-name overflow fix; motion blur setting fix; FPS hunter body unified to default; controller zoom fix; UI Back button collision; microphone muted by default. Famitsu / Game*Spark describe familiar underground corridors plus chaotic anomaly-like zones and a looping layout — third official collab after HIKAKIN and Banban. JP social notes hiding feels hard because players already know the corridor silhouette. Post-update troubleshooting: Problems After v3.4–3.5.",
+    },
+    {
+      id: "v340",
+      heading: "v3.4.0 — Hunter Body Types & Smoother Paint Mode",
+      body: "Steam News update 3.4.0 (July 31, 2026): character types applied to Hunters (Cube / Plump usable while seeking); Voice Input ON/OFF label fix; direct mouse support for console color palette; Paint Mode cursor unlocked from 30 fps so brush size and right-click zoom feel smooth. Game*Spark highlights seeker body choice as the headline change before Exit 8 weekend.",
+    },
+    {
+      id: "v332",
+      heading: "v3.3.2 — Server Reset Fix & Voice Chat Rework Pause",
+      body: "Steam News fix3.3.2 (July 29, 2026): server names/passwords no longer reset during specific actions; Plump belly collision added; controller settings UI adjusted; 3D eyedropper performance improved; proximity voice chat temporarily disabled while voice is reworked. Expect silent lobbies until the rework ships — not a broken headset.",
+    },
+    {
       id: "v330",
       heading: "v3.3.0 — Plump Body Type",
-      body: "Steam News (July 26, 2026): new character body type Plump. Silhouette and prop-mimic outlines change — re-check wall-flat and cluster hides after switching body types. Ships the same day as Discord restoration news. Post-update troubleshooting for the whole late-July wave: Problems After v3.1–3.3 fix guide.",
+      body: "Steam News (July 26, 2026): new character body type Plump. Silhouette and prop-mimic outlines change — re-check wall-flat and cluster hides after switching body types. Ships the same day as Discord restoration news. A later same-week Steam post also lists Performance Mode and 3D eyedropper / graphics-settings saves under the 3.3.0 label. Post-update troubleshooting for the late-July wave: Problems After v3.1–3.3 fix guide.",
     },
     {
       id: "v320",

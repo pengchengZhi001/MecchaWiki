@@ -87,6 +87,11 @@ const MAP_WHEN_TO_USE: Record<string, string[]> = {
     "BANBAN's Kindergarten signage seams before meme lobbies clear the entrance",
     "Poster / color-theme walls when seekers tunnel open hall floors first",
   ],
+  "exit-8": [
+    "When you can dual-sample corridor tile + grout — flat beige fills fail (Famitsu)",
+    "Anomaly / chaos zones when the clean loop corridor is too readable",
+    "Station signage and ad-panel seams before seekers learn Exit 8 irony checks",
+  ],
   "death-burger": [
     "When you can dual-sample sign/wall boundaries — flat carnival fills fail (Gamee)",
     "Clown mascot or carousel clutter rounds before meme spots get first-cleared",
@@ -140,6 +145,11 @@ const MAP_WHEN_NOT_TO_USE: Record<string, string[]> = {
     "Same mural perch three rounds — meme lobbies clear Banban art first",
     "Single flat fill across busy character murals — pattern alignment is required",
   ],
+  "exit-8": [
+    "Clean loop walkway camping — players already know the Exit 8 silhouette (JP social)",
+    "Same station-sign perch three rounds — irony meta clears signage early",
+    "Single flat beige fill on tiled walls — tile/grout dual-sample is required",
+  ],
   "death-burger": [
     "Open midway walkways as long camps — wide sightlines punish imperfect paint",
     "Same clown mascot perch three rounds — meme lobbies clear loud props first",
@@ -192,6 +202,11 @@ const MAP_COUNTER_STRATEGY: Record<string, string[]> = {
     "Clear mascot murals and BANBAN's Kindergarten signage on first pass — early meta lives on walls",
     "Scan hallway poster rows at crouch height before assuming halls are empty",
     "Classroom clutter corners: fit-check prop mimics before leaving the room",
+  ],
+  "exit-8": [
+    "Clear anomaly chaos zones and station signage on first pass — early meta avoids clean walkways",
+    "Scan tile walls for grout-grid breaks — flat beige blobs fail pattern check",
+    "Loop alcoves: re-check after each loop because lighting shifts",
   ],
   "death-burger": [
     "Clear clown mascot rows and carousel bases before midway assumptions",

@@ -14,6 +14,7 @@ const MAP_IMAGES: Record<string, string> = {
   "death-burger": "/images/maps/death-burger.jpg",
   greece: "/images/maps/greece.jpg",
   "garten-of-banban": "/images/maps/garten-of-banban.jpg",
+  "exit-8": "/images/maps/exit-8.jpg",
 };
 
 export type MapDifficulty = "Easy" | "Medium" | "Hard" | "Expert";
@@ -403,7 +404,7 @@ export const maps: GameMap[] = [
   {
     slug: "garten-of-banban",
     name: "Garten of Banban",
-    tagline: "Banban's Kindergarten · Newest collab map",
+    tagline: "Banban's Kindergarten · Collab map",
     difficulty: "Hard",
     playerCount: "4–12 players",
     themeColor: "#C41E3A",
@@ -427,6 +428,34 @@ export const maps: GameMap[] = [
       { name: "Lit Mural Fronts", description: "Strong front lighting exposes value mismatch on character art." },
     ],
     colorPalette: ["#C41E3A", "#7CFC00", "#FF69B4", "#1E90FF", "#FFD700"],
+  },
+  {
+    slug: "exit-8",
+    name: "Exit 8",
+    tagline: "The Exit 8 · Newest collab map",
+    difficulty: "Hard",
+    playerCount: "4–12 players",
+    themeColor: "#C4A35A",
+    accentColor: "#2C2C2C",
+    imageUrl: MAP_IMAGES["exit-8"],
+    description:
+      "Official collaboration map with The Exit 8 (8番出口), shipped in v3.5.0 (August 1, 2026 per Steam News). Famitsu and Game*Spark describe the familiar underground corridor — tiled passages, station signage, fluorescent strips — plus chaotic \"anomaly-like\" zones and a looping layout. Third official collab after HIKAKIN Museum and Garten of Banban. JP social threads note hiding feels hard because players already know the corridor silhouette; early meta favors anomaly chaos blends and tile/sign dual-tone seams over clean walkway camping. Lottery may default OFF for collaboration maps — enable Exit 8 manually. All hiding spots remain experimental.",
+    tips: [
+      "Dual-sample corridor tile and grout — flat beige fills read as stickers on the iconic Exit 8 walls (Famitsu theme).",
+      "Lean into anomaly / chaotic zones when the clean loop is too readable — Game*Spark notes messy areas exist alongside familiar passages.",
+      "Station signage and ad panels reward frame-edge paints; keep limbs inside the panel rectangle.",
+      "Collaboration maps may be OFF in random lottery by default (v2.7.0 rule) — enable Exit 8 manually if your group wants it.",
+    ],
+    hotspots: [
+      { name: "Tiled Corridor Walls", description: "Iconic subway tile + grout dual-tone blends.", type: "hot" },
+      { name: "Anomaly Chaos Zones", description: "Messy / distorted areas for \"anomaly-like\" mimics.", type: "hot" },
+      { name: "Clean Loop Walkway", description: "Familiar open sightlines — players already know the silhouette.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Straight Corridor Center", description: "Wide sightlines punish imperfect paint on bright tile floors." },
+      { name: "Lit Station Fronts", description: "Strong fluorescent light exposes value mismatch on wall panels." },
+    ],
+    colorPalette: ["#C4A35A", "#2C2C2C", "#E8DCC8", "#4A5568", "#8B7355"],
   },
 ];
 

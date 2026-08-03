@@ -107,6 +107,21 @@ const DAILY_TIPS = [
     source: "Steam News",
     sourceUrl: "https://consolepcgaming.com/meccha-chameleon-update-3-3-0-gives-characters-a-plumper-look/",
   },
+  {
+    tip: "v3.5.0 Exit 8: skip clean corridor camps — dual-sample tile/grout or hide in anomaly chaos zones (Famitsu / Game*Spark).",
+    source: "Famitsu",
+    sourceUrl: "https://www.famitsu.com/article/202608/83207",
+  },
+  {
+    tip: "Can't find friends after 3.5.0? Use friend-server search; update to 3.5.1 if Friend List vanished from options (Steam News).",
+    source: "Steam News",
+    sourceUrl: "https://consolepcgaming.com/meccha-chameleon-fix3-5-1-targets-the-friend-list-and-spectator-mode/",
+  },
+  {
+    tip: "Proximity voice is temporarily disabled (fix3.3.2 rework) and mic starts muted in 3.5.0 — unmute manually when your lobby wants chat.",
+    source: "Steam News",
+    sourceUrl: "https://consolepcgaming.com/meccha-chameleon-update-3-5-0-adds-an-exit-8-map-and-friend-server-search/",
+  },
 ] as const;
 
 const WEEKLY_CHALLENGES = [
@@ -134,6 +149,11 @@ const WEEKLY_CHALLENGES = [
     title: "Practice Greece blue-white seams",
     description: "Hide on Blue Dome Trim or White Plaster Ledge on the v3.0.0 map. Dual-sample Santorini contrast; add Emissive only on lit doorways (Denfaminicogamer + Game*Spark).",
     spotSlug: "greece-blue-dome-trim",
+  },
+  {
+    title: "Survive Exit 8 without clean-corridor camping",
+    description: "Use Anomaly Chaos Zone or Tile Corridor Blend on the v3.5.0 collab. Dual-sample tile/grout — JP social says familiar walkways are too readable (Famitsu).",
+    spotSlug: "exit-8-anomaly-chaos-zone",
   },
 ] as const;
 

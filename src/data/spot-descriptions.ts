@@ -194,6 +194,20 @@ export const spotDescriptions: Record<string, string> = {
     "Saturated color-theme wall block — match Banban-style color puzzle values tightly.",
   "banban-classroom-clutter":
     "Classroom clutter corner — prop-mimic beside desks and toys for clip rounds.",
+  "banban-playground-door-frame":
+    "Bright door / frame trim at classroom thresholds — dual-sample frame and wall.",
+  "exit-8-tile-corridor":
+    "Exit 8 subway tile + grout dual-tone corridor blend — avoid flat beige fills.",
+  "exit-8-station-signage":
+    "Station / exit signage panel seam — keep limbs inside the frame rectangle.",
+  "exit-8-anomaly-chaos-zone":
+    "Messy anomaly-like chaos zone — clutter forgives outline better than clean loops.",
+  "exit-8-loop-alcove":
+    "Side alcove off the looping corridor — re-sample after each loop lighting shift.",
+  "exit-8-ad-panel-wall":
+    "Underground ad / poster panel wall — pattern-align pose to panel edges.",
+  "exit-8-fluorescent-strip":
+    "Ceiling fluorescent strip attach — sample housing plus nearby tile values.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":

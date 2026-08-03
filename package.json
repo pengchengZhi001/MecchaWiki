@@ -18,6 +18,7 @@
     "fetch:death-burger": "node scripts/fetch-death-burger-images.mjs",
     "fetch:greece": "node scripts/fetch-greece-images.mjs",
     "fetch:banban": "node scripts/fetch-banban-images.mjs",
+    "fetch:exit-8": "node scripts/fetch-exit-8-images.mjs",
     "check:dup-images": "node scripts/check-dup-spots.mjs",
     "sync:workshop": "powershell -ExecutionPolicy Bypass -File scripts/sync-workshop.ps1"
   },
