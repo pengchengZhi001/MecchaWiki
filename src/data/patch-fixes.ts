@@ -89,6 +89,12 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     searchValue: 5,
   },
   {
+    slug: "problems-after-v3-6-0",
+    title: "v3.6 Update Problems — Deep Sea / Settings / Crowd FPS Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
+  {
     slug: "problems-after-v3-5-0",
     title: "v3.4–3.5 Update Problems — Exit 8 / Friend Search / Voice Fix Guide",
     category: "Patch",
@@ -119,10 +125,10 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v3.5.1",
-  releasedAt: "2026-08-02",
+  version: "v3.6.1",
+  releasedAt: "2026-08-08",
   headline:
-    "Exit 8 collab + friend-server search (3.5.0), Friend List restored (3.5.1), hunter body types (3.4.0), voice chat rework",
+    "Deep Sea map (3.6.0), settings persist / Eeyan reset, fix3.6.1 crowd FPS + chat filter, Emote Contest winners",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
     {
@@ -136,6 +142,36 @@ export const latestPatch: GamePatch = {
       searchTerms: ["authentication token", "can't login", "epic online services"],
       fixGuideSlug: "fix-authentication-token",
       priority: "high",
+    },
+    {
+      symptom: "Deep Sea hiding spots feel unknown / all fail",
+      searchTerms: ["Deep Sea spots", "深海 hide", "coral hide", "new map hide"],
+      fixGuideSlug: "problems-after-v3-6-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Game settings reset after restart",
+      searchTerms: ["settings not saving", "options reset", "settings persist", "3.6.0"],
+      fixGuideSlug: "problems-after-v3-6-0",
+      priority: "high",
+    },
+    {
+      symptom: "FPS drops in crowded / high player-count lobbies",
+      searchTerms: ["crowd lag", "high player FPS", "many players lag", "3.6.1"],
+      fixGuideSlug: "problems-after-v3-6-0",
+      priority: "high",
+    },
+    {
+      symptom: "Chat or nickname blocked for common words",
+      searchTerms: ["chat filter too strict", "common word blocked", "name blocked", "3.6.1"],
+      fixGuideSlug: "problems-after-v3-6-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Eeyan / Likes reset by accident",
+      searchTerms: ["Eeyan reset", "ええやん", "likes reset", "3.6.0"],
+      fixGuideSlug: "problems-after-v3-6-0",
+      priority: "medium",
     },
     {
       symptom: "Friend List missing from options after 3.5.0",
@@ -230,7 +266,7 @@ export const latestPatch: GamePatch = {
     {
       symptom: "Nameplate or chat message blocked after update",
       searchTerms: ["name blocked", "chat filter", "word filter", "can't type"],
-      fixGuideSlug: "problems-after-v2-8-0",
+      fixGuideSlug: "problems-after-v3-6-0",
       priority: "medium",
     },
     {
@@ -283,10 +319,11 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Exit 8 tile / anomaly / signage spots — brand-new v3.5.0 collab; all positions experimental",
-    "Garten of Banban mural, signage, door-frame spots after early kindergarten meta",
-    "Hunter Cube/Plump (3.4.0) and FPS default body (3.5.0) change seeker silhouettes",
-    "Mic muted by default (3.5.0); proximity voice still disabled pending rework (3.3.2)",
+    "Deep Sea coral / clam / wreck / fish / jelly spots — brand-new v3.6.0 map; all positions experimental",
+    "Exit 8 tile / anomaly / signage spots after early underground meta",
+    "Settings persistence and Eeyan reset controls after 3.6.0",
+    "Crowd lobby FPS after fix3.6.1 — re-check Performance Mode if drops remain",
+    "Five Emote Contest winners on the pose wheel — survival freeze still wins prep",
     "Only subscribe to trusted Workshop maps after the malware incident — prefer established uploaders",
   ],
 };

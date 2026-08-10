@@ -208,6 +208,20 @@ export const spotDescriptions: Record<string, string> = {
     "Underground ad / poster panel wall — pattern-align pose to panel edges.",
   "exit-8-fluorescent-strip":
     "Ceiling fluorescent strip attach — sample housing plus nearby tile values.",
+  "deep-sea-coral-cluster":
+    "Seafloor coral reef cluster — dual-sample coral tip and shadow base for prop mimic.",
+  "deep-sea-jellyfish-column":
+    "Mid-water jellyfish blend — sample bell and tentacle values separately.",
+  "deep-sea-tropical-fish-school":
+    "Tropical fish school pattern alignment — dual-sample fish stripe and water.",
+  "deep-sea-giant-clam":
+    "Giant clam / bivalve crouch — sample shell ridge and interior separately.",
+  "deep-sea-unicorn-statue":
+    "Unicorn statue meme landmark — sample stone and curl into the base; rotate early.",
+  "deep-sea-shipwreck-debris":
+    "Shipwreck debris pile — dual-sample wood/metal and nearby sand for clutter hide.",
+  "deep-sea-seaweed-thicket":
+    "Seaweed / kelp thicket — sample frond green and shadow gap; keep limbs inside plants.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":

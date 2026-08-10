@@ -6,11 +6,15 @@ export const updatesGuide: Guide = {
   category: "Mechanics",
   readTime: "10 min",
   excerpt:
-    "Meccha Chameleon patch history: v3.5.1 Friend List restore, v3.5.0 Exit 8 + friend-server search, v3.4.0 hunter body types, v3.3.x Plump / voice rework, Banban, Greece, glow paint, and what to re-test after each update.",
+    "Meccha Chameleon patch history: v3.6.1 crowd FPS, v3.6.0 Deep Sea + settings persist, Emote Contest winners, v3.5.x Exit 8 / friend search, Banban, Greece, glow paint, and what to re-test after each update.",
   seoKeywords: [
     "update",
     "patch notes",
     "version",
+    "v3.6.1",
+    "v3.6.0",
+    "Deep Sea",
+    "深海",
     "v3.5.1",
     "v3.5.0",
     "v3.4.0",
@@ -43,6 +47,16 @@ export const updatesGuide: Guide = {
       id: "why-updates-matter",
       heading: "Why Patch Notes Matter for Hiders",
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
+    },
+    {
+      id: "v361",
+      heading: "v3.6.1 — Crowd FPS Fix & Chat Filter Softening",
+      body: "Steam News fix3.6.1 (August 8, 2026): improved character behavior and significantly reduced performance drops caused by high player counts; fixed blocked words that were inadvertently filtering common words after 3.6.0's expanded profanity list. Emote Contest results were scheduled the next day. Post-update troubleshooting: Problems After v3.6 fix guide.",
+    },
+    {
+      id: "v360",
+      heading: "v3.6.0 — Deep Sea Map & Settings Persist",
+      body: "Steam News update 3.6.0 (August 7, 2026): new official map Deep Sea (深海); game settings now persist after restart; number input buttons; additional text NG words; feature to reset Eeyan / ええやん (Likes); reduced future update file size. Denfaminicogamer and Game*Spark describe tropical fish, jellyfish, coral, giant clams, seaweed, shipwreck debris, and a unicorn statue — early hide meta favors reef clutter and dual-tone fauna paints over open blue water. Post-update troubleshooting: Problems After v3.6.",
     },
     {
       id: "v351",

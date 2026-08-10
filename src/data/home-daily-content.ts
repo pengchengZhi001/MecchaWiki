@@ -113,6 +113,16 @@ const DAILY_TIPS = [
     sourceUrl: "https://www.famitsu.com/article/202608/83207",
   },
   {
+    tip: "v3.6.0 Deep Sea: prop-mimic coral, giant clams, and shipwreck debris — open blue water is transit only (Denfaminicogamer / Game*Spark).",
+    source: "Game*Spark",
+    sourceUrl: "https://www.gamespark.jp/article/2026/08/08/170391.html",
+  },
+  {
+    tip: "After 3.6.0, settings persist across restarts; fix3.6.1 cuts crowded-lobby FPS drops and softens over-strict chat filters (Steam News).",
+    source: "Steam News",
+    sourceUrl: "https://consolepcgaming.com/meccha-chameleon-fix3-6-1-takes-aim-at-crowd-related-performance-drops/",
+  },
+  {
     tip: "Can't find friends after 3.5.0? Use friend-server search; update to 3.5.1 if Friend List vanished from options (Steam News).",
     source: "Steam News",
     sourceUrl: "https://consolepcgaming.com/meccha-chameleon-fix3-5-1-targets-the-friend-list-and-spectator-mode/",
@@ -154,6 +164,11 @@ const WEEKLY_CHALLENGES = [
     title: "Survive Exit 8 without clean-corridor camping",
     description: "Use Anomaly Chaos Zone or Tile Corridor Blend on the v3.5.0 collab. Dual-sample tile/grout — JP social says familiar walkways are too readable (Famitsu).",
     spotSlug: "exit-8-anomaly-chaos-zone",
+  },
+  {
+    title: "Scout Deep Sea coral without open-water camping",
+    description: "Use Coral Reef Cluster or Shipwreck Debris on the v3.6.0 map. Prop-mimic seafloor clutter — Game*Spark says the reef tests paint skill (Denfaminicogamer).",
+    spotSlug: "deep-sea-coral-cluster",
   },
 ] as const;
 

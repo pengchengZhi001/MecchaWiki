@@ -2,15 +2,19 @@ import type { Guide } from "./types";
 
 export const emotesPosesGuide: Guide = {
   slug: "emotes-poses-guide",
-  title: "Emotes & Pose Wheel — From v1.8.0's 11 Emotes to v3.2.0's +12",
+  title: "Emotes & Pose Wheel — From v1.8.0's 11 Emotes to Contest Winners",
   category: "Mechanics",
   readTime: "8 min",
   excerpt:
-    "Update v1.8.0 added 11 emotes to the R-key pose wheel; v3.2.0 adds 12 more. GameRant, 9Puz, Steam News, and mecchachameleon.net document multi-wheel navigation, whistle/taunt on 1, and spectator emotes after elimination.",
+    "Update v1.8.0 added 11 emotes to the R-key pose wheel; v3.2.0 adds 12 more; August 2026 ships five community Emote Contest winners. GameRant, 9Puz, Steam News, and mecchachameleon.net document multi-wheel navigation, whistle/taunt on 1, and spectator emotes after elimination.",
   sources: [
     {
       name: "MECCHA CHAMELEON Steam News — update 3.2.0 (12 emotes)",
       url: "https://store.steampowered.com/news/app/4704690",
+    },
+    {
+      name: "consolepcgaming.com — Emote Contest winners",
+      url: "https://consolepcgaming.com/meccha-chameleon-has-added-five-winning-emotes-from-its-first-contest/",
     },
     {
       name: "consolepcgaming.com — update 3.2.0",
@@ -51,6 +55,11 @@ export const emotesPosesGuide: Guide = {
       id: "v32-emotes",
       heading: "What v3.2.0 Added (July 26, 2026)",
       body: "Steam News update 3.2.0 adds 12 more emotes on top of the v1.8.0 batch — another social-expression drop, still without a published per-emote name list. ConsolePCGaming summarizes the patch as playful communication plus a palette UI change (eyedropper button removed). Survival poses still beat funny emotes in prep; use the new pages for spectator taunts and friend-lobby chaos after you lock a competitive freeze pose.",
+    },
+    {
+      id: "emote-contest",
+      heading: "First Emote Contest Winners (August 9, 2026)",
+      body: "LEMORION's first community Emote Contest (#mecchaemote) accepted photos, drawings, and CG submissions through August 8 JST. ConsolePCGaming reports five winning poses shipped around August 9 — simple white figures with bright green outlines, including upright, crouching, and stretched-out silhouettes. Hold R and page the wheel to find them after updating. Survival freeze poses still win prep; contest emotes shine for spectator chaos and friend lobbies.",
     },
     {
       id: "open-wheel",

@@ -15,6 +15,7 @@ const MAP_IMAGES: Record<string, string> = {
   greece: "/images/maps/greece.jpg",
   "garten-of-banban": "/images/maps/garten-of-banban.jpg",
   "exit-8": "/images/maps/exit-8.jpg",
+  "deep-sea": "/images/maps/deep-sea.jpg",
 };
 
 export type MapDifficulty = "Easy" | "Medium" | "Hard" | "Expert";
@@ -432,7 +433,7 @@ export const maps: GameMap[] = [
   {
     slug: "exit-8",
     name: "Exit 8",
-    tagline: "The Exit 8 · Newest collab map",
+    tagline: "The Exit 8 · Collab underground corridor",
     difficulty: "Hard",
     playerCount: "4–12 players",
     themeColor: "#C4A35A",
@@ -456,6 +457,34 @@ export const maps: GameMap[] = [
       { name: "Lit Station Fronts", description: "Strong fluorescent light exposes value mismatch on wall panels." },
     ],
     colorPalette: ["#C4A35A", "#2C2C2C", "#E8DCC8", "#4A5568", "#8B7355"],
+  },
+  {
+    slug: "deep-sea",
+    name: "Deep Sea",
+    tagline: "Underwater reef · Newest official map",
+    difficulty: "Hard",
+    playerCount: "4–12 players",
+    themeColor: "#0B3D5C",
+    accentColor: "#2EC4B6",
+    imageUrl: MAP_IMAGES["deep-sea"],
+    description:
+      "Official underwater map added in v3.6.0 (August 7, 2026 per Steam News / LEMORION X). Japanese outlets Denfaminicogamer and Game*Spark describe tropical fish and jellyfish in the water column, coral and giant bivalves on the seafloor, seaweed thickets, shipwreck debris, and even a unicorn statue — a saturated fantasy reef that Game*Spark says especially tests hider paint skill and seeker attention. Early meta favors prop-mimic beside coral / clam / wreck clutter and dual-tone fish or jelly blends over open blue water. All hiding spots remain experimental until lobby screenshots settle.",
+    tips: [
+      "Prop-mimic beside coral, giant clams, and shipwreck debris — Game*Spark notes lots of seafloor clutter that rewards outline-breaking poses.",
+      "Dual-sample jellyfish bells / tentacles and tropical fish schools — flat single fills read as stickers against moving color noise (Denfaminicogamer theme).",
+      "Open mid-water blue is transit only; commit to reef clusters or wreck piles during prep.",
+      "Unicorn statue and bright props are meme magnets — rotate early once seekers clear the joke landmark.",
+    ],
+    hotspots: [
+      { name: "Coral / Clam Seafloor", description: "Dense reef props break outline when dual-sampled.", type: "hot" },
+      { name: "Jellyfish / Fish Column", description: "Colorful mid-water fauna for pattern-aligned blends.", type: "hot" },
+      { name: "Open Blue Water", description: "Bright empty sightlines — cross fast or avoid.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Open Mid-Water Column", description: "Wide sightlines punish imperfect paint on empty blue." },
+      { name: "Lit Unicorn Landmark", description: "Meme traffic + bright prop — seekers check early." },
+    ],
+    colorPalette: ["#0B3D5C", "#2EC4B6", "#F4A261", "#E76F51", "#7BDFF2"],
   },
 ];
 

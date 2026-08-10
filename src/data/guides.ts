@@ -54,6 +54,7 @@ import { problemsAfterV280Guide } from "./guides/problems-after-v2-8-0";
 import { problemsAfterV300Guide } from "./guides/problems-after-v3-0-0";
 import { problemsAfterV330Guide } from "./guides/problems-after-v3-3-0";
 import { problemsAfterV350Guide } from "./guides/problems-after-v3-5-0";
+import { problemsAfterV360Guide } from "./guides/problems-after-v3-6-0";
 
 export type { Guide } from "./guides/types";
 
@@ -65,6 +66,7 @@ export const guides: Guide[] = [
   updatesGuide,
   patchFixesHubGuide,
   problemsAfterUpdateGuide,
+  problemsAfterV360Guide,
   problemsAfterV350Guide,
   problemsAfterV330Guide,
   problemsAfterV300Guide,

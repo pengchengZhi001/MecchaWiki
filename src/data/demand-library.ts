@@ -647,6 +647,22 @@ export const demandLibrary: DemandEntry[] = [
     notes: "v3.5.0 collab — underground corridor + anomaly zones; lottery may default OFF",
   },
   {
+    question: "Deep Sea Map / 深海 Hiding Spots",
+    searchValue: 5,
+    status: "done",
+    href: "/maps/deep-sea",
+    category: "Maps",
+    notes: "v3.6.0 — coral, jellyfish, fish, clam, wreck, unicorn; spots experimental",
+  },
+  {
+    question: "Problems After v3.6 Update — Deep Sea / Settings / Crowd FPS",
+    searchValue: 5,
+    status: "done",
+    href: "/guides/problems-after-v3-6-0",
+    category: "Bug Fix",
+    notes: "Settings persist, Eeyan reset, fix3.6.1 FPS + chat filter, Emote Contest",
+  },
+  {
     question: "Problems After v3.4 / v3.5 Update — Exit 8 / Voice / Friend Search",
     searchValue: 5,
     status: "done",

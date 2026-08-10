@@ -92,6 +92,11 @@ const MAP_WHEN_TO_USE: Record<string, string[]> = {
     "Anomaly / chaos zones when the clean loop corridor is too readable",
     "Station signage and ad-panel seams before seekers learn Exit 8 irony checks",
   ],
+  "deep-sea": [
+    "When you can prop-mimic coral, clam, or wreck clutter — open blue water fails (Game*Spark)",
+    "Jellyfish / tropical fish dual-tones when seekers clear seafloor props first",
+    "Round one before the unicorn statue meme landmark gets first-cleared",
+  ],
   "death-burger": [
     "When you can dual-sample sign/wall boundaries — flat carnival fills fail (Gamee)",
     "Clown mascot or carousel clutter rounds before meme spots get first-cleared",
@@ -150,6 +155,11 @@ const MAP_WHEN_NOT_TO_USE: Record<string, string[]> = {
     "Same station-sign perch three rounds — irony meta clears signage early",
     "Single flat beige fill on tiled walls — tile/grout dual-sample is required",
   ],
+  "deep-sea": [
+    "Open mid-water blue as a long camp — empty sightlines punish imperfect paint",
+    "Same unicorn statue perch three rounds — meme lobbies clear the landmark early",
+    "Single flat fill across colorful fish or jelly props — pattern alignment is required",
+  ],
   "death-burger": [
     "Open midway walkways as long camps — wide sightlines punish imperfect paint",
     "Same clown mascot perch three rounds — meme lobbies clear loud props first",
@@ -207,6 +217,11 @@ const MAP_COUNTER_STRATEGY: Record<string, string[]> = {
     "Clear anomaly chaos zones and station signage on first pass — early meta avoids clean walkways",
     "Scan tile walls for grout-grid breaks — flat beige blobs fail pattern check",
     "Loop alcoves: re-check after each loop because lighting shifts",
+  ],
+  "deep-sea": [
+    "Clear coral / clam seafloor clusters and shipwreck piles before mid-water assumptions",
+    "Scan jellyfish and fish schools for pattern-aligned blends at multiple heights",
+    "Unicorn statue: glance once for meme traffic, then clear seaweed thickets",
   ],
   "death-burger": [
     "Clear clown mascot rows and carousel bases before midway assumptions",
