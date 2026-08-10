@@ -14,6 +14,13 @@ const topGuides = [
   { href: "/guides/controls-guide", label: "Controls Guide" },
 ] as const;
 
+const otherWikis = [
+  { href: "/mistfall-hunter", label: "Mistfall Hunter Wiki" },
+  { href: "/mistfall-hunter/routes", label: "Extraction Routes" },
+  { href: "/mistfall-hunter/classes", label: "Class Starters" },
+  { href: "/mistfall-hunter/guides/beginner-guide", label: "Beginner Guide" },
+] as const;
+
 const legalLinks = [
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/disclaimer", label: "Disclaimer" },
@@ -74,26 +81,17 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-muted">
-              Legal
+              Mistfall Hunter
             </p>
             <ul className="mt-3 space-y-2">
-              {legalLinks.map((link) => (
+              {otherWikis.map((link) => (
                 <li key={link.href}>
-                  {link.href.startsWith("mailto:") ? (
-                    <a
-                      href={link.href}
-                      className="text-sm text-foreground/70 transition hover:text-accent"
-                    >
-                      {link.label}
-                    </a>
-                  ) : (
-                    <Link
-                      href={link.href}
-                      className="text-sm text-foreground/70 transition hover:text-accent"
-                    >
-                      {link.label}
-                    </Link>
-                  )}
+                  <Link
+                    href={link.href}
+                    className="text-sm text-foreground/70 transition hover:text-accent"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -104,9 +102,27 @@ export default function Footer() {
           <p className="text-center text-xs text-muted sm:text-left">
             © {currentYear} {siteConfig.name}
           </p>
-          <p className="hidden text-center text-xs text-muted sm:block sm:text-right">
-            Guide-sourced spots · Survival strategies · Recommended by experienced players
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {legalLinks.map((link) =>
+              link.href.startsWith("mailto:") ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-xs text-muted transition hover:text-accent"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-xs text-muted transition hover:text-accent"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+          </div>
         </div>
       </div>
     </footer>

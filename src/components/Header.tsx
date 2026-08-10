@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { navLinks } from "@/lib/site";
+import { mistfallNavLinks } from "@/lib/mistfall";
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -29,6 +31,9 @@ function MenuIcon({ open }: { open: boolean }) {
 }
 
 export default function Header() {
+  const pathname = usePathname();
+  const isMistfall = pathname.startsWith("/mistfall-hunter");
+  const links = isMistfall ? mistfallNavLinks : navLinks;
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -37,6 +42,10 @@ export default function Header() {
       document.body.style.overflow = "";
     };
   }, [menuOpen]);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     function handleResize() {
@@ -51,17 +60,28 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-card-border bg-background/80 backdrop-blur-xl">
       <div className="relative mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:h-16 sm:px-6">
-        <Link href="/" className="group flex min-w-0 items-center gap-2 sm:gap-2.5">
+        <Link
+          href={isMistfall ? "/mistfall-hunter" : "/"}
+          className="group flex min-w-0 items-center gap-2 sm:gap-2.5"
+        >
           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-sm font-bold text-accent ring-1 ring-accent/30 transition group-hover:bg-accent/20">
-            🦎
+            {isMistfall ? "⚔" : "🦎"}
           </span>
           <span className="truncate text-base font-bold tracking-tight sm:text-lg">
-            Meccha<span className="text-accent">Wiki</span>
+            {isMistfall ? (
+              <>
+                Mistfall<span className="text-accent">Wiki</span>
+              </>
+            ) : (
+              <>
+                Meccha<span className="text-accent">Wiki</span>
+              </>
+            )}
           </span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main navigation">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -73,12 +93,29 @@ export default function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
-          <Link
-            href="/hidden-spots"
-            className="hidden rounded-lg bg-accent px-3.5 py-2 text-sm font-semibold text-background transition hover:bg-accent-dim sm:inline-block md:px-4"
-          >
-            Browse Best Spots
-          </Link>
+          {isMistfall ? (
+            <Link
+              href="/mistfall-hunter/routes"
+              className="hidden rounded-lg bg-accent px-3.5 py-2 text-sm font-semibold text-background transition hover:bg-accent-dim sm:inline-block md:px-4"
+            >
+              Browse Routes
+            </Link>
+          ) : (
+            <>
+              <Link
+                href="/mistfall-hunter"
+                className="hidden rounded-lg px-3 py-2 text-sm font-medium text-muted transition hover:text-accent lg:inline-block"
+              >
+                Mistfall
+              </Link>
+              <Link
+                href="/hidden-spots"
+                className="hidden rounded-lg bg-accent px-3.5 py-2 text-sm font-semibold text-background transition hover:bg-accent-dim sm:inline-block md:px-4"
+              >
+                Browse Best Spots
+              </Link>
+            </>
+          )}
 
           <button
             type="button"
@@ -107,7 +144,7 @@ export default function Header() {
             aria-label="Mobile navigation"
           >
             <div className="mx-auto max-w-6xl px-4 py-3 sm:px-6">
-              {navLinks.map((link) => (
+              {links.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -117,13 +154,32 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/hidden-spots"
-                className="mt-2 block rounded-lg bg-accent px-4 py-3 text-center text-sm font-semibold text-background transition hover:bg-accent-dim"
-                onClick={() => setMenuOpen(false)}
-              >
-                Browse Best Spots
-              </Link>
+              {isMistfall ? (
+                <Link
+                  href="/mistfall-hunter/routes"
+                  className="mt-2 block rounded-lg bg-accent px-4 py-3 text-center text-sm font-semibold text-background transition hover:bg-accent-dim"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Browse Routes
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    href="/mistfall-hunter"
+                    className="mt-2 block rounded-lg px-3 py-3 text-base font-medium text-foreground transition hover:bg-surface"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Mistfall Hunter Wiki
+                  </Link>
+                  <Link
+                    href="/hidden-spots"
+                    className="mt-2 block rounded-lg bg-accent px-4 py-3 text-center text-sm font-semibold text-background transition hover:bg-accent-dim"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Browse Best Spots
+                  </Link>
+                </>
+              )}
             </div>
           </nav>
         </>

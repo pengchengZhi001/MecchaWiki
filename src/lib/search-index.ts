@@ -3,6 +3,12 @@ import { maps } from "@/data/maps";
 import { workshopMaps } from "@/data/workshop";
 import { guides } from "@/data/guides";
 import { helpTopics } from "@/data/help";
+import {
+  mistfallRoutes,
+  mistfallClasses,
+  mistfallMaps,
+  mistfallGuides,
+} from "@/data/mistfall";
 
 export type SearchItem = {
   title: string;
@@ -95,4 +101,62 @@ export const searchIndex: SearchItem[] = [
       "how to paint",
     ],
   },
+  {
+    title: "Mistfall Hunter Wiki",
+    href: "/mistfall-hunter",
+    type: "Mistfall",
+    keywords: [
+      "mistfall hunter",
+      "mistfall",
+      "extraction",
+      "gyldhunter",
+      "returner woodling",
+    ],
+  },
+  ...mistfallRoutes.map((r) => ({
+    title: r.name,
+    href: `/mistfall-hunter/routes/${r.slug}`,
+    type: "Mistfall Route",
+    keywords: [
+      r.slug,
+      r.name.toLowerCase(),
+      r.mapName.toLowerCase(),
+      r.excerpt.toLowerCase(),
+      ...(r.seoKeywords ?? []),
+    ],
+  })),
+  ...mistfallClasses.map((c) => ({
+    title: `${c.name} — Mistfall Hunter`,
+    href: `/mistfall-hunter/classes/${c.slug}`,
+    type: "Mistfall Class",
+    keywords: [
+      c.slug,
+      c.name.toLowerCase(),
+      c.role.toLowerCase(),
+      c.excerpt.toLowerCase(),
+      ...(c.seoKeywords ?? []),
+    ],
+  })),
+  ...mistfallMaps.map((m) => ({
+    title: `${m.name} — Mistfall Map`,
+    href: `/mistfall-hunter/maps/${m.slug}`,
+    type: "Mistfall Map",
+    keywords: [
+      m.slug,
+      m.name.toLowerCase(),
+      m.tagline.toLowerCase(),
+      ...(m.seoKeywords ?? []),
+    ],
+  })),
+  ...mistfallGuides.map((g) => ({
+    title: g.title,
+    href: `/mistfall-hunter/guides/${g.slug}`,
+    type: "Mistfall Guide",
+    keywords: [
+      g.slug,
+      g.category.toLowerCase(),
+      g.excerpt.toLowerCase(),
+      ...(g.seoKeywords ?? []),
+    ],
+  })),
 ];

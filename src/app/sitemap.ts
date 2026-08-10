@@ -5,6 +5,12 @@ import { guides } from "@/data/guides";
 import { helpTopics } from "@/data/help";
 import { hiddenSpots } from "@/data/hidden-spots";
 import { workshopMaps } from "@/data/workshop";
+import {
+  mistfallRoutes,
+  mistfallClasses,
+  mistfallMaps,
+  mistfallGuides,
+} from "@/data/mistfall";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
@@ -14,6 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/maps",
     "/guides",
     "/help",
+    "/mistfall-hunter",
+    "/mistfall-hunter/routes",
+    "/mistfall-hunter/classes",
+    "/mistfall-hunter/maps",
+    "/mistfall-hunter/guides",
   ];
 
   return [
@@ -21,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteConfig.url}${path}`,
       lastModified: new Date("2026-06-20"),
       changeFrequency: "weekly" as const,
-      priority: path === "" ? 1 : 0.9,
+      priority: path === "" ? 1 : path.startsWith("/mistfall-hunter") ? 0.85 : 0.9,
     })),
     { url: `${siteConfig.url}/privacy`, lastModified: new Date("2026-06-25"), changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${siteConfig.url}/disclaimer`, lastModified: new Date("2026-06-25"), changeFrequency: "yearly" as const, priority: 0.3 },
@@ -54,6 +65,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.7,
+    })),
+    ...mistfallRoutes.map((r) => ({
+      url: `${siteConfig.url}/mistfall-hunter/routes/${r.slug}`,
+      lastModified: new Date("2026-08-10"),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
+    ...mistfallClasses.map((c) => ({
+      url: `${siteConfig.url}/mistfall-hunter/classes/${c.slug}`,
+      lastModified: new Date("2026-08-10"),
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
+    })),
+    ...mistfallMaps.map((m) => ({
+      url: `${siteConfig.url}/mistfall-hunter/maps/${m.slug}`,
+      lastModified: new Date("2026-08-10"),
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
+    })),
+    ...mistfallGuides.map((g) => ({
+      url: `${siteConfig.url}/mistfall-hunter/guides/${g.slug}`,
+      lastModified: new Date("2026-08-10"),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
     })),
   ];
 }
