@@ -59,7 +59,7 @@ export const emotesPosesGuide: Guide = {
     {
       id: "emote-contest",
       heading: "First Emote Contest Winners (August 9, 2026)",
-      body: "LEMORION's first community Emote Contest (#mecchaemote) accepted photos, drawings, and CG submissions through August 8 JST. ConsolePCGaming reports five winning poses shipped around August 9 — simple white figures with bright green outlines, including upright, crouching, and stretched-out silhouettes. Hold R and page the wheel to find them after updating. Survival freeze poses still win prep; contest emotes shine for spectator chaos and friend lobbies.",
+      body: "LEMORION's first community Emote Contest (#mecchaemote) accepted photos, drawings, and CG submissions through August 8 JST. ConsolePCGaming reports five winning poses shipped around August 9 as v3.7.0 — simple white figures with bright green outlines, including upright, crouching, and stretched-out silhouettes. Hold R and page the wheel to find them after updating. v3.9.1 adds reverse page movement, stops a fallback emote applying when you chose none, and closes a visible gap when clinging to ceilings with certain contest poses. Survival freeze poses still win prep; contest emotes shine for spectator chaos and friend lobbies.",
     },
     {
       id: "open-wheel",

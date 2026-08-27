@@ -16,6 +16,7 @@ const MAP_IMAGES: Record<string, string> = {
   "garten-of-banban": "/images/maps/garten-of-banban.jpg",
   "exit-8": "/images/maps/exit-8.jpg",
   "deep-sea": "/images/maps/deep-sea.jpg",
+  "shopping-mall": "/images/maps/shopping-mall.jpg",
 };
 
 export type MapDifficulty = "Easy" | "Medium" | "Hard" | "Expert";
@@ -461,7 +462,7 @@ export const maps: GameMap[] = [
   {
     slug: "deep-sea",
     name: "Deep Sea",
-    tagline: "Underwater reef · Newest official map",
+    tagline: "Underwater reef · 14th official map",
     difficulty: "Hard",
     playerCount: "4–12 players",
     themeColor: "#0B3D5C",
@@ -485,6 +486,35 @@ export const maps: GameMap[] = [
       { name: "Lit Unicorn Landmark", description: "Meme traffic + bright prop — seekers check early." },
     ],
     colorPalette: ["#0B3D5C", "#2EC4B6", "#F4A261", "#E76F51", "#7BDFF2"],
+  },
+  {
+    slug: "shopping-mall",
+    name: "Shopping Mall",
+    tagline: "Indoor mall · Newest official map",
+    difficulty: "Hard",
+    playerCount: "4–12 players",
+    themeColor: "#C45C26",
+    accentColor: "#F4D35E",
+    imageUrl: MAP_IMAGES["shopping-mall"],
+    description:
+      "Official indoor mall map added in v3.9.0 (August 16, 2026 per Steam News / LEMORION X). Japanese outlets Denfaminicogamer and Dengeki Online confirm the name ショッピングモール; it is not a collaboration map. The official still (consolepcgaming / LEMORION X) shows a bright multi-level atrium with a glass skylight, escalator, glass-railed balconies, a curved wooden handbag display, a bench beside a planter of green bushes, white tile floors, and paint-splattered structural pillars. mecchachameleon.net still treats exact coordinates as pending in-game verification. Early meta: prop-mimic in the planter/bench cluster shown in the still, dual-sample handbag-shelf colors, and skip open atrium floors. LEMORION said the next official map addition will be the last excluding collaborations.",
+    tips: [
+      "The official still shows a hider crouched in the planter/bush cluster — sample leaf green + planter rim, not the white tile floor (consolepcgaming / LEMORION X).",
+      "Curved wooden handbag shelves are dual-tone gold: sample bag color and wood separately; flat fills pop on bright mall lighting.",
+      "Open atrium tile and escalator landings are transit only — glass balcony rails give vertical sight cones for seekers.",
+      "Paint splatters on white pillars can work as camouflage only if you match both the splatter hue AND the surrounding white — one-sample fills read as stickers.",
+      "v3.9.0 is not a collab map — it should appear in random lottery without the collaboration OFF default that hits HIKAKIN / Banban / Exit 8.",
+    ],
+    hotspots: [
+      { name: "Planter / Bench Recess", description: "Official still's foreground hide — bushes + bench break outline.", type: "hot" },
+      { name: "Handbag Display Shelf", description: "Curved wood + colorful bags for dual-tone prop mimics.", type: "hot" },
+      { name: "Central Atrium Floor", description: "Bright white tile + long sightlines — cross fast or avoid.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Open Atrium / Skylight Floor", description: "White tile and overhead light punish imperfect paint and movement." },
+      { name: "Escalator Landings", description: "Vertical seeker sight cones from glass-railed balconies." },
+    ],
+    colorPalette: ["#C45C26", "#F4D35E", "#E8E4DC", "#2C2C2C", "#5B8DEF"],
   },
 ];
 

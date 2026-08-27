@@ -15,10 +15,11 @@ const topGuides = [
 ] as const;
 
 const otherWikis = [
+  { href: "/wikis", label: "All Steam Game Wikis" },
+  { href: "/wikis/counter-strike-2", label: "CS2 Wiki" },
+  { href: "/wikis/dota-2", label: "Dota 2 Wiki" },
+  { href: "/wikis/palworld", label: "Palworld Wiki" },
   { href: "/mistfall-hunter", label: "Mistfall Hunter Wiki" },
-  { href: "/mistfall-hunter/routes", label: "Extraction Routes" },
-  { href: "/mistfall-hunter/classes", label: "Class Starters" },
-  { href: "/mistfall-hunter/guides/beginner-guide", label: "Beginner Guide" },
 ] as const;
 
 const legalLinks = [
@@ -81,7 +82,7 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-muted">
-              Mistfall Hunter
+              Game Wikis
             </p>
             <ul className="mt-3 space-y-2">
               {otherWikis.map((link) => (

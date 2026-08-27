@@ -7,8 +7,9 @@ export const viralSuccessGuide: Guide = {
   category: "Community",
   readTime: "10 min",
   excerpt:
-    "MECCHA CHAMELEON sold 15 million copies in under a month, peaked above 244k Steam concurrent players, and teased a Japanese star collaboration. Reddit, Kotaku, and GamesRadar explain what players actually discuss.",
+    "MECCHA CHAMELEON sold 20 million copies by August 12, 2026 (Steam News), after 15 million in under a month. Reddit, Kotaku, and GamesRadar explain what players actually discuss.",
   seoKeywords: [
+    "20 million",
     "15 million",
     "viral",
     "sales",
@@ -41,8 +42,12 @@ export const viralSuccessGuide: Guide = {
       url: "https://www.notebookcheck.net/15-million-copies-sold-in-one-month-What-s-behind-the-Meccha-Chameleon-hype.1335728.0.html",
     },
     {
-      name: "Steam Community — 15M milestone post",
-      url: "https://store.steampowered.com/news/app/4704690/view/688635449342694172?l=english",
+      name: "Steam Community — 20M milestone post",
+      url: "https://store.steampowered.com/news/app/4704690",
+    },
+    {
+      name: "Denfaminicogamer — 2000万本 + Shopping Mall",
+      url: "https://news.denfaminicogamer.jp/news/260816h",
     },
     {
       name: "consolepcgaming.com — v2.5.0 collaboration map",
@@ -59,7 +64,7 @@ export const viralSuccessGuide: Guide = {
     {
       id: "sales-milestone",
       heading: "15 Million Sales in Under a Month",
-      body: "GamesRadar and GosuGamers report that developer lemorion_1224 announced 15 million copies sold within roughly 25 days of the June 2026 Steam launch — after passing 1 million in four days, 3 million in a week, 7 million in two weeks, and 10 million in sixteen days per the same coverage. Analyst Daniel Ahmad noted on X that the milestone made Meccha Chameleon both the fastest-selling and highest-selling game of the year at that point, ahead of several AAA launches cited in press roundups. The Steam community blog post quoted across outlets: \"Thanks a million! Get ready for a new collaboration with a famous Japanese star next week!\"",
+      body: "GamesRadar and GosuGamers report that developer lemorion_1224 announced 15 million copies sold within roughly 25 days of the June 2026 Steam launch — after passing 1 million in four days, 3 million in a week, 7 million in two weeks, and 10 million in sixteen days per the same coverage. Analyst Daniel Ahmad noted on X that the milestone made Meccha Chameleon both the fastest-selling and highest-selling game of the year at that point, ahead of several AAA launches cited in press roundups. Steam News on August 12, 2026 followed with \"Over 20 million units sold! Thank you for your support!\" — Denfaminicogamer dates the 2000万本 mark to August 12, about two months after launch. The earlier Steam community blog post quoted across outlets: \"Thanks a million! Get ready for a new collaboration with a famous Japanese star next week!\"",
     },
     {
       id: "why-reddit-cites",

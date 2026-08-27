@@ -11,6 +11,7 @@ import {
   mistfallMaps,
   mistfallGuides,
 } from "@/data/mistfall";
+import { getGuidesForGame, steamWikiGames } from "@/data/steam-wikis";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/mistfall-hunter/classes",
     "/mistfall-hunter/maps",
     "/mistfall-hunter/guides",
+    "/wikis",
   ];
 
   return [
@@ -90,5 +92,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),
+    ...steamWikiGames.map((game) => ({
+      url: `${siteConfig.url}/wikis/${game.slug}`,
+      lastModified: new Date("2026-08-18"),
+      changeFrequency: "weekly" as const,
+      priority: game.rank <= 10 ? 0.85 : 0.7,
+    })),
+    ...steamWikiGames.flatMap((game) => [
+      {
+        url: `${siteConfig.url}/wikis/${game.slug}/guides`,
+        lastModified: new Date("2026-08-18"),
+        changeFrequency: "weekly" as const,
+        priority: 0.65,
+      },
+      ...getGuidesForGame(game).map((g) => ({
+        url: `${siteConfig.url}/wikis/${game.slug}/guides/${g.slug}`,
+        lastModified: new Date("2026-08-18"),
+        changeFrequency: "monthly" as const,
+        priority: g.slug === "beginner-guide" ? 0.75 : 0.55,
+      })),
+    ]),
   ];
 }

@@ -87,7 +87,7 @@ export const problemsAfterV360Guide: Guide = {
     {
       id: "next",
       heading: "Still Broken?",
-      body: "Version mismatch and auth token failures remain the top lobby killers on every major bump — Can't Join Lobby and Authentication Token guides. Early-August Exit 8 / friend search / voice issues: Problems After v3.4–3.5. Late-July Banban / malware / Discord: Problems After v3.1–3.3. Patch hub lists every high-priority symptom for the current build.",
+      body: "Version mismatch and auth token failures remain the top lobby killers on every major bump — Can't Join Lobby and Authentication Token guides. Mid-August Shopping Mall / Mo Eeyo / BAN: Problems After v3.7–3.9. Early-August Exit 8 / friend search / voice issues: Problems After v3.4–3.5. Late-July Banban / malware / Discord: Problems After v3.1–3.3. Patch hub lists every high-priority symptom for the current build.",
     },
   ],
 };

@@ -118,6 +118,21 @@ const DAILY_TIPS = [
     sourceUrl: "https://www.gamespark.jp/article/2026/08/08/170391.html",
   },
   {
+    tip: "v3.9.0 Shopping Mall: crouch in the planter/bush recess from the official still — sample leaf green + planter rim, not white atrium tile (LEMORION X / consolepcgaming).",
+    source: "consolepcgaming.com",
+    sourceUrl: "https://consolepcgaming.com/meccha-chameleon-update-3-9-0-adds-shopping-mall-map/",
+  },
+  {
+    tip: "v3.8.0 Mo Eeyo (もうええよ) skips hide time and answer-reveal only if everyone votes yes — not a majority (Denfaminicogamer / Steam News).",
+    source: "Denfaminicogamer",
+    sourceUrl: "https://news.denfaminicogamer.jp/news/2608142t",
+  },
+  {
+    tip: "Host BAN lists reset when you restart the server (3.8.0). Use the Player Management ID added in 3.9.0 when reporting (Dengeki Online).",
+    source: "Dengeki Online",
+    sourceUrl: "https://dengekionline.com/article/202608/84583",
+  },
+  {
     tip: "After 3.6.0, settings persist across restarts; fix3.6.1 cuts crowded-lobby FPS drops and softens over-strict chat filters (Steam News).",
     source: "Steam News",
     sourceUrl: "https://consolepcgaming.com/meccha-chameleon-fix3-6-1-takes-aim-at-crowd-related-performance-drops/",
@@ -169,6 +184,11 @@ const WEEKLY_CHALLENGES = [
     title: "Scout Deep Sea coral without open-water camping",
     description: "Use Coral Reef Cluster or Shipwreck Debris on the v3.6.0 map. Prop-mimic seafloor clutter — Game*Spark says the reef tests paint skill (Denfaminicogamer).",
     spotSlug: "deep-sea-coral-cluster",
+  },
+  {
+    title: "Scout Shopping Mall without atrium camping",
+    description: "Use Planter Bush Recess or Handbag Display Shelf on the v3.9.0 map. Dual-sample green/wood — official still landmarks beat open white tile (LEMORION / consolepcgaming).",
+    spotSlug: "shopping-mall-planter-bench",
   },
 ] as const;
 

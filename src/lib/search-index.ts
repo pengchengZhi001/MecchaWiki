@@ -9,6 +9,7 @@ import {
   mistfallMaps,
   mistfallGuides,
 } from "@/data/mistfall";
+import { getGuidesForGame, steamWikiGames } from "@/data/steam-wikis";
 
 export type SearchItem = {
   title: string;
@@ -159,4 +160,44 @@ export const searchIndex: SearchItem[] = [
       ...(g.seoKeywords ?? []),
     ],
   })),
+  {
+    title: "Steam Game Wikis",
+    href: "/wikis",
+    type: "Wiki Hub",
+    keywords: [
+      "steam wiki",
+      "game guides",
+      "cs2",
+      "dota",
+      "pubg",
+      "top steam games",
+    ],
+  },
+  ...steamWikiGames.map((game) => ({
+    title: `${game.name} Wiki`,
+    href: `/wikis/${game.slug}`,
+    type: "Game Wiki",
+    keywords: [
+      game.slug,
+      game.name.toLowerCase(),
+      game.shortName.toLowerCase(),
+      game.genreLabel.toLowerCase(),
+      game.tagline.toLowerCase(),
+    ],
+  })),
+  ...steamWikiGames.flatMap((game) =>
+    getGuidesForGame(game).map((g) => ({
+      title: g.title,
+      href: `/wikis/${game.slug}/guides/${g.slug}`,
+      type: "Game Guide",
+      keywords: [
+        g.slug,
+        game.slug,
+        game.name.toLowerCase(),
+        g.category.toLowerCase(),
+        g.excerpt.toLowerCase(),
+        ...g.seoKeywords.map((k) => k.toLowerCase()),
+      ],
+    }))
+  ),
 ];

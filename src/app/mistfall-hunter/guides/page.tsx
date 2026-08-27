@@ -8,9 +8,9 @@ import { createMistfallMetadata } from "@/lib/mistfall";
 export const metadata: Metadata = createMistfallMetadata({
   title: "Guides",
   description:
-    "Mistfall Hunter guides: beginner loop, how to extract, Returner Woodling, class tier list, and camp upgrades.",
+    "Mistfall Hunter guides: Soul Harvest, August patch and lag, Einherjar Mist Lords, class tier list, and first extracts.",
   path: "/mistfall-hunter/guides",
-  keywords: ["guides", "beginner guide", "how to extract"],
+  keywords: ["guides", "Soul Harvest", "patch notes", "beginner guide"],
 });
 
 export default function MistfallGuidesPage() {
@@ -18,7 +18,7 @@ export default function MistfallGuidesPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <PageHeader
         title="Guides"
-        description="Search-driven articles for first hours, extract rules, Woodling cues, tiers, and camp progression."
+        description="Season 1 Soul Harvest, August patch notes and lag, Einherjar Knots, class tiers, and first-hour extracts."
       />
       <NativeBanner />
       <div className="grid gap-4">

@@ -39,13 +39,14 @@ export const mistfallClasses: HunterClass[] = [
     difficulty: "Easy",
     beginnerRank: 2,
     pveTier: "A",
-    pvpTier: "A",
+    pvpTier: "S",
     stances: ["Reverent", "Blasphemer"],
     excerpt:
-      "Heals, vision, and zone denial for players who want safer solos and strong trio value.",
+      "Heals, vision, and zone denial. Range Seer is the 1v1 build people are learning after the August 12 ranged nerfs.",
     strengths: [
       "Reverent stance stabilizes rough extracts",
       "Excellent trio utility once your squad syncs portals",
+      "Range Seer spacing is the current 1v1 answer to post-nerf casters and bows",
       "Strong disengage tools when hunters contest the Soul Tree",
     ],
     weaknesses: [
@@ -73,13 +74,14 @@ export const mistfallClasses: HunterClass[] = [
     pvpTier: "S",
     stances: ["Elemental", "Stardust"],
     excerpt:
-      "High burst and control for players who already kite well. Squishy — spacing is everything.",
+      "Stardust still wins stacked 3v3. Solo PvP damage was cut on August 12 — do not copy pre-patch duel clips.",
     strengths: [
       "Top-tier trio damage when protected",
       "Crowd control that wins contested extracts",
       "Strong mid-range poke before committing to Soul Tree",
     ],
     weaknesses: [
+      "Solo PvP multiplier and Deep Freeze impact were cut on August 12",
       "Low forgiveness in melee scrambles",
       "Punished hard if you tunnel PvE while hunters approach",
     ],
@@ -101,18 +103,19 @@ export const mistfallClasses: HunterClass[] = [
     difficulty: "Medium",
     beginnerRank: 3,
     pveTier: "B",
-    pvpTier: "S",
+    pvpTier: "A",
     stances: ["Longbow", "Gadget arrows"],
     excerpt:
-      "Patient ranged play with traps and charged shots. Rewards positioning over panic melee.",
+      "Patient ranged play. August 12 raised key cooldowns and cut solo PvP damage — save burst for guaranteed openings.",
     strengths: [
       "Excellent solo kiting once spacing clicks",
-      "Strong PvP chip and zone control",
       "Safer Woodling contests from distance",
+      "Sonic Arrow cooldown was cut, which helps reposition tools",
     ],
     weaknesses: [
+      "Mysticfly, Steel Arrow, and Dodge Power Shot cooldowns all went up",
+      "Solo PvP damage multiplier was reduced; trio PvP unchanged",
       "Weaker if forced into tight interiors",
-      "Needs ammo discipline and map pathing knowledge",
     ],
     starterTips: [
       "Practice charged shots in PvE packs before taking Brandrgarde.",
@@ -132,10 +135,10 @@ export const mistfallClasses: HunterClass[] = [
     difficulty: "Hard",
     beginnerRank: 6,
     pveTier: "C",
-    pvpTier: "B",
+    pvpTier: "A",
     stances: ["Stealth daggers", "Dual blades"],
     excerpt:
-      "Ambush specialist for hunting other Gyldhunters. High skill floor — skip until you understand extract timing.",
+      "Ambush specialist. Super Armor and piercing were cut on August 12; Wound Accumulation now detonates at 8 stacks — timing over spam.",
     strengths: [
       "Burst deletes isolated hunters",
       "Strong third-party potential at Soul Tree",
@@ -166,11 +169,11 @@ export const mistfallClasses: HunterClass[] = [
     pvpTier: "A",
     stances: ["Greatsword", "Polearm & Shield"],
     excerpt:
-      "Parry-focused heavy fighter with strong launch tuning. Steeper than Mercenary, stronger once fundamentals click.",
+      "Parry-focused heavy fighter. August patches were mostly energy and cancel fixes — melee parry pressure is showing up in 1v1 threads after the ranged cuts.",
     strengths: [
       "High PvE durability after learning parry windows",
       "Strong objective hold near Soul Trees",
-      "Flexible stance swap for packs vs hunters",
+      "Flexible stance swap for packs vs hunters — melee pressure is rising in 1v1 after the ranged cuts",
     ],
     weaknesses: [
       "Punishing if you miss defensive timings",

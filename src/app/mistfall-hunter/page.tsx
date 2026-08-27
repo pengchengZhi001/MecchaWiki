@@ -143,7 +143,7 @@ export default function MistfallHomePage() {
             <div>
               <h2 className="text-2xl font-bold">Core guides</h2>
               <p className="mt-1 text-sm text-muted">
-                Beginner loop, extract rules, Woodling cues, tiers, and camp upgrades.
+                Soul Harvest, August patch and lag, live class tiers, and first extracts.
               </p>
             </div>
             <Link

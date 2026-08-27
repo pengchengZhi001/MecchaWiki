@@ -25,6 +25,8 @@ import { siteConfig } from "@/lib/site";
 import { NativeBanner } from "@/components/ads";
 import PatchAlertBanner from "@/components/PatchAlertBanner";
 import { getLaunchMaps } from "@/lib/workshop-launch";
+import { steamWikiGames } from "@/data/steam-wikis";
+import GameWikiCard from "@/components/steam-wiki/GameWikiCard";
 
 export default function HomePage() {
   const topSpots = getTopSpots(12);
@@ -338,6 +340,27 @@ export default function HomePage() {
               footer={<span className="text-xs text-muted">{guide.readTime} read</span>}
             />
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-card-border bg-surface/30">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 className="text-2xl font-bold">Steam Game Wikis</h2>
+              <p className="mt-1 text-sm text-muted">
+                CS2, Dota 2, Palworld, PUBG and 46 more — each wiki lives on its own route
+              </p>
+            </div>
+            <Link href="/wikis" className="text-sm font-medium text-accent hover:underline">
+              All 50 wikis →
+            </Link>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {steamWikiGames.slice(0, 6).map((game) => (
+              <GameWikiCard key={game.slug} game={game} />
+            ))}
+          </div>
         </div>
       </section>
 

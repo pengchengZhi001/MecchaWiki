@@ -222,6 +222,26 @@ export const spotDescriptions: Record<string, string> = {
     "Shipwreck debris pile — dual-sample wood/metal and nearby sand for clutter hide.",
   "deep-sea-seaweed-thicket":
     "Seaweed / kelp thicket — sample frond green and shadow gap; keep limbs inside plants.",
+  "deep-sea-open-blue-water":
+    "Open mid-water blue column — experimental transit hide; empty sightlines punish paint errors.",
+  "deep-sea-map-boundary":
+    "Deep Sea map-edge / out-of-bounds perch — patched in fix3.7.2 (Steam News titled fix7.3.2).",
+  "shopping-mall-storefront-window":
+    "Upper mall balcony / glass storefront blend — dual-sample glass rail and wall, not atrium white.",
+  "shopping-mall-directory-signage":
+    "Skylight pillar and structural signage — match paint splatters plus surrounding white separately.",
+  "shopping-mall-mannequin-cluster":
+    "Display-cluster recess off the atrium — prop-mimic beside benches and shop fixtures.",
+  "shopping-mall-food-court-clutter":
+    "Upper-level display clutter along the atrium rail — keep limbs inside fixture silhouette.",
+  "shopping-mall-clothing-rack":
+    "Curved wooden handbag shelf from the official still — dual-sample bag color and wood.",
+  "shopping-mall-planter-bench":
+    "Planter bush + bench recess shown in the official still — sample leaf green and planter rim.",
+  "shopping-mall-atrium-floor":
+    "Open atrium white-tile floor — meme traffic, low survival; transit only.",
+  "shopping-mall-escalator-rail":
+    "Escalator and glass balcony rail — sample metal/glass; seekers look down from landings.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":
@@ -296,4 +316,8 @@ export const spotDescriptions: Record<string, string> = {
     "MegaMall grocery aisle shelf row — TheGamer mall guide's primary replayable hide.",
   "megamall-arcade-cluster":
     "Arcade cabinet cluster in MegaMall — colorful machine faces break outline.",
+  "megamall-fast-food-counter":
+    "MegaMall fast-food counter clutter — TheGamer mall guide lists food-court shops as replayable hides.",
+  "megamall-instrument-shop":
+    "MegaMall instrument-shop display — TheGamer mall layout includes instrument stores besides grocery and arcade.",
 };

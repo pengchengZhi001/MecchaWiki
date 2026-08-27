@@ -695,6 +695,21 @@ const MAP_FALLBACK: Record<
       "Central pit rim is social-meme traffic after Overwatch Ilios comparisons — clip once, then rotate.",
     ],
   },
+  "shopping-mall": {
+    sources: [
+      { name: "Denfaminicogamer — Shopping Mall map", url: "https://news.denfaminicogamer.jp/news/260816h" },
+      { name: "Dengeki Online — update 3.9.0", url: "https://dengekionline.com/article/202608/84583" },
+      { name: "consolepcgaming.com — update 3.9.0", url: "https://consolepcgaming.com/meccha-chameleon-update-3-9-0-adds-shopping-mall-map/" },
+      { name: "mecchachameleon.net — Shopping Mall", url: "https://mecchachameleon.net/maps/shopping-mall" },
+    ],
+    paintNote: "White atrium tile vs planter green vs handbag wood are different values — sample the surface you touch, not the skylight floor.",
+    poseNote: "Planter/bench crouches and shelf-edge prop mimics; avoid open atrium tile and escalator landings.",
+    winTips: [
+      "v3.9.0 brand-new map — all spots experimental until lobby screenshots settle.",
+      "Official still: planter bush recess and curved handbag shelf are the first landmarks to learn.",
+      "Do not confuse this official map with Workshop MegaMall - SuperMarket.",
+    ],
+  },
 };
 
 const PAINT_SYSTEM_SOURCE: GuideSource = {

@@ -97,6 +97,11 @@ const MAP_WHEN_TO_USE: Record<string, string[]> = {
     "Jellyfish / tropical fish dual-tones when seekers clear seafloor props first",
     "Round one before the unicorn statue meme landmark gets first-cleared",
   ],
+  "shopping-mall": [
+    "When you can crouch in the planter/bench recess shown in the official still (consolepcgaming / LEMORION X)",
+    "Handbag-shelf dual-samples before seekers learn the atrium first-clear",
+    "Upper balcony glass rails when the floor is too bright under the skylight",
+  ],
   "death-burger": [
     "When you can dual-sample sign/wall boundaries — flat carnival fills fail (Gamee)",
     "Clown mascot or carousel clutter rounds before meme spots get first-cleared",
@@ -160,6 +165,11 @@ const MAP_WHEN_NOT_TO_USE: Record<string, string[]> = {
     "Same unicorn statue perch three rounds — meme lobbies clear the landmark early",
     "Single flat fill across colorful fish or jelly props — pattern alignment is required",
   ],
+  "shopping-mall": [
+    "Open atrium white tile as a long camp — skylight sightlines punish imperfect paint",
+    "Same planter perch three rounds — official-still screenshot hides get first-cleared",
+    "Single flat fill across handbag wood and bag colors — dual-sample is required",
+  ],
   "death-burger": [
     "Open midway walkways as long camps — wide sightlines punish imperfect paint",
     "Same clown mascot perch three rounds — meme lobbies clear loud props first",
@@ -222,6 +232,11 @@ const MAP_COUNTER_STRATEGY: Record<string, string[]> = {
     "Clear coral / clam seafloor clusters and shipwreck piles before mid-water assumptions",
     "Scan jellyfish and fish schools for pattern-aligned blends at multiple heights",
     "Unicorn statue: glance once for meme traffic, then clear seaweed thickets",
+  ],
+  "shopping-mall": [
+    "Clear the planter/bench recess and handbag shelf on first pass — official still landmarks",
+    "Scan glass balcony rails and escalator landings from above before assuming the floor is empty",
+    "Pillar splatters: fit-check dual-tone white + paint before leaving the atrium",
   ],
   "death-burger": [
     "Clear clown mascot rows and carousel bases before midway assumptions",

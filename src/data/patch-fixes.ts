@@ -89,6 +89,12 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     searchValue: 5,
   },
   {
+    slug: "problems-after-v3-9-0",
+    title: "v3.7–3.9 Update Problems — Shopping Mall / Mo Eeyo / BAN Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
+  {
     slug: "problems-after-v3-6-0",
     title: "v3.6 Update Problems — Deep Sea / Settings / Crowd FPS Fix Guide",
     category: "Patch",
@@ -125,10 +131,10 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v3.6.1",
-  releasedAt: "2026-08-08",
+  version: "v3.9.1",
+  releasedAt: "2026-08-16",
   headline:
-    "Deep Sea map (3.6.0), settings persist / Eeyan reset, fix3.6.1 crowd FPS + chat filter, Emote Contest winners",
+    "Shopping Mall map (3.9.0), player IDs, Mo Eeyo skip-votes + host BAN (3.8.0), 3.9.1 emote paging / ceiling-cling gap",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
     {
@@ -144,10 +150,52 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
-      symptom: "Deep Sea hiding spots feel unknown / all fail",
-      searchTerms: ["Deep Sea spots", "深海 hide", "coral hide", "new map hide"],
-      fixGuideSlug: "problems-after-v3-6-0",
+      symptom: "Shopping Mall hiding spots feel unknown / all fail",
+      searchTerms: ["Shopping Mall spots", "ショッピングモール hide", "mall hide", "new map hide"],
+      fixGuideSlug: "problems-after-v3-9-0",
       priority: "medium",
+    },
+    {
+      symptom: "Mo Eeyo skip vote not starting / not unanimous",
+      searchTerms: ["Mo Eeyo", "もうええよ", "skip hide time", "skip answer reveal"],
+      fixGuideSlug: "problems-after-v3-9-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Banned player rejoins after host restarts the server",
+      searchTerms: ["BAN list reset", "ban not saving", "kick rejoin", "3.8.0 BAN"],
+      fixGuideSlug: "problems-after-v3-9-0",
+      priority: "high",
+    },
+    {
+      symptom: "Voice chat flashes ON at round start",
+      searchTerms: ["voice chat turns on", "mic flash", "3.9.0 voice"],
+      fixGuideSlug: "problems-after-v3-9-0",
+      priority: "high",
+    },
+    {
+      symptom: "Need a player ID to report or identify someone",
+      searchTerms: ["player ID", "User Management ID", "3.9.0 ID display"],
+      fixGuideSlug: "problems-after-v3-9-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Emote wheel stuck / ceiling cling shows a gap",
+      searchTerms: ["emote reverse page", "wrong emote", "ceiling cling gap", "3.9.1"],
+      fixGuideSlug: "problems-after-v3-9-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Jump height feels wrong / Deep Sea OOB hide gone",
+      searchTerms: ["jump too high", "Deep Sea OOB", "fix7.3.2", "3.7.2"],
+      fixGuideSlug: "problems-after-v3-9-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Match ended while a Hunter was still present",
+      searchTerms: ["round ended early", "hunter still present", "3.7.2"],
+      fixGuideSlug: "problems-after-v3-9-0",
+      priority: "high",
     },
     {
       symptom: "Game settings reset after restart",
@@ -319,11 +367,12 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Deep Sea coral / clam / wreck / fish / jelly spots — brand-new v3.6.0 map; all positions experimental",
-    "Exit 8 tile / anomaly / signage spots after early underground meta",
-    "Settings persistence and Eeyan reset controls after 3.6.0",
-    "Crowd lobby FPS after fix3.6.1 — re-check Performance Mode if drops remain",
-    "Five Emote Contest winners on the pose wheel — survival freeze still wins prep",
+    "Shopping Mall planter / handbag shelf / escalator / pillar spots — brand-new v3.9.0 map; all positions experimental",
+    "Deep Sea OOB edge hides after fix3.7.2 — those routes are closed",
+    "Jump-reliant ceiling clings after 3.7.1 / 3.8.0 jump-height changes and 3.9.1 emote gap fix",
+    "Mo Eeyo unanimous skip and session-only BAN list after 3.8.0 — confirm vote UI and that restarts clear bans",
+    "Player ID on User Management after 3.9.0 — use it for reports",
+    "Five Emote Contest winners plus 3.9.1 reverse paging — survival freeze still wins prep",
     "Only subscribe to trusted Workshop maps after the malware incident — prefer established uploaders",
   ],
 };

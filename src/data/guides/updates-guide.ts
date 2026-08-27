@@ -6,11 +6,19 @@ export const updatesGuide: Guide = {
   category: "Mechanics",
   readTime: "10 min",
   excerpt:
-    "Meccha Chameleon patch history: v3.6.1 crowd FPS, v3.6.0 Deep Sea + settings persist, Emote Contest winners, v3.5.x Exit 8 / friend search, Banban, Greece, glow paint, and what to re-test after each update.",
+    "Meccha Chameleon patch history: v3.9.1 emote paging, v3.9.0 Shopping Mall, v3.8.0 Mo Eeyo / BAN, v3.7.x jump and Deep Sea OOB, v3.6 Deep Sea, and what to re-test after each update.",
   seoKeywords: [
     "update",
     "patch notes",
     "version",
+    "v3.9.1",
+    "v3.9.0",
+    "Shopping Mall",
+    "ショッピングモール",
+    "v3.8.0",
+    "Mo Eeyo",
+    "もうええよ",
+    "v3.7.2",
     "v3.6.1",
     "v3.6.0",
     "Deep Sea",
@@ -47,6 +55,41 @@ export const updatesGuide: Guide = {
       id: "why-updates-matter",
       heading: "Why Patch Notes Matter for Hiders",
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
+    },
+    {
+      id: "v391",
+      heading: "v3.9.1 — Emote Reverse Paging & Ceiling-Cling Gap",
+      body: "Steam News 3.9.1 (August 16, 2026): emote selection can page in reverse; fixed a different emote applying when none was chosen; fixed a visible gap when clinging to the ceiling with certain emotes. Pair with the first Emote Contest poses from 3.7.0. Post-update troubleshooting: Problems After v3.7–3.9.",
+    },
+    {
+      id: "v390",
+      heading: "v3.9.0 — Shopping Mall Map (15th Official) & Player IDs",
+      body: "Steam News update3.9.0 (August 16, 2026): new official map Shopping Mall (ショッピングモール); voice chat no longer momentarily turns on; Player Management tab shows a player ID — Dengeki: use that ID when user information is required. LEMORION / Denfaminicogamer: the next official map addition will be the last excluding collaborations. Official still shows a bright multi-level atrium with escalator, planter hide, and handbag shelf. Post-update troubleshooting: Problems After v3.7–3.9.",
+    },
+    {
+      id: "v380",
+      heading: "v3.8.0 — Mo Eeyo Skip Votes & Host BAN",
+      body: "Steam News update 3.8.0 (August 14, 2026): Mo Eeyo (もうええよ / Enough Already) force-skips hiding time and answer-reveal by a unanimous vote; host BAN list resets when the server restarts. Fixes: hidden objects still had collision, camera jerk near walls while hiding, answer-reveal invisibility, jump height too high, TPS hunter aim too high, green mic indicator while speaking (not a proximity-voice restore), User Management controller navigation. Denfaminicogamer covers もうええよ + BAN the same day. Post-update troubleshooting: Problems After v3.7–3.9.",
+    },
+    {
+      id: "v373",
+      heading: "v3.7.3 — Controller Paint Speed Setting",
+      body: "Steam News fix3.7.3 (August 12, 2026): rare hunter-not-moving-to-map; numeric quick button could go below minimum; glitched player names/displays; controller painting X-axis faster than Y; new movement speed settings for controller painting. Confirm the in-game setting name.",
+    },
+    {
+      id: "v372",
+      heading: "v3.7.2 — Deep Sea Out-of-Bounds & Early Match End (Steam Title Typo fix7.3.2)",
+      body: "Steam News titled this fix7.3.2 (digits swapped). Real version 3.7.2 (August 11, 2026): character movement speed; players could exit the Deep Sea map (OOB closed); games could end while a Hunter was still present. consolepcgaming repeats the mistitled headline — use 3.7.2 when checking your client.",
+    },
+    {
+      id: "v371",
+      heading: "v3.7.1 — Mod-Map Hunter Move & Jump Height",
+      body: "Steam News fix3.7.1 (August 10, 2026): Basic Mode hunter would not move onto certain Mod maps; jump height adjusted (direction unspecified — 3.8.0 later says it was too high); part of the UI adjusted.",
+    },
+    {
+      id: "v370",
+      heading: "v3.7.0 — First Emote Contest Winners",
+      body: "Steam News titled \"1st Emote Contest Results Announcement!\" without a version number (August 9, 2026); LEMORION X confirms 3.7.0. Five community #mecchaemote poses added — no official per-pose names. Survival freeze still wins prep. See Emotes & Pose Wheel guide.",
     },
     {
       id: "v361",

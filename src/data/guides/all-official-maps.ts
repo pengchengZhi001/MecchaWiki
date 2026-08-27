@@ -6,7 +6,7 @@ export const allOfficialMapsGuide: Guide = {
   category: "Maps",
   readTime: "10 min",
   excerpt:
-    "Every official map as of v3.6.0 — launch roster, post-launch additions, HIKAKIN Museum, Egypt, Death Burger, Greece, Garten of Banban, Exit 8, and Deep Sea — with links to map pages on this site.",
+    "Every official map as of v3.9.0 — launch roster through Deep Sea, plus Shopping Mall (15th) — with links to map pages on this site.",
   sources: [
     {
       name: "Wikipedia — Meccha Chameleon (map list)",
@@ -19,6 +19,10 @@ export const allOfficialMapsGuide: Guide = {
     {
       name: "IGN — All Maps & Best Hiding Spots",
       url: "https://www.ign.com/wikis/meccha-chameleon/All_Maps_in_Meccha_Chameleon:_Best_Hiding_Spots",
+    },
+    {
+      name: "Steam v3.9.0 — Shopping Mall map",
+      url: "https://news.denfaminicogamer.jp/news/260816h",
     },
     {
       name: "Steam v3.6.0 — Deep Sea map",
@@ -45,7 +49,7 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "overview",
       heading: "How Many Official Maps Exist?",
-      body: "As of v3.6.0 (August 7, 2026), the official pool includes the launch roster (Mansion, Indoor Country, Sewer, Backrooms, Cold Storage, Brick Loft), post-launch stages Penguin Hotel, Sugarland, and Osaka, plus HIKAKIN Museum (v2.6.0 collab), Egypt (v2.7.0), Death Burger (v2.8.0), Greece (v3.0.0), Garten of Banban (v3.1.0 collab — Banban's Kindergarten), Exit 8 (v3.5.0 collab — The Exit 8 / 8番出口), and Deep Sea (v3.6.0 underwater reef). Press counted Greece as the 11th numbered official stage; Banban, Exit 8, and Deep Sea continue the rapid map cadence. Collaboration maps can be excluded from random lottery by default. Custom maps add unlimited variety through Steam Workshop — subscribe carefully after the late-July malware reports.",
+      body: "As of v3.9.0 (August 16, 2026), the official pool includes the launch roster (Mansion, Indoor Country, Sewer, Backrooms, Cold Storage, Brick Loft), post-launch stages Penguin Hotel, Sugarland, and Osaka, plus HIKAKIN Museum (v2.6.0 collab), Egypt (v2.7.0), Death Burger (v2.8.0), Greece (v3.0.0), Garten of Banban (v3.1.0 collab), Exit 8 (v3.5.0 collab), Deep Sea (v3.6.0 underwater reef), and Shopping Mall (v3.9.0 indoor atrium — 15th official). LEMORION said the next official map addition will be the last excluding collaborations. Collaboration maps can be excluded from random lottery by default. Custom maps add unlimited variety through Steam Workshop — subscribe carefully after the late-July malware reports.",
     },
     {
       id: "launch-maps",
@@ -55,12 +59,12 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "post-launch",
       heading: "Post-Launch Maps",
-      body: "Penguin Hotel — added v1.2.0; ice-hotel theme; v2.7.0 adds random furniture elements so spots must be re-scouted. Sugarland — added v1.4.0: candy-themed saturated colors. Osaka — added v1.7.0, reworked v2.5.0: compact Japan streets. Egypt — added v2.7.0: desert/tomb palette, early pillar and alcove meta. HIKAKIN Museum — added v2.6.0 collab: photo walls, Misokin/ONICHA exhibits, special gimmicks; lottery default OFF in v2.7.0. Death Burger — added v2.8.0: burger horror amusement park; clown mascots and signage clutter. Greece — added v3.0.0: Santorini blue-and-white streets with sunset light; pairs with v2.9.0 emissive paint. Garten of Banban — added v3.1.0 collab: Banban's Kindergarten murals and signage (Game*Spark / Denfaminicogamer). Exit 8 — added v3.5.0 collab: underground corridor from The Exit 8 with anomaly-like chaos zones and a looping layout (Famitsu / Game*Spark). Deep Sea — added v3.6.0: underwater reef with tropical fish, jellyfish, coral, giant clams, seaweed, shipwreck debris, and a unicorn statue (Denfaminicogamer / Game*Spark); all spots experimental.",
+      body: "Penguin Hotel — added v1.2.0; ice-hotel theme; v2.7.0 adds random furniture elements so spots must be re-scouted. Sugarland — added v1.4.0: candy-themed saturated colors. Osaka — added v1.7.0, reworked v2.5.0: compact Japan streets. Egypt — added v2.7.0: desert/tomb palette, early pillar and alcove meta. HIKAKIN Museum — added v2.6.0 collab: photo walls, Misokin/ONICHA exhibits, special gimmicks; lottery default OFF in v2.7.0. Death Burger — added v2.8.0: burger horror amusement park; clown mascots and signage clutter. Greece — added v3.0.0: Santorini blue-and-white streets with sunset light; pairs with v2.9.0 emissive paint. Garten of Banban — added v3.1.0 collab: Banban's Kindergarten murals and signage (Game*Spark / Denfaminicogamer). Exit 8 — added v3.5.0 collab: underground corridor from The Exit 8 with anomaly-like chaos zones and a looping layout (Famitsu / Game*Spark). Deep Sea — added v3.6.0: underwater reef with tropical fish, jellyfish, coral, giant clams, seaweed, shipwreck debris, and a unicorn statue (Denfaminicogamer / Game*Spark). Shopping Mall — added v3.9.0: bright multi-level atrium with glass skylight, escalator, planter/bench recess, and a curved wooden handbag shelf (LEMORION still / Denfaminicogamer); all spots experimental.",
     },
     {
       id: "why-maps-matter",
       heading: "Why Map Choice Changes Your Hide",
-      body: "mecha-chameleon.net: camouflage that works in one room gets you spotted instantly in another because each map has distinct surfaces, lighting, and palettes. Mansion teaches sampling speed; Sewer and Backrooms punish lazy one-sample hides; Sugarland, Osaka, and Egypt reward exact color reads on saturated or mixed surfaces; HIKAKIN Museum rewards photo-wall and exhibit prop mimics; Greece rewards blue/white dual-samples and glow matching on sunset lit props; Banban rewards mural and poster-wall blends on colorful kindergarten art; Exit 8 rewards tile/sign dual-tones and anomaly-zone clutter over clean corridor camping; Deep Sea rewards coral/wreck prop mimics and dual-tone fish or jelly blends over open blue water.",
+      body: "mecha-chameleon.net: camouflage that works in one room gets you spotted instantly in another because each map has distinct surfaces, lighting, and palettes. Mansion teaches sampling speed; Sewer and Backrooms punish lazy one-sample hides; Sugarland, Osaka, and Egypt reward exact color reads on saturated or mixed surfaces; HIKAKIN Museum rewards photo-wall and exhibit prop mimics; Greece rewards blue/white dual-samples and glow matching on sunset lit props; Banban rewards mural and poster-wall blends on colorful kindergarten art; Exit 8 rewards tile/sign dual-tones and anomaly-zone clutter over clean corridor camping; Deep Sea rewards coral/wreck prop mimics and dual-tone fish or jelly blends over open blue water; Shopping Mall rewards planter/handbag dual-samples and balcony glass rails over open atrium tile.",
     },
     {
       id: "workshop",
@@ -70,7 +74,7 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "on-this-site",
       heading: "Map Pages on Meccha Wiki",
-      body: "Browse /maps for per-map difficulty, color palettes, hotspots, and danger zones. Use /hidden-spots filtered by map for curated positions with source attribution. Newest pages cover Deep Sea, Exit 8, Garten of Banban, Greece, Death Burger, Egypt, and HIKAKIN Museum; spot databases expand as community verification continues.",
+      body: "Browse /maps for per-map difficulty, color palettes, hotspots, and danger zones. Use /hidden-spots filtered by map for curated positions with source attribution. Newest pages cover Shopping Mall, Deep Sea, Exit 8, Garten of Banban, Greece, Death Burger, Egypt, and HIKAKIN Museum; spot databases expand as community verification continues.",
     },
   ],
 };
