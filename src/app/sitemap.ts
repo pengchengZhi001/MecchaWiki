@@ -11,7 +11,7 @@ import {
   mistfallMaps,
   mistfallGuides,
 } from "@/data/mistfall";
-import { getGuidesForGame, steamWikiGames } from "@/data/steam-wikis";
+import { getGuidesForGame, getAllFullWikis, steamWikiGames } from "@/data/steam-wikis";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
@@ -110,6 +110,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date("2026-08-18"),
         changeFrequency: "monthly" as const,
         priority: g.slug === "beginner-guide" ? 0.75 : 0.55,
+      })),
+    ]),
+    ...getAllFullWikis().flatMap((wiki) => [
+      {
+        url: `${siteConfig.url}/wikis/${wiki.slug}/maps`,
+        lastModified: new Date("2026-08-27"),
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${siteConfig.url}/wikis/${wiki.slug}/roles`,
+        lastModified: new Date("2026-08-27"),
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${siteConfig.url}/wikis/${wiki.slug}/strats`,
+        lastModified: new Date("2026-08-27"),
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+      },
+      ...wiki.maps.map((m) => ({
+        url: `${siteConfig.url}/wikis/${wiki.slug}/maps/${m.slug}`,
+        lastModified: new Date("2026-08-27"),
+        changeFrequency: "weekly" as const,
+        priority: 0.75,
+      })),
+      ...wiki.roles.map((r) => ({
+        url: `${siteConfig.url}/wikis/${wiki.slug}/roles/${r.slug}`,
+        lastModified: new Date("2026-08-27"),
+        changeFrequency: "weekly" as const,
+        priority: 0.75,
+      })),
+      ...wiki.strats.map((s) => ({
+        url: `${siteConfig.url}/wikis/${wiki.slug}/strats/${s.slug}`,
+        lastModified: new Date("2026-08-27"),
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
       })),
     ]),
   ];

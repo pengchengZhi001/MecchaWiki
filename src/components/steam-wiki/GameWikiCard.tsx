@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { SteamWikiGame } from "@/data/steam-wikis";
 import { steamHeader, wikiPath } from "@/lib/steam-wiki";
+import { fullWikiNav } from "@/data/steam-wikis/names";
 
 export default function GameWikiCard({
   game,
@@ -36,6 +37,11 @@ export default function GameWikiCard({
           {game.freeToPlay && (
             <span className="rounded-lg bg-purple/90 px-2 py-1 text-xs font-bold text-white">
               Free
+            </span>
+          )}
+          {fullWikiNav[game.slug] && (
+            <span className="rounded-lg bg-accent px-2 py-1 text-xs font-bold text-background">
+              Full wiki
             </span>
           )}
         </div>

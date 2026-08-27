@@ -1,6 +1,22 @@
 export { steamWikiGames } from "./games";
 export { getGuidesForGame, getGuideForGame } from "./guides";
-export type { SteamWikiGame, WikiGenre, WikiGuide } from "./types";
+export {
+  getFullWiki,
+  getAllFullWikis,
+  getWikiMap,
+  getWikiRole,
+  getWikiStrat,
+  getStratsByMap,
+} from "./full";
+export type {
+  SteamWikiGame,
+  WikiGenre,
+  WikiGuide,
+  WikiMap,
+  WikiRole,
+  WikiStrat,
+  FullWiki,
+} from "./types";
 
 import { steamWikiGames } from "./games";
 import type { SteamWikiGame } from "./types";

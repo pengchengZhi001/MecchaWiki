@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks } from "@/lib/site";
 import { mistfallNavLinks } from "@/lib/mistfall";
-import { wikiShortNames } from "@/data/steam-wikis/names";
+import { wikiShortNames, fullWikiNav } from "@/data/steam-wikis/names";
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -37,12 +37,21 @@ export default function Header() {
   const wikiSlug = pathname.match(/^\/wikis\/([^/]+)/)?.[1];
   const wikiName = wikiSlug ? wikiShortNames[wikiSlug] : undefined;
   const isGameWiki = Boolean(wikiName);
+  const hubs = wikiSlug ? fullWikiNav[wikiSlug] : undefined;
   const wikiNavLinks = wikiSlug
-    ? [
-        { href: `/wikis/${wikiSlug}`, label: "Home" },
-        { href: `/wikis/${wikiSlug}/guides`, label: "Guides" },
-        { href: "/wikis", label: "All Wikis" },
-      ]
+    ? hubs
+      ? [
+          { href: `/wikis/${wikiSlug}`, label: "Home" },
+          { href: `/wikis/${wikiSlug}/strats`, label: hubs.strats },
+          { href: `/wikis/${wikiSlug}/roles`, label: hubs.roles },
+          { href: `/wikis/${wikiSlug}/maps`, label: hubs.maps },
+          { href: `/wikis/${wikiSlug}/guides`, label: "Guides" },
+        ]
+      : [
+          { href: `/wikis/${wikiSlug}`, label: "Home" },
+          { href: `/wikis/${wikiSlug}/guides`, label: "Guides" },
+          { href: "/wikis", label: "All Wikis" },
+        ]
     : navLinks;
   const links = isMistfall ? mistfallNavLinks : isGameWiki ? wikiNavLinks : navLinks;
   const [menuOpen, setMenuOpen] = useState(false);
@@ -118,10 +127,10 @@ export default function Header() {
             </Link>
           ) : isGameWiki ? (
             <Link
-              href={`/wikis/${wikiSlug}/guides/beginner-guide`}
+              href={hubs ? `/wikis/${wikiSlug}/strats` : `/wikis/${wikiSlug}/guides/beginner-guide`}
               className="hidden rounded-lg bg-accent px-3.5 py-2 text-sm font-semibold text-background transition hover:bg-accent-dim sm:inline-block md:px-4"
             >
-              Beginner Guide
+              {hubs ? `Browse ${hubs.strats}` : "Beginner Guide"}
             </Link>
           ) : (
             <>
@@ -187,11 +196,11 @@ export default function Header() {
                 </Link>
               ) : isGameWiki ? (
                 <Link
-                  href={`/wikis/${wikiSlug}/guides/beginner-guide`}
+                  href={hubs ? `/wikis/${wikiSlug}/strats` : `/wikis/${wikiSlug}/guides/beginner-guide`}
                   className="mt-2 block rounded-lg bg-accent px-4 py-3 text-center text-sm font-semibold text-background transition hover:bg-accent-dim"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Beginner Guide
+                  {hubs ? `Browse ${hubs.strats}` : "Beginner Guide"}
                 </Link>
               ) : (
                 <>

@@ -51,3 +51,17 @@ export const wikiShortNames: Record<string, string> = {
   "path-of-exile-2": "PoE 2",
   "elden-ring": "Elden Ring",
 };
+
+/** Hub labels for completed Mistfall-style wikis. Keep in sync with full/index.ts. */
+export const fullWikiNav: Record<
+  string,
+  { maps: string; roles: string; strats: string }
+> = {
+  "counter-strike-2": { maps: "Maps", roles: "Roles", strats: "Setups" },
+  "dota-2": { maps: "Lanes", roles: "Roles", strats: "Setups" },
+  palworld: { maps: "Biomes", roles: "Jobs", strats: "Setups" },
+  "marvel-rivals": { maps: "Maps", roles: "Roles", strats: "Setups" },
+  pubg: { maps: "Maps", roles: "Roles", strats: "Setups" },
+  "ea-fc-26": { maps: "Modes", roles: "Jobs", strats: "Setups" },
+  rust: { maps: "Monuments", roles: "Jobs", strats: "Setups" },
+};

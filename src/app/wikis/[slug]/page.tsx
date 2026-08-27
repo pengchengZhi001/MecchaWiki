@@ -8,8 +8,12 @@ import { NativeBanner } from "@/components/ads";
 import {
   getGameBySlug,
   getGuidesForGame,
+  getFullWiki,
   steamWikiGames,
 } from "@/data/steam-wikis";
+import WikiMapCard from "@/components/steam-wiki/WikiMapCard";
+import WikiRoleCard from "@/components/steam-wiki/WikiRoleCard";
+import WikiStratCard from "@/components/steam-wiki/WikiStratCard";
 import {
   createSteamWikiMetadata,
   steamHeader,
@@ -46,10 +50,17 @@ export default async function GameWikiHomePage({ params }: Props) {
   const game = getGameBySlug(slug);
   if (!game) notFound();
 
-  const guides = getGuidesForGame(game);
+  const wiki = getFullWiki(slug);
+  const guides = wiki ? wiki.guides : getGuidesForGame(game);
   const related = steamWikiGames
     .filter((g) => g.genre === game.genre && g.slug !== game.slug)
     .slice(0, 3);
+  const featuredMaps = wiki?.maps.slice(0, 4) ?? [];
+  const starterRoles = wiki
+    ? [...wiki.roles].sort((a, b) => a.beginnerRank - b.beginnerRank).slice(0, 3)
+    : [];
+  const featuredStrats = wiki?.strats.slice(0, 3) ?? [];
+  const featuredGuides = guides.slice(0, 3);
 
   return (
     <>
@@ -98,18 +109,37 @@ export default async function GameWikiHomePage({ params }: Props) {
             {game.publisher !== game.developer ? ` · ${game.publisher}` : ""}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href={wikiPath(game.slug, "/guides/beginner-guide")}
-              className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-accent-dim"
-            >
-              Beginner guide
-            </Link>
-            <Link
-              href={wikiPath(game.slug, "/guides")}
-              className="rounded-lg border border-card-border bg-card/70 px-5 py-2.5 text-sm font-semibold backdrop-blur transition hover:border-accent/40"
-            >
-              All guides
-            </Link>
+            {wiki ? (
+              <>
+                <Link
+                  href={wikiPath(game.slug, "/strats")}
+                  className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-accent-dim"
+                >
+                  Browse {wiki.hubs.strats.toLowerCase()}
+                </Link>
+                <Link
+                  href={wikiPath(game.slug, "/roles")}
+                  className="rounded-lg border border-card-border bg-card/70 px-5 py-2.5 text-sm font-semibold backdrop-blur transition hover:border-accent/40"
+                >
+                  {wiki.hubs.roles}
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link
+                  href={wikiPath(game.slug, "/guides/beginner-guide")}
+                  className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-accent-dim"
+                >
+                  Beginner guide
+                </Link>
+                <Link
+                  href={wikiPath(game.slug, "/guides")}
+                  className="rounded-lg border border-card-border bg-card/70 px-5 py-2.5 text-sm font-semibold backdrop-blur transition hover:border-accent/40"
+                >
+                  All guides
+                </Link>
+              </>
+            )}
             <a
               href={steamStoreUrl(game.steamAppId)}
               target="_blank"
@@ -125,34 +155,101 @@ export default async function GameWikiHomePage({ params }: Props) {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <NativeBanner />
 
-        <section className="mt-4">
-          <h2 className="text-2xl font-bold">The loop</h2>
-          <p className="mt-3 max-w-3xl leading-relaxed text-foreground/80">{game.pitch}</p>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">{game.loop}</p>
-        </section>
+        {wiki ? (
+          <>
+            <section className="mt-4">
+              <div className="mb-6 flex items-end justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-bold">Featured {wiki.hubs.strats.toLowerCase()}</h2>
+                  <p className="mt-1 text-sm text-muted">{wiki.copy.home.strats}</p>
+                </div>
+                <Link
+                  href={wikiPath(game.slug, "/strats")}
+                  className="shrink-0 text-sm font-medium text-accent hover:underline"
+                >
+                  All {wiki.hubs.strats.toLowerCase()} →
+                </Link>
+              </div>
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {featuredStrats.map((strat) => (
+                  <WikiStratCard key={strat.slug} gameSlug={game.slug} strat={strat} />
+                ))}
+              </div>
+            </section>
 
-        <section className="mt-12">
-          <h2 className="text-2xl font-bold">First moves</h2>
-          <ol className="mt-4 space-y-3">
-            {game.firstMoves.map((step, i) => (
-              <li
-                key={step}
-                className="rounded-xl border border-card-border bg-card p-4 text-sm leading-relaxed text-foreground/80"
-              >
-                <span className="mr-2 font-semibold text-accent">{i + 1}.</span>
-                {step}
-              </li>
-            ))}
-          </ol>
-        </section>
+            <section className="mt-16">
+              <div className="mb-6 flex items-end justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-bold">Start with these {wiki.hubs.roles.toLowerCase()}</h2>
+                  <p className="mt-1 text-sm text-muted">{wiki.copy.home.roles}</p>
+                </div>
+                <Link
+                  href={wikiPath(game.slug, "/roles")}
+                  className="shrink-0 text-sm font-medium text-accent hover:underline"
+                >
+                  All {wiki.hubs.roles.toLowerCase()} →
+                </Link>
+              </div>
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {starterRoles.map((role) => (
+                  <WikiRoleCard key={role.slug} gameSlug={game.slug} role={role} />
+                ))}
+              </div>
+            </section>
+
+            <section className="mt-16">
+              <div className="mb-6 flex items-end justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-bold">{wiki.hubs.maps} worth learning first</h2>
+                  <p className="mt-1 text-sm text-muted">{wiki.copy.home.maps}</p>
+                </div>
+                <Link
+                  href={wikiPath(game.slug, "/maps")}
+                  className="shrink-0 text-sm font-medium text-accent hover:underline"
+                >
+                  All {wiki.hubs.maps.toLowerCase()} →
+                </Link>
+              </div>
+              <div className="grid gap-5 sm:grid-cols-2">
+                {featuredMaps.map((map) => (
+                  <WikiMapCard key={map.slug} gameSlug={game.slug} map={map} />
+                ))}
+              </div>
+            </section>
+          </>
+        ) : (
+          <>
+            <section className="mt-4">
+              <h2 className="text-2xl font-bold">The loop</h2>
+              <p className="mt-3 max-w-3xl leading-relaxed text-foreground/80">{game.pitch}</p>
+              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">{game.loop}</p>
+            </section>
+
+            <section className="mt-12">
+              <h2 className="text-2xl font-bold">First moves</h2>
+              <ol className="mt-4 space-y-3">
+                {game.firstMoves.map((step, i) => (
+                  <li
+                    key={step}
+                    className="rounded-xl border border-card-border bg-card p-4 text-sm leading-relaxed text-foreground/80"
+                  >
+                    <span className="mr-2 font-semibold text-accent">{i + 1}.</span>
+                    {step}
+                  </li>
+                ))}
+              </ol>
+            </section>
+          </>
+        )}
 
         <section className="mt-16">
           <div className="mb-6 flex items-end justify-between gap-4">
             <div>
               <h2 className="text-2xl font-bold">Guides</h2>
               <p className="mt-1 text-sm text-muted">
-                Beginner path, genre fundamentals, settings, and FAQ — all under{" "}
-                <code className="text-xs text-accent">/wikis/{game.slug}</code>
+                {wiki
+                  ? wiki.copy.home.guides
+                  : "Beginner path, genre fundamentals, settings, and FAQ."}
               </p>
             </div>
             <Link
@@ -163,7 +260,7 @@ export default async function GameWikiHomePage({ params }: Props) {
             </Link>
           </div>
           <div className="grid gap-4">
-            {guides.map((guide) => (
+            {featuredGuides.map((guide) => (
               <Card
                 key={guide.slug}
                 href={wikiPath(game.slug, `/guides/${guide.slug}`)}

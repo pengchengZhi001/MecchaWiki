@@ -1,5 +1,6 @@
 import type { SteamWikiGame, WikiGuide } from "./types";
 import { steamWikiGames } from "./games";
+import { getFullWiki } from "./full";
 
 function readTimeFromSections(sections: { body: string }[]): string {
   const words = sections.reduce(
@@ -116,6 +117,8 @@ function faqGuide(game: SteamWikiGame): WikiGuide {
 }
 
 export function getGuidesForGame(game: SteamWikiGame): WikiGuide[] {
+  const full = getFullWiki(game.slug);
+  if (full) return full.guides;
   return [
     beginnerGuide(game),
     tipsGuide(game),

@@ -24,12 +24,21 @@ export function wikiPath(slug: string, rest = "") {
   return `${steamWikiHubPath}/${slug}${rest}`;
 }
 
-export function wikiNavLinks(game: SteamWikiGame) {
+export function wikiNavLinks(game: SteamWikiGame, hubs?: { maps: string; roles: string; strats: string }) {
+  if (hubs) {
+    return [
+      { href: wikiPath(game.slug), label: "Home" },
+      { href: wikiPath(game.slug, "/strats"), label: hubs.strats },
+      { href: wikiPath(game.slug, "/roles"), label: hubs.roles },
+      { href: wikiPath(game.slug, "/maps"), label: hubs.maps },
+      { href: wikiPath(game.slug, "/guides"), label: "Guides" },
+    ];
+  }
   return [
     { href: wikiPath(game.slug), label: "Home" },
     { href: wikiPath(game.slug, "/guides"), label: "Guides" },
     { href: steamWikiHubPath, label: "All Wikis" },
-  ] as const;
+  ];
 }
 
 type WikiMeta = {

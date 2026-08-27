@@ -9,7 +9,7 @@ import {
   mistfallMaps,
   mistfallGuides,
 } from "@/data/mistfall";
-import { getGuidesForGame, steamWikiGames } from "@/data/steam-wikis";
+import { getGuidesForGame, getAllFullWikis, steamWikiGames } from "@/data/steam-wikis";
 
 export type SearchItem = {
   title: string;
@@ -200,4 +200,24 @@ export const searchIndex: SearchItem[] = [
       ],
     }))
   ),
+  ...getAllFullWikis().flatMap((wiki) => [
+    ...wiki.maps.map((m) => ({
+      title: `${m.name} — ${wiki.slug.replace(/-/g, " ")}`,
+      href: `/wikis/${wiki.slug}/maps/${m.slug}`,
+      type: "Wiki Map",
+      keywords: [m.slug, m.name.toLowerCase(), m.tagline.toLowerCase(), ...(m.seoKeywords ?? [])],
+    })),
+    ...wiki.roles.map((r) => ({
+      title: `${r.name} — ${wiki.slug.replace(/-/g, " ")}`,
+      href: `/wikis/${wiki.slug}/roles/${r.slug}`,
+      type: "Wiki Role",
+      keywords: [r.slug, r.name.toLowerCase(), r.role.toLowerCase(), ...(r.seoKeywords ?? [])],
+    })),
+    ...wiki.strats.map((s) => ({
+      title: s.name,
+      href: `/wikis/${wiki.slug}/strats/${s.slug}`,
+      type: "Wiki Setup",
+      keywords: [s.slug, s.name.toLowerCase(), s.mapName.toLowerCase(), ...(s.seoKeywords ?? [])],
+    })),
+  ]),
 ];

@@ -47,7 +47,7 @@ export default function SteamWikisHubPage() {
 
       <PageHeader
         title="Steam Game Wikis"
-        description="Guides for the 50 most played Steam games, each on its own route. Ranked from recent concurrent-player charts — utilities and overlay apps omitted so every entry is an actual game."
+        description="CS2, Dota 2, Palworld, Marvel Rivals, PUBG, FC 26, and Rust are full wikis like Mistfall Hunter. The other titles are on the same routes and will be expanded the same way."
       />
 
       <NativeBanner />
