@@ -47,7 +47,7 @@ export default function SteamWikisHubPage() {
 
       <PageHeader
         title="Steam Game Wikis"
-        description="CS2, Dota 2, Palworld, Marvel Rivals, PUBG, FC 26, and Rust are full wikis like Mistfall Hunter. The other titles are on the same routes and will be expanded the same way."
+        description="CS2 through Apex are full wikis like Mistfall Hunter. The other titles are on the same routes and will be expanded the same way."
       />
 
       <NativeBanner />

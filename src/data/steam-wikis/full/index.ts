@@ -6,6 +6,8 @@ import { marvelRivalsWiki } from "./marvel-rivals";
 import { pubgWiki } from "./pubg";
 import { eaFc26Wiki } from "./ea-fc-26";
 import { rustWiki } from "./rust";
+import { zomboidWiki } from "./project-zomboid";
+import { apexWiki } from "./apex-legends";
 
 const fullWikis: Record<string, FullWiki> = {
   [cs2Wiki.slug]: cs2Wiki,
@@ -15,6 +17,8 @@ const fullWikis: Record<string, FullWiki> = {
   [pubgWiki.slug]: pubgWiki,
   [eaFc26Wiki.slug]: eaFc26Wiki,
   [rustWiki.slug]: rustWiki,
+  [zomboidWiki.slug]: zomboidWiki,
+  [apexWiki.slug]: apexWiki,
 };
 
 export function getFullWiki(slug: string): FullWiki | undefined {

@@ -64,4 +64,6 @@ export const fullWikiNav: Record<
   pubg: { maps: "Maps", roles: "Roles", strats: "Setups" },
   "ea-fc-26": { maps: "Modes", roles: "Jobs", strats: "Setups" },
   rust: { maps: "Monuments", roles: "Jobs", strats: "Setups" },
+  "project-zomboid": { maps: "Towns", roles: "Jobs", strats: "Setups" },
+  "apex-legends": { maps: "Maps", roles: "Roles", strats: "Setups" },
 };
