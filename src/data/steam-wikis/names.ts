@@ -66,4 +66,6 @@ export const fullWikiNav: Record<
   rust: { maps: "Monuments", roles: "Jobs", strats: "Setups" },
   "project-zomboid": { maps: "Towns", roles: "Jobs", strats: "Setups" },
   "apex-legends": { maps: "Maps", roles: "Roles", strats: "Setups" },
+  "rainbow-six-siege": { maps: "Maps", roles: "Roles", strats: "Setups" },
+  "dead-by-daylight": { maps: "Realms", roles: "Roles", strats: "Setups" },
 };

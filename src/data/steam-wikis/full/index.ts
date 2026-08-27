@@ -8,6 +8,8 @@ import { eaFc26Wiki } from "./ea-fc-26";
 import { rustWiki } from "./rust";
 import { zomboidWiki } from "./project-zomboid";
 import { apexWiki } from "./apex-legends";
+import { siegeWiki } from "./rainbow-six-siege";
+import { dbdWiki } from "./dead-by-daylight";
 
 const fullWikis: Record<string, FullWiki> = {
   [cs2Wiki.slug]: cs2Wiki,
@@ -19,6 +21,8 @@ const fullWikis: Record<string, FullWiki> = {
   [rustWiki.slug]: rustWiki,
   [zomboidWiki.slug]: zomboidWiki,
   [apexWiki.slug]: apexWiki,
+  [siegeWiki.slug]: siegeWiki,
+  [dbdWiki.slug]: dbdWiki,
 };
 
 export function getFullWiki(slug: string): FullWiki | undefined {
