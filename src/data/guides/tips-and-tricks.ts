@@ -58,7 +58,7 @@ export const tipsAndTricksGuide: Guide = {
     {
       id: "multiplayer-tricks",
       heading: "Multiplayer & Friend Lobby Tricks",
-      body: "Unique server names beat generic \"Hide and Seek\" in Find Server. Recreate rooms after patch days — stale session IDs fail even with correct passwords. For 4–6 player learning lobbies, Mansion plus forced taunt off keeps prep calm. Streamers: password rooms until rules are explained — public lobbies risk spectator leaks and griefing. Cross-check everyone subscribed to workshop maps before host picks custom layout.",
+      body: "Share the 5-character join code after v4.1.0 — searching by room title no longer works. Recreate rooms after patch days — stale session IDs fail even with correct passwords. For 4–6 player learning lobbies, Mansion plus forced taunt off keeps prep calm. Streamers: password rooms until rules are explained — public lobbies risk spectator leaks and griefing. Cross-check everyone subscribed to workshop maps before host picks custom layout.",
     },
     {
       id: "viral-tricks",

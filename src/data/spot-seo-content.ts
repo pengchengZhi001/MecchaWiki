@@ -102,6 +102,16 @@ const MAP_WHEN_TO_USE: Record<string, string[]> = {
     "Handbag-shelf dual-samples before seekers learn the atrium first-clear",
     "Upper balcony glass rails when the floor is too bright under the skylight",
   ],
+  kyoto: [
+    "When you can dual-sample maple red + balcony stone from the official still (Denfaminicogamer / LEMORION X)",
+    "Torii / bamboo clusters before seekers learn the plaza first-clear",
+    "Under-deck recesses after the 大 stair meme landmark gets first-cleared",
+  ],
+  "art-museum": [
+    "When you can eyedrop the canvas you touch — museum analog from skypenguin.net / DualShockers",
+    "Darker paintings and smaller frames before giant canvases get first-cleared",
+    "Plinth / frame-edge compact poses when open gallery floors are too bright",
+  ],
   "death-burger": [
     "When you can dual-sample sign/wall boundaries — flat carnival fills fail (Gamee)",
     "Clown mascot or carousel clutter rounds before meme spots get first-cleared",
@@ -170,6 +180,16 @@ const MAP_WHEN_NOT_TO_USE: Record<string, string[]> = {
     "Same planter perch three rounds — official-still screenshot hides get first-cleared",
     "Single flat fill across handbag wood and bag colors — dual-sample is required",
   ],
+  kyoto: [
+    "Open plaza tile as a long camp — lattice skylight sightlines punish imperfect paint",
+    "Same 大 stair perch three rounds — official-still meme landmark gets first-cleared",
+    "Single flat vermillion fill across torii wood and shadow — dual-sample is required",
+  ],
+  "art-museum": [
+    "Open gallery floor as a long camp — spotlight sightlines punish imperfect paint",
+    "Same giant-canvas perch three rounds — workshop analog says large paintings read human at range",
+    "Confusing this official map with Workshop ART GALLERY (Popunia) callouts",
+  ],
   "death-burger": [
     "Open midway walkways as long camps — wide sightlines punish imperfect paint",
     "Same clown mascot perch three rounds — meme lobbies clear loud props first",
@@ -237,6 +257,16 @@ const MAP_COUNTER_STRATEGY: Record<string, string[]> = {
     "Clear the planter/bench recess and handbag shelf on first pass — official still landmarks",
     "Scan glass balcony rails and escalator landings from above before assuming the floor is empty",
     "Pillar splatters: fit-check dual-tone white + paint before leaving the atrium",
+  ],
+  kyoto: [
+    "Clear maple balcony and torii rows on first pass — official still landmarks",
+    "Scan bamboo and lantern-wall grids at crouch height before assuming the plaza is empty",
+    "大 stair: glance once for meme traffic, then clear under-deck recesses",
+  ],
+  "art-museum": [
+    "Clear canvas blends and darker paintings on first pass — museum analog from skypenguin.net",
+    "Scan plinths and gilded frames at crouch height before assuming halls are empty",
+    "Giant canvas fronts: look for human-shaped silhouettes at range",
   ],
   "death-burger": [
     "Clear clown mascot rows and carousel bases before midway assumptions",

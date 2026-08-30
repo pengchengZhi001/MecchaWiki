@@ -242,6 +242,38 @@ export const spotDescriptions: Record<string, string> = {
     "Open atrium white-tile floor — meme traffic, low survival; transit only.",
   "shopping-mall-escalator-rail":
     "Escalator and glass balcony rail — sample metal/glass; seekers look down from landings.",
+  "kyoto-maple-balcony":
+    "High-left maple tree on the official 4.1.0 still — sample leaf red plus balcony stone, not plaza tile.",
+  "kyoto-torii-row":
+    "Vermillion torii row — dual-sample gate red and shadow gap; keep limbs inside the post silhouette.",
+  "kyoto-bamboo-cluster":
+    "Foreground bamboo thicket from the official still — sample stalk green and inter-stalk shadow.",
+  "kyoto-wagasa-lantern":
+    "Wagasa umbrella and orange lantern cluster — prop-mimic compact poses under warm light.",
+  "kyoto-lantern-wall":
+    "Right-wall grid of white lanterns — dual-sample lantern paper and wall behind.",
+  "kyoto-dai-stairs":
+    "Glowing 大 character on the wide stair — meme traffic; experimental transit hide.",
+  "kyoto-under-balcony":
+    "Shadow recess under upper decks — sample dark tile plus underside stone.",
+  "kyoto-open-plaza":
+    "Open polished plaza floor under the lattice skylight — low survival; transit only.",
+  "art-museum-canvas-blend":
+    "Canvas blend on official Art Museum — eyedrop the painting you touch; experimental pending official still.",
+  "art-museum-sculpture-plinth":
+    "Sculpture plinth / pedestal cluster — compact pose at crouch height.",
+  "art-museum-gilded-frame":
+    "Gilded frame edge — dual-sample gold trim and canvas, keep limbs inside the rectangle.",
+  "art-museum-gallery-column":
+    "Gallery column / alcove edge — sample plaster plus shadow band.",
+  "art-museum-lesser-wing":
+    "Lesser-known wing analog — smaller canvases beat giant paintings at range (DualShockers workshop analog).",
+  "art-museum-dark-canvas":
+    "Darker canvas region — skypenguin.net notes dark paint hides better than bright highlights.",
+  "art-museum-open-floor":
+    "Open gallery floor — bright sightlines; meme camp only.",
+  "art-museum-spotlight-front":
+    "Spotlight-lit gallery front — value mismatch on pale walls; experimental warning pin.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":

@@ -710,6 +710,35 @@ const MAP_FALLBACK: Record<
       "Do not confuse this official map with Workshop MegaMall - SuperMarket.",
     ],
   },
+  kyoto: {
+    sources: [
+      { name: "Denfaminicogamer — Kyoto / Art Museum", url: "https://news.denfaminicogamer.jp/news/2608283n" },
+      { name: "consolepcgaming.com — update 4.1.0", url: "https://consolepcgaming.com/meccha-chameleon-4-1-0-brings-2-new-maps-and-join-code-search/" },
+      { name: "Steam News — BIG UPDATE 4.1.0", url: "https://store.steampowered.com/news/app/4704690" },
+    ],
+    paintNote: "Maple red vs torii vermillion vs plaza tile are different values — sample the surface you touch, not the dark floor.",
+    poseNote: "Maple/balcony crouches and torii/bamboo prop mimics; avoid open plaza tile and the glowing 大 stair.",
+    winTips: [
+      "v4.1.0 brand-new map — all spots experimental until lobby screenshots settle.",
+      "Official still: maple balcony, torii rows, and bamboo are the first landmarks to learn.",
+      "The 大 stair is meme traffic — clip once, then rotate.",
+    ],
+  },
+  "art-museum": {
+    sources: [
+      { name: "Denfaminicogamer — Kyoto / Art Museum", url: "https://news.denfaminicogamer.jp/news/2608283n" },
+      { name: "skypenguin.net — museum / ARTGALLERY analog", url: "https://skypenguin.net/2026/06/25/post-155004/" },
+      { name: "DualShockers — Art Gallery workshop analog", url: "https://www.dualshockers.com/best-hiding-spots-in-art-gallery-in-meccha-chameleon/" },
+      { name: "consolepcgaming.com — update 4.1.0", url: "https://consolepcgaming.com/meccha-chameleon-4-1-0-brings-2-new-maps-and-join-code-search/" },
+    ],
+    paintNote: "Eyedrop the canvas you touch; darker regions hide better than bright highlights (skypenguin.net analog).",
+    poseNote: "Compact canvas and plinth poses; avoid open gallery floors and giant-canvas fronts.",
+    winTips: [
+      "v4.1.0 official 美術館 — dedicated still pending; all spots experimental.",
+      "Do not confuse with Workshop ART GALLERY (Popunia).",
+      "Smaller lesser-known paintings often beat giant canvases at range (DualShockers analog).",
+    ],
+  },
 };
 
 const PAINT_SYSTEM_SOURCE: GuideSource = {

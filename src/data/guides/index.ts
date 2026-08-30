@@ -24,6 +24,7 @@ export { problemsAfterV330Guide } from "./problems-after-v3-3-0";
 export { problemsAfterV350Guide } from "./problems-after-v3-5-0";
 export { problemsAfterV360Guide } from "./problems-after-v3-6-0";
 export { problemsAfterV390Guide } from "./problems-after-v3-9-0";
+export { problemsAfterV410Guide } from "./problems-after-v4-1-0";
 export { whyKeepGettingFoundGuide } from "./why-keep-getting-found";
 export { howToPaintBetterGuide } from "./how-to-paint-better";
 export { bestPoseGuide } from "./best-pose-guide";

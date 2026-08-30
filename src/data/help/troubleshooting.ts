@@ -41,7 +41,7 @@ export const troubleshootingTopic: HelpTopic = {
       tags: ["can't join", "lobby", "connect", "multiplayer"],
       answer: [
         "Version mismatch is the #1 cause per community fix guides and v1.1.0 patch notes: everyone closes the game, exits Steam fully, confirms no pending update, then the host creates a brand-new room.",
-        "If Steam invites fail, use the in-game server browser with a unique server name instead — multiple community reports describe black screens and auth failures from desktop invites.",
+        "If Steam invites fail, use the v4.1.0 5-character join code shown in-game instead of searching by room title — the old server-name browser is gone (Steam News / consolepcgaming).",
         "Test with an official map before blaming workshop subscriptions — every player must subscribe to custom maps the host selects.",
       ],
       relatedLink: {
@@ -99,11 +99,11 @@ export const troubleshootingTopic: HelpTopic = {
     {
       id: "empty-server-browser",
       question: "Server browser is empty — is multiplayer broken?",
-      tags: ["server browser", "find server", "no rooms"],
+      tags: ["server browser", "find server", "no rooms", "join code"],
       answer: [
-        "Not necessarily. Patch v1.1.0 changed public search so in-progress games may not list. You only see joinable lobbies, which can look empty during off-peak hours.",
-        "Toggle Search Public Servers, clear name filters, and retry after peak evening hours in your region.",
-        "Hosting your own public room for five minutes often populates faster than waiting on an empty browser — friends plus randoms fill slots.",
+        "Not necessarily. After v4.1.0, in-progress games are hidden from public search by default (options toggle), and you must pick a region tag. An empty list can mean no joinable rooms, not dead multiplayer.",
+        "Friends should search the host's 5-character alphanumeric join code — not the room title. Older guides that say Find Server by unique name are outdated.",
+        "Toggle Search Public Servers, clear filters, retry after peak evening hours, or host your own public room for five minutes so friends can join by code.",
       ],
     },
     {
@@ -113,7 +113,7 @@ export const troubleshootingTopic: HelpTopic = {
       answer: [
         "Host should recreate the room after any map or password change. Old invites point at dead session IDs.",
         "Friend accepts invite from Steam overlay while game is at main menu — joining from desktop notification while in another lobby sometimes fails silently.",
-        "Use a unique server name plus password for private tests so friends confirm they landed in the right lobby before prep starts.",
+        "Share the 5-character join code plus optional password so friends confirm they landed in the right lobby before prep starts.",
       ],
       relatedLink: {
         href: "/guides/fix-steam-invite-not-working",

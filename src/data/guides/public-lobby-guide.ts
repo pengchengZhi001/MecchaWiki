@@ -34,7 +34,7 @@ export const publicLobbyGuide: Guide = {
     {
       id: "lobby-griefing",
       heading: "Lobby Griefing — Mic and Chat Leaks",
-      body: "A top Steam review (547 helpful votes) describes lobby griefing: players still in the lobby opening mics or typing in chat to reveal hider locations to active hunters, ruining in-progress matches. Mitigation: host or join password private rooms for serious sessions; mute all except friends in public queue; leave lobbies where spectators chat coordinates during hunt phase. Streamers should delay sharing server names on stream until house rules are explained.",
+      body: "A top Steam review (547 helpful votes) describes lobby griefing: players still in the lobby opening mics or typing in chat to reveal hider locations to active hunters, ruining in-progress matches. Mitigation: host or join password private rooms for serious sessions; mute all except friends in public queue; leave lobbies where spectators chat coordinates during hunt phase. Streamers should delay sharing the v4.1.0 join code on stream until house rules are explained.",
     },
     {
       id: "spectator-exploit",

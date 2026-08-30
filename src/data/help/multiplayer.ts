@@ -16,7 +16,7 @@ export const multiplayerTopic: HelpTopic = {
       question: "How do I play MECCHA CHAMELEON online?",
       tags: ["online", "multiplayer", "matchmaking"],
       answer: [
-        "Launch the game from Steam, open the multiplayer menu, and either Find Server to browse public lobbies or Create Server to host your own room. Public servers accept drop-in players when not marked private — streamers often use this for viewer participation.",
+        "Launch the game from Steam, open the multiplayer menu, and either browse public lobbies (select a region tag) or Create Server to host. After v4.1.0 friends join with the 5-character in-game code — not by searching the room title. Public servers accept drop-in players when not marked private — streamers often use this for viewer participation.",
         "Each round splits into prep phase (hiders paint and pose) and hunt phase (seekers tag hiders before the timer ends). You need at least two players; the developer recommends 2–10 for stable sessions, though the client technically supports larger counts.",
         "Workshop maps and official maps are chosen by the host before launch. Subscribe to custom maps on Steam Workshop before joining a lobby that uses them, or you may fail to load the stage.",
       ],
@@ -30,9 +30,9 @@ export const multiplayerTopic: HelpTopic = {
       question: "How do I create a server and invite friends?",
       tags: ["host", "invite", "friends", "private"],
       answer: [
-        "From the multiplayer menu, choose Create Server, enter a recognizable server name, and optionally set a password for private sessions. Add tags that describe your map or vibe so friends can find you in the browser.",
-        "The fastest invite path: press Esc → Friends List → invite Steam friends directly. They join without manually searching the server list.",
-        "Alternatively, friends open Find Server, enable Search Public Servers, and look for your server name. Keep the name unique — \"Hide and Seek\" duplicates are impossible to find.",
+        "From the multiplayer menu, choose Create Server, optionally set a password, and pick a region tag. The host reads the 5-character alphanumeric join code in-game and shares it — the old searchable server-name browser is gone after v4.1.0.",
+        "The fastest invite path: press Esc → Friends List → invite Steam friends directly. They join without typing the code. If invites fail, share the join code instead.",
+        "Friends open Find Server, select the same region, and search the join code — not the room title, and not a 6-digit ID from older guides.",
         "Pick one host for the night and avoid mid-session host migration unless connection tests fail. Stable hosts with wired Ethernet produce fewer disconnects than Wi‑Fi hosts juggling stream overlays.",
       ],
     },
@@ -47,6 +47,7 @@ export const multiplayerTopic: HelpTopic = {
       },
       answer: [
         "Version mismatch is the #1 cause. Close the game for everyone, restart Steam, wait for updates to finish, then have the host create a brand-new room and send fresh invites. Reusing stale rooms after a patch often fails even when invites look valid.",
+        "After v4.1.0 the old server-name browser is gone. The host reads the 5-character alphanumeric join code in-game; friends search that code — not the room title, and not a 6-digit ID from older guides.",
         "If the host changed maps, passwords, or privacy settings, old invites break. Ask for a new invite rather than spam-clicking the previous one.",
         "Workshop map missing: if the host picked a custom map you have not subscribed to, subscribe on Steam Workshop, restart the game, and retry.",
         "Test with a two-player private room before blaming firewalls. Most casual join failures resolve with update + restart + new room — not router port forwarding.",
@@ -61,9 +62,9 @@ export const multiplayerTopic: HelpTopic = {
       question: "Public server vs private room — what's the difference?",
       tags: ["public", "private", "password"],
       answer: [
-        "Public servers appear in Find Server when Search Public Servers is enabled. Anyone can join until the room fills — great for random chaos and stream audiences.",
-        "Private rooms use passwords or friend-only invites. Use these for learning sessions, testing new spots, or groups that do not want random seekers joining mid-prep.",
-        "Note: after patch v1.1.0, servers already in progress may not appear in public search. An empty-looking browser can mean no joinable rooms exist, not that multiplayer is broken.",
+        "Public servers appear in Find Server when Search Public Servers is enabled and a region tag is selected. Anyone can join until the room fills — great for random chaos and stream audiences. After v4.1.0, in-progress rooms stay hidden by default.",
+        "Private rooms use passwords, friend-only invites, or the v4.1.0 5-character join code. Use these for learning sessions, testing new spots, or groups that do not want random seekers joining mid-prep.",
+        "After patch v4.1.0, in-progress games are hidden from public search by default (toggle in options). An empty-looking browser can mean no joinable rooms exist, not that multiplayer is broken. You must select a region tag.",
       ],
     },
     {

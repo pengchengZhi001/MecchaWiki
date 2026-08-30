@@ -86,6 +86,7 @@ export const searchIndex: SearchItem[] = [
       "not working",
       "broken",
       "can't join lobby",
+      "join code",
       "authentication token",
     ],
   },

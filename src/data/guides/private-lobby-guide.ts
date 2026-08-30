@@ -30,17 +30,17 @@ export const privateLobbyGuide: Guide = {
     {
       id: "create-server",
       heading: "How to Create a Private Lobby",
-      body: "From the multiplayer menu: Create Server → set a recognizable, unique server name (avoid generic names like \"Hide and Seek\") → optional password for private sessions → pick official or workshop map (ensure all friends subscribed to workshop maps). Host on wired Ethernet when possible — Destructoid notes if the host disconnects, the session ends immediately.",
+      body: "From the multiplayer menu: Create Server → optional password for private sessions → pick a region tag → share the 5-character in-game join code (Steam News v4.1.0 — the old searchable server-name browser is gone). Pick official or workshop map (ensure all friends subscribed to workshop maps). Host on wired Ethernet when possible — Destructoid notes if the host disconnects, the session ends immediately.",
     },
     {
       id: "invite-friends",
       heading: "How to Invite Friends",
-      body: "Fastest path reported by community guides: Esc → Friends List → invite Steam friends directly. Friends can also open Find Server, enable Search Public Servers, and join by your unique server name. Keep Steam Overlay enabled (Steam → Settings → In-Game) — overlay supports invites and lobby communication. After map, password, or privacy changes, recreate the room and send fresh invites — stale invites break.",
+      body: "Fastest path reported by community guides: Esc → Friends List → invite Steam friends directly. After v4.1.0, friends can also search the host's 5-character join code in Find Server — not the room title. Keep Steam Overlay enabled (Steam → Settings → In-Game) — overlay supports invites and lobby communication. After map, password, or privacy changes, recreate the room and send fresh invites — stale invites break.",
     },
     {
       id: "public-vs-private",
       heading: "Public vs Private Servers",
-      body: "Steam store: if a server is not set to private, anyone can join — streamers use this for viewer participation. Private rooms use passwords or friend-only invites for learning sessions and groups that do not want random joiners mid-prep. After patch v1.1.0, in-progress games may not appear in public search — empty browser does not always mean broken multiplayer.",
+      body: "Steam store: if a server is not set to private, anyone can join — streamers use this for viewer participation. Private rooms use passwords, friend-only invites, or the v4.1.0 5-character join code for learning sessions and groups that do not want random joiners mid-prep. After 4.1.0, in-progress games are hidden from public search by default (options toggle) and you must select a region tag — empty browser does not always mean broken multiplayer.",
     },
     {
       id: "player-counts",
@@ -50,7 +50,7 @@ export const privateLobbyGuide: Guide = {
     {
       id: "invite-workaround",
       heading: "When Steam Invites Fail",
-      body: "2UpSkill and multiple Steam threads report invite bugs (black screen, auth failure). Workaround: skip Steam invites — host creates room with unique name, friends join via in-game server browser. Some players join any public server for ~10 seconds, leave, refresh search, then find private rooms. See our Can't Join Lobby fix guide for version mismatch and workshop steps.",
+      body: "2UpSkill and multiple Steam threads report invite bugs (black screen, auth failure). Workaround after v4.1.0: skip Steam invites — host creates a room and friends search the 5-character in-game join code. Older guides that say join by unique server name are outdated. See our Can't Join Lobby fix guide for version mismatch and workshop steps.",
     },
     {
       id: "host-tips",

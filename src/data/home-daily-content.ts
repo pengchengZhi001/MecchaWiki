@@ -123,6 +123,26 @@ const DAILY_TIPS = [
     sourceUrl: "https://consolepcgaming.com/meccha-chameleon-update-3-9-0-adds-shopping-mall-map/",
   },
   {
+    tip: "v4.1.0 Kyoto: sample maple red + balcony stone or torii vermillion — skip the open plaza and the glowing 大 stair (LEMORION / Denfaminicogamer).",
+    source: "Denfaminicogamer",
+    sourceUrl: "https://news.denfaminicogamer.jp/news/2608283n",
+  },
+  {
+    tip: "v4.1.0 join codes: friends search the 5-character in-game code — the old server-name browser is gone (Steam News / consolepcgaming).",
+    source: "consolepcgaming.com",
+    sourceUrl: "https://consolepcgaming.com/meccha-chameleon-4-1-0-brings-2-new-maps-and-join-code-search/",
+  },
+  {
+    tip: "Petit Chameleon (x0.5) only works if the host allows it — 4gamer expects most public lobbies to leave it off (Steam News / 4gamer).",
+    source: "4gamer",
+    sourceUrl: "https://www.4gamer.net/games/007/G100712/20260820044/",
+  },
+  {
+    tip: "Art Museum (official 美術館) is not Workshop ART GALLERY — paint into canvases and prefer darker paintings (skypenguin.net analog / Steam News).",
+    source: "skypenguin.net",
+    sourceUrl: "https://skypenguin.net/2026/06/25/post-155004/",
+  },
+  {
     tip: "v3.8.0 Mo Eeyo (もうええよ) skips hide time and answer-reveal only if everyone votes yes — not a majority (Denfaminicogamer / Steam News).",
     source: "Denfaminicogamer",
     sourceUrl: "https://news.denfaminicogamer.jp/news/2608142t",
@@ -189,6 +209,16 @@ const WEEKLY_CHALLENGES = [
     title: "Scout Shopping Mall without atrium camping",
     description: "Use Planter Bush Recess or Handbag Display Shelf on the v3.9.0 map. Dual-sample green/wood — official still landmarks beat open white tile (LEMORION / consolepcgaming).",
     spotSlug: "shopping-mall-planter-bench",
+  },
+  {
+    title: "Scout Kyoto without plaza camping",
+    description: "Use Maple Balcony Tree or Torii Gate Row on the v4.1.0 map. Dual-sample red foliage/gates — official still landmarks beat the glowing 大 stair (LEMORION / Denfaminicogamer).",
+    spotSlug: "kyoto-maple-balcony",
+  },
+  {
+    title: "Scout Art Museum without floor camping",
+    description: "Use Canvas Blend or Dark Canvas Region on the v4.1.0 official 美術館. Eyedrop the painting you touch — not Workshop ART GALLERY (skypenguin.net analog).",
+    spotSlug: "art-museum-canvas-blend",
   },
 ] as const;
 

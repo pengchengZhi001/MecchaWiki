@@ -89,6 +89,12 @@ export const fixGuideCatalog: FixGuideEntry[] = [
     searchValue: 5,
   },
   {
+    slug: "problems-after-v4-1-0",
+    title: "v4.0–4.1 Update Problems — Kyoto / Art Museum / Join Code / Petit Fix Guide",
+    category: "Patch",
+    searchValue: 5,
+  },
+  {
     slug: "problems-after-v3-9-0",
     title: "v3.7–3.9 Update Problems — Shopping Mall / Mo Eeyo / BAN Fix Guide",
     category: "Patch",
@@ -131,12 +137,18 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v3.9.1",
-  releasedAt: "2026-08-16",
+  version: "v4.1.0",
+  releasedAt: "2026-08-28",
   headline:
-    "Shopping Mall map (3.9.0), player IDs, Mo Eeyo skip-votes + host BAN (3.8.0), 3.9.1 emote paging / ceiling-cling gap",
+    "Kyoto + Art Museum maps, 5-character join codes, Greece/Egypt rework, Petit Chameleon (4.0.0), crash + network fixes",
   steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
   knownIssues: [
+    {
+      symptom: "Can't find friends — old server browser is gone",
+      searchTerms: ["join code", "5-character code", "server browser gone", "can't find server", "4.1.0"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "high",
+    },
     {
       symptom: "Can't join friends after updating",
       searchTerms: ["can't join lobby", "version mismatch", "black screen join"],
@@ -148,6 +160,60 @@ export const latestPatch: GamePatch = {
       searchTerms: ["authentication token", "can't login", "epic online services"],
       fixGuideSlug: "fix-authentication-token",
       priority: "high",
+    },
+    {
+      symptom: "Game crashes mid-match after 4.x",
+      searchTerms: ["crash during gameplay", "4.1.0 crash", "discord crash report"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "high",
+    },
+    {
+      symptom: "Kyoto / Art Museum hiding spots feel unknown / all fail",
+      searchTerms: ["Kyoto spots", "京都 hide", "Art Museum spots", "美術館 hide", "new map hide"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Can't select Petit Chameleon / tiny body missing",
+      searchTerms: ["Petit Chameleon", "プチカメレオン", "0.5 size", "host allow petit", "4.0.0"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Greece or Egypt spots stopped working",
+      searchTerms: ["Greece rework", "Egypt rework", "4.1.0 map rework", "spot patched"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Hunter didn't teleport at round start / waiting crouch",
+      searchTerms: ["hunter no TP", "can't crouch waiting", "fix4.0.1"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Ammo settings reset every match",
+      searchTerms: ["ammo settings reset", "4.1.0 ammo", "hunter ammo option"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Workshop maps re-downloading / first launch stall",
+      searchTerms: ["mod maps re-download", "workshop auto update", "hotfix August 22"],
+      fixGuideSlug: "fix-workshop-map-loading",
+      priority: "medium",
+    },
+    {
+      symptom: "Taunt spam / forced taunt too fast",
+      searchTerms: ["taunt cooldown", "forced taunt 5 seconds", "4.1.0 taunt"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "medium",
+    },
+    {
+      symptom: "Must pick a region tag before searching",
+      searchTerms: ["region tag required", "4.1.0 region", "cannot search"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "medium",
     },
     {
       symptom: "Shopping Mall hiding spots feel unknown / all fail",
@@ -367,12 +433,14 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Shopping Mall planter / handbag shelf / escalator / pillar spots — brand-new v3.9.0 map; all positions experimental",
+    "Kyoto maple / torii / bamboo / lantern-wall pins — brand-new v4.1.0 map; official still landmarks only, all experimental",
+    "Art Museum canvas / frame / plinth pins — official 美術館 still pending; do not confuse with Workshop ART GALLERY",
+    "Greece and Egypt after the 4.1.0 rework — pre-4.1.0 pit-rim, pillar, and alcove pins need a fresh scout",
+    "Petit Chameleon (x0.5) hitbox after 4.0.0 — wall-flat and prop-mimic coverage changes when the host enables it",
+    "Join via 5-character code after 4.1.0 — old server-name browser is gone",
+    "Shopping Mall planter / handbag shelf / escalator / pillar spots — still experimental from v3.9.0",
     "Deep Sea OOB edge hides after fix3.7.2 — those routes are closed",
     "Jump-reliant ceiling clings after 3.7.1 / 3.8.0 jump-height changes and 3.9.1 emote gap fix",
-    "Mo Eeyo unanimous skip and session-only BAN list after 3.8.0 — confirm vote UI and that restarts clear bans",
-    "Player ID on User Management after 3.9.0 — use it for reports",
-    "Five Emote Contest winners plus 3.9.1 reverse paging — survival freeze still wins prep",
     "Only subscribe to trusted Workshop maps after the malware incident — prefer established uploaders",
   ],
 };

@@ -17,6 +17,8 @@ const MAP_IMAGES: Record<string, string> = {
   "exit-8": "/images/maps/exit-8.jpg",
   "deep-sea": "/images/maps/deep-sea.jpg",
   "shopping-mall": "/images/maps/shopping-mall.jpg",
+  kyoto: "/images/maps/kyoto.jpg",
+  "art-museum": "/images/maps/art-museum.jpg",
 };
 
 export type MapDifficulty = "Easy" | "Medium" | "Hard" | "Expert";
@@ -301,7 +303,7 @@ export const maps: GameMap[] = [
     accentColor: "#2E5A4C",
     imageUrl: MAP_IMAGES["egypt"],
     description:
-      "Official desert / tomb-themed map added in v2.7.0 (July 12, 2026 per Steam News). Sandy stone, pillar shadows, hieroglyph walls, and prop clusters reward value-matched paints over bright accent mistakes. Early community consensus: vertical pillars and alcove depth beat open sand floors — re-verify spots as lobby meta settles.",
+      "Official desert / tomb-themed map added in v2.7.0 (July 12, 2026 per Steam News). Sandy stone, pillar shadows, hieroglyph walls, and prop clusters reward value-matched paints over bright accent mistakes. Early community consensus: vertical pillars and alcove depth beat open sand floors — re-verify spots as lobby meta settles. Steam News 4.1.0 (August 28, 2026) reworked Egypt — pre-4.1.0 pillar/alcove pins need a fresh scout.",
     tips: [
       "Sample stone and sand separately — warm floor vs cool pillar shadow are different values.",
       "Pillar and statue plinths sit above default seeker eye height when you climb during prep.",
@@ -385,7 +387,7 @@ export const maps: GameMap[] = [
     accentColor: "#F5F5F0",
     imageUrl: MAP_IMAGES["greece"],
     description:
-      "Official Santorini-inspired map added in v3.0.0 (July 20, 2026 per Steam News). Japanese outlets Denfaminicogamer, 4gamer, and Game*Spark describe blue-and-white contrasting buildings, beautiful sunset lighting, and a compact globe-shaped layout with tight streets. Community chatter (including Chinese and JP social threads) compares the central circular pit to Overwatch's Ilios — treat that as meme lore, not a verified hide. Early meta pairs white plaster / blue dome dual-samples with v2.9.0 emissive (glow) paint on lit sunset surfaces. Week-two scouting adds shutter recesses, rooftop chimney clusters, and balcony rail shadows.",
+      "Official Santorini-inspired map added in v3.0.0 (July 20, 2026 per Steam News). Japanese outlets Denfaminicogamer, 4gamer, and Game*Spark describe blue-and-white contrasting buildings, beautiful sunset lighting, and a compact globe-shaped layout with tight streets. Community chatter (including Chinese and JP social threads) compares the central circular pit to Overwatch's Ilios — treat that as meme lore, not a verified hide. Early meta pairs white plaster / blue dome dual-samples with v2.9.0 emissive (glow) paint on lit sunset surfaces. Week-two scouting adds shutter recesses, rooftop chimney clusters, and balcony rail shadows. Steam News 4.1.0 (August 28, 2026) reworked Greece — re-test pre-4.1.0 pins; geometry and lighting may have shifted.",
     tips: [
       "Dual-sample white plaster and blue dome/trim — flat single fills read as stickers on Santorini contrast (JP press theme).",
       "Sunset-lit doorways and warm walls pair with v2.9.0 emissive paint — match glow intensity to the lit object, not max emissive everywhere.",
@@ -490,14 +492,14 @@ export const maps: GameMap[] = [
   {
     slug: "shopping-mall",
     name: "Shopping Mall",
-    tagline: "Indoor mall · Newest official map",
+    tagline: "Indoor mall · 17th official",
     difficulty: "Hard",
     playerCount: "4–12 players",
     themeColor: "#C45C26",
     accentColor: "#F4D35E",
     imageUrl: MAP_IMAGES["shopping-mall"],
     description:
-      "Official indoor mall map added in v3.9.0 (August 16, 2026 per Steam News / LEMORION X). Japanese outlets Denfaminicogamer and Dengeki Online confirm the name ショッピングモール; it is not a collaboration map. The official still (consolepcgaming / LEMORION X) shows a bright multi-level atrium with a glass skylight, escalator, glass-railed balconies, a curved wooden handbag display, a bench beside a planter of green bushes, white tile floors, and paint-splattered structural pillars. mecchachameleon.net still treats exact coordinates as pending in-game verification. Early meta: prop-mimic in the planter/bench cluster shown in the still, dual-sample handbag-shelf colors, and skip open atrium floors. LEMORION said the next official map addition will be the last excluding collaborations.",
+      "Official indoor mall map added in v3.9.0 (August 16, 2026 per Steam News / LEMORION X). Japanese outlets Denfaminicogamer and Dengeki Online confirm the name ショッピングモール; it is not a collaboration map. The official still (consolepcgaming / LEMORION X) shows a bright multi-level atrium with a glass skylight, escalator, glass-railed balconies, a curved wooden handbag display, a bench beside a planter of green bushes, white tile floors, and paint-splattered structural pillars. Early meta: prop-mimic in the planter/bench cluster shown in the still, dual-sample handbag-shelf colors, and skip open atrium floors. v3.9.0 said the next official addition would be the last excluding collabs; 4.1.0 then shipped Kyoto + Art Museum as a pair, and Denfaminicogamer notes official maps will keep updating irregularly.",
     tips: [
       "The official still shows a hider crouched in the planter/bush cluster — sample leaf green + planter rim, not the white tile floor (consolepcgaming / LEMORION X).",
       "Curved wooden handbag shelves are dual-tone gold: sample bag color and wood separately; flat fills pop on bright mall lighting.",
@@ -515,6 +517,64 @@ export const maps: GameMap[] = [
       { name: "Escalator Landings", description: "Vertical seeker sight cones from glass-railed balconies." },
     ],
     colorPalette: ["#C45C26", "#F4D35E", "#E8E4DC", "#2C2C2C", "#5B8DEF"],
+  },
+  {
+    slug: "kyoto",
+    name: "Kyoto",
+    tagline: "Festival atrium · 18th official",
+    difficulty: "Hard",
+    playerCount: "4–12 players",
+    themeColor: "#C41E3A",
+    accentColor: "#F4D35E",
+    imageUrl: MAP_IMAGES["kyoto"],
+    description:
+      "Official map added in BIG UPDATE 4.1.0 (August 28, 2026 per Steam News / LEMORION X 🍁). Japanese outlets Denfaminicogamer confirm the name 京都. The official still (LEMORION tweet republished by Denfaminicogamer) shows a multi-level indoor plaza under a white lattice skylight: red torii rows, maple trees on a high balcony, bamboo in the foreground, wagasa umbrellas, orange lanterns, a glowing 大 character on a wide stair, an escalator to upper decks, and a right-wall grid of white lanterns. Early meta: prop-mimic in maple / torii / bamboo clutter and skip the open polished floor. Not a collaboration map. All pins remain experimental until lobby screenshots settle.",
+    tips: [
+      "Official still: red maple on the left balcony — sample leaf red + balcony stone, not the dark plaza tile (LEMORION / Denfaminicogamer).",
+      "Torii rows are dual-tone vermillion + shadow — flat red fills pop under the lattice lights.",
+      "Bamboo and wagasa clusters break outline; keep limbs inside the prop silhouette.",
+      "The glowing 大 stair is a meme magnet — seekers check it early; treat as transit or rotate after round one.",
+      "4.1.0 is not a collab map — it should appear in random lottery without the collaboration OFF default.",
+    ],
+    hotspots: [
+      { name: "Maple Balcony", description: "Official still's high-left maple — foliage + ledge dual-sample.", type: "hot" },
+      { name: "Torii / Bamboo Cluster", description: "Vermillion gates and bamboo stalks break outline at floor height.", type: "hot" },
+      { name: "Open Plaza Floor", description: "Polished dark tile + long sightlines — cross fast or avoid.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Central Plaza / 大 Stair", description: "Wide sightlines and meme traffic on the lit 大 character." },
+      { name: "Escalator Landings", description: "Vertical seeker cones from upper decks and the lattice roof." },
+    ],
+    colorPalette: ["#C41E3A", "#1A1A1A", "#F4E8C1", "#2E8B57", "#8B0000"],
+  },
+  {
+    slug: "art-museum",
+    name: "Art Museum",
+    tagline: "Official 美術館 · 19th official",
+    difficulty: "Hard",
+    playerCount: "4–12 players",
+    themeColor: "#C4A35A",
+    accentColor: "#F5F0E6",
+    imageUrl: MAP_IMAGES["art-museum"],
+    description:
+      "Official map added in BIG UPDATE 4.1.0 (August 28, 2026 per Steam News / LEMORION X 🎨). Japanese outlets Denfaminicogamer confirm the name 美術館. It is not a collaboration map and is not the Steam Workshop ART GALLERY by Popunia — DualShockers and skypenguin.net already mapped that workshop stage (Mona Lisa, Last Supper, darker canvases). Treat official 美術館 pins as experimental until LEMORION posts a dedicated still; early hide theory follows museum logic: paint into canvases, dual-sample frame + wall, prefer darker paintings, skip open gallery floors.",
+    tips: [
+      "Do not confuse this official map with Workshop ART GALLERY (Popunia) or Workshop Art Museum (id 3752392092).",
+      "skypenguin.net on museum layouts: eyedrop the painting you touch; darker canvas regions hide better than bright highlights.",
+      "DualShockers workshop guide: smaller lesser-known paintings often beat giant canvases whose silhouette reads human at range.",
+      "Sculpture plinths and gilded frames reward compact poses; white gallery walls are transit only.",
+      "4.1.0 is not a collab map — it should appear in random lottery without the collaboration OFF default.",
+    ],
+    hotspots: [
+      { name: "Canvas / Frame Seams", description: "Paint-into-artwork dual-sample — workshop museum analog pending official still.", type: "hot" },
+      { name: "Sculpture Plinths", description: "Pedestal clusters break outline at crouch height.", type: "hot" },
+      { name: "Open Gallery Floor", description: "Bright floors + long sightlines — cross fast or avoid.", type: "danger" },
+    ],
+    dangerZones: [
+      { name: "Lit Gallery Center", description: "Spotlight fronts expose value mismatch on pale walls." },
+      { name: "Giant Canvas Fronts", description: "Large paintings read human-shaped at range (skypenguin analog)." },
+    ],
+    colorPalette: ["#C4A35A", "#F5F0E6", "#2C2C2C", "#8B4513", "#5C4033"],
   },
 ];
 

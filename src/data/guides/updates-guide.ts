@@ -6,11 +6,19 @@ export const updatesGuide: Guide = {
   category: "Mechanics",
   readTime: "10 min",
   excerpt:
-    "Meccha Chameleon patch history: v3.9.1 emote paging, v3.9.0 Shopping Mall, v3.8.0 Mo Eeyo / BAN, v3.7.x jump and Deep Sea OOB, v3.6 Deep Sea, and what to re-test after each update.",
+    "Meccha Chameleon patch history: v4.1.0 Kyoto / Art Museum / join codes, v4.0.0 Petit Chameleon, v3.9.1 emote paging, v3.9.0 Shopping Mall, and what to re-test after each update.",
   seoKeywords: [
     "update",
     "patch notes",
     "version",
+    "v4.1.0",
+    "v4.0.0",
+    "Kyoto",
+    "京都",
+    "Art Museum",
+    "美術館",
+    "Petit Chameleon",
+    "join code",
     "v3.9.1",
     "v3.9.0",
     "Shopping Mall",
@@ -55,6 +63,31 @@ export const updatesGuide: Guide = {
       id: "why-updates-matter",
       heading: "Why Patch Notes Matter for Hiders",
       body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
+    },
+    {
+      id: "v410",
+      heading: "v4.1.0 — Kyoto, Art Museum, Join Codes & Greece/Egypt Rework",
+      body: "Steam News BIG UPDATE 4.1.0 (August 28, 2026): official maps Kyoto (京都) and Art Museum (美術館); Greece and Egypt reworked; legacy server browser replaced by 5-character alphanumeric join codes (verifiable in-game); in-progress public rooms hidden by default (options toggle); server elapsed time; match ends if hunter count hits 0 while hunters wait; player-count 0 display fix; 1-second taunt cooldown; forced-taunt minimum 1s → 5s; painting network −40%; FPS cap 239 → 240; ammo settings persist between matches; possible mid-game crash fix; voice-toggle SFX; region tag required; stick paint vs framerate / upward bias; hider camera; options-menu hitch. Denfaminicogamer / consolepcgaming cover the same day. Post-update troubleshooting: Problems After v4.0–4.1.",
+    },
+    {
+      id: "v402",
+      heading: "v4.0.2 — Network Usage Cut ~50%",
+      body: "Steam News Update 4.0.2 (August 25, 2026): reduced network usage by approximately 50%; adjusted display of certain controller operation guides. No maps. Pair with 4.1.0's additional 40% painting-network cut.",
+    },
+    {
+      id: "v401",
+      heading: "v4.0.1 — Hunter Start TP & Free Camera",
+      body: "Steam News fix4.0.1 (August 24, 2026): hunters cannot crouch while waiting so round-start TP works; free-camera position shift mitigated. consolepcgaming covers both items.",
+    },
+    {
+      id: "v400-hotfix",
+      heading: "Hotfix (August 22) — Workshop Maps Auto-Update",
+      body: "Steam News Hotfix (August 22, 2026): mod maps now update automatically; all mods re-download only on the first launch after this hotfix. Expect a stall the first time you open the game — not a broken Workshop install.",
+    },
+    {
+      id: "v400",
+      heading: "v4.0.0 — Petit Chameleon (x0.5, Host-Gated)",
+      body: "Steam News update4.0.0 (August 20, 2026): Petit Chameleon (プチカメレオン) at x0.5 size — fourth body type after default, Cube, and Plump; host must allow it. Fixes: floating off the ground; rare crouch-elimination miss; stuck locations (no map named). Denfaminicogamer / 4gamer: public lobbies may leave Petit off because smaller bodies are harder to find. Post-update troubleshooting: Problems After v4.0–4.1.",
     },
     {
       id: "v391",

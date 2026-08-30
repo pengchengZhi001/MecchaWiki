@@ -21,6 +21,7 @@
     "fetch:exit-8": "node scripts/fetch-exit-8-images.mjs",
     "fetch:deep-sea": "node scripts/fetch-deep-sea-images.mjs",
     "fetch:shopping-mall": "node scripts/fetch-shopping-mall-images.mjs",
+    "fetch:kyoto-art-museum": "node scripts/fetch-kyoto-art-museum-images.mjs",
     "check:dup-images": "node scripts/check-dup-spots.mjs",
     "sync:workshop": "powershell -ExecutionPolicy Bypass -File scripts/sync-workshop.ps1"
   },

@@ -20,6 +20,8 @@ export const metadata: Metadata = createMetadata({
     "all maps",
     "hiding spots",
     "Mansion hiding spots",
+    "Kyoto",
+    "Art Museum",
     "workshop maps",
     "map guide",
   ],

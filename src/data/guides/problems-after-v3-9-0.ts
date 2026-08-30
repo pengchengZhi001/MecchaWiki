@@ -98,7 +98,7 @@ export const problemsAfterV390Guide: Guide = {
     {
       id: "next",
       heading: "Still Broken?",
-      body: "Version mismatch and auth token failures remain the top lobby killers on every major bump — Can't Join Lobby and Authentication Token guides. Early-August Deep Sea / settings / crowd FPS: Problems After v3.6. Exit 8 / friend search / voice: Problems After v3.4–3.5. Patch hub lists every high-priority symptom for the current build.",
+      body: "Version mismatch and auth token failures remain the top lobby killers on every major bump — Can't Join Lobby and Authentication Token guides. Late-August Kyoto / join codes / Petit: Problems After v4.0–4.1. Early-August Deep Sea / settings / crowd FPS: Problems After v3.6. Exit 8 / friend search / voice: Problems After v3.4–3.5. Patch hub lists every high-priority symptom for the current build.",
     },
   ],
 };

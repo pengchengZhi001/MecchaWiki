@@ -44,7 +44,7 @@ export const fixCantJoinLobbyGuide: Guide = {
     {
       id: "stale-invites",
       heading: "Step 3 — Fresh Room, Not Stale Invites",
-      body: "Many players report Steam invites failing after the host changes map, password, or privacy settings. Old invites point at dead sessions. Fix: host recreates the room, sends a new invite, and friends accept from the Steam overlay while at the main menu — not while stuck inside another lobby. Steam thread \"IN-GAME INVITE NOT WORKING\" confirms invites work more reliably when friends stay on the Find Server screen before the host sends in-game invites via Esc. If invites keep failing, skip them entirely: host sets a unique server name, friends open Find Server → Search Public Servers, and join by name through the in-game browser. Community reports describe black screens and auth failures specifically when accepting desktop Steam invites mid-session.",
+      body: "Many players report Steam invites failing after the host changes map, password, or privacy settings. Old invites point at dead sessions. Fix: host recreates the room, sends a new invite, and friends accept from the Steam overlay while at the main menu — not while stuck inside another lobby. After v4.1.0 the legacy server-name browser is gone: the host reads the 5-character alphanumeric join code in-game and friends search that code (Steam News / consolepcgaming). Older guides that mention 6-digit lobby IDs or Find Server by name are outdated. Confirm the code in-game; public search hides in-progress rooms by default (options toggle). Steam thread \"IN-GAME INVITE NOT WORKING\" still applies — invites work more reliably when friends stay on the join screen. If invites keep failing, skip them entirely and use the join code. Full 4.1.0 walkthrough: Problems After v4.0–4.1.",
     },
     {
       id: "eula-agreement",
@@ -59,7 +59,7 @@ export const fixCantJoinLobbyGuide: Guide = {
     {
       id: "empty-browser",
       heading: "Empty Server Browser — Not Always Broken",
-      body: "After v1.1.0, in-progress games may not appear in public search — you only see joinable lobbies. An empty browser during off-peak hours can mean no open rooms, not dead multiplayer. Toggle Search Public Servers, clear name filters, retry during peak evening hours, or host your own public room for a few minutes to populate it.",
+      body: "After v4.1.0, in-progress games are hidden from public search by default (options toggle) so the list prefers rooms still waiting for hunters. An empty browser during off-peak hours can mean no open rooms, not dead multiplayer. You must select a region tag. Search by the 5-character join code rather than the room title. Toggle Search Public Servers, clear filters, retry during peak evening hours, or host your own public room for a few minutes to populate it.",
     },
     {
       id: "network-last",
@@ -69,7 +69,7 @@ export const fixCantJoinLobbyGuide: Guide = {
     {
       id: "quick-checklist",
       heading: "Quick Checklist",
-      body: "Everyone closes game and restarts Steam → confirm no pending update → host creates new room → fresh invites or server browser join → test official map before workshop → verify game files if still failing → match download regions → change host once → firewall/VPN only as last resort. Most casual join failures resolve without router port forwarding.",
+      body: "Everyone closes game and restarts Steam → confirm no pending update → host creates new room → fresh invites or 5-character join code → test official map before workshop → verify game files if still failing → match download regions → change host once → firewall/VPN only as last resort. Most casual join failures resolve without router port forwarding.",
     },
   ],
 };

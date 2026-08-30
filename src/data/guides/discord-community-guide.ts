@@ -61,7 +61,7 @@ export const discordCommunityGuide: Guide = {
     {
       id: "finding-groups",
       heading: "Finding Friend Groups & Private Lobbies",
-      body: "Best path for friends: Steam invite via Esc → Friends List (see Private Lobby Guide). For pickup groups: Discord LFG channels, recognizable public server names in Find Server, or streamer communities with stated rules. Avoid public lobbies for learning paint basics — griefing and spectator leaks are common (Public Lobby Guide). Password Mansion rooms with 4–6 players beat random queue for first ten hours.",
+      body: "Best path for friends: Steam invite via Esc → Friends List (see Private Lobby Guide). For pickup groups: Discord LFG channels, the host's v4.1.0 5-character join code, or streamer communities with stated rules. Avoid public lobbies for learning paint basics — griefing and spectator leaks are common (Public Lobby Guide). Password Mansion rooms with 4–6 players beat random queue for first ten hours.",
     },
     {
       id: "reporting-fair-play",
