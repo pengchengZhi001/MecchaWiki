@@ -303,16 +303,17 @@ export const maps: GameMap[] = [
     accentColor: "#2E5A4C",
     imageUrl: MAP_IMAGES["egypt"],
     description:
-      "Official desert / tomb-themed map added in v2.7.0 (July 12, 2026 per Steam News). Sandy stone, pillar shadows, hieroglyph walls, and prop clusters reward value-matched paints over bright accent mistakes. Early community consensus: vertical pillars and alcove depth beat open sand floors — re-verify spots as lobby meta settles. Steam News 4.1.0 (August 28, 2026) reworked Egypt — pre-4.1.0 pillar/alcove pins need a fresh scout.",
+      "Official desert / tomb-themed map added in v2.7.0 (July 12, 2026 per Steam News). Sandy stone, pillar shadows, hieroglyph walls, and prop clusters reward value-matched paints over bright accent mistakes. GameWith (updated Sep 4, 2026): Pharaoh coffins and Bastet statues pack the tomb, and uneven (でこぼこ) walls create dead angles. Early community consensus: vertical pillars and alcove depth beat open sand floors. Steam News 4.1.0 (August 28, 2026) reworked Egypt — pre-4.1.0 pillar/alcove pins need a fresh scout.",
     tips: [
       "Sample stone and sand separately — warm floor vs cool pillar shadow are different values.",
       "Pillar and statue plinths sit above default seeker eye height when you climb during prep.",
       "Hieroglyph walls need pattern-aligned poses; flat fill on busy relief reads as a sticker.",
-      "Open sand corridors are transit only — camp clutter or vertical geometry instead.",
+      "GameWith: hide in Bastet / coffin clutter or uneven-wall nooks — open sand corridors are transit only.",
+      "Re-scout every Egypt pin after the 4.1.0 rework — geometry may have shifted.",
     ],
     hotspots: [
       { name: "Pillar Shadow Rings", description: "Column bases and mid-height wraps hide outline in dark stone.", type: "hot" },
-      { name: "Sarcophagus / Alcove Depth", description: "Recessed props break silhouette from foyer angles.", type: "hot" },
+      { name: "Bastet / Sarcophagus Cluster", description: "GameWith coffin + Bastet props break silhouette from foyer angles.", type: "hot" },
       { name: "Open Sand Floor", description: "Bright value + no clutter — seekers clear first.", type: "danger" },
     ],
     dangerZones: [
@@ -477,6 +478,7 @@ export const maps: GameMap[] = [
       "Dual-sample jellyfish bells / tentacles and tropical fish schools — flat single fills read as stickers against moving color noise (Denfaminicogamer theme).",
       "Open mid-water blue is transit only; commit to reef clusters or wreck piles during prep.",
       "Unicorn statue and bright props are meme magnets — rotate early once seekers clear the joke landmark.",
+      "GameWith (Sep 4, 2026): seafloor wrecks and treasure chests are hide targets besides floating clownfish and jellyfish.",
     ],
     hotspots: [
       { name: "Coral / Clam Seafloor", description: "Dense reef props break outline when dual-sampled.", type: "hot" },
@@ -506,10 +508,11 @@ export const maps: GameMap[] = [
       "Open atrium tile and escalator landings are transit only — glass balcony rails give vertical sight cones for seekers.",
       "Paint splatters on white pillars can work as camouflage only if you match both the splatter hue AND the surrounding white — one-sample fills read as stickers.",
       "v3.9.0 is not a collab map — it should appear in random lottery without the collaboration OFF default that hits HIKAKIN / Banban / Exit 8.",
+      "GameWith (Sep 4, 2026): goods pile on the floor and shelves — the mall is compact but easy to mimic. Prop-mimic a merchandise stack instead of open atrium tile.",
     ],
     hotspots: [
       { name: "Planter / Bench Recess", description: "Official still's foreground hide — bushes + bench break outline.", type: "hot" },
-      { name: "Handbag Display Shelf", description: "Curved wood + colorful bags for dual-tone prop mimics.", type: "hot" },
+      { name: "Handbag / Floor Merchandise", description: "Curved wood shelves plus GameWith floor-and-shelf goods piles.", type: "hot" },
       { name: "Central Atrium Floor", description: "Bright white tile + long sightlines — cross fast or avoid.", type: "danger" },
     ],
     dangerZones: [
@@ -521,24 +524,25 @@ export const maps: GameMap[] = [
   {
     slug: "kyoto",
     name: "Kyoto",
-    tagline: "Festival atrium · 18th official",
+    tagline: "Kyoto Station atrium · 18th official",
     difficulty: "Hard",
     playerCount: "4–12 players",
     themeColor: "#C41E3A",
     accentColor: "#F4D35E",
     imageUrl: MAP_IMAGES["kyoto"],
     description:
-      "Official map added in BIG UPDATE 4.1.0 (August 28, 2026 per Steam News / LEMORION X 🍁). Japanese outlets Denfaminicogamer confirm the name 京都. The official still (LEMORION tweet republished by Denfaminicogamer) shows a multi-level indoor plaza under a white lattice skylight: red torii rows, maple trees on a high balcony, bamboo in the foreground, wagasa umbrellas, orange lanterns, a glowing 大 character on a wide stair, an escalator to upper decks, and a right-wall grid of white lanterns. Early meta: prop-mimic in maple / torii / bamboo clutter and skip the open polished floor. Not a collaboration map. All pins remain experimental until lobby screenshots settle.",
+      "Official map added in BIG UPDATE 4.1.0 (August 28, 2026 per Steam News / LEMORION X 🍁). Japanese outlets Denfaminicogamer confirm the name 京都. 4gamer (Aug 31) and GameWith (Sep 4) describe a Kyoto Station motif packed with Japanese objects — torii and gardens (庭園) inside the hall, with lots of vertical volume. The official still (LEMORION tweet republished by Denfaminicogamer) shows a multi-level indoor plaza under a white lattice skylight: red torii rows, maple trees on a high balcony, bamboo in the foreground, wagasa umbrellas, orange lanterns, festival stalls, a glowing 大 character on a wide stair, an escalator to upper decks, and a right-wall grid of white lanterns. Early meta: prop-mimic in maple / garden / torii / stall clutter, use height, and skip the open polished floor. Not a collaboration map. All pins remain experimental until lobby screenshots settle.",
     tips: [
       "Official still: red maple on the left balcony — sample leaf red + balcony stone, not the dark plaza tile (LEMORION / Denfaminicogamer).",
+      "GameWith: gardens and torii sit inside the station hall — hedge/planter dual-samples beat open concourse tile.",
+      "GameWith: vertical space is large — escalator decks and upper landings are part of the hide loop, not just the plaza floor.",
       "Torii rows are dual-tone vermillion + shadow — flat red fills pop under the lattice lights.",
-      "Bamboo and wagasa clusters break outline; keep limbs inside the prop silhouette.",
       "The glowing 大 stair is a meme magnet — seekers check it early; treat as transit or rotate after round one.",
       "4.1.0 is not a collab map — it should appear in random lottery without the collaboration OFF default.",
     ],
     hotspots: [
-      { name: "Maple Balcony", description: "Official still's high-left maple — foliage + ledge dual-sample.", type: "hot" },
-      { name: "Torii / Bamboo Cluster", description: "Vermillion gates and bamboo stalks break outline at floor height.", type: "hot" },
+      { name: "Maple Balcony / Station Garden", description: "Official still maple plus GameWith 庭園 hedges — foliage + stone dual-sample.", type: "hot" },
+      { name: "Torii / Stall Cluster", description: "Vermillion gates, bamboo, and wooden festival booths break outline at floor height.", type: "hot" },
       { name: "Open Plaza Floor", description: "Polished dark tile + long sightlines — cross fast or avoid.", type: "danger" },
     ],
     dangerZones: [
@@ -557,17 +561,17 @@ export const maps: GameMap[] = [
     accentColor: "#F5F0E6",
     imageUrl: MAP_IMAGES["art-museum"],
     description:
-      "Official map added in BIG UPDATE 4.1.0 (August 28, 2026 per Steam News / LEMORION X 🎨). Japanese outlets Denfaminicogamer confirm the name 美術館. It is not a collaboration map and is not the Steam Workshop ART GALLERY by Popunia — DualShockers and skypenguin.net already mapped that workshop stage (Mona Lisa, Last Supper, darker canvases). Treat official 美術館 pins as experimental until LEMORION posts a dedicated still; early hide theory follows museum logic: paint into canvases, dual-sample frame + wall, prefer darker paintings, skip open gallery floors.",
+      "Official map added in BIG UPDATE 4.1.0 (August 28, 2026 per Steam News / LEMORION X 🎨). Japanese outlets Denfaminicogamer confirm the name 美術館. 4gamer (Aug 31): world-famous paintings hang alongside objects from Meccha Chameleon itself. GameWith (Sep 4): tourist-attraction miniatures fill the halls besides paintings. A Steam announcement comment (Nezumi, Aug 28) called out dioramas plus paintings and a pretty small footprint — one player's impression, not a layout sheet. It is not a collaboration map and is not the Steam Workshop ART GALLERY by Popunia. Treat official 美術館 pins as experimental until LEMORION posts a dedicated still; early hide theory: paint into canvases, mimic in-game exhibit props and miniature dioramas, skip open gallery floors.",
     tips: [
       "Do not confuse this official map with Workshop ART GALLERY (Popunia) or Workshop Art Museum (id 3752392092).",
-      "skypenguin.net on museum layouts: eyedrop the painting you touch; darker canvas regions hide better than bright highlights.",
-      "DualShockers workshop guide: smaller lesser-known paintings often beat giant canvases whose silhouette reads human at range.",
-      "Sculpture plinths and gilded frames reward compact poses; white gallery walls are transit only.",
-      "4.1.0 is not a collab map — it should appear in random lottery without the collaboration OFF default.",
+      "4gamer: eyedrop world-famous paintings you touch; also prop-mimic the Meccha objects on display — seekers expect canvases first.",
+      "GameWith: tourist-attraction miniatures / dioramas reward compact crouch poses on plinths.",
+      "skypenguin.net analog: darker canvas regions hide better than bright highlights; DualShockers analog: smaller frames beat giant canvases at range.",
+      "White gallery floors are transit only. 4.1.0 is not a collab map — it should appear in random lottery without the collaboration OFF default.",
     ],
     hotspots: [
-      { name: "Canvas / Frame Seams", description: "Paint-into-artwork dual-sample — workshop museum analog pending official still.", type: "hot" },
-      { name: "Sculpture Plinths", description: "Pedestal clusters break outline at crouch height.", type: "hot" },
+      { name: "World Painting / Frame Seams", description: "4gamer world-famous canvases — eyedrop the painting, not the wall.", type: "hot" },
+      { name: "Meccha Exhibit / Miniatures", description: "In-game objects plus tourist-attraction dioramas (4gamer / GameWith).", type: "hot" },
       { name: "Open Gallery Floor", description: "Bright floors + long sightlines — cross fast or avoid.", type: "danger" },
     ],
     dangerZones: [

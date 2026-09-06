@@ -258,6 +258,14 @@ export const spotDescriptions: Record<string, string> = {
     "Shadow recess under upper decks — sample dark tile plus underside stone.",
   "kyoto-open-plaza":
     "Open polished plaza floor under the lattice skylight — low survival; transit only.",
+  "kyoto-station-garden":
+    "Kyoto Station garden / maple-hedge planter — GameWith 庭園 hide; sample leaf plus stone rim.",
+  "kyoto-festival-stall":
+    "Wooden festival booth from the official still — 4gamer Japanese-object clutter; dual-sample lattice wood.",
+  "kyoto-upper-escalator":
+    "Upper escalator deck — GameWith vertical-volume hide; sample landing stone plus underside shadow.",
+  "kyoto-shamisen-billboard":
+    "Left-wall shamisen digital billboard — meme traffic; experimental transit hide.",
   "art-museum-canvas-blend":
     "Canvas blend on official Art Museum — eyedrop the painting you touch; experimental pending official still.",
   "art-museum-sculpture-plinth":
@@ -274,6 +282,20 @@ export const spotDescriptions: Record<string, string> = {
     "Open gallery floor — bright sightlines; meme camp only.",
   "art-museum-spotlight-front":
     "Spotlight-lit gallery front — value mismatch on pale walls; experimental warning pin.",
+  "art-museum-world-painting":
+    "World-famous painting wall on official 美術館 — 4gamer; eyedrop the canvas, not Workshop ART GALLERY.",
+  "art-museum-meccha-exhibit":
+    "In-game Meccha objects displayed as museum exhibits — 4gamer; prop-mimic familiar props.",
+  "art-museum-miniature-diorama":
+    "Tourist-attraction miniature / diorama cluster — GameWith + Nezumi Steam comment; compact plinth pose.",
+  "egypt-bastet-statue":
+    "Bastet statue cluster on Egypt — GameWith Pharaoh/Bastet props; re-scout after the 4.1.0 rework.",
+  "egypt-uneven-wall-nook":
+    "Uneven tomb-wall dead angle — GameWith でこぼこ relief; dual-sample highlight and recess.",
+  "deep-sea-treasure-chest":
+    "Seafloor treasure chest beside wreck clutter — GameWith 宝箱; dual-sample wood/gold and sand.",
+  "shopping-mall-floor-merchandise":
+    "Floor merchandise piles on Shopping Mall — GameWith compact-mall goods stacks, not atrium tile.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":

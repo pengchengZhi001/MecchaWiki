@@ -42,6 +42,14 @@ export const problemsAfterV410Guide: Guide = {
       url: "https://news.denfaminicogamer.jp/news/2608283n",
     },
     {
+      name: "4gamer — 京都駅モチーフ / 世界の絵画",
+      url: "https://www.4gamer.net/games/007/G100712/20260831021/",
+    },
+    {
+      name: "GameWith — map list (updated 2026-09-04)",
+      url: "https://gamewith.jp/gamedb/17059/articles/61446",
+    },
+    {
       name: "consolepcgaming.com — update4.0.0 Petit Chameleon",
       url: "https://consolepcgaming.com/meccha-chameleons-update4-0-0-notes-add-petit-chameleon-and-three-fixes/",
     },
@@ -81,7 +89,7 @@ export const problemsAfterV410Guide: Guide = {
     {
       id: "kyoto-art-museum",
       heading: "Kyoto & Art Museum — Early Meta",
-      body: "Official still (LEMORION X / Denfaminicogamer): Kyoto is a multi-level indoor plaza under a white lattice skylight — red torii, maple on a high balcony, bamboo, wagasa umbrellas, orange lanterns, a glowing 大 stair, escalator, and a lantern-grid wall. Early meta: maple / torii / bamboo dual-samples, skip open plaza tile and the 大 meme stair. Art Museum (美術館) has no dedicated still yet; do not confuse it with Workshop ART GALLERY (Popunia) or Workshop Art Museum. Museum hide analog (skypenguin.net / DualShockers): paint into canvases, prefer darker paintings and smaller frames, skip open gallery floors. Greece and Egypt were reworked in the same patch — re-scout old pillar, pit-rim, and alcove pins. Browse /maps/kyoto, /maps/art-museum, and /hidden-spots — treat every new pin as experimental.",
+      body: "Official still (LEMORION X / Denfaminicogamer): Kyoto is a multi-level indoor plaza under a white lattice skylight — red torii, maple on a high balcony, bamboo, wagasa umbrellas, orange lanterns, festival stalls, a glowing 大 stair, escalator, and a lantern-grid wall. 4gamer (Aug 31) / GameWith (Sep 4): Kyoto Station motif with gardens (庭園) inside the hall and lots of vertical volume — use upper decks, not only plaza floor. Early meta: maple / garden / torii / stall dual-samples, skip open plaza tile and the 大 meme stair. Art Museum (美術館): 4gamer says world-famous paintings plus in-game Meccha objects on display; GameWith adds tourist-attraction miniatures; a Steam comment (Nezumi) noted dioramas and a small footprint. Do not confuse it with Workshop ART GALLERY (Popunia). Greece and Egypt were reworked in the same patch — GameWith still lists Pharaoh coffins, Bastet statues, and uneven tomb walls on Egypt, and Santorini blue-white on Greece; re-scout old pins. Browse /maps/kyoto, /maps/art-museum, and /hidden-spots — treat every new pin as experimental.",
     },
     {
       id: "petit-chameleon",
@@ -91,7 +99,7 @@ export const problemsAfterV410Guide: Guide = {
     {
       id: "crashes-network-taunts",
       heading: "Crashes, Network, Taunts, Ammo & Hunter Start",
-      body: "4.1.0 lists a possible mid-game crash fix; if you still crash, Steam's August 26 Japanese post asks for Discord reports (https://discord.gg/huyTHb2zk7) so LEMORION can reproduce — do not follow random Discord 'fix' links from the late-July malware scare. 4.0.2 cuts general network usage ~50%; 4.1.0 cuts painting network data 40%. Ammo settings no longer reset every match after 4.1.0. Taunts now have a 1-second cooldown and the forced-taunt minimum is 5 seconds (was 1). fix4.0.1: hunters cannot crouch while waiting so round-start TP works; free camera shifting your position is mitigated. Stick paint speed no longer scales with FPS; upward stick bias is fixed. If voice toggle feels silent, 4.1.0 adds an SFX when you change voice state.",
+      body: "4.1.0 lists a possible mid-game crash fix; Steam News as of September 6, 2026 has no 4.1.1 follow-up. If you still crash, Steam's August 26 Japanese post asks for Discord reports (https://discord.gg/huyTHb2zk7) so LEMORION can reproduce — do not follow random Discord 'fix' links from the late-July malware scare. Friends who still type a 6-digit lobby ID from older third-party guides will miss the room — codes are 5 alphanumeric characters, verified in-game. 4.0.2 cuts general network usage ~50%; 4.1.0 cuts painting network data 40%. Ammo settings no longer reset every match after 4.1.0. Taunts now have a 1-second cooldown and the forced-taunt minimum is 5 seconds (was 1) — Steam announcement comments mixed on this; it is by design, not a bug. GameWith comments keep asking for Switch; Platforms guide: Steam PC only. BLOOMIN' KIDS real-world collab (Denfaminicogamer Aug 29) still has no date/ticket sheet as of Sep 6 — watch LEMORION X, not Discord rumor links. fix4.0.1: hunters cannot crouch while waiting so round-start TP works; free camera shifting your position is mitigated. Stick paint speed no longer scales with FPS; upward stick bias is fixed. If voice toggle feels silent, 4.1.0 adds an SFX when you change voice state.",
     },
     {
       id: "next",

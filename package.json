@@ -22,6 +22,7 @@
     "fetch:deep-sea": "node scripts/fetch-deep-sea-images.mjs",
     "fetch:shopping-mall": "node scripts/fetch-shopping-mall-images.mjs",
     "fetch:kyoto-art-museum": "node scripts/fetch-kyoto-art-museum-images.mjs",
+    "fetch:sep6-spots": "node scripts/fetch-sep6-spot-images.mjs",
     "check:dup-images": "node scripts/check-dup-spots.mjs",
     "sync:workshop": "powershell -ExecutionPolicy Bypass -File scripts/sync-workshop.ps1"
   },

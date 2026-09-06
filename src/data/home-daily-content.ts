@@ -128,6 +128,11 @@ const DAILY_TIPS = [
     sourceUrl: "https://news.denfaminicogamer.jp/news/2608283n",
   },
   {
+    tip: "v4.1.0 Kyoto: GameWith frames a Kyoto Station hall with gardens and vertical decks — sample maple/garden stone, not the plaza tile (4gamer / GameWith / Denfaminicogamer).",
+    source: "GameWith",
+    sourceUrl: "https://gamewith.jp/gamedb/17059/articles/61446",
+  },
+  {
     tip: "v4.1.0 join codes: friends search the 5-character in-game code — the old server-name browser is gone (Steam News / consolepcgaming).",
     source: "consolepcgaming.com",
     sourceUrl: "https://consolepcgaming.com/meccha-chameleon-4-1-0-brings-2-new-maps-and-join-code-search/",
@@ -138,9 +143,9 @@ const DAILY_TIPS = [
     sourceUrl: "https://www.4gamer.net/games/007/G100712/20260820044/",
   },
   {
-    tip: "Art Museum (official 美術館) is not Workshop ART GALLERY — paint into canvases and prefer darker paintings (skypenguin.net analog / Steam News).",
-    source: "skypenguin.net",
-    sourceUrl: "https://skypenguin.net/2026/06/25/post-155004/",
+    tip: "Art Museum (official 美術館) is not Workshop ART GALLERY — 4gamer: world paintings plus in-game Meccha exhibits; GameWith: tourist-attraction miniatures.",
+    source: "4gamer",
+    sourceUrl: "https://www.4gamer.net/games/007/G100712/20260831021/",
   },
   {
     tip: "v3.8.0 Mo Eeyo (もうええよ) skips hide time and answer-reveal only if everyone votes yes — not a majority (Denfaminicogamer / Steam News).",
@@ -212,13 +217,13 @@ const WEEKLY_CHALLENGES = [
   },
   {
     title: "Scout Kyoto without plaza camping",
-    description: "Use Maple Balcony Tree or Torii Gate Row on the v4.1.0 map. Dual-sample red foliage/gates — official still landmarks beat the glowing 大 stair (LEMORION / Denfaminicogamer).",
-    spotSlug: "kyoto-maple-balcony",
+    description: "Use Maple Balcony Tree or Station Garden Hedge on the v4.1.0 map. Dual-sample red foliage — GameWith station gardens beat the glowing 大 stair (4gamer / GameWith).",
+    spotSlug: "kyoto-station-garden",
   },
   {
     title: "Scout Art Museum without floor camping",
-    description: "Use Canvas Blend or Dark Canvas Region on the v4.1.0 official 美術館. Eyedrop the painting you touch — not Workshop ART GALLERY (skypenguin.net analog).",
-    spotSlug: "art-museum-canvas-blend",
+    description: "Use World-Famous Painting Wall or Landmark Miniature Diorama on the v4.1.0 official 美術館. Eyedrop the canvas or diorama — not Workshop ART GALLERY (4gamer / GameWith).",
+    spotSlug: "art-museum-world-painting",
   },
 ] as const;
 

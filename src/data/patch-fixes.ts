@@ -150,9 +150,15 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
-      symptom: "Can't join friends after updating",
-      searchTerms: ["can't join lobby", "version mismatch", "black screen join"],
-      fixGuideSlug: "fix-cant-join-lobby",
+      symptom: "Older guide said 6-digit lobby ID — code does not work",
+      searchTerms: ["6-digit", "6 digit join", "lobby ID", "join code 5 character", "server name search"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "high",
+    },
+    {
+      symptom: "Still crashing mid-match after 4.1.0's crash fix",
+      searchTerms: ["still crash", "4.1.0 crash discord", "huyTHb2zk7", "crash after patch"],
+      fixGuideSlug: "problems-after-v4-1-0",
       priority: "high",
     },
     {
@@ -433,8 +439,8 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
-    "Kyoto maple / torii / bamboo / lantern-wall pins — brand-new v4.1.0 map; official still landmarks only, all experimental",
-    "Art Museum canvas / frame / plinth pins — official 美術館 still pending; do not confuse with Workshop ART GALLERY",
+    "Kyoto maple / garden / torii / stall / upper-deck pins — 4gamer Kyoto Station motif + GameWith 庭園 / vertical volume; all experimental",
+    "Art Museum world-painting / Meccha-exhibit / miniature-diorama pins — 4gamer + GameWith; do not confuse with Workshop ART GALLERY",
     "Greece and Egypt after the 4.1.0 rework — pre-4.1.0 pit-rim, pillar, and alcove pins need a fresh scout",
     "Petit Chameleon (x0.5) hitbox after 4.0.0 — wall-flat and prop-mimic coverage changes when the host enables it",
     "Join via 5-character code after 4.1.0 — old server-name browser is gone",

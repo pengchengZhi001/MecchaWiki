@@ -484,7 +484,7 @@ export const demandLibrary: DemandEntry[] = [
     status: "done",
     href: "/guides/platforms-guide",
     category: "Setup",
-    notes: "SlashSkill + Insider Gaming — PC-only Steam exclusive July 2026",
+    notes: "SlashSkill + Insider Gaming — PC-only Steam exclusive; GameWith Sep 2026 comments still ask for Switch 2",
   },
   {
     question: "Why Did Meccha Chameleon Go Viral / 15 Million Sales?",
@@ -676,7 +676,7 @@ export const demandLibrary: DemandEntry[] = [
     status: "done",
     href: "/maps/kyoto",
     category: "Maps",
-    notes: "v4.1.0 18th official — festival atrium; maple, torii, bamboo, 大 stair; spots experimental",
+    notes: "v4.1.0 18th official — Kyoto Station motif; gardens, torii, maple, stalls, vertical decks; spots experimental",
   },
   {
     question: "Art Museum Map / 美術館 Hiding Spots",
@@ -684,7 +684,7 @@ export const demandLibrary: DemandEntry[] = [
     status: "done",
     href: "/maps/art-museum",
     category: "Maps",
-    notes: "v4.1.0 19th official 美術館 — not Workshop ART GALLERY; canvas-blend analog",
+    notes: "v4.1.0 19th official 美術館 — world paintings, Meccha exhibits, miniatures; not Workshop ART GALLERY",
   },
   {
     question: "Problems After v4.0–4.1 — Kyoto / Join Code / Petit",
@@ -709,6 +709,20 @@ export const demandLibrary: DemandEntry[] = [
     href: "/guides/problems-after-v4-1-0",
     category: "Mechanics",
     notes: "v4.0.0 host-gated body type; 4gamer expects public lobbies to leave it off",
+  },
+  {
+    question: "BLOOMIN' KIDS Real-World Event / 福岡",
+    searchValue: 4,
+    status: "planned",
+    category: "Community",
+    notes: "Denfaminicogamer Aug 29: details 'next week'; still unpublished as of Sep 6 2026 — watch LEMORION X",
+  },
+  {
+    question: "Make it F2P / Price Debate After 4.1.0",
+    searchValue: 3,
+    status: "skip",
+    category: "Community",
+    notes: "Steam 4.1.0 comments + GameWith board — player debate, no official F2P plan",
   },
   {
     question: "Problems After v3.7–3.9 — Shopping Mall / Mo Eeyo / BAN",
