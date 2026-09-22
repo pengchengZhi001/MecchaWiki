@@ -293,7 +293,7 @@ export default async function GameWikiHomePage({ params }: Props) {
                 href={steamWikiHubPath}
                 className="rounded-lg px-4 py-2 text-sm font-medium text-accent hover:underline"
               >
-                All 50 wikis →
+                All 51 wikis →
               </Link>
             </div>
           </section>

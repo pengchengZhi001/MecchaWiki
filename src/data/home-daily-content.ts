@@ -143,9 +143,24 @@ const DAILY_TIPS = [
     sourceUrl: "https://www.4gamer.net/games/007/G100712/20260820044/",
   },
   {
-    tip: "Art Museum (official 美術館) is not Workshop ART GALLERY — 4gamer: world paintings plus in-game Meccha exhibits; GameWith: tourist-attraction miniatures.",
-    source: "4gamer",
-    sourceUrl: "https://www.4gamer.net/games/007/G100712/20260831021/",
+    tip: "v4.1.1 incoming voice is muted by default — unmute in settings; disable-voice is a new option, not a broken headset (Steam News / Nintendo Everything).",
+    source: "Steam News",
+    sourceUrl: "https://store.steampowered.com/news/app/4704690/view/698776157349216280",
+  },
+  {
+    tip: "Switch 2 hosted rooms temporarily cap at 10 players after 4.1.1 — have a Steam PC host for larger mixed lobbies (consolepcgaming / Game*Spark).",
+    source: "consolepcgaming.com",
+    sourceUrl: "https://consolepcgaming.com/meccha-chameleon-update-4-1-1-brings-voice-chat-controls-and-a-lower-switch-2-cap/",
+  },
+  {
+    tip: "Kyoto: go under the festival stall or behind the torii post — note.com 下・奥・裏 beats plaza-facing rims (note.com / 4gamer).",
+    source: "note.com",
+    sourceUrl: "https://note.com/imokotrader/n/nb92c40e3c9d7",
+  },
+  {
+    tip: "Art Museum: hide as gallery bench legs or under a diorama plinth — seekers scan world paintings first (note.com / GameWith).",
+    source: "note.com",
+    sourceUrl: "https://note.com/imokotrader/n/nb92c40e3c9d7",
   },
   {
     tip: "v3.8.0 Mo Eeyo (もうええよ) skips hide time and answer-reveal only if everyone votes yes — not a majority (Denfaminicogamer / Steam News).",
@@ -224,6 +239,21 @@ const WEEKLY_CHALLENGES = [
     title: "Scout Art Museum without floor camping",
     description: "Use World-Famous Painting Wall or Landmark Miniature Diorama on the v4.1.0 official 美術館. Eyedrop the canvas or diorama — not Workshop ART GALLERY (4gamer / GameWith).",
     spotSlug: "art-museum-world-painting",
+  },
+  {
+    title: "Hide under Kyoto clutter, not on it",
+    description: "Use Festival Stall Underside or Torii Post Shadow. note.com 下・奥・裏 — skip the plaza-facing rim (note.com / 4gamer).",
+    spotSlug: "kyoto-stall-underside",
+  },
+  {
+    title: "Art Museum bench legs, not canvas fronts",
+    description: "Use Gallery Bench Legs or Plinth Underside Shadow. Seekers scan world paintings first (note.com / GameWith).",
+    spotSlug: "art-museum-bench-leg",
+  },
+  {
+    title: "Scout Cherry Blossom Garden without path camping",
+    description: "Use Koi Pond Rim or Garden Bridge Rail on the Sep 9 Workshop map. Chinese-inspired garden, not official Kyoto — PC only (Steam Workshop).",
+    spotSlug: "cherry-blossom-koi-pond",
   },
 ] as const;
 

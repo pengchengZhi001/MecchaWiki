@@ -52,6 +52,7 @@ export default function RootLayout({
         <Popunder />
         <Footer />
         <Analytics />
+        <Autotag />
       </body>
     </html>
   );

@@ -90,7 +90,7 @@ export const fixGuideCatalog: FixGuideEntry[] = [
   },
   {
     slug: "problems-after-v4-1-0",
-    title: "v4.0–4.1 Update Problems — Kyoto / Art Museum / Join Code / Petit Fix Guide",
+    title: "v4.0–4.1.1 Update Problems — Switch 2 / Voice / Join Code / Kyoto Fix Guide",
     category: "Patch",
     searchValue: 5,
   },
@@ -137,12 +137,36 @@ export const fixGuideCatalog: FixGuideEntry[] = [
  * Banner shows on homepage when releasedAt is within PATCH_FIX_WINDOW_DAYS.
  */
 export const latestPatch: GamePatch = {
-  version: "v4.1.0",
-  releasedAt: "2026-08-28",
+  version: "v4.1.1",
+  releasedAt: "2026-09-16",
   headline:
-    "Kyoto + Art Museum maps, 5-character join codes, Greece/Egypt rework, Petit Chameleon (4.0.0), crash + network fixes",
-  steamNewsUrl: "https://store.steampowered.com/news/app/4704690",
+    "Voice-chat disable + mic icon, touch-screen paint, Switch 2 host cap 10, crash still under investigation — after Switch 2 launch + PC cross-play",
+  steamNewsUrl: "https://store.steampowered.com/news/app/4704690/view/698776157349216280",
   knownIssues: [
+    {
+      symptom: "Still crashing mid-match — 4.1.1 says crash is under investigation",
+      searchTerms: ["still crash", "4.1.1 crash", "crash under investigation", "huyTHb2zk7"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "high",
+    },
+    {
+      symptom: "Can't hear friends — incoming voice muted by default after 4.1.1",
+      searchTerms: ["voice muted", "can't hear voice", "disable voice chat", "mic icon", "4.1.1 voice"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "high",
+    },
+    {
+      symptom: "PC and Switch 2 friends can't join each other",
+      searchTerms: ["cross-play", "crossplay", "Switch 2 join PC", "hotfix 4.1.0 cross-play"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "high",
+    },
+    {
+      symptom: "Switch 2 lobby won't fill past 10 players",
+      searchTerms: ["Switch 2 10 players", "host cap 10", "12 to 10", "4.1.1 Switch"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "high",
+    },
     {
       symptom: "Can't find friends — old server browser is gone",
       searchTerms: ["join code", "5-character code", "server browser gone", "can't find server", "4.1.0"],
@@ -156,10 +180,16 @@ export const latestPatch: GamePatch = {
       priority: "high",
     },
     {
-      symptom: "Still crashing mid-match after 4.1.0's crash fix",
-      searchTerms: ["still crash", "4.1.0 crash discord", "huyTHb2zk7", "crash after patch"],
+      symptom: "Can't disable voice chat / mic icon missing",
+      searchTerms: ["disable voice", "microphone icon", "touch screen paint", "4.1.1"],
       fixGuideSlug: "problems-after-v4-1-0",
-      priority: "high",
+      priority: "medium",
+    },
+    {
+      symptom: "Workshop map missing on Switch 2",
+      searchTerms: ["Switch 2 workshop", "mod maps later this year", "workshop deprecated"],
+      fixGuideSlug: "problems-after-v4-1-0",
+      priority: "medium",
     },
     {
       symptom: "Invalid authentication token on launch",
@@ -439,6 +469,9 @@ export const latestPatch: GamePatch = {
     },
   ],
   retestNotes: [
+    "Voice chat after 4.1.1 — incoming audio muted by default; disable-voice option and mic icon are new, not a broken headset",
+    "Switch 2 hosted sessions temporarily cap at 10 (was 12) — PC hosts and the Sep 10 24-player cross-play note are separate",
+    "Crash still under investigation in 4.1.1 — report on LEMORION Discord, do not follow random Discord 'fix' links",
     "Kyoto maple / garden / torii / stall / upper-deck pins — 4gamer Kyoto Station motif + GameWith 庭園 / vertical volume; all experimental",
     "Art Museum world-painting / Meccha-exhibit / miniature-diorama pins — 4gamer + GameWith; do not confuse with Workshop ART GALLERY",
     "Greece and Egypt after the 4.1.0 rework — pre-4.1.0 pit-rim, pillar, and alcove pins need a fresh scout",

@@ -484,7 +484,7 @@ export const demandLibrary: DemandEntry[] = [
     status: "done",
     href: "/guides/platforms-guide",
     category: "Setup",
-    notes: "SlashSkill + Insider Gaming — PC-only Steam exclusive; GameWith Sep 2026 comments still ask for Switch 2",
+    notes: "Switch 2 eShop since Sep 9 2026 with Steam PC cross-play; original Switch / PS5 / Xbox still unavailable",
   },
   {
     question: "Why Did Meccha Chameleon Go Viral / 15 Million Sales?",

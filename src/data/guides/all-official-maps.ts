@@ -6,7 +6,7 @@ export const allOfficialMapsGuide: Guide = {
   category: "Maps",
   readTime: "10 min",
   excerpt:
-    "Every official map as of v4.1.0 — 19 stages from the launch roster through Shopping Mall, plus Kyoto and Art Museum (18th/19th) — with links to map pages on this site.",
+    "Every official map as of v4.1.1 — 19 stages from the launch roster through Shopping Mall, plus Kyoto and Art Museum — with Switch 2 notes and links to map pages on this site.",
   sources: [
     {
       name: "Wikipedia — Meccha Chameleon (map list)",
@@ -61,7 +61,7 @@ export const allOfficialMapsGuide: Guide = {
     {
       id: "overview",
       heading: "How Many Official Maps Exist?",
-      body: "As of v4.1.0 (August 28, 2026), the official pool is 19 maps: the launch roster (Mansion, Indoor Country, Sewer, Backrooms, Cold Storage, Brick Loft), post-launch stages Penguin Hotel, Sugarland, and Osaka, plus HIKAKIN Museum (v2.6.0 collab), Egypt (v2.7.0, reworked 4.1.0), Death Burger (v2.8.0), Greece (v3.0.0, reworked 4.1.0), Garten of Banban (v3.1.0 collab), Exit 8 (v3.5.0 collab), Deep Sea (v3.6.0 underwater reef), Shopping Mall (v3.9.0 indoor atrium — 17th official), Kyoto (v4.1.0 festival atrium — 18th), and Art Museum (v4.1.0 美術館 — 19th). v3.9.0 said the next official addition would be the last excluding collabs; 4.1.0 shipped two maps and Denfaminicogamer notes official maps will keep updating irregularly. Collaboration maps can be excluded from random lottery by default. Custom maps add unlimited variety through Steam Workshop — subscribe carefully after the late-July malware reports.",
+      body: "As of v4.1.1 (September 16, 2026) the official pool is still 19 maps — 4.1.1 added no stages. 4.1.0 (August 28) shipped Kyoto (京都) and Art Museum (美術館). The launch roster (Mansion, Indoor Country, Sewer, Backrooms, Cold Storage, Brick Loft), post-launch stages Penguin Hotel, Sugarland, and Osaka, plus HIKAKIN Museum (v2.6.0 collab), Egypt (v2.7.0, reworked 4.1.0), Death Burger (v2.8.0), Greece (v3.0.0, reworked 4.1.0), Garten of Banban (v3.1.0 collab), Exit 8 (v3.5.0 collab), Deep Sea (v3.6.0 underwater reef), Shopping Mall (v3.9.0 indoor atrium), Kyoto, and Art Museum. Denfaminicogamer notes official maps will keep updating irregularly. Collaboration maps can be excluded from random lottery by default. Custom maps add unlimited variety through Steam Workshop on PC — Switch 2 cannot load them yet (Game*Spark: user maps later this year; Steam Community: Workshop will be replaced by a new MOD system). Subscribe carefully after the late-July malware reports.",
     },
     {
       id: "launch-maps",

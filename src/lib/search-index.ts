@@ -168,6 +168,7 @@ export const searchIndex: SearchItem[] = [
     keywords: [
       "steam wiki",
       "game guides",
+      "wardogs",
       "cs2",
       "dota",
       "pubg",

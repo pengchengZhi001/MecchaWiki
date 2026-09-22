@@ -1,17 +1,19 @@
 import type { Guide } from "./types";
-import { latestPatch } from "../patch-fixes";
 
 export const problemsAfterV410Guide: Guide = {
   slug: "problems-after-v4-1-0",
   title:
-    "Meccha Chameleon v4.0–4.1 Update Problems — Kyoto / Art Museum / Join Code / Petit Fix Guide",
+    "Meccha Chameleon v4.0–4.1.1 Update Problems — Switch 2 / Voice / Join Code / Kyoto Fix Guide",
   category: "Fix",
-  readTime: "11 min",
+  readTime: "12 min",
   excerpt:
-    "Broke after late-August 2026 4.0–4.1.x? Fix 5-character join codes replacing the server browser, Petit Chameleon host toggle, Kyoto and Art Museum learning, Greece/Egypt reworks, mid-match crashes, ammo settings reset, and workshop re-downloads.",
+    "Broke after 4.0–4.1.1? Fix Switch 2 ↔ PC cross-play, incoming voice muted by default, the temporary Switch 2 host cap of 10, 5-character join codes, Kyoto / Art Museum learning, and crashes still under investigation.",
   seoKeywords: [
+    "v4.1.1",
     "v4.1.0",
-    "v4.0.0",
+    "Switch 2",
+    "cross-play",
+    "voice chat",
     "Kyoto",
     "京都",
     "Art Museum",
@@ -26,12 +28,28 @@ export const problemsAfterV410Guide: Guide = {
     src: "/images/maps/kyoto.jpg",
     alt: "MECCHA CHAMELEON Kyoto map — festival atrium with torii, maple, and glowing 大 stair",
     caption:
-      "Update 4.1.0 adds Kyoto and Art Museum, replaces the server browser with join codes, and reworks Greece and Egypt. 4.0.0 adds host-gated Petit Chameleon (x0.5).",
+      "Update 4.1.1 adds voice-chat controls and a temporary Switch 2 host cap of 10. 4.1.0 added Kyoto, Art Museum, and join codes; Hotfix 4.1.0 enabled PC cross-play for the Switch 2 launch.",
   },
   sources: [
     {
-      name: "MECCHA CHAMELEON Steam News — BIG UPDATE 4.1.0",
-      url: latestPatch.steamNewsUrl,
+      name: "MECCHA CHAMELEON Steam News — Update 4.1.1",
+      url: "https://store.steampowered.com/news/app/4704690/view/698776157349216280",
+    },
+    {
+      name: "Nintendo Everything — 4.1.1 patch notes",
+      url: "https://nintendoeverything.com/meccha-chameleon-4-1-1-update-out-now-patch-notes/",
+    },
+    {
+      name: "consolepcgaming.com — 4.1.1 voice / Switch 2 cap",
+      url: "https://consolepcgaming.com/meccha-chameleon-update-4-1-1-brings-voice-chat-controls-and-a-lower-switch-2-cap/",
+    },
+    {
+      name: "Game*Spark — Switch 2 cross-play",
+      url: "https://www.gamespark.jp/article/2026/09/10/172058.html",
+    },
+    {
+      name: "Famitsu — Nintendo Direct 2026.9.9",
+      url: "https://www.famitsu.com/article/202609/87346",
     },
     {
       name: "consolepcgaming.com — 4.1.0 Kyoto / Art Museum / join codes",
@@ -73,13 +91,23 @@ export const problemsAfterV410Guide: Guide = {
   content: [
     {
       id: "what-shipped",
-      heading: "What Shipped August 20–28 (4.0.0 → 4.1.0)",
-      body: "Steam News update4.0.0 (August 20, 2026): Petit Chameleon (プチカメレオン) at x0.5 size, host-gated; floating-off-ground fix; rare crouch-elimination miss; stuck locations fixed (no map named). Hotfix (August 22): Workshop / mod maps now update automatically — first launch re-downloads all mods. fix4.0.1 (August 24): hunters cannot crouch while waiting so TP at round start works; free-camera position shift mitigated. Update 4.0.2 (August 25): network usage cut by about 50%; controller operation-guide display tweak. Steam also asked crash-prone players to join a Discord (August 26, Japanese-only post). BIG UPDATE 4.1.0 (August 28): official maps Kyoto (京都) and Art Museum (美術館); Greece and Egypt reworked; legacy server browser replaced by 5-character alphanumeric join codes (verifiable in-game); in-progress public rooms hidden by default (toggle in options); server elapsed time on search; match ends if hunter count hits 0 while hunters wait; player-count 0 display fix; 1-second taunt cooldown; forced-taunt minimum 1s → 5s; painting network data −40%; max FPS cap 239 → 240; ammo settings no longer reset every match; possible mid-game crash fix; voice-toggle SFX; region tag required; stick paint speed vs framerate / upward bias; hider camera; options-menu FPS hitch. Denfaminicogamer: official maps will continue to update irregularly. Full history: Updates & Patch Notes guide.",
+      heading: "What Shipped August 20 – September 16 (4.0.0 → 4.1.1)",
+      body: "Steam News update4.0.0 (August 20, 2026): Petit Chameleon (プチカメレオン) at x0.5 size, host-gated; floating-off-ground fix; rare crouch-elimination miss; stuck locations fixed (no map named). Hotfix (August 22): Workshop / mod maps now update automatically — first launch re-downloads all mods. fix4.0.1 (August 24): hunters cannot crouch while waiting so TP at round start works; free-camera position shift mitigated. Update 4.0.2 (August 25): network usage cut by about 50%; controller operation-guide display tweak. Steam also asked crash-prone players to join a Discord (August 26, Japanese-only post). BIG UPDATE 4.1.0 (August 28): official maps Kyoto (京都) and Art Museum (美術館); Greece and Egypt reworked; legacy server browser replaced by 5-character alphanumeric join codes. Nintendo Direct 2026.9.9: Switch 2 version announced and live the same day with Steam PC cross-play (Famitsu / Game*Spark). Unnumbered Hotfix 4.1.0 on launch day added the cross-play option (consolepcgaming). Update 4.1.1 (September 16): disable-voice option, touch-screen paint, mic icon, incoming voice muted by default, Switch 2 hosted sessions temporarily 10 players (was 12), spectator / UI / cursor / player-limit fixes — crash still under investigation (Steam News / Nintendo Everything). Full history: Updates & Patch Notes guide.",
     },
     {
       id: "first-60-seconds",
-      heading: "First 60 Seconds After Updating to 4.1.x",
-      body: "Close Meccha Chameleon completely. Exit Steam and reopen. Confirm Downloads shows no pending bytes for App 4704690. Relaunch from the Steam library. Have every friend confirm matching 4.1.x — mixing 3.9.x and 4.1.x breaks joins. After 4.1.0 the old server-name browser is gone: the host reads the 5-character join code in-game and friends search that code (not the room title). Host creates a brand-new room after sync. If Workshop maps fail to load, wait out the first-launch re-download from the August 22 hotfix. Generic checklist: Problems After Update guide.",
+      heading: "First 60 Seconds After Updating to 4.1.1",
+      body: "Close Meccha Chameleon completely. Exit Steam (or close the Switch 2 software) and reopen. Confirm Downloads / eShop shows no pending bytes for App 4704690. Relaunch from the library. Have every friend confirm matching 4.1.1 — mixing 4.1.0 and 4.1.1, or PC vs Switch 2 on different patches, breaks joins. After 4.1.0 the old server-name browser is gone: the host reads the 5-character join code in-game and friends search that code (not the room title). Host creates a brand-new room after sync. Enable the cross-play option if a Switch 2 friend is joining a Steam lobby (Hotfix 4.1.0). If Workshop maps fail to load on PC, wait out the first-launch re-download from the August 22 hotfix — Switch 2 cannot use Workshop maps yet (Game*Spark: user maps later this year). Generic checklist: Problems After Update guide.",
+    },
+    {
+      id: "switch2-crossplay",
+      heading: "Switch 2, Cross-Play & the Temporary Host Cap of 10",
+      body: "Switch 2 launched September 9, 2026 (Nintendo Direct 2026.9.9). Game*Spark quoting LEMORION: full Steam PC cross-play, mouse support, and lobbies up to 24 players. 4.1.1 then temporarily reduced Switch 2 hosted sessions from 12 to 10 — that cap applies when a Switch 2 console is the host, not when a PC hosts a mixed lobby. If a 12-player party cannot queue, have the Steam PC player host. Incoming voice is muted by default after 4.1.1 — unmute in audio settings before blaming cross-play. Workshop / MOD maps remain PC-only until the year-end MOD system (Steam Community: Workshop will be deprecated then). Original Nintendo Switch, PS5, and Xbox still cannot play. Game*Spark warns the Nintendo Store also lists a lookalike titled 変態カメレオン. Full platform notes: Platforms guide.",
+    },
+    {
+      id: "voice-chat-411",
+      heading: "Voice Chat After 4.1.1 — Muted Incoming, Optional Disable, Mic Icon",
+      body: "4.1.1 adds an option to disable voice chat, a microphone icon when the game detects audio input, and changes incoming voice to muted by default (Steam News / Nintendo Everything / consolepcgaming). Silent lobbies after this patch are usually the new default, not a broken headset and not the old 3.3.2 proximity-voice pause. Unmute incoming audio in settings; disable voice entirely if public-lobby mic griefing is the problem (Public Lobby Guide). The mic icon is a tell that you are transmitting — check it before you talk over a hide. Touch-screen painting also shipped in 4.1.1 for Switch 2.",
     },
     {
       id: "join-codes",
@@ -99,7 +127,7 @@ export const problemsAfterV410Guide: Guide = {
     {
       id: "crashes-network-taunts",
       heading: "Crashes, Network, Taunts, Ammo & Hunter Start",
-      body: "4.1.0 lists a possible mid-game crash fix; Steam News as of September 6, 2026 has no 4.1.1 follow-up. If you still crash, Steam's August 26 Japanese post asks for Discord reports (https://discord.gg/huyTHb2zk7) so LEMORION can reproduce — do not follow random Discord 'fix' links from the late-July malware scare. Friends who still type a 6-digit lobby ID from older third-party guides will miss the room — codes are 5 alphanumeric characters, verified in-game. 4.0.2 cuts general network usage ~50%; 4.1.0 cuts painting network data 40%. Ammo settings no longer reset every match after 4.1.0. Taunts now have a 1-second cooldown and the forced-taunt minimum is 5 seconds (was 1) — Steam announcement comments mixed on this; it is by design, not a bug. GameWith comments keep asking for Switch; Platforms guide: Steam PC only. BLOOMIN' KIDS real-world collab (Denfaminicogamer Aug 29) still has no date/ticket sheet as of Sep 6 — watch LEMORION X, not Discord rumor links. fix4.0.1: hunters cannot crouch while waiting so round-start TP works; free camera shifting your position is mitigated. Stick paint speed no longer scales with FPS; upward stick bias is fixed. If voice toggle feels silent, 4.1.0 adds an SFX when you change voice state.",
+      body: "4.1.1 lists the crash issue as still under investigation (Steam News / Nintendo Everything) — 4.1.0's possible mid-game crash fix did not close it. If you still crash, Steam's August 26 Japanese post asks for Discord reports (https://discord.gg/huyTHb2zk7) so LEMORION can reproduce — do not follow random Discord 'fix' links from the late-July malware scare. Friends who still type a 6-digit lobby ID from older third-party guides will miss the room — codes are 5 alphanumeric characters, verified in-game. 4.0.2 cuts general network usage ~50%; 4.1.0 cuts painting network data 40%. Ammo settings no longer reset every match after 4.1.0. Taunts now have a 1-second cooldown and the forced-taunt minimum is 5 seconds (was 1) — Steam announcement comments mixed on this; it is by design, not a bug. Switch 2 is live as of September 9 — Platforms guide. BLOOMIN' KIDS real-world collab (Denfaminicogamer Aug 29) still has no date/ticket sheet as of Sep 22 — watch LEMORION X, not Discord rumor links. fix4.0.1: hunters cannot crouch while waiting so round-start TP works; free camera shifting your position is mitigated. Stick paint speed no longer scales with FPS; upward stick bias is fixed. If voice toggle feels silent, 4.1.0 adds an SFX when you change voice state; 4.1.1 then mutes incoming voice by default.",
     },
     {
       id: "next",

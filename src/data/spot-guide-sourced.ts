@@ -722,6 +722,7 @@ const MAP_FALLBACK: Record<
       "v4.1.0 brand-new map — all spots experimental until lobby screenshots settle.",
       "Official still: maple balcony, torii rows, and bamboo are the first landmarks to learn.",
       "The 大 stair is meme traffic — clip once, then rotate.",
+      "note.com (Sep 2026): go under/behind/deeper — stall undersides, torii post shadows, planter backs beat plaza-facing rims.",
     ],
   },
   "art-museum": {
@@ -737,6 +738,19 @@ const MAP_FALLBACK: Record<
       "v4.1.0 official 美術館 — dedicated still pending; all spots experimental.",
       "Do not confuse with Workshop ART GALLERY (Popunia).",
       "Smaller lesser-known paintings often beat giant canvases at range (DualShockers analog).",
+      "note.com chair-leg / plinth-underside pins: seekers scan canvases first.",
+    ],
+  },
+  "cherry-blossom-garden": {
+    sources: [
+      { name: "Steam Workshop — Cherry Blossom Garden", url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3798672001" },
+    ],
+    paintNote: "Pond water vs stone rim vs leaf vs wood rail are different values — sample the surface you touch.",
+    poseNote: "Koi-pond crouches and bridge-rail prop mimics; avoid open mountain paths.",
+    winTips: [
+      "Workshop map by Xiu~ (Sep 9, 2026) — Chinese-inspired garden, not official Kyoto.",
+      "Steam listing landmarks: koi pond, bridges, flowers, traditional architecture.",
+      "PC Workshop only until Switch 2 user maps ship later this year.",
     ],
   },
 };

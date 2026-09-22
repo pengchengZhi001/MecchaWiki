@@ -870,6 +870,23 @@ export const workshopMaps: WorkshopMap[] = [
     subscriptions: 63953,
     views: 68437,
   },
+  {
+    id: "3798672001",
+    slug: "cherry-blossom-garden",
+    title: "Cherry Blossom Garden",
+    author: "Xiu~",
+    category: "new",
+    colors: 6,
+    description: "Chinese-inspired garden with mountains, traditional architecture, bridges, flowers, and a koi pond. Steam Workshop drop on Switch 2 launch day (Sep 9, 2026) — PC only until user maps reach Switch 2. Distinct from official Kyoto.",
+    tags: ["Garden", "Trending", "Steam Workshop"],
+    imageUrl: "https://images.steamusercontent.com/ugc/12696834947027860090/9F03B2CBE47801957D39B6AB74E301844FFD9B15/",
+    workshopUrl: "https://steamcommunity.com/sharedfiles/filedetails/?id=3798672001",
+    workshopId: "3798672001",
+    submittedAt: "2026-09-09",
+    curated: true,
+    subscriptions: 6192,
+    views: 7526,
+  },
 ];
 
 export function formatWorkshopSubscriptions(count: number): string {

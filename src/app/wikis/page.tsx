@@ -11,11 +11,17 @@ import { siteConfig } from "@/lib/site";
 import { steamWikiHubPath } from "@/lib/steam-wiki";
 
 export const metadata: Metadata = createMetadata({
-  title: "Steam Game Wikis — Top 50 Most Played",
+  title: "Steam Game Wikis — WARDOGS, CS2 & Top Played",
   description:
-    "Strategy wikis for Steam's most played games: CS2, Dota 2, Palworld, PUBG, and 46 more — each on its own route with beginner guides, settings, and FAQs.",
+    "Strategy wikis for Steam's breakout and most played games: WARDOGS, CS2, Dota 2, Palworld, PUBG, and 46 more — each on its own route with beginner guides, maps, and FAQs.",
   path: steamWikiHubPath,
-  keywords: ["Steam wiki", "game guides", "top Steam games", "strategy wiki"],
+  keywords: [
+    "Steam wiki",
+    "game guides",
+    "WARDOGS wiki",
+    "top Steam games",
+    "strategy wiki",
+  ],
 });
 
 export default function SteamWikisHubPage() {
@@ -32,12 +38,12 @@ export default function SteamWikisHubPage() {
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "Steam Top 50 Game Wikis",
+            name: "Steam Game Wikis",
             url: `${siteConfig.url}${steamWikiHubPath}`,
             numberOfItems: steamWikiGames.length,
-            itemListElement: steamWikiGames.map((game) => ({
+            itemListElement: steamWikiGames.map((game, index) => ({
               "@type": "ListItem",
-              position: game.rank,
+              position: index + 1,
               url: `${siteConfig.url}${steamWikiHubPath}/${game.slug}`,
               name: `${game.name} Wiki`,
             })),
@@ -47,7 +53,7 @@ export default function SteamWikisHubPage() {
 
       <PageHeader
         title="Steam Game Wikis"
-        description="CS2 through Dead by Daylight are full wikis like Mistfall Hunter. The other titles are on the same routes and will be expanded the same way."
+        description="WARDOGS, CS2 through Dead by Daylight are full wikis like Mistfall Hunter. The other titles are on the same routes and will be expanded the same way."
       />
 
       <NativeBanner />

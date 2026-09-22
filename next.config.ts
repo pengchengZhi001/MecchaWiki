@@ -23,6 +23,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/workshop", destination: "/workshop-maps", permanent: true },
+      { source: "/wardogs", destination: "/wikis/wardogs", permanent: true },
+      { source: "/wardogs/:path*", destination: "/wikis/wardogs/:path*", permanent: true },
       { source: "/tools", destination: "/hidden-spots", permanent: true },
       { source: "/tools/:path*", destination: "/hidden-spots", permanent: true },
       { source: "/hidden-spots/submit", destination: "/hidden-spots", permanent: true },

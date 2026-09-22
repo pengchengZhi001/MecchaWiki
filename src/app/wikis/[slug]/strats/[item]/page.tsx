@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import DifficultyBadge from "@/components/DifficultyBadge";
-import { NativeBanner } from "@/components/ads";
+import WikiSidebarAds from "@/components/steam-wiki/WikiSidebarAds";
 import {
   getAllFullWikis,
   getFullWiki,
@@ -104,9 +104,9 @@ export default async function GameWikiStratDetailPage({ params }: Props) {
         </div>
       </header>
 
-      <NativeBanner />
-
-      <section className="mt-10">
+      <div className="mt-8 grid gap-8 lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          <section>
         <h2 className="text-xl font-bold">Step-by-step</h2>
         <ol className="mt-4 space-y-3">
           {strat.steps.map((step, i) => (
@@ -147,6 +147,10 @@ export default async function GameWikiStratDetailPage({ params }: Props) {
           </Link>
         </div>
       )}
+        </div>
+
+        <WikiSidebarAds game={game} />
+      </div>
     </article>
   );
 }

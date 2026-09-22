@@ -7,12 +7,14 @@ export const platformsGuide: Guide = {
   category: "Setup",
   readTime: "9 min",
   excerpt:
-    "MECCHA CHAMELEON is a Windows PC Steam exclusive as of July 2026 — no Nintendo Switch, PlayStation, Xbox, iOS, or Android version. Crossplay, Mac workarounds, and Steam Deck Playable status explained with sources.",
+    "MECCHA CHAMELEON is on Steam (Windows PC) and Nintendo Switch 2 (eShop since Sep 9, 2026) with full PC cross-play. Original Switch, PS5, Xbox, iOS, and Android are still unavailable. Workshop maps stay PC-only until later this year.",
   seoKeywords: [
     "Nintendo Switch",
+    "Switch 2",
     "PS5",
     "Xbox",
     "crossplay",
+    "cross-play",
     "cross platform",
     "Mac",
     "mobile",
@@ -21,16 +23,20 @@ export const platformsGuide: Guide = {
   ],
   sources: [
     {
-      name: "SlashSkill — Every platform explained",
-      url: "https://www.slashskill.com/is-meccha-chameleon-on-ps5-xbox-switch-or-mac-every-platform-explained/",
+      name: "Famitsu — Nintendo Direct 2026.9.9 Switch 2",
+      url: "https://www.famitsu.com/article/202609/87346",
     },
     {
-      name: "Insider Gaming — Console availability",
-      url: "https://insider-gaming.com/is-meccha-chameleon-on-playstation-xbox-or-nintendo-switch-all-platforms/",
+      name: "Game*Spark — Switch 2 cross-play / user maps later this year",
+      url: "https://www.gamespark.jp/article/2026/09/10/172058.html",
     },
     {
-      name: "Times of India — Crossplay support",
-      url: "https://timesofindia.indiatimes.com/sports/esports/news/is-meccha-chameleon-cross-platform-crossplay-support-explained/articleshow/131731694.cms",
+      name: "Dengeki Online — Switch 2 eShop launch",
+      url: "https://dengekionline.com/article/202609/87396",
+    },
+    {
+      name: "consolepcgaming.com — 4.1.1 Switch 2 host cap",
+      url: "https://consolepcgaming.com/meccha-chameleon-update-4-1-1-brings-voice-chat-controls-and-a-lower-switch-2-cap/",
     },
     {
       name: "MECCHA CHAMELEON on Steam",
@@ -38,31 +44,31 @@ export const platformsGuide: Guide = {
     },
   ],
   heroImage: {
-    src: "/images/spots/mansion-kitchen-shelving.jpg",
-    alt: "MECCHA CHAMELEON gameplay on PC — Mansion map kitchen zone",
+    src: "/images/maps/kyoto.jpg",
+    alt: "MECCHA CHAMELEON Kyoto map — festival atrium with torii and maple",
     caption:
-      "As of July 2026 the game runs on Windows PC through Steam only — console ports are not announced.",
+      "Playable on Steam PC and Nintendo Switch 2 (September 9, 2026) with full cross-play. PS5, Xbox, and original Switch are still unavailable.",
   },
   content: [
     {
       id: "quick-answer",
-      heading: "Quick Answer — PC Only on Steam",
-      body: "MECCHA CHAMELEON (App 4704690) is available exclusively on Windows PC through Steam at $5.99. SlashSkill, Insider Gaming, and Times of India all confirm the same status as of mid-2026: no PlayStation 5, Xbox Series X|S, Nintendo Switch, Nintendo Switch 2, iOS, or Android release, and no official port has been announced. Steam's store page lists Platforms: PC (Microsoft Windows). Everyone who wants to play together needs a Windows Steam build — there is no cross-platform play because there is only one platform.",
+      heading: "Quick Answer — Steam PC + Nintendo Switch 2",
+      body: "MECCHA CHAMELEON (App 4704690) is available on Windows PC through Steam at $5.99 and on Nintendo Switch 2 through the eShop (Famitsu / Dengeki: announced in Nintendo Direct 2026.9.9 and live the same day). ITmedia lists the Japanese eShop price at ¥790; a 20% launch discount ran through September 17, 2026 and has ended. Game*Spark quoting developer LEMORION: Switch 2 supports full cross-play with Steam PC, mouse controls, and lobbies up to 24 players. Update 4.1.1 temporarily caps Switch 2 hosted sessions at 10 players (was 12) — have a PC host if you need a larger mixed lobby. Original Nintendo Switch, PlayStation 5, Xbox, iOS, and Android remain unavailable. Mid-2026 PC-only articles (SlashSkill, Insider Gaming, Times of India) are outdated as of September 9.",
     },
     {
       id: "nintendo-switch",
-      heading: "Is Meccha Chameleon on Nintendo Switch?",
-      body: "No. Insider Gaming states Meccha Chameleon is not playable on either the original Nintendo Switch or Switch 2, with no mention of a version in development. SlashSkill adds that while Switch 2 mouse-style controls would suit the paint tool better than a standard gamepad, that remains hypothetical — no Switch release exists. Community speculation about a future port appears in gaming press because party games often migrate to Switch after PC success, but treat any Switch listing outside Steam as unofficial or scam content until the developer announces through Steam News.",
+      heading: "Is Meccha Chameleon on Nintendo Switch or Switch 2?",
+      body: "Nintendo Switch 2: yes, since September 9, 2026. Famitsu, Dengeki Online, and GAME Watch covered the Nintendo Direct 2026.9.9 reveal with same-day eShop delivery. 4.1.1 adds touch-screen painting, Switch 2 A/B/X/Y button notation, and the temporary 10-player host cap. Original Nintendo Switch: still no. Treat any listing for the first Switch as unofficial or a lookalike. Game*Spark warns the Nintendo Store also sells a similarly logo'd title titled 変態カメレオン — search めっちゃカメレオン or the LEMORION / HAGANEIRO credit before you buy.",
     },
     {
       id: "playstation-xbox",
-      heading: "PlayStation & Xbox — Not Available",
-      body: "Insider Gaming confirms the game is unavailable on PlayStation 5 and all PlayStation consoles, and likewise not on Xbox Series X|S or past-gen Xbox. It is not on Xbox Game Pass. SlashSkill notes that as a smaller indie launch from developer lemorion_1224, console ports were likely low priority during the rapid PC patch cycle. Times of India echoes that PC remains the only way to experience the title today, though breakout sales could motivate future ports — nothing is confirmed.",
+      heading: "PlayStation & Xbox — Still Not Available",
+      body: "PlayStation 5, Xbox Series X|S, and Game Pass still have no official port. Switch 2 did not imply other consoles. Friends on PS5 or Xbox cannot join Steam or Switch 2 lobbies. Options those groups discuss: one person hosts from Steam PC or Switch 2, or wait for a Steam News / Nintendo Direct announcement. Nothing is confirmed beyond the two shipped platforms.",
     },
     {
       id: "crossplay",
-      heading: "Crossplay & Cross-Platform Play",
-      body: "Meccha Chameleon does not support crossplay. Times of India explains that because the game is PC-only via Steam, every player in a lobby is already on the same platform — there is no PlayStation-to-PC bridge to configure. SlashSkill's crossplay guide confirms the same: friends need Windows PCs, Steam accounts, and their own game copy. Steam Family Sharing may let another household account access the library, but multiplayer still requires compatible Steam clients on Windows.",
+      heading: "Cross-Play — Steam PC ↔ Switch 2",
+      body: "Cross-play shipped with the Switch 2 launch. Game*Spark (Sep 10) quotes LEMORION: Switch 2 plays with PC, mouse is supported, and rooms can hold up to 24. consolepcgaming notes an unnumbered Hotfix 4.1.0 added a cross-play option — enable it on the host if mixed-platform joins fail. Everyone must be on 4.1.1+; version mismatch still kills lobbies. Join with the v4.1.0 5-character in-game code. Incoming voice is muted by default after 4.1.1 — unmute before assuming cross-play broke audio. Steam Community currently states MOD-map cross-play arrives by year end with a new MOD system that will replace Steam Workshop. Until then, Workshop maps stay on PC lobbies; Switch 2 players will fail to load them. Original Switch, PS5, and Xbox still have no bridge.",
     },
     {
       id: "mac-linux",
@@ -82,17 +88,17 @@ export const platformsGuide: Guide = {
     {
       id: "v25-controller",
       heading: "Experimental Controller Palette (v2.5.0)",
-      body: "consolepcgaming.com's v2.5.0 patch coverage notes an experimental color palette added for upcoming controller support — a signal the developer is exploring gamepad-friendly paint UI, separate from a console port announcement. Native controller support remains unlisted on Steam at community report time; Steam Input workarounds still apply until patch notes confirm full gamepad support.",
+      body: "consolepcgaming.com's v2.5.0 patch coverage notes an experimental color palette added for upcoming controller support. Native gamepad operations shipped in v3.1.0; Switch 2 adds mouse, touch-screen paint (v4.1.1), and official button notation. Steam Input layouts still help on Steam Deck.",
     },
     {
       id: "playing-with-friends",
       heading: "How Console-Only Friends Can Play",
-      body: "If your friend group owns only PlayStation, Xbox, or Switch hardware, MECCHA CHAMELEON cannot join them on those devices today. Options players discuss: one friend buys or borrows a cheap Windows mini PC or laptop for party nights; remote play from a host PC via Steam Remote Play (paint precision suffers); or wait for any future port announcement on Steam News. For groups already on PC, private Steam lobbies work without crossplay configuration — see Private Lobby Guide.",
+      body: "If your friend group owns only PlayStation, Xbox, or original Switch hardware, they still cannot join. Switch 2 and Steam PC can play together after Hotfix 4.1.0 / 4.1.1 — share the 5-character join code and enable the cross-play option. For PS5/Xbox-only groups the practical paths remain a cheap Windows PC, Steam Deck, or waiting for a future port. See Private Lobby Guide for the join-code flow.",
     },
     {
       id: "watch-for-announcements",
       heading: "How to Track Future Platform News",
-      body: "Official platform changes would appear on the Steam store page, Steam News feed for App 4704690, and the developer's linked social accounts — not fan wiki speculation. Meccha Wiki updates this guide when verified ports ship. Until then, searching Is Meccha Chameleon on Switch, Mecha Chameleon PS5, or メッチャカメレオン Switch should land here plus Steam's official listing.",
+      body: "Official platform changes appear on Steam News for App 4704690, the Nintendo eShop listing, Nintendo Direct, and LEMORION's social accounts — not Discord rumor links. Next confirmed item on the public roadmap is user-created / MOD maps on Switch 2 later this year (Game*Spark / Steam Community). Until a PlayStation or Xbox store listing exists, treat those ports as unannounced. Searching Is Meccha Chameleon on Switch 2, Mecha Chameleon PS5, or メッチャカメレオン Switch should land here plus the official store pages.",
     },
   ],
 };

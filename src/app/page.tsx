@@ -349,11 +349,11 @@ export default function HomePage() {
             <div>
               <h2 className="text-2xl font-bold">Steam Game Wikis</h2>
               <p className="mt-1 text-sm text-muted">
-                CS2, Dota 2, Palworld, PUBG and 46 more — each wiki lives on its own route
+                WARDOGS, CS2, Dota 2, Palworld, PUBG and 46 more — each wiki lives on its own route
               </p>
             </div>
             <Link href="/wikis" className="text-sm font-medium text-accent hover:underline">
-              All 50 wikis →
+              All 51 wikis →
             </Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

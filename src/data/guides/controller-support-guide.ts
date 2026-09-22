@@ -57,6 +57,11 @@ export const controllerSupportGuide: Guide = {
       body: "Casual friend lobbies learning movement and emotes; seeker role with reduced paint demand; streamer couch co-op; Steam Deck handheld sessions. Avoid controller-only prep in sweaty public lobbies where mouse hiders finish paint with seconds to spare. Pair with How to Paint Better and Emotes & Pose Wheel guides once binds are stable.",
     },
     {
+      id: "switch2",
+      heading: "Nintendo Switch 2 — Mouse, Touch Paint, Host Cap",
+      body: "Switch 2 launched September 9, 2026 with mouse support (Game*Spark / LEMORION) and 4.1.1 touch-screen painting. Stick brush-size now returns the cursor after adjustment. Incoming voice is muted by default — unmute in settings. Switch 2 hosted sessions temporarily cap at 10 players (4.1.1); a Steam PC host can still run a larger mixed lobby. A/B/X/Y notation was adjusted for Switch 2. Cross-play with Steam requires the Hotfix 4.1.0 option and matching 4.1.1+. Workshop maps are not on Switch 2 yet. Platforms guide covers purchase and lookalikes.",
+    },
+    {
       id: "next-steps",
       heading: "Next Steps",
       body: "Read Controls help for default keybind list. If join fails on Deck, see Can't Join Lobby — version mismatch hits portable PCs the same as desktop. For Banban / late-July patch issues: Problems After v3.1–3.3. Practice Mansion bathroom tiles first, then migrate to Garten of Banban mural blends.",

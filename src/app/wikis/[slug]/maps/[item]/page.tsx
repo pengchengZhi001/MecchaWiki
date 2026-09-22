@@ -5,7 +5,7 @@ import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import DifficultyBadge from "@/components/DifficultyBadge";
 import WikiStratCard from "@/components/steam-wiki/WikiStratCard";
-import { NativeBanner } from "@/components/ads";
+import WikiSidebarAds from "@/components/steam-wiki/WikiSidebarAds";
 import {
   getAllFullWikis,
   getFullWiki,
@@ -99,65 +99,69 @@ export default async function GameWikiMapDetailPage({ params }: Props) {
         </div>
       </header>
 
-      <NativeBanner />
+      <div className="mt-8 grid gap-8 lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          <p className="max-w-3xl leading-relaxed text-foreground/85">
+            {wikiMap.overview}
+          </p>
 
-      <p className="mt-8 max-w-3xl leading-relaxed text-foreground/85">
-        {wikiMap.overview}
-      </p>
-
-      <dl className="mt-8 grid gap-4 sm:grid-cols-3">
-        {wikiMap.stats.map((stat) => (
-          <div
-            key={stat.label}
-            className="rounded-xl border border-card-border bg-card p-4"
-          >
-            <dt className="text-xs uppercase tracking-wider text-muted">{stat.label}</dt>
-            <dd className="mt-1 text-sm font-medium">{stat.value}</dd>
-          </div>
-        ))}
-      </dl>
-
-      <section className="mt-10">
-        <h2 className="text-xl font-bold">Key spots</h2>
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-          {wikiMap.poi.map((itemPoi) => (
-            <li
-              key={itemPoi.name}
-              className="rounded-xl border border-card-border bg-surface/60 p-4"
-            >
-              <p className="font-semibold">{itemPoi.name}</p>
-              <p className="mt-1 text-sm text-muted">{itemPoi.note}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mt-10">
-        <h2 className="text-xl font-bold">Play notes</h2>
-        <ul className="mt-4 space-y-2">
-          {wikiMap.notes.map((note) => (
-            <li
-              key={note}
-              className="rounded-lg border border-card-border bg-card px-4 py-3 text-sm text-foreground/80"
-            >
-              {note}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      {related.length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold">
-            {wiki.hubs.strats} for {wikiMap.name}
-          </h2>
-          <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {related.map((strat) => (
-              <WikiStratCard key={strat.slug} gameSlug={slug} strat={strat} />
+          <dl className="mt-8 grid gap-4 sm:grid-cols-3">
+            {wikiMap.stats.map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-xl border border-card-border bg-card p-4"
+              >
+                <dt className="text-xs uppercase tracking-wider text-muted">{stat.label}</dt>
+                <dd className="mt-1 text-sm font-medium">{stat.value}</dd>
+              </div>
             ))}
-          </div>
-        </section>
-      )}
+          </dl>
+
+          <section className="mt-10">
+            <h2 className="text-xl font-bold">Key spots</h2>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {wikiMap.poi.map((itemPoi) => (
+                <li
+                  key={itemPoi.name}
+                  className="rounded-xl border border-card-border bg-surface/60 p-4"
+                >
+                  <p className="font-semibold">{itemPoi.name}</p>
+                  <p className="mt-1 text-sm text-muted">{itemPoi.note}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mt-10">
+            <h2 className="text-xl font-bold">Play notes</h2>
+            <ul className="mt-4 space-y-2">
+              {wikiMap.notes.map((note) => (
+                <li
+                  key={note}
+                  className="rounded-lg border border-card-border bg-card px-4 py-3 text-sm text-foreground/80"
+                >
+                  {note}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {related.length > 0 && (
+            <section className="mt-12">
+              <h2 className="text-xl font-bold">
+                {wiki.hubs.strats} for {wikiMap.name}
+              </h2>
+              <div className="mt-5 grid gap-5 sm:grid-cols-2">
+                {related.map((strat) => (
+                  <WikiStratCard key={strat.slug} gameSlug={slug} strat={strat} />
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
+
+        <WikiSidebarAds game={game} />
+      </div>
     </article>
   );
 }

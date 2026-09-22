@@ -94,20 +94,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...steamWikiGames.map((game) => ({
       url: `${siteConfig.url}/wikis/${game.slug}`,
-      lastModified: new Date("2026-08-18"),
+      lastModified: new Date(game.slug === "wardogs" ? "2026-09-22" : "2026-08-18"),
       changeFrequency: "weekly" as const,
-      priority: game.rank <= 10 ? 0.85 : 0.7,
+      priority: game.slug === "wardogs" || game.rank <= 10 ? 0.85 : 0.7,
     })),
     ...steamWikiGames.flatMap((game) => [
       {
         url: `${siteConfig.url}/wikis/${game.slug}/guides`,
-        lastModified: new Date("2026-08-18"),
+        lastModified: new Date(game.slug === "wardogs" ? "2026-09-22" : "2026-08-18"),
         changeFrequency: "weekly" as const,
         priority: 0.65,
       },
       ...getGuidesForGame(game).map((g) => ({
         url: `${siteConfig.url}/wikis/${game.slug}/guides/${g.slug}`,
-        lastModified: new Date("2026-08-18"),
+        lastModified: new Date(game.slug === "wardogs" ? "2026-09-22" : "2026-08-18"),
         changeFrequency: "monthly" as const,
         priority: g.slug === "beginner-guide" ? 0.75 : 0.55,
       })),
@@ -115,37 +115,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getAllFullWikis().flatMap((wiki) => [
       {
         url: `${siteConfig.url}/wikis/${wiki.slug}/maps`,
-        lastModified: new Date("2026-08-27"),
+        lastModified: new Date(wiki.slug === "wardogs" ? "2026-09-22" : "2026-08-27"),
         changeFrequency: "weekly" as const,
         priority: 0.8,
       },
       {
         url: `${siteConfig.url}/wikis/${wiki.slug}/roles`,
-        lastModified: new Date("2026-08-27"),
+        lastModified: new Date(wiki.slug === "wardogs" ? "2026-09-22" : "2026-08-27"),
         changeFrequency: "weekly" as const,
         priority: 0.8,
       },
       {
         url: `${siteConfig.url}/wikis/${wiki.slug}/strats`,
-        lastModified: new Date("2026-08-27"),
+        lastModified: new Date(wiki.slug === "wardogs" ? "2026-09-22" : "2026-08-27"),
         changeFrequency: "weekly" as const,
         priority: 0.8,
       },
       ...wiki.maps.map((m) => ({
         url: `${siteConfig.url}/wikis/${wiki.slug}/maps/${m.slug}`,
-        lastModified: new Date("2026-08-27"),
+        lastModified: new Date(wiki.slug === "wardogs" ? "2026-09-22" : "2026-08-27"),
         changeFrequency: "weekly" as const,
         priority: 0.75,
       })),
       ...wiki.roles.map((r) => ({
         url: `${siteConfig.url}/wikis/${wiki.slug}/roles/${r.slug}`,
-        lastModified: new Date("2026-08-27"),
+        lastModified: new Date(wiki.slug === "wardogs" ? "2026-09-22" : "2026-08-27"),
         changeFrequency: "weekly" as const,
         priority: 0.75,
       })),
       ...wiki.strats.map((s) => ({
         url: `${siteConfig.url}/wikis/${wiki.slug}/strats/${s.slug}`,
-        lastModified: new Date("2026-08-27"),
+        lastModified: new Date(wiki.slug === "wardogs" ? "2026-09-22" : "2026-08-27"),
         changeFrequency: "weekly" as const,
         priority: 0.8,
       })),

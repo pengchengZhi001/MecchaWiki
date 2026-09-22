@@ -16,6 +16,7 @@ const topGuides = [
 
 const otherWikis = [
   { href: "/wikis", label: "All Steam Game Wikis" },
+  { href: "/wikis/wardogs", label: "WARDOGS Wiki" },
   { href: "/wikis/counter-strike-2", label: "CS2 Wiki" },
   { href: "/wikis/dota-2", label: "Dota 2 Wiki" },
   { href: "/wikis/palworld", label: "Palworld Wiki" },

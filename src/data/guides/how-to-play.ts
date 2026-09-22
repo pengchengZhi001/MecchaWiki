@@ -33,12 +33,12 @@ export const howToPlayGuide: Guide = {
     {
       id: "what-is-it",
       heading: "What Is Meccha Chameleon?",
-      body: "MECCHA CHAMELEON (often misspelled Mecha Chameleon or Mecca Chameleon — same game) is a $5.99 multiplayer hide-and-seek party game on Steam for Windows PC. Solo developer lemorion_1224 released it in June 2026. Hiders paint their plain white bodies to match walls, floors, and props, then freeze in a pose. Seekers sweep the map in first person and tag every hider before the timer ends. There is no solo mode — you need at least one other player online.",
+      body: "MECCHA CHAMELEON (often misspelled Mecha Chameleon or Mecca Chameleon — same game) is a $5.99 multiplayer hide-and-seek party game on Steam for Windows PC, also on Nintendo Switch 2 since September 9, 2026 with PC cross-play. Developer lemorion_1224 (with HAGANEIRO) released it in June 2026. Hiders paint their plain white bodies to match walls, floors, and props, then freeze in a pose. Seekers sweep the map in first person and tag every hider before the timer ends. There is no solo mode — you need at least one other player online.",
     },
     {
       id: "buy-install",
       heading: "How to Buy and Install",
-      body: "Search \"MECCHA CHAMELEON\" in the Steam store or open App ID 4704690 directly. Add to cart, complete checkout, and launch from your Steam Library. The game is PC-only — no PlayStation, Xbox, Switch, or mobile version at launch, so cross-platform play is not supported. Minimum specs are modest; if you see lag or blurry shaders on first launch, try Launch Options -dx11 (see our lag fix guide). Full install-to-first-match order: First Match Checklist.",
+      body: "Search \"MECCHA CHAMELEON\" in the Steam store or open App ID 4704690 directly. Add to cart, complete checkout, and launch from your Steam Library. Nintendo Switch 2 players buy it on the eShop (Nintendo Direct 2026.9.9, live the same day) and can cross-play with Steam friends after Hotfix 4.1.0. Original Switch, PlayStation, Xbox, and mobile are still unavailable. Minimum PC specs are modest; if you see lag or blurry shaders on first launch, try Launch Options -dx11 (see our lag fix guide). Full install-to-first-match order: First Match Checklist.",
     },
     {
       id: "first-lobby",

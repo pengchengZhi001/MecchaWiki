@@ -33,7 +33,7 @@ export const worthItBuyersGuide: Guide = {
     {
       id: "price",
       heading: "Price & Where to Buy",
-      body: "MECCHA CHAMELEON is sold exclusively on Steam for Windows PC at $5.99 USD at launch (June 2026). Search \"MECCHA CHAMELEON\" or App 4704690 — avoid third-party key sites and fake mobile downloads. Mecha Chameleon and Mecca Chameleon are common misspellings for the same listing. No console or mobile version means no cross-platform play with friends on PlayStation, Xbox, or Switch.",
+      body: "MECCHA CHAMELEON sells on Steam for Windows PC at $5.99 USD (App 4704690) and on Nintendo Switch 2 eShop since September 9, 2026 (ITmedia: ¥790; 20% launch deal ended September 17). Search \"MECCHA CHAMELEON\" — avoid third-party key sites, fake mobile downloads, and the Nintendo Store lookalike 変態カメレオン (Game*Spark). Mecha Chameleon and Mecca Chameleon are common misspellings for the same listing. Steam PC and Switch 2 can cross-play; original Switch, PS5, and Xbox still cannot.",
     },
     {
       id: "worth-it-short",

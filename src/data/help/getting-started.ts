@@ -22,8 +22,8 @@ export const gettingStartedTopic: HelpTopic = {
         caption: "Purchase once on Steam (App ID 4704690) — no separate launcher.",
       },
       answer: [
-        "MECCHA CHAMELEON is PC-only and sold exclusively on Steam. Search for \"MECCHA CHAMELEON\" in the Steam store or open App ID 4704690 directly. Click Add to Cart, complete checkout, and the game appears in your Steam Library.",
-        "There is no official console or mobile version at launch. Avoid third-party \"free download\" or crack sites — they are not legitimate distribution and will not receive updates required for multiplayer.",
+        "MECCHA CHAMELEON is sold on Steam for Windows PC (App ID 4704690, $5.99) and on the Nintendo Switch 2 eShop since September 9, 2026. Search \"MECCHA CHAMELEON\" / めっちゃカメレオン. Click Add to Cart or download from the eShop, then launch from your library.",
+        "There is no original Switch, PlayStation, Xbox, or official mobile version. Avoid third-party \"free download\" or crack sites — they are not legitimate distribution and will not receive updates required for multiplayer. Game*Spark flags a Nintendo Store lookalike titled 変態カメレオン.",
         "After purchase, click Install in your library. Steam downloads the game to your chosen drive. Launch from the library or pin it to your taskbar for quick access before friend sessions.",
         "Steam Family Sharing may let another account play if the owner shares their library — both accounts still need the Steam PC client and compatible builds for multiplayer together.",
       ],

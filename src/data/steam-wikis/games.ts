@@ -3,6 +3,74 @@ import type { SteamWikiGame } from "./types";
 export const steamWikiGames: SteamWikiGame[] = [
   {
     rank: 1,
+    slug: "wardogs",
+    name: "WARDOGS",
+    shortName: "WARDOGS",
+    steamAppId: 1867240,
+    developer: "BULKHEAD",
+    publisher: "Team17",
+    genre: "tactical-fps",
+    genreLabel: "Tactical FPS",
+    freeToPlay: false,
+    tagline: "Hold the Hot Zone — 100 players, three teams, cash is king",
+    pitch:
+      "WARDOGS is BULKHEAD and Team17's Early Access all-out-warfare FPS: up to 100 players split across Lonestar, Valkyra, and Manticore fight a randomized 2×2 km Control Zone. First team to 100 points wins. It is not a battle royale and not an extraction shooter — you win by bodies on the objective, logistics back from spawn, and a persistent cash wallet.",
+    loop: "Buy a kit you can afford to lose, reach the Control Zone, put bodies in the moving Hot Zone, cash out teamplay (revives, lifts, spotting, FOBs), then spend that wallet on the next life.",
+    firstMoves: [
+      "Spend a cheap first kit: one controllable rifle, two or three magazines, matching loose ammo, bandages, and light armor. Your $10,000 starting wallet persists between matches — blowing it on round one is how you play the rest of the session in free starter guns.",
+      "Open the map and find the Control Zone before you sprint. The fight is 4 km² inside a 256 km² battlefield. Walking from the safe zone is the death penalty; buy a ride or catch a lift.",
+      "Stand inside the zone when the 30-second tick fires. A squad that wins a fight just outside the circle loses the point to a smaller group that stayed in.",
+      "Play Medic or Assault until the loop is automatic. Revives and spotting pay cash without requiring you to win a 1v1 against a tank.",
+    ],
+    mistakes: [
+      "Treating it like a two-team FPS. After you clear Lonestar, Manticore has been watching. The third faction is the real threat.",
+      "Buying a max kit, dying, and repeating. Gear is gone on death. Cash is not. Budget the life, not the fantasy loadout.",
+      "Ignoring the Hot Zone. Players inside it count as two toward control and earn double cash. Ten in the Hot Zone beat nineteen on the edge.",
+      "Respawning the instant you go down. A teammate revive keeps the kit. Travel time back from the safe zone is the actual respawn timer.",
+    ],
+    settingsNotes: [
+      "Cap FPS to a number 16 GB of RAM and a GTX 1660-class GPU can hold in 100-player fights. A hitch on a ridge peek is a lost kit.",
+      "Use wired ethernet and turn off extra overlays. Proximity voice and vehicle audio are how you hear the third team, not Discord alone.",
+      "Drop shadows, volumetric fog, and foliage if the valley hitchs. You need to read ridges more than you need max presets.",
+    ],
+    extra: {
+      slug: "control-zone-and-hot-zone",
+      title: "WARDOGS Control Zone and Hot Zone",
+      category: "Fundamentals",
+      excerpt:
+        "How 30-second ticks, double-count Hot Zone bodies, and tower codes actually win the match.",
+      sections: [
+        {
+          heading: "First to 100",
+          body: "Every 30 seconds the faction with the most players inside the randomized 2×2 km Control Zone earns a point. First to 100 wins. Kills only matter if they let your team stay in the circle.",
+        },
+        {
+          heading: "Hot Zone math",
+          body: "A smaller shifting Hot Zone inside the Control Zone counts each player as two and doubles cash. Move bodies into it when it drifts. Holding the edge of the big circle while they sit in the Hot Zone is how you lose a tick you thought you owned.",
+        },
+      ],
+    },
+    faq: [
+      {
+        q: "Is WARDOGS a battle royale?",
+        a: "No. The Steam store page says it is not a battle royale and not an extraction shooter. One mode: 100 players, three teams, one Control Zone, first to 100 points.",
+      },
+      {
+        q: "How much does WARDOGS cost?",
+        a: "Early Access is $39.99 on Steam (app 1867240). Developer BULKHEAD, publisher Team17. It is not free to play.",
+      },
+      {
+        q: "What should I buy first?",
+        a: "A cheap rifle kit you can afford to lose twice. Starting wallet is $10,000 and persists between matches. Gear does not persist through death.",
+      },
+      {
+        q: "How do I rank up a class?",
+        a: "There are no locked classes. Six XP tracks — Assault, Medic, Recon, Support, Driver, Pilot — level from what you do. Mix tools in one loadout.",
+      },
+    ],
+  },
+  {
+    rank: 1,
     slug: "counter-strike-2",
     name: "Counter-Strike 2",
     shortName: "CS2",

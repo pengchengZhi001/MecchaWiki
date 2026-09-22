@@ -4,12 +4,28 @@ import type { SteamWikiGame } from "@/data/steam-wikis/types";
 
 export const steamWikiHubPath = "/wikis";
 
+/** Newer store assets live under a content hash; legacy /header.jpg 404s. */
+const STEAM_ASSET_OVERRIDES: Record<number, { header: string; hero: string }> = {
+  1867240: {
+    header:
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg",
+    hero:
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/9e3d0dba457f3d33734990866160be80c399f67c/library_hero.jpg",
+  },
+};
+
 export function steamHeader(appId: number) {
-  return `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/header.jpg`;
+  return (
+    STEAM_ASSET_OVERRIDES[appId]?.header ??
+    `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/header.jpg`
+  );
 }
 
 export function steamHero(appId: number) {
-  return `https://cdn.akamai.steamstatic.com/steam/apps/${appId}/library_hero.jpg`;
+  return (
+    STEAM_ASSET_OVERRIDES[appId]?.hero ??
+    `https://cdn.akamai.steamstatic.com/steam/apps/${appId}/library_hero.jpg`
+  );
 }
 
 export function steamCapsule(appId: number) {

@@ -6,11 +6,15 @@ export const updatesGuide: Guide = {
   category: "Mechanics",
   readTime: "10 min",
   excerpt:
-    "Meccha Chameleon patch history: v4.1.0 Kyoto / Art Museum / join codes, v4.0.0 Petit Chameleon, v3.9.1 emote paging, v3.9.0 Shopping Mall, and what to re-test after each update.",
+    "Meccha Chameleon patch history: v4.1.1 voice / Switch 2 cap, Switch 2 launch + PC cross-play, v4.1.0 Kyoto / Art Museum / join codes, v4.0.0 Petit Chameleon, and what to re-test after each update.",
   seoKeywords: [
     "update",
     "patch notes",
     "version",
+    "v4.1.1",
+    "Switch 2",
+    "cross-play",
+    "voice chat",
     "v4.1.0",
     "v4.0.0",
     "Kyoto",
@@ -57,17 +61,47 @@ export const updatesGuide: Guide = {
       name: "Wikipedia — Meccha Chameleon",
       url: "https://en.wikipedia.org/wiki/Meccha_Chameleon",
     },
+    {
+      name: "Steam News — Update 4.1.1",
+      url: "https://store.steampowered.com/news/app/4704690/view/698776157349216280",
+    },
+    {
+      name: "Nintendo Everything — 4.1.1 patch notes",
+      url: "https://nintendoeverything.com/meccha-chameleon-4-1-1-update-out-now-patch-notes/",
+    },
+    {
+      name: "consolepcgaming.com — 4.1.1 voice / Switch 2 cap",
+      url: "https://consolepcgaming.com/meccha-chameleon-update-4-1-1-brings-voice-chat-controls-and-a-lower-switch-2-cap/",
+    },
+    {
+      name: "Game*Spark — Switch 2 cross-play / user maps later this year",
+      url: "https://www.gamespark.jp/article/2026/09/10/172058.html",
+    },
+    {
+      name: "Famitsu — Nintendo Direct 2026.9.9 Switch 2",
+      url: "https://www.famitsu.com/article/202609/87346",
+    },
   ],
   content: [
     {
       id: "why-updates-matter",
       heading: "Why Patch Notes Matter for Hiders",
-      body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Re-test favorite hiding spots monthly and after every Steam download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
+      body: "MECCHA CHAMELEON meta is patch-sensitive. Wall-clip spots from launch-week YouTube clips may fail after geometry fixes. Matchmaking only works between players on the same version — friends who skip updates cannot join your lobby. Switch 2 and Steam PC also need matching 4.1.x builds for cross-play. Re-test favorite hiding spots monthly and after every Steam or eShop download. This hub summarizes community-verified changes; always cross-check Steam News for exact build numbers before tournaments.",
+    },
+    {
+      id: "v411",
+      heading: "v4.1.1 — Voice Chat Controls, Touch Paint & Switch 2 Host Cap (Sep 16)",
+      body: "Steam News Update 4.1.1 (September 16, 2026): option to disable voice chat; touch-screen painting; microphone icon at the top of the screen when the game detects audio input; incoming voice chat muted by default; spectator target switch with LT / Right Shoulder fixed; User Management refresh no longer stacks UI; certain maps no longer load by default; Switch 2 A/B/X/Y button notation adjusted; maximum player limit now enforced when many users join at once; stick brush-size returns the cursor to its original position; Switch 2 hosted sessions temporarily reduced from 12 to 10 players; mouse-mode Paint Mode cursor jump and post-action cursor drag fixed. Nintendo Everything / GoNintendo / consolepcgaming carry the same notes. Steam News explicitly lists the crash issue as still under investigation — 4.1.0's possible crash fix did not close it. Post-update troubleshooting: Problems After v4.0–4.1.",
+    },
+    {
+      id: "switch2-launch",
+      heading: "Nintendo Switch 2 Launch + Hotfix 4.1.0 Cross-Play (Sep 9)",
+      body: "Announced in Nintendo Direct 2026.9.9 and live on the eShop the same day (Famitsu / Dengeki / GAME Watch). Game*Spark (Sep 10) quoting LEMORION: Switch 2 ↔ Steam PC cross-play, mouse support on Switch 2, lobbies up to 24 players, and user-created maps coming later this year — not at launch. Steam Community currently states full cross-play, with MOD-map cross-play and a replacement MOD system due by year end (Steam Workshop to be deprecated then). An unnumbered Hotfix 4.1.0 on launch day added the cross-play option (consolepcgaming). ITmedia: eShop price ¥790 with a 20% launch deal through September 17, 2026 (now ended). 4.1.1 later temporary-caps Switch 2 hosted sessions at 10. Original Nintendo Switch, PS5, and Xbox remain unavailable. Lookalike warning: Game*Spark flags 変態カメレオン on the Nintendo Store. Platforms guide has the join path.",
     },
     {
       id: "v410",
       heading: "v4.1.0 — Kyoto, Art Museum, Join Codes & Greece/Egypt Rework",
-      body: "Steam News BIG UPDATE 4.1.0 (August 28, 2026): official maps Kyoto (京都) and Art Museum (美術館); Greece and Egypt reworked; legacy server browser replaced by 5-character alphanumeric join codes (verifiable in-game); in-progress public rooms hidden by default (options toggle); server elapsed time; match ends if hunter count hits 0 while hunters wait; player-count 0 display fix; 1-second taunt cooldown; forced-taunt minimum 1s → 5s; painting network −40%; FPS cap 239 → 240; ammo settings persist between matches; possible mid-game crash fix; voice-toggle SFX; region tag required; stick paint vs framerate / upward bias; hider camera; options-menu hitch. Denfaminicogamer / consolepcgaming cover the same day. 4gamer (Aug 31): Kyoto is a Kyoto Station motif with Japanese objects; Art Museum hangs world-famous paintings plus in-game Meccha objects. GameWith (Sep 4): station gardens, large vertical volume, tourist-attraction miniatures. Steam News as of September 6, 2026 has no 4.1.1 / 4.2.0. BLOOMIN' KIDS real-world event (Denfaminicogamer Aug 29) still lists details as forthcoming. Steam announcement comments split on price/F2P, taunt cooldowns, and update cadence — player talk, not official positions. Post-update troubleshooting: Problems After v4.0–4.1.",
+      body: "Steam News BIG UPDATE 4.1.0 (August 28, 2026): official maps Kyoto (京都) and Art Museum (美術館); Greece and Egypt reworked; legacy server browser replaced by 5-character alphanumeric join codes (verifiable in-game); in-progress public rooms hidden by default (options toggle); server elapsed time; match ends if hunter count hits 0 while hunters wait; player-count 0 display fix; 1-second taunt cooldown; forced-taunt minimum 1s → 5s; painting network −40%; FPS cap 239 → 240; ammo settings persist between matches; possible mid-game crash fix; voice-toggle SFX; region tag required; stick paint vs framerate / upward bias; hider camera; options-menu hitch. Denfaminicogamer / consolepcgaming cover the same day. 4gamer (Aug 31): Kyoto is a Kyoto Station motif with Japanese objects; Art Museum hangs world-famous paintings plus in-game Meccha objects. GameWith (Sep 4): station gardens, large vertical volume, tourist-attraction miniatures. Steam announcement comments split on price/F2P, taunt cooldowns, and update cadence — player talk, not official positions. Follow-up 4.1.1 shipped September 16. Post-update troubleshooting: Problems After v4.0–4.1.",
     },
     {
       id: "v402",

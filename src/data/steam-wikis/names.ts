@@ -1,5 +1,6 @@
 /** Slim client-safe labels so the header does not import full wiki copy. */
 export const wikiShortNames: Record<string, string> = {
+  wardogs: "WARDOGS",
   "counter-strike-2": "CS2",
   "dota-2": "Dota 2",
   palworld: "Palworld",
@@ -57,6 +58,7 @@ export const fullWikiNav: Record<
   string,
   { maps: string; roles: string; strats: string }
 > = {
+  wardogs: { maps: "Maps", roles: "Roles", strats: "Setups" },
   "counter-strike-2": { maps: "Maps", roles: "Roles", strats: "Setups" },
   "dota-2": { maps: "Lanes", roles: "Roles", strats: "Setups" },
   palworld: { maps: "Biomes", roles: "Jobs", strats: "Setups" },

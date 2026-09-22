@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
-import { NativeBanner } from "@/components/ads";
+import WikiSidebarAds from "@/components/steam-wiki/WikiSidebarAds";
 import {
   getGuideForGame,
   getGuidesForGame,
@@ -121,9 +121,9 @@ export default async function GameWikiGuideDetailPage({ params }: Props) {
             <p className="mt-3 text-lg text-muted">{guide.excerpt}</p>
           </header>
 
-          <NativeBanner />
-
-          <nav className="mt-8 rounded-xl border border-card-border bg-card p-5 lg:hidden">
+          <div className="mt-8 grid gap-8 lg:grid-cols-3">
+            <div className="lg:col-span-2">
+          <nav className="rounded-xl border border-card-border bg-card p-5 lg:hidden">
             <p className="text-xs font-semibold uppercase tracking-wider text-muted">
               On this page
             </p>
@@ -167,6 +167,10 @@ export default async function GameWikiGuideDetailPage({ params }: Props) {
               </Link>
             </p>
           </footer>
+            </div>
+
+            <WikiSidebarAds game={game} />
+          </div>
         </div>
       </div>
     </article>

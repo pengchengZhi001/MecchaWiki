@@ -16,7 +16,7 @@ export const multiplayerTopic: HelpTopic = {
       question: "How do I play MECCHA CHAMELEON online?",
       tags: ["online", "multiplayer", "matchmaking"],
       answer: [
-        "Launch the game from Steam, open the multiplayer menu, and either browse public lobbies (select a region tag) or Create Server to host. After v4.1.0 friends join with the 5-character in-game code — not by searching the room title. Public servers accept drop-in players when not marked private — streamers often use this for viewer participation.",
+        "Launch from Steam or the Nintendo Switch 2 eShop, open the multiplayer menu, and either browse public lobbies (select a region tag) or Create Server to host. After v4.1.0 friends join with the 5-character in-game code — not by searching the room title. Public servers accept drop-in players when not marked private — streamers often use this for viewer participation. Mixed Steam + Switch 2 lobbies need the cross-play option from Hotfix 4.1.0.",
         "Each round splits into prep phase (hiders paint and pose) and hunt phase (seekers tag hiders before the timer ends). You need at least two players; the developer recommends 2–10 for stable sessions, though the client technically supports larger counts.",
         "Workshop maps and official maps are chosen by the host before launch. Subscribe to custom maps on Steam Workshop before joining a lobby that uses them, or you may fail to load the stage.",
       ],
@@ -72,8 +72,8 @@ export const multiplayerTopic: HelpTopic = {
       question: "Is MECCHA CHAMELEON cross-platform?",
       tags: ["crossplay", "console", "xbox", "playstation"],
       answer: [
-        "No. MECCHA CHAMELEON is Steam PC only at launch. Console versions are not available, so PlayStation, Xbox, and Switch players cannot join PC lobbies.",
-        "Everyone in your group needs the Steam PC purchase. Steam Deck players can join if the game runs acceptably on their device, but that is still the PC build — not a separate console ecosystem.",
+        "Yes — Steam PC and Nintendo Switch 2 can play together after the September 9, 2026 Switch 2 launch (Famitsu / Game*Spark). Enable the Hotfix 4.1.0 cross-play option, match 4.1.1+ on every client, and join with the 5-character code. Incoming voice is muted by default after 4.1.1.",
+        "Original Nintendo Switch, PlayStation, and Xbox still cannot join. Workshop / MOD maps stay PC-only until later this year (Game*Spark / Steam Community). If a Switch 2 host cannot fill past 10 players, that is the temporary 4.1.1 cap — have a PC player host.",
       ],
     },
     {

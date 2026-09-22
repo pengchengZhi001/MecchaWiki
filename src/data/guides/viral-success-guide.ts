@@ -115,7 +115,7 @@ export const viralSuccessGuide: Guide = {
     {
       id: "what-players-should-do",
       heading: "What Players Should Do With the Hype",
-      body: "High sales mean crowded public lobbies, more clip chasers on obvious spots, and faster meta saturation on Mansion horse statue jokes. Use private password rooms for learning paint basics. Re-test database spots after each patch — viral geometry from launch week may fail post-v1.2.0. Follow Steam News for collaboration map drops rather than rumor reposts. For fair-play concerns that scaled with player count, see Noclip Exploits and Cheaters guides. For platform questions from friends on consoles, see our Platforms guide.",
+      body: "High sales mean crowded public lobbies, more clip chasers on obvious spots, and faster meta saturation on Mansion horse statue jokes. Use private password rooms for learning paint basics. Re-test database spots after each patch — viral geometry from launch week may fail post-v1.2.0. Follow Steam News for collaboration map drops rather than rumor reposts. For fair-play concerns that scaled with player count, see Noclip Exploits and Cheaters guides. Nintendo Switch 2 launched September 9, 2026 with Steam PC cross-play (Famitsu / Game*Spark) — original Switch, PS5, and Xbox still cannot join. See our Platforms guide.",
     },
   ],
 };

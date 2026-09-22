@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import DifficultyBadge from "@/components/DifficultyBadge";
-import { NativeBanner } from "@/components/ads";
+import WikiSidebarAds from "@/components/steam-wiki/WikiSidebarAds";
 import {
   getAllFullWikis,
   getFullWiki,
@@ -112,9 +112,9 @@ export default async function GameWikiRoleDetailPage({ params }: Props) {
         </div>
       </header>
 
-      <NativeBanner />
-
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
+      <div className="mt-8 grid gap-8 lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          <div className="grid gap-6 md:grid-cols-2">
         <section className="rounded-xl border border-card-border bg-card p-5">
           <h2 className="text-lg font-bold">Strengths</h2>
           <ul className="mt-3 space-y-2">
@@ -153,6 +153,10 @@ export default async function GameWikiRoleDetailPage({ params }: Props) {
           ))}
         </ol>
       </section>
+        </div>
+
+        <WikiSidebarAds game={game} />
+      </div>
     </article>
   );
 }

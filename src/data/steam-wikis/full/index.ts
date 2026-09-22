@@ -10,8 +10,10 @@ import { zomboidWiki } from "./project-zomboid";
 import { apexWiki } from "./apex-legends";
 import { siegeWiki } from "./rainbow-six-siege";
 import { dbdWiki } from "./dead-by-daylight";
+import { wardogsWiki } from "./wardogs";
 
 const fullWikis: Record<string, FullWiki> = {
+  [wardogsWiki.slug]: wardogsWiki,
   [cs2Wiki.slug]: cs2Wiki,
   [dota2Wiki.slug]: dota2Wiki,
   [palworldWiki.slug]: palworldWiki,

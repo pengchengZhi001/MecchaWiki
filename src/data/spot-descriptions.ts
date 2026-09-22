@@ -266,6 +266,14 @@ export const spotDescriptions: Record<string, string> = {
     "Upper escalator deck — GameWith vertical-volume hide; sample landing stone plus underside shadow.",
   "kyoto-shamisen-billboard":
     "Left-wall shamisen digital billboard — meme traffic; experimental transit hide.",
+  "kyoto-stall-underside":
+    "Underside of a Kyoto festival booth — note.com under/behind clutter plus 4gamer Japanese-object stalls.",
+  "kyoto-torii-post-shadow":
+    "Shadow behind a vermillion torii post — note.com 物の裏; sample post shadow, not plaza tile.",
+  "kyoto-garden-planter-back":
+    "Back side of a GameWith 庭園 planter — crouch behind the hedge, not on the plaza-facing rim.",
+  "kyoto-escalator-underside":
+    "Shadow band under a Kyoto escalator landing — GameWith vertical volume plus note.com 下.",
   "art-museum-canvas-blend":
     "Canvas blend on official Art Museum — eyedrop the painting you touch; experimental pending official still.",
   "art-museum-sculpture-plinth":
@@ -288,6 +296,12 @@ export const spotDescriptions: Record<string, string> = {
     "In-game Meccha objects displayed as museum exhibits — 4gamer; prop-mimic familiar props.",
   "art-museum-miniature-diorama":
     "Tourist-attraction miniature / diorama cluster — GameWith + Nezumi Steam comment; compact plinth pose.",
+  "art-museum-bench-leg":
+    "Gallery bench-leg hide — note.com chair-leg tactic on official 美術館; sample wood plus floor shadow.",
+  "art-museum-plinth-shadow":
+    "Underside of a miniature/diorama plinth — GameWith tourist models plus note.com 下・奥.",
+  "art-museum-frame-gap":
+    "Gap between two frames — skypenguin/DualShockers analog: small gaps beat giant-canvas fronts.",
   "egypt-bastet-statue":
     "Bastet statue cluster on Egypt — GameWith Pharaoh/Bastet props; re-scout after the 4.1.0 rework.",
   "egypt-uneven-wall-nook":
@@ -296,6 +310,14 @@ export const spotDescriptions: Record<string, string> = {
     "Seafloor treasure chest beside wreck clutter — GameWith 宝箱; dual-sample wood/gold and sand.",
   "shopping-mall-floor-merchandise":
     "Floor merchandise piles on Shopping Mall — GameWith compact-mall goods stacks, not atrium tile.",
+  "cherry-blossom-koi-pond":
+    "Koi-pond rim on Workshop Cherry Blossom Garden — Steam listing pond hide; dual-sample water and stone.",
+  "cherry-blossom-bridge-rail":
+    "Garden bridge rail — Workshop description names bridges; sample wood rail plus shadow.",
+  "cherry-blossom-tree-cluster":
+    "Moving sakura/leaf cluster — player comments note wind-animated leaves; sample leaf plus trunk.",
+  "cherry-blossom-open-path":
+    "Open garden path under mountains — Steam listing scenery; transit only, long sightlines.",
   "minecraft-crafting-table":
     "Crafting table corner with dual-tone wood cover — GAMES.GG's top Minecraft workshop pick.",
   "minecraft-village-tree-line":
